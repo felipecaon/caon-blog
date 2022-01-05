@@ -1,0 +1,20 @@
+name: CI
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          external_repository: felipecaon/felipecaon.github.io
+          publish_dir: ./public
+          #   keep_files: true
+          user_name: felipecaon
+          user_email: felipecaon@gmail.com
+          publish_branch: master
+          cname: caon.io
