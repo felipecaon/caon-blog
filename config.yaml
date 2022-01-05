@@ -1,7 +1,7 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL: https://example.com/
-title: Hugo Book
+baseURL: https://caon.io
+title: caon.io
 theme: hugo-book
 
 # Book configuration
@@ -20,29 +20,14 @@ markup:
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-languages:
-  en:
-    languageName: English
-    contentDir: content
-    weight: 1
-  ru:
-    languageName: Russian
-    contentDir: content.ru
-    weight: 2
-  zh:
-    languageName: Chinese
-    contentDir: content.zh
-    weight: 3
+# languages:
 
 menu:
   # before: []
   after:
     - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book"
+      url: "https://github.com/felipecaon"
       weight: 10
-    - name: "Hugo Themes"
-      url: "https://themes.gohugo.io/hugo-book/"
-      weight: 20
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
@@ -81,7 +66,7 @@ params:
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath: edit/main/exampleSite
+  # BookEditPath: edit/main/exampleSite
 
   # Configure the date format used on the pages
   # - In git information
@@ -97,17 +82,17 @@ params:
   # By default partals/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
-  BookComments: true
+  BookComments: false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
   # Theme will print warning if page referenced in markdown does not exists.
-  BookPortableLinks: true
+  BookPortableLinks: false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
-  BookServiceWorker: true
+  BookServiceWorker: false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.

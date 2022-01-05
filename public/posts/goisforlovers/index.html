@@ -10,18 +10,16 @@ This document is a brief primer on using Go templates.">
 <meta property="og:description" content="Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
 This document is a brief primer on using Go templates." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/posts/goisforlovers/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://caon.io/posts/goisforlovers/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-01-05T11:29:14-03:00" />
 
-<title>(Hu)go Template Primer | Hugo Book</title>
+<title>(Hu)go Template Primer | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c23ca90d725940915c2fa646f78856575f29019a66c2fe80fbbf140e21bdc49d.js" integrity="sha256-wjypDXJZQJFcL6ZG94hWV18pAZpmwv6A&#43;78UDiG9xJ0=" crossorigin="anonymous"></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.3d1ac839a6b7fa1e202e0f6954a58fd74ae4bbd7395a69d07d1203bb4e0905fb.js" integrity="sha256-PRrIOaa3&#43;h4gLg9pVKWP10rku9c5WmnQfRIDu04JBfs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -37,7 +35,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Hugo Book</span>
+  <a class="flex align-center" href="/"><span>caon.io</span>
   </a>
 </h2>
 
@@ -48,47 +46,6 @@ https://github.com/alex-shpak/hugo-book
   <ul id="book-search-results"></ul>
 </div>
 
-
-
-  
-
-
-
-  
-    
-  
-    
-  
-
-
-
-<ul class="book-languages">
-  <li>
-    <input type="checkbox" id="languages" class="toggle" />
-    <label for="languages" class="flex justify-between">
-      <a role="button" class="flex align-center">
-        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        English
-      </a>
-    </label>
-
-    <ul>
-      
-      <li>
-        <a href="https://example.com/ru/">
-          Russian
-        </a>
-      </li>
-      
-      <li>
-        <a href="https://example.com/zh/">
-          Chinese
-        </a>
-      </li>
-      
-    </ul>
-  </li>
-</ul>
 
 
 
@@ -114,7 +71,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/example/" class="">Example Site</a>
+    <a href="https://caon.io/docs/example/" class="">Example Site</a>
   
 
           
@@ -127,7 +84,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/example/table-of-contents/" class="">Table of Contents</a>
+    <a href="https://caon.io/docs/example/table-of-contents/" class="">Table of Contents</a>
   
 
           
@@ -140,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+    <a href="https://caon.io/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
   
 
         </li>
@@ -153,7 +110,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+    <a href="https://caon.io/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
   
 
         </li>
@@ -187,7 +144,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+    <a href="https://caon.io/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
   
 
           
@@ -200,7 +157,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+    <a href="https://caon.io/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
   
 
         </li>
@@ -241,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/buttons/" class="">Buttons</a>
+    <a href="https://caon.io/docs/shortcodes/buttons/" class="">Buttons</a>
   
 
         </li>
@@ -254,7 +211,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/columns/" class="">Columns</a>
+    <a href="https://caon.io/docs/shortcodes/columns/" class="">Columns</a>
   
 
         </li>
@@ -267,7 +224,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/details/" class="">Details</a>
+    <a href="https://caon.io/docs/shortcodes/details/" class="">Details</a>
   
 
         </li>
@@ -280,7 +237,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/expand/" class="">Expand</a>
+    <a href="https://caon.io/docs/shortcodes/expand/" class="">Expand</a>
   
 
         </li>
@@ -293,7 +250,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/hints/" class="">Hints</a>
+    <a href="https://caon.io/docs/shortcodes/hints/" class="">Hints</a>
   
 
         </li>
@@ -306,7 +263,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/katex/" class="">Katex</a>
+    <a href="https://caon.io/docs/shortcodes/katex/" class="">Katex</a>
   
 
         </li>
@@ -319,7 +276,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/mermaid/" class="">Mermaid</a>
+    <a href="https://caon.io/docs/shortcodes/mermaid/" class="">Mermaid</a>
   
 
         </li>
@@ -334,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
     <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
-      <a href="https://example.com/docs/shortcodes/section/" class="">Section</a>
+      <a href="https://caon.io/docs/shortcodes/section/" class="">Section</a>
     </label>
   
 
@@ -348,7 +305,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/section/first-page/" class="">First Page</a>
+    <a href="https://caon.io/docs/shortcodes/section/first-page/" class="">First Page</a>
   
 
         </li>
@@ -361,7 +318,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/section/second-page/" class="">Second Page</a>
+    <a href="https://caon.io/docs/shortcodes/section/second-page/" class="">Second Page</a>
   
 
         </li>
@@ -379,7 +336,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://example.com/docs/shortcodes/tabs/" class="">Tabs</a>
+    <a href="https://caon.io/docs/shortcodes/tabs/" class="">Tabs</a>
   
 
         </li>
@@ -412,14 +369,8 @@ https://github.com/alex-shpak/hugo-book
   </li>
   
   <li>
-    <a href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener">
+    <a href="https://github.com/felipecaon" target="_blank" rel="noopener">
         Github
-      </a>
-  </li>
-  
-  <li>
-    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
-        Hugo Themes
       </a>
   </li>
   
@@ -531,16 +482,13 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<p>Hugo uses the excellent 
-  <a href="https://golang.org/">Go</a> 
-  <a href="https://golang.org/pkg/html/template/">html/template</a> library for
+<p>Hugo uses the excellent <a href="https://golang.org/">Go</a> <a href="https://golang.org/pkg/html/template/">html/template</a> library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
 logic to be able to create a good static website. If you have used other
 template systems from different languages or frameworks you will find a lot of
 similarities in Go templates.</p>
-<p>This document is a brief primer on using Go templates. The 
-  <a href="https://golang.org/pkg/html/template/">Go docs</a>
+<p>This document is a brief primer on using Go templates. The <a href="https://golang.org/pkg/html/template/">Go docs</a>
 provide more details.</p>
 <h2 id="introduction-to-go-templates">
   Introduction to Go Templates
@@ -551,8 +499,7 @@ belief that only the most basic of logic belongs in the template or view layer.
 One consequence of this simplicity is that Go templates parse very quickly.</p>
 <p>A unique characteristic of Go templates is they are content aware. Variables and
 content will be sanitized depending on the context of where they are used. More
-details can be found in the 
-  <a href="https://golang.org/pkg/html/template/">Go docs</a>.</p>
+details can be found in the <a href="https://golang.org/pkg/html/template/">Go docs</a>.</p>
 <h2 id="basic-syntax">
   Basic Syntax
   <a class="anchor" href="#basic-syntax">#</a>
@@ -581,8 +528,7 @@ functions.</p>
 <p>Each Go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-
-  <a href="/layout/variables">variables</a> page.</p>
+<a href="/layout/variables">variables</a> page.</p>
 <p>A variable is accessed by referencing the variable name.</p>
 <pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
 </code></pre>
@@ -596,8 +542,7 @@ page you are rendering. More details are available on the
 </h2>
 <p>Go template ship with a few functions which provide basic functionality. The Go
 template system also provides a mechanism for applications to extend the
-available functions with their own. 
-  <a href="/layout/functions">Hugo template
+available functions with their own. <a href="/layout/functions">Hugo template
 functions</a> provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -752,8 +697,7 @@ you want to inside of your templates.</p>
   <a class="anchor" href="#using-content-page-parameters">#</a>
 </h2>
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the 
-  <a href="/content/front-matter">front matter</a>.</p>
+templates. This happens in the <a href="/content/front-matter">front matter</a>.</p>
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
@@ -827,13 +771,6 @@ so, such as in this example:</p>
 
 
 
-  <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/posts/goisforlovers.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
-      <span>Edit this page</span>
-    </a>
-  </div>
-
 
 </div>
 
@@ -847,10 +784,6 @@ so, such as in this example:</p>
       </footer>
 
       
-  
-  <div class="book-comments">
-
-</div>
   
  
 
