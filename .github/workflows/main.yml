@@ -16,5 +16,5 @@ jobs:
           #   keep_files: true
           user_name: felipecaon
           user_email: felipecaon@gmail.com
-          publish_branch: master
+          publish_branch: main
           cname: caon.io
