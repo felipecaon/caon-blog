@@ -168,13 +168,30 @@ Example of scope
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/recon/subdomainenum/</link>
+      <link>https://caon.io/docs/recon/subdomainenum/subdomainenum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/docs/recon/subdomainenum/</guid>
-      <description>Subdomain Enumeration #  The art of subdomain enumeration consists into gathering a list of valid subdomains of your target, this list allows a researcher to expand attack surface and understand more about the target.
-Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.</description>
+      <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum/</guid>
+      <description>Subdomain Enumeration #  The art of subdomain enumeration consists into gathering a list of valid subdomains of your target, this list allows a researcher to expand attack surface and understand more about the target.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</guid>
+      <description>Active Resources #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</guid>
+      <description>Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau -subs example.com | unfurl -u domains # https://github.com/gwen001/github-subdomains # Need to configure github keys github-subdomains -d example.</description>
     </item>
     
     <item>

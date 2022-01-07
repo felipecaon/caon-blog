@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau -subs example.com | unfurl -u domains # https://github.com/gwen001/github-subdomains # Need to configure github keys github-subdomains -d example.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau -subs example.com | unfurl -u domains # https://github.com/gwen001/github-subdomains # Need to configure github keys github-subdomains -d example." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2022-01-07T13:12:18-03:00" />
+
+<title>Subdomainenum Passive | caon.io</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.d13cf357585a4acfbbe7ef0bc4c68272b0d9a3af32ed503e7b7024d122060785.js" integrity="sha256-0TzzV1haSs&#43;75&#43;8LxMaCcrDZo68y7VA&#43;e3Ak0SIGB4U=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>caon.io</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><strong>Recon</strong></li>
+<li><a href="/docs/recon/scope/">Scope</a></li>
+<li><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a>
+<ul>
+<li><a href="/docs/recon/subdomainenum/subdomainenum_passive/"class=active>Passive</a></li>
+<li><a href="/docs/recon/subdomainenum/subdomainenum_active/">Active</a></li>
+</ul>
+</li>
+<li><a href="/docs/recon/probing/">Probing</a></li>
+<li><a href="/docs/recon/fuzzing/">Fuzzing</a></li>
+<li><a href="/docs/recon/screenshot/">Screenshot</a></li>
+<li><a href="/docs/recon/spider/">Spider</a></li>
+<li><a href="/docs/recon/wordlistgeneration/">Wordlist Generation</a></li>
+<li><a href="/docs/recon/wafcheck/">Wafcheck</a></li>
+</ul>
+<br/>
+<ul>
+<li><strong>Exploitation</strong></li>
+</ul>
+<br />
+<ul>
+<li><strong>Resources</strong></li>
+<li><a href="/docs/resources/blogs/">Blogs</a></li>
+<li><a href="/docs/resources/youtubechannels/">Youtube channels</a></li>
+<li><a href="/docs/resources/writeups/">Great Writeups</a></li>
+<li><a href="/docs/resources/tools/">Tools</a></li>
+</ul>
+<br />
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/felipecaon" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Subdomainenum Passive</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#passive-resources">Passive Resources</a></li>
+        <li><a href="#all-in-one-script">All in one script</a></li>
+        <li><a href="#third-party-websites">Third party websites</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="passive-resources">
+  Passive Resources
+  <a class="anchor" href="#passive-resources">#</a>
+</h2>
+<p>A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.</p>
+<pre tabindex="0"><code># https://github.com/OWASP/Amass
+amass enum -passive -d domain.com
+
+# https://github.com/projectdiscovery/subfinder
+subfinder -d domain.com -all -silent
+
+# https://github.com/tomnomnom/assetfinder
+assetfinder --subs-only example.com
+
+# https://github.com/Findomain/Findomain
+findomain -u example.com -q
+
+# https://github.com/lc/gau
+# https://github.com/tomnomnom/unfurl
+gau -subs example.com | unfurl -u domains
+
+# https://github.com/gwen001/github-subdomains
+# Need to configure github keys
+github-subdomains -d example.com
+</code></pre><h2 id="all-in-one-script">
+  All in one script
+  <a class="anchor" href="#all-in-one-script">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">amass enum -passive -d domain.com -o amass_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Amass finalizado&#34;
+
+subfinder -silent -d $1 -o subfinder_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Subfinder finalizado&#34;
+
+findomain -t $1 -u findomain_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Findomain finalizado&#34;
+
+github-subdomains -d $1 -o github_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Github subdomains finalizado&#34;
+
+assetfinder -subs-only $1 &gt; assetfinder_$1.txt
+echo &#34;[+] Assetfinder finalizado&#34;
+
+cat subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
+rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt
+</code></pre></div><h2 id="third-party-websites">
+  Third party websites
+  <a class="anchor" href="#third-party-websites">#</a>
+</h2>
+<p>The following list contains sites that may have additional subdomains:</p>
+<ul>
+<li><a href="https://chaos.projectdiscovery.io/">https://chaos.projectdiscovery.io/</a></li>
+<li><a href="https://phpinfo.me/domain/">https://phpinfo.me/domain/</a></li>
+<li><a href="http://tool.chinaz.com/subdomain">http://tool.chinaz.com/subdomain</a></li>
+<li><a href="https://site.ip138.com/example.com/domain.html">https://site.ip138.com/example.com/domain.html</a></li>
+<li><a href="https://spyse.com/target/domain/example.com/subdomain-list">https://spyse.com/target/domain/example.com/subdomain-list</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#passive-resources">Passive Resources</a></li>
+        <li><a href="#all-in-one-script">All in one script</a></li>
+        <li><a href="#third-party-websites">Third party websites</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
