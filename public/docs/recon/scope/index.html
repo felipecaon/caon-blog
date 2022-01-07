@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Scope #  As a bug bounty hunter, you may keep a close eye in the scope for the desired program.
+An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+Example of scope
+   In-Scope Out of scope     example.com subdomain.example.com   *-dev.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Scope #  As a bug bounty hunter, you may keep a close eye in the scope for the desired program.
+An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+Example of scope
+   In-Scope Out of scope     example.com subdomain.example.com   *-dev." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://caon.io/docs/recon/scope/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Scope | caon.io</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.0ec1cbc3f99086d149c2267194053f52c55f9346d7321f5325901fb7a15e87d8.js" integrity="sha256-DsHLw/mQhtFJwiZxlAU/UsVfk0bXMh9TJZAft6Feh9g=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>caon.io</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><strong>Recon</strong></li>
+<li><a href="/docs/recon/scope/"class=active>Scope</a></li>
+<li><a href="/docs/recon/subdomainenum/">Subdomain Enumeration</a></li>
+<li><a href="/docs/recon/probing/">Probing</a></li>
+<li><a href="/docs/recon/fuzzing/">Fuzzing</a></li>
+<li><a href="/docs/recon/screenshot/">Screenshot</a></li>
+<li><a href="/docs/recon/spider/">Spider</a></li>
+<li><a href="/docs/recon/wordlistgeneration/">Wordlist Generation</a></li>
+<li><a href="/docs/recon/wafcheck/">Wafcheck</a></li>
+</ul>
+<br/>
+<ul>
+<li><strong>Exploitation</strong></li>
+</ul>
+<br />
+<ul>
+<li><strong>Resources</strong></li>
+<li><a href="/docs/resources/blogs/">Blogs</a></li>
+<li><a href="/docs/resources/youtubechannels/">Youtube channels</a></li>
+<li><a href="/docs/resources/writeups/">Great Writeups</a></li>
+<li><a href="/docs/resources/tools/">Tools</a></li>
+</ul>
+<br />
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/" >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/felipecaon" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Scope</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#scope">Scope</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="scope">
+  Scope
+  <a class="anchor" href="#scope">#</a>
+</h1>
+<p>As a bug bounty hunter, you may keep a close eye in the scope for the desired program.</p>
+<p>An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.</p>
+<p>Example of scope</p>
+<table>
+<thead>
+<tr>
+<th>In-Scope</th>
+<th>Out of scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>example.com</td>
+<td>subdomain.example.com</td>
+</tr>
+<tr>
+<td>*-dev.example.com</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The scope above states that <code>example.com</code> and <code>www.example.com</code> are valid (www is a subdomain, example.com points to www by default).</p>
+<p>Any subdomain under <code>-dev.example.com</code>  is valid as well, the wildcard symbol (*) states that anything is valid. So, <code>test-dev.example.com</code>, <code>app-dev.example.com</code> are valid but <code>app.example.com</code> is not because the subdomain does not have the <code>-dev</code>part.</p>
+<p>Some programs offer a wildcard scope, in those cases, it is a good idea to keep an eye in Out of scope domains. See the example:</p>
+<table>
+<thead>
+<tr>
+<th>In-Scope</th>
+<th>Out of scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*.website.com</td>
+<td>wow.website.com</td>
+</tr>
+<tr>
+<td></td>
+<td>ie.website.com</td>
+</tr>
+</tbody>
+</table>
+<p>As written, <code>website.com</code> has a wildcard scope, meaning every subdomain is valid, except for those who are in the Out of scope list, which are <code>wow.website.com</code> and <code>ie.website.com</code></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#scope">Scope</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

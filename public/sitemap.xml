@@ -68,6 +68,36 @@
     <loc>https://caon.io/docs/example/hidden/</loc>
     <lastmod>2022-01-05T11:29:14-03:00</lastmod>
   </url><url>
+    <loc>https://caon.io/docs/exploitation/cachepoisoning/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/exploitation/lfi/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/exploitation/xss/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/fuzzing/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/probing/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/scope/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/screenshot/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/spider/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/subdomainenum/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/wafcheck/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/recon/wordlistgeneration/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/resources/blogs/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/resources/tools/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/resources/writeups/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/resources/youtubechannels/</loc>
+  </url><url>
     <loc>https://caon.io/docs/shortcodes/</loc>
     <lastmod>2022-01-05T11:29:14-03:00</lastmod>
   </url><url>
@@ -111,6 +141,6 @@
     <lastmod>2022-01-05T11:29:14-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/</loc>
-    <lastmod>2022-01-05T11:29:14-03:00</lastmod>
+    <lastmod>2022-01-05T14:04:49-03:00</lastmod>
   </url>
 </urlset>
