@@ -8,13 +8,17 @@ headless: true
 	- [Passive]({{< relref "/docs/recon/subdomainenum/subdomainenum_passive" >}})
 	- [Active]({{< relref "/docs/recon/subdomainenum/subdomainenum_active" >}})
 - [Probing]({{< relref "/docs/recon/probing" >}})
-- [Fuzzing]({{< relref "/docs/recon/fuzzing" >}})
 - [Screenshot]({{< relref "/docs/recon/screenshot" >}})
-- [Spider]({{< relref "/docs/recon/spider" >}})
-- [Wordlist Generation]({{< relref "/docs/recon/wordlistgeneration" >}})
-- [Wafcheck]({{< relref "/docs/recon/wafcheck" >}})
 
-<br/>
+- Content Discovery
+	- [Dorking]({{< relref "/docs/recon/dorks" >}})
+	- [Spidering]({{< relref "/docs/recon/spider" >}})
+	- [Fuzzing]({{< relref "/docs/recon/fuzzing" >}})
+	- [Params]({{< relref "/docs/recon/paramdiscovery" >}})
+
+- [Wordlist Generation]({{< relref "/docs/recon/wordlistgeneration" >}})
+
+<br />
 
 - **Exploitation**
 
@@ -25,5 +29,6 @@ headless: true
 - [Youtube channels]({{< relref "/docs/resources/youtubechannels" >}})
 - [Great Writeups]({{< relref "/docs/resources/writeups" >}})
 - [Tools]({{< relref "/docs/resources/tools" >}})
+- [Career]({{< relref "/docs/resources/career" >}})
 
 <br />

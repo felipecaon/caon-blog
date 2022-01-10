@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Active Resources #  ">
+<meta name="description" content="Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+Get resolver at:
+RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Active Resources #  " />
+<meta property="og:description" content="Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+Get resolver at:
+RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/subdomainenum/subdomainenum_active/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +21,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d13cf357585a4acfbbe7ef0bc4c68272b0d9a3af32ed503e7b7024d122060785.js" integrity="sha256-0TzzV1haSs&#43;75&#43;8LxMaCcrDZo68y7VA&#43;e3Ak0SIGB4U=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b9351bb6e2e15223720bb1630b6bdd7aa67dbbd559645c2cb7ac622ca0e2800a.js" integrity="sha256-uTUbtuLhUiNyC7FjC2vdeqZ9u9VZZFwst6xiLKDigAo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -56,22 +60,39 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><strong>Recon</strong></li>
-<li><a href="/docs/recon/scope/">Scope</a></li>
-<li><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a>
+<li>
+<p><strong>Recon</strong></p>
+</li>
+<li>
+<p><a href="/docs/recon/scope/">Scope</a></p>
+</li>
+<li>
+<p><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a></p>
 <ul>
 <li><a href="/docs/recon/subdomainenum/subdomainenum_passive/">Passive</a></li>
 <li><a href="/docs/recon/subdomainenum/subdomainenum_active/"class=active>Active</a></li>
 </ul>
 </li>
-<li><a href="/docs/recon/probing/">Probing</a></li>
+<li>
+<p><a href="/docs/recon/probing/">Probing</a></p>
+</li>
+<li>
+<p><a href="/docs/recon/screenshot/">Screenshot</a></p>
+</li>
+<li>
+<p>Content Discovery</p>
+<ul>
+<li><a href="/docs/recon/dorks/">Dorking</a></li>
+<li><a href="/docs/recon/spider/">Spidering</a></li>
 <li><a href="/docs/recon/fuzzing/">Fuzzing</a></li>
-<li><a href="/docs/recon/screenshot/">Screenshot</a></li>
-<li><a href="/docs/recon/spider/">Spider</a></li>
-<li><a href="/docs/recon/wordlistgeneration/">Wordlist Generation</a></li>
-<li><a href="/docs/recon/wafcheck/">Wafcheck</a></li>
+<li><a href="/docs/recon/paramdiscovery/">Params</a></li>
 </ul>
-<br/>
+</li>
+<li>
+<p><a href="/docs/recon/wordlistgeneration/">Wordlist Generation</a></p>
+</li>
+</ul>
+<br />
 <ul>
 <li><strong>Exploitation</strong></li>
 </ul>
@@ -82,6 +103,7 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/resources/youtubechannels/">Youtube channels</a></li>
 <li><a href="/docs/resources/writeups/">Great Writeups</a></li>
 <li><a href="/docs/resources/tools/">Tools</a></li>
+<li><a href="/docs/resources/career/">Career</a></li>
 </ul>
 <br />
 
@@ -148,7 +170,12 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#active-resources">Active Resources</a></li>
+    <li><a href="#active-resources">Active Resources</a>
+      <ul>
+        <li><a href="#pure-dns">Pure DNS</a></li>
+        <li><a href="#permutations">Permutations</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -165,7 +192,24 @@ https://github.com/alex-shpak/hugo-book
   Active Resources
   <a class="anchor" href="#active-resources">#</a>
 </h1>
-</article>
+<p>The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.</p>
+<p>Get resolver at:</p>
+<pre tabindex="0"><code>RESOLVER_SOURCE
+</code></pre><h2 id="pure-dns">
+  Pure DNS
+  <a class="anchor" href="#pure-dns">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/d3mondev/puredns
+puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains
+
+puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains
+</code></pre><h2 id="permutations">
+  Permutations
+  <a class="anchor" href="#permutations">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/Josue87/gotator
+gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md
+</code></pre></article>
  
       
 
@@ -202,7 +246,12 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#active-resources">Active Resources</a></li>
+    <li><a href="#active-resources">Active Resources</a>
+      <ul>
+        <li><a href="#pure-dns">Pure DNS</a></li>
+        <li><a href="#permutations">Permutations</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

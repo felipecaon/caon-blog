@@ -34,11 +34,29 @@
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/recon/dorks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/dorks/</guid>
+      <description>Dorks #  Google #  # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks Gituhb #  #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/recon/fuzzing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/fuzzing/</guid>
       <description>Fuzzing #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/recon/paramdiscovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/paramdiscovery/</guid>
+      <description>Parameter Discovery #  </description>
     </item>
     
     <item>
@@ -70,7 +88,7 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/screenshot/</guid>
-      <description>Sreenshot #  </description>
+      <description>Screenshot #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web # https://github.com/sensepost/gowitness </description>
     </item>
     
     <item>
@@ -79,7 +97,7 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/spider/</guid>
-      <description>Spider #  </description>
+      <description>Spider #  # https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &amp;gt; spider.txt cat spider.txt | grep -o -E &amp;quot;(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;amp;\/\?\:@\+-\_=#%;,])*&amp;quot; | grep &amp;quot;example.com&amp;quot; &amp;gt;&amp;gt; links.txt # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt The list generated from gospider links.</description>
     </item>
     
     <item>
@@ -97,7 +115,9 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</guid>
-      <description>Active Resources #  </description>
+      <description>Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+Get resolver at:
+RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     
     <item>
@@ -125,7 +145,8 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/wordlistgeneration/</guid>
-      <description>Wordlist generation #  unfurl</description>
+      <description>Wordlist generation #  After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
+cat links.txt | unfurl -u keys &amp;gt; parameters.txt </description>
     </item>
     
     <item>
@@ -134,7 +155,16 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/blogs/</guid>
-      <description>Blogs #     Link     https://www.hahwul.com/   https://netsec.expert/   https://ihorrasch.com/    </description>
+      <description>Blogs #     Link     https://www.hahwul.com/   https://netsec.expert/   https://ihorrasch.com/   https://www.agarri.fr/en   https://www.100security.com.br/    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/resources/career/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/resources/career/</guid>
+      <description>Career Advice #  | Site | Description | | https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md | CyberSec career pa&amp;gt;| https://devskiller.com/screen-security-engineer/ | CyberSec career path | | https://devskiller.com/screen-security-engineer/ | Security Engineer Career |</description>
     </item>
     
     <item>
@@ -152,7 +182,7 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/writeups/</guid>
-      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to dte writeups   https://web.archive.org/web/20210812053905/enumerated.de/index/salesforce Salesforce Lightining   https://medium.com/@SecTech/adobe-experience-manager-exploitation-24bd9eb75ed9 AEM exploitation   https://dant0x65.medium.com/bug-bounty-tip-automating-ssrf-ea344ec59962 Configure burp to look for SSRFs   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   https://infosecwriteups.com/apache-example-servlet-leads-to-61a2720cac20 Exploit default apache pages   https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ CyberSec career path    </description>
+      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://web.archive.org/web/20210812053905/enumerated.de/index/salesforce Salesforce Lightining   https://medium.com/@SecTech/adobe-experience-manager-exploitation-24bd9eb75ed9 AEM exploitation   https://dant0x65.medium.com/bug-bounty-tip-automating-ssrf-ea344ec59962 Configure burp to look for SSRFs   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   https://infosecwriteups.com/apache-example-servlet-leads-to-61a2720cac20 Exploit default apache pages   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.</description>
     </item>
     
     <item>

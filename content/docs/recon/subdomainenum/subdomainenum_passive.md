@@ -1,4 +1,4 @@
-## Passive Resources
+# Passive Resources
 
 A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
 
@@ -28,19 +28,19 @@ github-subdomains -d example.com
 
 ```tpl
 amass enum -passive -d domain.com -o amass_$1.txt > /dev/null 2>&1
-echo "[+] Amass finalizado"
+echo "[+] Amass done"
 
 subfinder -silent -d $1 -o subfinder_$1.txt > /dev/null 2>&1
-echo "[+] Subfinder finalizado"
+echo "[+] Subfinder done"
 
 findomain -t $1 -u findomain_$1.txt > /dev/null 2>&1
-echo "[+] Findomain finalizado"
+echo "[+] Findomain done"
 
 github-subdomains -d $1 -o github_$1.txt > /dev/null 2>&1
-echo "[+] Github subdomains finalizado"
+echo "[+] Github subdomains done"
 
 assetfinder -subs-only $1 > assetfinder_$1.txt
-echo "[+] Assetfinder finalizado"
+echo "[+] Assetfinder done"
 
 cat subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
 rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt
@@ -56,3 +56,15 @@ The following list contains sites that may have additional subdomains:
 - http://tool.chinaz.com/subdomain
 - https://site.ip138.com/example.com/domain.html
 - https://spyse.com/target/domain/example.com/subdomain-list
+
+## Google analytics ID
+
+Extract Google tag manager from webiste, format: `UAXXXXXX`
+
+- https://builtwith.com/relationships/tag/UAXXXXXX
+- https://api.hackertarget.com/analyticslookup/?q=UAXXXXXX
+
+```
+# https://github.com/Josue87/AnalyticsRelationships
+cat subdomains.txt | analyticsrelationships
+```

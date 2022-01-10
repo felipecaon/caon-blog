@@ -77,8 +77,12 @@
     <loc>https://caon.io/docs/exploitation/xss/</loc>
     <lastmod>2022-01-07T13:12:18-03:00</lastmod>
   </url><url>
+    <loc>https://caon.io/docs/recon/dorks/</loc>
+  </url><url>
     <loc>https://caon.io/docs/recon/fuzzing/</loc>
     <lastmod>2022-01-07T13:12:18-03:00</lastmod>
+  </url><url>
+    <loc>https://caon.io/docs/recon/paramdiscovery/</loc>
   </url><url>
     <loc>https://caon.io/docs/recon/probing/</loc>
     <lastmod>2022-01-07T13:12:18-03:00</lastmod>
@@ -109,6 +113,8 @@
   </url><url>
     <loc>https://caon.io/docs/resources/blogs/</loc>
     <lastmod>2022-01-07T13:12:18-03:00</lastmod>
+  </url><url>
+    <loc>https://caon.io/docs/resources/career/</loc>
   </url><url>
     <loc>https://caon.io/docs/resources/tools/</loc>
     <lastmod>2022-01-07T13:12:18-03:00</lastmod>

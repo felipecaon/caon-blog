@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d13cf357585a4acfbbe7ef0bc4c68272b0d9a3af32ed503e7b7024d122060785.js" integrity="sha256-0TzzV1haSs&#43;75&#43;8LxMaCcrDZo68y7VA&#43;e3Ak0SIGB4U=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b9351bb6e2e15223720bb1630b6bdd7aa67dbbd559645c2cb7ac622ca0e2800a.js" integrity="sha256-uTUbtuLhUiNyC7FjC2vdeqZ9u9VZZFwst6xiLKDigAo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -58,22 +58,39 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><strong>Recon</strong></li>
-<li><a href="/docs/recon/scope/">Scope</a></li>
-<li><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a>
+<li>
+<p><strong>Recon</strong></p>
+</li>
+<li>
+<p><a href="/docs/recon/scope/">Scope</a></p>
+</li>
+<li>
+<p><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a></p>
 <ul>
 <li><a href="/docs/recon/subdomainenum/subdomainenum_passive/"class=active>Passive</a></li>
 <li><a href="/docs/recon/subdomainenum/subdomainenum_active/">Active</a></li>
 </ul>
 </li>
-<li><a href="/docs/recon/probing/">Probing</a></li>
+<li>
+<p><a href="/docs/recon/probing/">Probing</a></p>
+</li>
+<li>
+<p><a href="/docs/recon/screenshot/">Screenshot</a></p>
+</li>
+<li>
+<p>Content Discovery</p>
+<ul>
+<li><a href="/docs/recon/dorks/">Dorking</a></li>
+<li><a href="/docs/recon/spider/">Spidering</a></li>
 <li><a href="/docs/recon/fuzzing/">Fuzzing</a></li>
-<li><a href="/docs/recon/screenshot/">Screenshot</a></li>
-<li><a href="/docs/recon/spider/">Spider</a></li>
-<li><a href="/docs/recon/wordlistgeneration/">Wordlist Generation</a></li>
-<li><a href="/docs/recon/wafcheck/">Wafcheck</a></li>
+<li><a href="/docs/recon/paramdiscovery/">Params</a></li>
 </ul>
-<br/>
+</li>
+<li>
+<p><a href="/docs/recon/wordlistgeneration/">Wordlist Generation</a></p>
+</li>
+</ul>
+<br />
 <ul>
 <li><strong>Exploitation</strong></li>
 </ul>
@@ -84,6 +101,7 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/resources/youtubechannels/">Youtube channels</a></li>
 <li><a href="/docs/resources/writeups/">Great Writeups</a></li>
 <li><a href="/docs/resources/tools/">Tools</a></li>
+<li><a href="/docs/resources/career/">Career</a></li>
 </ul>
 <br />
 
@@ -150,11 +168,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#passive-resources">Passive Resources</a>
       <ul>
-        <li><a href="#passive-resources">Passive Resources</a></li>
         <li><a href="#all-in-one-script">All in one script</a></li>
         <li><a href="#third-party-websites">Third party websites</a></li>
+        <li><a href="#google-analytics-id">Google analytics ID</a></li>
       </ul>
     </li>
   </ul>
@@ -169,10 +187,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="passive-resources">
+  <article class="markdown"><h1 id="passive-resources">
   Passive Resources
   <a class="anchor" href="#passive-resources">#</a>
-</h2>
+</h1>
 <p>A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.</p>
 <pre tabindex="0"><code># https://github.com/OWASP/Amass
 amass enum -passive -d domain.com
@@ -198,19 +216,19 @@ github-subdomains -d example.com
   <a class="anchor" href="#all-in-one-script">#</a>
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">amass enum -passive -d domain.com -o amass_$1.txt &gt; /dev/null 2&gt;&amp;1
-echo &#34;[+] Amass finalizado&#34;
+echo &#34;[+] Amass done&#34;
 
 subfinder -silent -d $1 -o subfinder_$1.txt &gt; /dev/null 2&gt;&amp;1
-echo &#34;[+] Subfinder finalizado&#34;
+echo &#34;[+] Subfinder done&#34;
 
 findomain -t $1 -u findomain_$1.txt &gt; /dev/null 2&gt;&amp;1
-echo &#34;[+] Findomain finalizado&#34;
+echo &#34;[+] Findomain done&#34;
 
 github-subdomains -d $1 -o github_$1.txt &gt; /dev/null 2&gt;&amp;1
-echo &#34;[+] Github subdomains finalizado&#34;
+echo &#34;[+] Github subdomains done&#34;
 
 assetfinder -subs-only $1 &gt; assetfinder_$1.txt
-echo &#34;[+] Assetfinder finalizado&#34;
+echo &#34;[+] Assetfinder done&#34;
 
 cat subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
 rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt
@@ -226,7 +244,18 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
 <li><a href="https://site.ip138.com/example.com/domain.html">https://site.ip138.com/example.com/domain.html</a></li>
 <li><a href="https://spyse.com/target/domain/example.com/subdomain-list">https://spyse.com/target/domain/example.com/subdomain-list</a></li>
 </ul>
-</article>
+<h2 id="google-analytics-id">
+  Google analytics ID
+  <a class="anchor" href="#google-analytics-id">#</a>
+</h2>
+<p>Extract Google tag manager from webiste, format: <code>UAXXXXXX</code></p>
+<ul>
+<li><a href="https://builtwith.com/relationships/tag/UAXXXXXX">https://builtwith.com/relationships/tag/UAXXXXXX</a></li>
+<li><a href="https://api.hackertarget.com/analyticslookup/?q=UAXXXXXX">https://api.hackertarget.com/analyticslookup/?q=UAXXXXXX</a></li>
+</ul>
+<pre tabindex="0"><code># https://github.com/Josue87/AnalyticsRelationships
+cat subdomains.txt | analyticsrelationships
+</code></pre></article>
  
       
 
@@ -263,11 +292,11 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
   
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#passive-resources">Passive Resources</a>
       <ul>
-        <li><a href="#passive-resources">Passive Resources</a></li>
         <li><a href="#all-in-one-script">All in one script</a></li>
         <li><a href="#third-party-websites">Third party websites</a></li>
+        <li><a href="#google-analytics-id">Google analytics ID</a></li>
       </ul>
     </li>
   </ul>
