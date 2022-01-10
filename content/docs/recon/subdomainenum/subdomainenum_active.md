@@ -2,7 +2,7 @@
 
 The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 
-Get resolver at:
+Get resolvers at:
 ```
 RESOLVER_SOURCE
 ```

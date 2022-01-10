@@ -25,10 +25,11 @@ headless: true
 <br />
 
 - **Resources**
-- [Blogs]({{< relref "/docs/resources/blogs" >}})
+- [Sites]({{< relref "/docs/resources/sites" >}})
 - [Youtube channels]({{< relref "/docs/resources/youtubechannels" >}})
 - [Great Writeups]({{< relref "/docs/resources/writeups" >}})
-- [Tools]({{< relref "/docs/resources/tools" >}})
+- [Web Tools]({{< relref "/docs/resources/tools" >}})
+- [Repositories]({{< relref "/docs/resources/repositories" >}})
 - [Career]({{< relref "/docs/resources/career" >}})
 
 <br />

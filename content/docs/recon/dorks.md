@@ -14,7 +14,7 @@
 # Google dork helper, input url and the sites generates dorks
 ```
 
-## Gituhb
+## Github
 
 ```
 #https://github.com/obheda12/GitDorker
@@ -23,3 +23,8 @@ python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dor
 # https://vsec7.github.io/
 # Git dork helper, input url and the site generates dorks
 ```
+
+## Useful sites
+
+- https://dorks.faisalahmed.me/ (Appends URL to google dorks)
+- https://vsec7.github.io/ (Appends URL to github dorks)
