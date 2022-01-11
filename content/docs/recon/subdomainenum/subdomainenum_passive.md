@@ -63,8 +63,20 @@ Extract Google tag manager from webiste, format: `UAXXXXXX`
 
 - https://builtwith.com/relationships/tag/UAXXXXXX
 - https://api.hackertarget.com/analyticslookup/?q=UAXXXXXX
+- https://spyonweb.com/UAXXXXXX
 
 ```
 # https://github.com/Josue87/AnalyticsRelationships
 cat subdomains.txt | analyticsrelationships
 ```
+
+## Favicon
+
+```
+# https://github.com/Viralmaniar/MurMurHash
+git clone https://github.com/Viralmaniar/MurMurHash.git
+cd MurMurHash/
+pip3 install -r requirements.txt
+```
+
+

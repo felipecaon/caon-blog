@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Fuzzing #  ">
+<meta name="description" content="Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Fuzzing #  " />
+<meta property="og:description" content="Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/fuzzing/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.2375c715bd6b21040f74b4a157689001128620462f74cee688c6b9cfbe936ce4.js" integrity="sha256-I3XHFb1rIQQPdLShV2iQARKGIEYvdM7miMa5z76TbOQ=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.4357f40b54e07262d0abb8ce765e0b738449c8490777dfd29172a26c1793dd0d.js" integrity="sha256-Q1f0C1TgcmLQq7jOdl4Lc4RJyEkHd9/SkXKibBeT3Q0=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -184,7 +184,19 @@ https://github.com/alex-shpak/hugo-book
   Fuzzing
   <a class="anchor" href="#fuzzing">#</a>
 </h1>
-</article>
+<pre tabindex="0"><code># https://github.com/ffuf/ffuf
+ffuf -w /path/to/wordlist -u https://target/FUZZ
+
+# Multiple sources
+ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot;
+
+#Cool flags
+
+-ac: Calibrate requests to unmatch false positives
+-recursion: recursion
+-se: Stop on erors
+-sf: Stop on 95% 403 Forbidden, possible WAF ban
+</code></pre></article>
  
       
 

@@ -131,7 +131,7 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/fuzzing/</guid>
-      <description>Fuzzing #  </description>
+      <description>Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://streetcontxt.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.0.0.1&amp;quot; -X &amp;quot;METHOD&amp;quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban </description>
     </item>
     
     <item>
@@ -140,7 +140,10 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/paramdiscovery/</guid>
-      <description>Parameter Discovery #  </description>
+      <description>Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
+https://github.com/Sh1Yo/x8 #  x8 -u &amp;ldquo;https://example.com/&#34; -w 
+ https://github.com/ffuf/ffuf #  ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value
+ ## Param discovering from crawling results Given a list with crawled urls, grep the ones that have known parameters and get only the url https://github.</description>
     </item>
     
     <item>
