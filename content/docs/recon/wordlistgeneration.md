@@ -3,5 +3,7 @@
 After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
 
 ```
-cat links.txt | unfurl -u keys > parameters.txt
+# https://github.com/tomnomnom/anew
+
+cat links.txt | unfurl -u keys | anew all_parameters.txt
 ```

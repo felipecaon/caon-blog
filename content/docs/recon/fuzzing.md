@@ -15,3 +15,10 @@ ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u "https://st
 -se: Stop on erors
 -sf: Stop on 95% 403 Forbidden, possible WAF ban
 ```
+
+## Backup Files
+
+```
+# https://github.com/mazen160/bfac
+bfac --no-text --url http://example.com/test.php --level 2
+```
