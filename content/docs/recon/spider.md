@@ -15,13 +15,6 @@ dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt 
 
 The list generated from gospider `links.txt` can be used to discover additional subdomains
 
-## WAF Checker
-
-```
-# https://github.com/EnableSecurity/wafw00f
-wafw00f -i websites.txt
-```
-
 ## Robots
 
 ```

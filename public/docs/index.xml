@@ -43,6 +43,15 @@
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/cookieattacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cookieattacks/</guid>
+      <description>Cookie Based Attacls #  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/csrf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -83,7 +92,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/javascriptfiles/</guid>
-      <description></description>
+      <description>Javascript Files #  Linters #   JSHint  Download #    JSScanner
+Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
+  JSBeat
+Download all js files for each site and beautify: https://github.com/felipecaon/BugBountyStuff/blob/main/scripts/jsbeat.py
+  Way Back Machine #  Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.</description>
     </item>
     
     <item>
@@ -106,11 +119,42 @@
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/openredirect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/openredirect/</guid>
+      <description>Open Redirect #  Often a bug that brings impact when chained.
+Using &amp;ldquo;https:&amp;rdquo; to bypass &amp;ldquo;//&amp;rdquo; blacklisted keyword
+https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rdquo; blacklisted keyword
+//google.com Using /\/ to bypass // blacklisted keyword
+\/\/google.com/ /\/google.com/ Using &amp;ldquo;/&amp;quot; to bypass:
+/\google.com Using &amp;ldquo;%E3%80%82&amp;rdquo; to bypass &amp;ldquo;.&amp;rdquo; blacklisted character
+//google%E3%80%82com Using null byte &amp;ldquo;%00&amp;rdquo; to bypass blacklist filter
+//google%00.com Using parameter pollution
+?next=whitelisted.com&amp;amp;next=google.com Using &amp;ldquo;@&amp;rdquo; character, browser will redirect to anything after the &amp;ldquo;@&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/parameterpollution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/parameterpollution/</guid>
+      <description>HTTP Parameter Pollution #  When searching for HPP keep in mind some servers handle parameters differently.
+Take http://example.com?username=foo&amp;amp;username=bar as an example.
+ PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS user all occurences  A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
+Social Media Share Links #  Often a websites offers its user a feature to share a given page in social media.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/requestsmuggling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/requestsmuggling/</guid>
-      <description></description>
+      <description>Request Smuggling #  It&amp;rsquo;s far more easier to search for articles explaining this concept.
+If you want to test for it:
+ HTTP Request Smuggler, Burp extension Smuggler  Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling  </description>
     </item>
     
     <item>
@@ -128,7 +172,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/ssrf/</guid>
-      <description>SSRF #  </description>
+      <description>SSRF #  Sometimes sites offer the possibility to make external requests using their server, what if we could user their “external” service to make requests for internal resources. That’s SSRF.
+If the site is hosted in amazon, it is possible to get internal information by requesting the urls:
+http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/meta-data/iam/securty-credentials Another idea is to try and request IP’s that we know that are internal:
+10.0.0.0 to 10.255.255.55 100.64.0.0 to 10.</description>
     </item>
     
     <item>
@@ -155,7 +202,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/wafbypass/</guid>
-      <description></description>
+      <description>WAF Bypass Techniques #    Try to find real IP address instead of TLD domain, see IP history websites section
+  Awesome WAF
+  WAF Community Bypasses
+  Known Bypasses
+  # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites #   https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip  Quick Techniques #  Given domain.com, try to access:</description>
     </item>
     
     <item>
@@ -164,8 +215,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/webtech/</guid>
-      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner Generaç tips Mindmap  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET #   exploiting-viewstate viewgen  trace.axd any.aspx/trace.axd Cloudflare #  Techniques to try to uncover web servers behind cloudflare:
- Search domain in https://leaked.site/index.php?resolver%2Fcloudflare.0%2F= CloudFlair Historical DNS records  Drupal #   Drupal hacking guide droopescan Reverse Shel with admin access  Flask #   Flask-Unsign  GraphQL #   GraphQL introspection graphql-voyager clairvoyance - bruteforce introspection HackTricks - GraphQL  JBoss #   jexboss  Jenkins #   https://github.</description>
+      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner Generaç tips Mindmap More Tips  Apache #   Exploit default apache  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET/IIS #   exploiting-viewstate viewgen shortname scanner  trace.axd any.aspx/trace.axd WEB-INF/web.xml /con/ /aux/ con.aspx aux.aspx Cloudflare #  Techniques to try to uncover web servers behind cloudflare:</description>
     </item>
     
     <item>
@@ -309,7 +359,7 @@ RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolv
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/wafcheck/</guid>
-      <description>WAF Check #  </description>
+      <description>WAF Check #  # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
     </item>
     
     <item>
@@ -319,7 +369,7 @@ RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolv
       
       <guid>https://caon.io/docs/recon/wordlistgeneration/</guid>
       <description>Wordlist generation #  After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
-# https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt </description>
+Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths #  cat links.txt | unfurl paths | rev | cut -d &#39;/&#39; -f1 | rev | anew paths.txt </description>
     </item>
     
     <item>
@@ -373,7 +423,7 @@ RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolv
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/writeups/</guid>
-      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://web.archive.org/web/20210812053905/enumerated.de/index/salesforce Salesforce Lightining   https://medium.com/@SecTech/adobe-experience-manager-exploitation-24bd9eb75ed9 AEM exploitation   https://dant0x65.medium.com/bug-bounty-tip-automating-ssrf-ea344ec59962 Configure burp to look for SSRFs   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   https://infosecwriteups.com/apache-example-servlet-leads-to-61a2720cac20 Exploit default apache pages   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.</description>
+      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues    </description>
     </item>
     
     <item>

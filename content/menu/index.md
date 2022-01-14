@@ -9,6 +9,7 @@ headless: true
 	- [Active]({{< relref "/docs/recon/subdomainenum/subdomainenum_active" >}})
 - [Probing]({{< relref "/docs/recon/probing" >}})
 - [Screenshot]({{< relref "/docs/recon/screenshot" >}})
+- [WAF Check]({{< relref "/docs/recon/wafcheck" >}})
 
 - Content Discovery
 	- [Dorking]({{< relref "/docs/recon/dorks" >}})
@@ -22,27 +23,30 @@ headless: true
 
 - **Exploitation**
 - Bypass
-	- [403 Bypass]({{< relref "/docs/exploitation/403bypass.md" >}})
-	- [WAF Bypass]({{< relref "/docs/exploitation/wafbypass.md" >}})
+	- [403 Bypass]({{< relref "/docs/exploitation/403bypass" >}})
+	- [WAF Bypass]({{< relref "/docs/exploitation/wafbypass" >}})
 - Authentication
 	- [OAuth]({{< relref "/docs/exploitation/oauth" >}})
 	- [Broken Auth]({{< relref "/docs/exploitation/twofa" >}})
 
-- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning.md" >}})
-- [Clickjacking]({{< relref "/docs/exploitation/clickjacking.md" >}})
-- [Command Injection]({{< relref "/docs/exploitation/commandinjection.md" >}})
-- [CSRF]({{< relref "/docs/exploitation/csrf.md" >}})
-- [Deserialization]({{< relref "/docs/exploitation/deserialization.md" >}})
-- [HTTP host header attacks]({{< relref "/docs/exploitation/httpshosteheader.md" >}})
-- [IDOR]({{< relref "/docs/exploitation/idor.md" >}})
+- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning" >}})
+- [Clickjacking]({{< relref "/docs/exploitation/clickjacking" >}})
+- [Command Injection]({{< relref "/docs/exploitation/commandinjection" >}})
+- [Cookie Based Attacks]({{< relref "/docs/exploitation/cookieattacks" >}})
+- [CSRF]({{< relref "/docs/exploitation/csrf" >}})
+- [Deserialization]({{< relref "/docs/exploitation/deserialization" >}})
+- [HTTP Host Header Attacks]({{< relref "/docs/exploitation/httpshosteheader" >}})
+- [HTTP Parameter Pollution]({{< relref "/docs/exploitation/parameterpollution" >}})
+- [IDOR]({{< relref "/docs/exploitation/idor" >}})
 - [Javascript Files]({{< relref "/docs/exploitation/javascriptfiles" >}})
-- [LFI]({{< relref "/docs/exploitation/lfi.md" >}})
-- [Request Smuggling]({{< relref "/docs/exploitation/requestsmuggling.md" >}})
-- [SSTI]({{< relref "/docs/exploitation/ssti.md" >}})
-- [SSRF]({{< relref "/docs/exploitation/ssrf.md" >}})
-- [SQLi]({{< relref "/docs/exploitation/sqli.md" >}})
-- [XSS]({{< relref "/docs/exploitation/xss.md" >}})
-- [XXE]({{< relref "/docs/exploitation/xxe.md" >}})
+- [LFI]({{< relref "/docs/exploitation/lfi" >}})
+- [Open Redirect]({{< relref "/docs/exploitation/openredirect" >}})
+- [Request Smuggling]({{< relref "/docs/exploitation/requestsmuggling" >}})
+- [SSTI]({{< relref "/docs/exploitation/ssti" >}})
+- [SSRF]({{< relref "/docs/exploitation/ssrf" >}})
+- [SQLi]({{< relref "/docs/exploitation/sqli" >}})
+- [XSS]({{< relref "/docs/exploitation/xss" >}})
+- [XXE]({{< relref "/docs/exploitation/xxe" >}})
 - [Web technologies]({{< relref "/docs/exploitation/webtech" >}})
 
 <br />
