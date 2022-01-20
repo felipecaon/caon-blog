@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.com/mazen160/bfac bfac --no-text --url http://example.com/test.php --level 2 ">
+<meta name="description" content="Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.com/mazen160/bfac bfac --no-text --url http://example.com/test.php --level 2 Wordlists #  WebApps #  # https://github.com/p0dalirius/webapp-wordlists # This repo contains wordlists for a lot of webapps ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.com/mazen160/bfac bfac --no-text --url http://example.com/test.php --level 2 " />
+<meta property="og:description" content="Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://streetcontxt.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.com/mazen160/bfac bfac --no-text --url http://example.com/test.php --level 2 Wordlists #  WebApps #  # https://github.com/p0dalirius/webapp-wordlists # This repo contains wordlists for a lot of webapps " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/fuzzing/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-01-11T16:43:32-03:00" />
+<meta property="article:modified_time" content="2022-01-20T11:29:58-03:00" />
 
 <title>Fuzzing | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.1ab932acd076dfef025f3847f2aec9763caa75bce3edb935ca73aac0e03c6bb5.js" integrity="sha256-GrkyrNB23&#43;8CXzhH8q7Jdjyqdbzj7bk1ynOqwOA8a7U=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.619d95a19e69655b8041d7c3f6434a5c2ada707a37d62661bc33fba9b28144e0.js" integrity="sha256-YZ2VoZ5pZVuAQdfD9kNKXCracHo31iZhvDP7qbKBROA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -147,6 +147,9 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="/docs/exploitation/openredirect/">Open Redirect</a></p>
 </li>
 <li>
+<p><a href="/docs/exploitation/prototypepollution/">Prototype Pollution</a></p>
+</li>
+<li>
 <p><a href="/docs/exploitation/requestsmuggling/">Request Smuggling</a></p>
 </li>
 <li>
@@ -253,6 +256,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#fuzzing">Fuzzing</a>
       <ul>
         <li><a href="#backup-files">Backup Files</a></li>
+        <li><a href="#wordlists">Wordlists</a>
+          <ul>
+            <li><a href="#webapps">WebApps</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -289,6 +297,16 @@ ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https
 </h2>
 <pre tabindex="0"><code># https://github.com/mazen160/bfac
 bfac --no-text --url http://example.com/test.php --level 2
+</code></pre><h2 id="wordlists">
+  Wordlists
+  <a class="anchor" href="#wordlists">#</a>
+</h2>
+<h3 id="webapps">
+  WebApps
+  <a class="anchor" href="#webapps">#</a>
+</h3>
+<pre tabindex="0"><code># https://github.com/p0dalirius/webapp-wordlists
+# This repo contains wordlists for a lot of webapps
 </code></pre></article>
  
       
@@ -329,6 +347,11 @@ bfac --no-text --url http://example.com/test.php --level 2
     <li><a href="#fuzzing">Fuzzing</a>
       <ul>
         <li><a href="#backup-files">Backup Files</a></li>
+        <li><a href="#wordlists">Wordlists</a>
+          <ul>
+            <li><a href="#webapps">WebApps</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
