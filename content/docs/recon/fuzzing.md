@@ -22,3 +22,12 @@ ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u "https://st
 # https://github.com/mazen160/bfac
 bfac --no-text --url http://example.com/test.php --level 2
 ```
+
+## Wordlists
+
+### WebApps
+```
+# https://github.com/p0dalirius/webapp-wordlists
+# This repo contains wordlists for a lot of webapps
+```
+

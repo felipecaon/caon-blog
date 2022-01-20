@@ -41,6 +41,7 @@ headless: true
 - [Javascript Files]({{< relref "/docs/exploitation/javascriptfiles" >}})
 - [LFI]({{< relref "/docs/exploitation/lfi" >}})
 - [Open Redirect]({{< relref "/docs/exploitation/openredirect" >}})
+- [Prototype Pollution]({{< relref "/docs/exploitation/prototypepollution" >}})
 - [Request Smuggling]({{< relref "/docs/exploitation/requestsmuggling" >}})
 - [SSTI]({{< relref "/docs/exploitation/ssti" >}})
 - [SSRF]({{< relref "/docs/exploitation/ssrf" >}})
