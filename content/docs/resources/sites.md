@@ -9,3 +9,4 @@
 | https://www.100security.com.br/ | Blog (portuguese) |
 | https://www.hacking8.com/ | Blog (chinese) |
 | https://weboas.is/ | Link aggregator |
+| https://github.com/ziishaned/learn-regex | Learn Regex | 

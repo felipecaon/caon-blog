@@ -16,6 +16,15 @@
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/auth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/cachepoisoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -80,7 +89,7 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/csrf/</guid>
-      <description>CSRF #  Conditions to exploit an useful CSRF #   Revelante action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters  How to find #   Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request a call manually Extract the token with XSS or HTMl injection  Generate POCs #   In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc  | URL | Description | | https://pentestbook.</description>
+      <description>CSRF #  Conditions to exploit an useful CSRF #   Revelante action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters  How to find #   Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request a call manually Extract the token with XSS or HTMl injection  Generate POCs #   In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc     URL Description     https://pentestbook.</description>
     </item>
     
     <item>
@@ -94,13 +103,12 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/exploitation/httpshosteheader/</link>
+      <link>https://caon.io/docs/exploitation/hostheaderinjection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/docs/exploitation/httpshosteheader/</guid>
+      <guid>https://caon.io/docs/exploitation/hostheaderinjection/</guid>
       <description>Host Header Attacks #  Typically host header injection are not harmful by themselves, it is necessary a chain of vulnerabilites for it to escalate.
- Business Logic flaws Cache poisoning  Attack Vectors #     If the attack is successful, the user will receive an email that will direct to evil.com
-Common Headers #  # Make internal request, reflect to somewhere Client-IP: 127.0.0.1 Forwarded-For-Ip: 127.0.0.1 Forwarded-For: 127.</description>
+ Business Logic flaws Cache poisoning  Attack Vectors #   Premise: An websites allows an user to remember his passwords by requesting a reset email. Attack vector: An attacker request the reset for an email that the knows the application exists, he intercepts the request and adds a host X-Forwarded-For: evil.</description>
     </item>
     
     <item>
@@ -109,7 +117,12 @@ Common Headers #  # Make internal request, reflect to somewhere Client-IP: 127.0
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/idor/</guid>
-      <description>IDOR #  https://pentestbook.six2dez.com/enumeration/web/idor</description>
+      <description>IDOR #  Basically try to screw with evertything.
+Add parameters into the endpoints
+GET /api_v1/messages --&amp;gt; 401 vs GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution
+GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution:
+POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby!
+/user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions</description>
     </item>
     
     <item>
@@ -178,7 +191,7 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/passwordbruteforce/</guid>
-      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com    URl Description     https://github.com/ihebski/DefaultCreds-cheat-sheet Default credentials for dozen of applications   https://cirt.net/passwords Default credentials for dozen of applications   ## ##   https://github.com/ignis-sec/Pwdb-Public Mass list of passwords, based on data   https://bit.ly/3nFUfJG Rockyou list 🤘   https://github.com/1N3/IntruderPayloads Lists used by burp    </description>
+      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com    URl Description     https://nordpass.com/most-common-passwords-list/ Most used password by nord vpn   https://github.com/ihebski/DefaultCreds-cheat-sheet Default credentials for dozen of applications   https://cirt.net/passwords Default credentials for dozen of applications   https://forum.ywhack.com/bountytips.php?password Default credentials for dozen of applications   ## ##   https://github.</description>
     </item>
     
     <item>
@@ -197,7 +210,7 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       
       <guid>https://caon.io/docs/exploitation/requestsmuggling/</guid>
       <description>Request Smuggling #  It&amp;rsquo;s far more easier to search for articles explaining this concept.
-Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling  </description>
+Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/  </description>
     </item>
     
     <item>
@@ -218,8 +231,8 @@ Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/s
       <guid>https://caon.io/docs/exploitation/ssrf/</guid>
       <description>SSRF #  Sometimes sites offer the possibility to make external requests using their server, what if we could user their “external” service to make requests for internal resources. That’s SSRF.
 If the site is hosted in amazon, it is possible to get internal information by requesting the urls:
-http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/meta-data/iam/securty-credentials Another idea is to try and request IP’s that we know that are internal:
-10.0.0.0 to 10.255.255.55 100.64.0.0 to 10.</description>
+http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data/ http://169.254.169.254/latest/meta-data/iam/security-credentials/flaws/ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/meta-data/iam/securty-credentials Another idea is to try and request IP’s that we know that are internal:
+10.0.0.0 to 10.</description>
     </item>
     
     <item>
@@ -237,7 +250,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/twofa/</guid>
-      <description></description>
+      <description>Two factor Authentication #  Bypasses #   Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000  </description>
     </item>
     
     <item>
@@ -246,7 +259,13 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/typesofauth/</guid>
-      <description>Authentication Types #  # Basic Auth (B64) Authorization: Basic AXVubzpwQDU1dzByYM== # Bearer Token (JWT) Authorization: Bearer &amp;lt;token&amp;gt; # API Key GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 # Digest Auth Authorization: Digest username=”admin” Realm=”abcxyz” nonce=”474754847743646”, uri=”/uri” response=”7cffhfr54685gnnfgerg8” # OAuth2.0 Authorization: Bearer hY_9.B5f-4.1BfE # Hawk Authentication Authorization: Hawk id=&amp;quot;abcxyz123&amp;quot;, ts=&amp;quot;1592459563&amp;quot;, nonce=&amp;quot;gWqbkw&amp;quot;, mac=&amp;quot;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;quot; # AWS signature Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ </description>
+      <description>Authentication Types #  Basic Auth (B64) #  Authorization: Basic AXVubzpwQDU1dzByYM==
+Bearer Token (JWT) #  Authorization: Bearer 
+API Key #  GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789
+Digest Auth #  Authorization: Digest username=”admin” Realm=”abcxyz” nonce=”474754847743646”, uri=”/uri” response=”7cffhfr54685gnnfgerg8”
+OAuth2.0 #  Authorization: Bearer hY_9.B5f-4.1BfE
+Hawk Authentication #  Authorization: Hawk id=&amp;ldquo;abcxyz123&amp;rdquo;, ts=&amp;ldquo;1592459563&amp;rdquo;, nonce=&amp;ldquo;gWqbkw&amp;rdquo;, mac=&amp;ldquo;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;rdquo;
+AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_</description>
     </item>
     
     <item>
@@ -259,7 +278,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
   Awesome WAF
   WAF Community Bypasses
   Known Bypasses
-  # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites #   https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip  Quick Techniques #  Given domain.com, try to access:</description>
+  # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites #   https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns  Quick Techniques #  Given domain.</description>
     </item>
     
     <item>
@@ -268,7 +287,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/webtech/</guid>
-      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner Generaç tips Mindmap More Tips  Apache #   Exploit default apache  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET/IIS #   exploiting-viewstate viewgen shortname scanner  trace.axd any.aspx/trace.axd WEB-INF/web.xml /con/ /aux/ con.aspx aux.aspx Cloudflare #  Techniques to try to uncover web servers behind cloudflare:</description>
+      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap  Apache #   Exploit default apache  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET/IIS #   exploiting-viewstate viewgen shortname scanner  trace.axd any.aspx/trace.axd WEB-INF/web.xml /con/ /aux/ con.aspx aux.aspx Cloudflare #  Techniques to try to uncover web servers behind cloudflare:</description>
     </item>
     
     <item>
@@ -287,7 +306,7 @@ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/m
       
       <guid>https://caon.io/docs/exploitation/xxe/</guid>
       <description>XXE #  Detection:
-# Content type &amp;quot;application/json&amp;quot; or &amp;quot;application/x-www-form-urlencoded&amp;quot; to &amp;quot;applcation/xml&amp;quot;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your milicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
+# Content type &amp;quot;application/json&amp;quot; or &amp;quot;application/x-www-form-urlencoded&amp;quot; to &amp;quot;applcation/xml&amp;quot;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your malicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
     </item>
     
     <item>
@@ -468,7 +487,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://weboas.is/ Link aggregator    </description>
+      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://weboas.is/ Link aggregator   https://github.com/ziishaned/learn-regex Learn Regex    </description>
     </item>
     
     <item>

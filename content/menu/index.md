@@ -30,7 +30,7 @@ headless: true
 - Authentication
 	- [Authentication Types]({{< relref "/docs/exploitation/typesofauth" >}})
 	- [OAuth]({{< relref "/docs/exploitation/oauth" >}})
-	- [Broken Auth]({{< relref "/docs/exploitation/twofa" >}})
+	- [2FA Auth]({{< relref "/docs/exploitation/twofa" >}})
 
 - Vulnerabilities
 	- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning" >}})
@@ -41,7 +41,7 @@ headless: true
 	- [CSRF]({{< relref "/docs/exploitation/csrf" >}})
 	- [CORS]({{< relref "/docs/exploitation/cors" >}})
 	- [Deserialization]({{< relref "/docs/exploitation/deserialization" >}})
-	- [Host Header Attacks]({{< relref "/docs/exploitation/httpshosteheader" >}})
+	- [Host Header Injection]({{< relref "/docs/exploitation/hostheaderinjection" >}})
 	- [IDOR]({{< relref "/docs/exploitation/idor" >}})
 	- [Javascript Files]({{< relref "/docs/exploitation/javascriptfiles" >}})
 	- [LFI]({{< relref "/docs/exploitation/lfi" >}})
