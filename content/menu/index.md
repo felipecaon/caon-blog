@@ -29,7 +29,7 @@ headless: true
 
 - Authentication
 	- [Authentication Types]({{< relref "/docs/exploitation/typesofauth" >}})
-	- [OAuth]({{< relref "/docs/exploitation/oauth" >}})
+	- [OAuth 2]({{< relref "/docs/exploitation/oauth" >}})
 	- [2FA Auth]({{< relref "/docs/exploitation/twofa" >}})
 
 - Vulnerabilities
@@ -43,7 +43,6 @@ headless: true
 	- [Deserialization]({{< relref "/docs/exploitation/deserialization" >}})
 	- [Host Header Injection]({{< relref "/docs/exploitation/hostheaderinjection" >}})
 	- [IDOR]({{< relref "/docs/exploitation/idor" >}})
-	- [Javascript Files]({{< relref "/docs/exploitation/javascriptfiles" >}})
 	- [LFI]({{< relref "/docs/exploitation/lfi" >}})
 	- [Open Redirect]({{< relref "/docs/exploitation/openredirect" >}})
 	- [Parameter Pollution]({{< relref "/docs/exploitation/parameterpollution" >}})
@@ -59,12 +58,6 @@ headless: true
 	- [Password Brute Force]({{< relref "/docs/exploitation/passwordbruteforce" >}})
 	- [Javascript Analysys]({{< relref "/docs/exploitation/javascriptfiles" >}})
 	- [Web technologies]({{< relref "/docs/exploitation/webtech" >}})
-
-<br />
-
-- **Mindmaps**
-- [Cookie Based Attacks]({{< relref "/docs/mindmaps/cookiebasedattacks.md" >}})
-- [Sign Up]({{< relref "/docs/mindmaps/signup.md" >}})
 
 <br />
 

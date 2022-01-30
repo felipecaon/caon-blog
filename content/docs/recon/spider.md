@@ -17,6 +17,9 @@ The list generated from gospider `links.txt` can be used to discover additional 
 
 ## Robots
 
+Roboxtractor extract endpoints marked as disallow in robots files to generate wordlists.  
+Also has a waybackmachine flag that will hunt robots.txt old versions.
+
 ```
 # https://github.com/Josue87/roboxtractor
 cat subdomains | roboxtractor -m 0 -wb

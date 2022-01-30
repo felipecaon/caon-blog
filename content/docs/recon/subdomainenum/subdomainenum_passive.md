@@ -72,6 +72,8 @@ cat subdomains.txt | analyticsrelationships
 
 ## Favicon
 
+Search for favicon md5 value in known search engines to find websites related to your search
+
 ```
 # https://github.com/Viralmaniar/MurMurHash
 git clone https://github.com/Viralmaniar/MurMurHash.git

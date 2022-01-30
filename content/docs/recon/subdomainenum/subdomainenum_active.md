@@ -4,7 +4,8 @@ The ideia behind an active subdomain recon is to bruteforce subdomain in order t
 
 Get resolvers at:
 ```
-RESOLVER_SOURCE
+# https://github.com/felipecaon/resolvers
+wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt
 ```
 
 ## Pure DNS

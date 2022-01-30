@@ -8,5 +8,6 @@
 | https://www.agarri.fr/en | Blog | 
 | https://www.100security.com.br/ | Blog (portuguese) |
 | https://www.hacking8.com/ | Blog (chinese) |
+| https://www.rcesecurity.com | Blog |
 | https://weboas.is/ | Link aggregator |
 | https://github.com/ziishaned/learn-regex | Learn Regex | 

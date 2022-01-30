@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Probing #  Validates a list of urls, checks to see if they are alive or not.
-Two tools were provided, choose the best fit, the do the same thing but in some cases httprobe is faster and resolves more urls correctly.
-# https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out ">
+Two tools were provided, choose the best fit, they do the same thing.
+Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # HttpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Probing #  Validates a list of urls, checks to see if they are alive or not.
-Two tools were provided, choose the best fit, the do the same thing but in some cases httprobe is faster and resolves more urls correctly.
-# https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out " />
+Two tools were provided, choose the best fit, they do the same thing.
+Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # HttpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/probing/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@ Two tools were provided, choose the best fit, the do the same thing but in some 
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b928d9adea04ef1420a733ca24553ce4ccca7a3da86ce70359ee82808191ea2a.js" integrity="sha256-uSjZreoE7xQgpzPKJFU85MzKej2obOcDWe6CgIGR6io=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.cf9a6a49ba2b82301323fb0dfa5cd4072c55807357b0e65819500ff9df996163.js" integrity="sha256-z5pqSborgjATI/sN&#43;lzUByxVgHNXsOZYGVAP&#43;d&#43;ZYWM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -131,7 +131,6 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/exploitation/deserialization/">Deserialization</a></li>
 <li><a href="/docs/exploitation/hostheaderinjection/">Host Header Injection</a></li>
 <li><a href="/docs/exploitation/idor/">IDOR</a></li>
-<li><a href="/docs/exploitation/javascriptfiles/">Javascript Files</a></li>
 <li><a href="/docs/exploitation/lfi/">LFI</a></li>
 <li><a href="/docs/exploitation/openredirect/">Open Redirect</a></li>
 <li><a href="/docs/exploitation/parameterpollution/">Parameter Pollution</a></li>
@@ -235,7 +234,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#probing">Probing</a></li>
+    <li><a href="#probing">Probing</a>
+      <ul>
+        <li><a href="#httprobe">Httprobe</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -253,11 +256,16 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#probing">#</a>
 </h1>
 <p>Validates a list of urls, checks to see if they are alive or not.</p>
-<p>Two tools were provided, choose the best fit, the do the same thing but in some cases httprobe is faster and resolves more urls correctly.</p>
+<p>Two tools were provided, choose the best fit, they do the same thing.</p>
+<h2 id="httprobe">
+  Httprobe
+  <a class="anchor" href="#httprobe">#</a>
+</h2>
 <pre tabindex="0"><code># https://github.com/tomnomnom/httprobe/
 # go get -u github.com/tomnomnom/httprobe@master
 cat urls | httprobe --prefer-https | tee -a out
 
+# HttpX
 
 # https://github.com/projectdiscovery/httpx
 # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
@@ -299,7 +307,11 @@ cat urls | httpx -random-agent -retries 2 -o out
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#probing">Probing</a></li>
+    <li><a href="#probing">Probing</a>
+      <ul>
+        <li><a href="#httprobe">Httprobe</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

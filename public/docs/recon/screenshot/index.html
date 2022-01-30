@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Screenshot #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web # https://github.com/sensepost/gowitness ">
+<meta name="description" content="Screenshot #  For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
+Hold down!
+A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
+ EyeWitness #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness #  # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging webscreenshot.py
+webscreenshot is Kopfschmerzen">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Screenshot #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web # https://github.com/sensepost/gowitness " />
+<meta property="og:description" content="Screenshot #  For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
+Hold down!
+A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
+ EyeWitness #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness #  # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging webscreenshot.py
+webscreenshot is Kopfschmerzen" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/screenshot/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +25,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b928d9adea04ef1420a733ca24553ce4ccca7a3da86ce70359ee82808191ea2a.js" integrity="sha256-uSjZreoE7xQgpzPKJFU85MzKej2obOcDWe6CgIGR6io=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.cf9a6a49ba2b82301323fb0dfa5cd4072c55807357b0e65819500ff9df996163.js" integrity="sha256-z5pqSborgjATI/sN&#43;lzUByxVgHNXsOZYGVAP&#43;d&#43;ZYWM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -127,7 +135,6 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/exploitation/deserialization/">Deserialization</a></li>
 <li><a href="/docs/exploitation/hostheaderinjection/">Host Header Injection</a></li>
 <li><a href="/docs/exploitation/idor/">IDOR</a></li>
-<li><a href="/docs/exploitation/javascriptfiles/">Javascript Files</a></li>
 <li><a href="/docs/exploitation/lfi/">LFI</a></li>
 <li><a href="/docs/exploitation/openredirect/">Open Redirect</a></li>
 <li><a href="/docs/exploitation/parameterpollution/">Parameter Pollution</a></li>
@@ -231,7 +238,12 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#screenshot">Screenshot</a></li>
+    <li><a href="#screenshot">Screenshot</a>
+      <ul>
+        <li><a href="#eyewitness">EyeWitness</a></li>
+        <li><a href="#gowitness">GoWitness</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -248,11 +260,32 @@ https://github.com/alex-shpak/hugo-book
   Screenshot
   <a class="anchor" href="#screenshot">#</a>
 </h1>
+<p>For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.</p>
+<blockquote class="book-hint danger">
+  <p><strong>Hold down!</strong></p>
+<p>A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.</p>
+
+</blockquote>
+
+<h2 id="eyewitness">
+  EyeWitness
+  <a class="anchor" href="#eyewitness">#</a>
+</h2>
 <pre tabindex="0"><code># https://github.com/FortyNorthSecurity/EyeWitness
 EyeWitness -f urls.txt --web
+</code></pre><h2 id="gowitness">
+  GoWitness
+  <a class="anchor" href="#gowitness">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/sensepost/gowitness
+gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging
+</code></pre><blockquote class="book-hint info">
+  <p><strong>webscreenshot.py</strong></p>
+<p>webscreenshot is Kopfschmerzen</p>
 
-# https://github.com/sensepost/gowitness
-</code></pre></article>
+</blockquote>
+
+</article>
  
       
 
@@ -289,7 +322,12 @@ EyeWitness -f urls.txt --web
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#screenshot">Screenshot</a></li>
+    <li><a href="#screenshot">Screenshot</a>
+      <ul>
+        <li><a href="#eyewitness">EyeWitness</a></li>
+        <li><a href="#gowitness">GoWitness</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

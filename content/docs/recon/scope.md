@@ -1,7 +1,5 @@
 # Scope
 
-As a bug bounty hunter, you may keep a close eye in the scope for the desired program.
-
 An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 
 Example of scope

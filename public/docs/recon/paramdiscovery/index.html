@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
-# https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url">
+X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; ffuf #  # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
-# https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url" />
+X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; ffuf #  # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/paramdiscovery/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b928d9adea04ef1420a733ca24553ce4ccca7a3da86ce70359ee82808191ea2a.js" integrity="sha256-uSjZreoE7xQgpzPKJFU85MzKej2obOcDWe6CgIGR6io=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.cf9a6a49ba2b82301323fb0dfa5cd4072c55807357b0e65819500ff9df996163.js" integrity="sha256-z5pqSborgjATI/sN&#43;lzUByxVgHNXsOZYGVAP&#43;d&#43;ZYWM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -129,7 +129,6 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/exploitation/deserialization/">Deserialization</a></li>
 <li><a href="/docs/exploitation/hostheaderinjection/">Host Header Injection</a></li>
 <li><a href="/docs/exploitation/idor/">IDOR</a></li>
-<li><a href="/docs/exploitation/javascriptfiles/">Javascript Files</a></li>
 <li><a href="/docs/exploitation/lfi/">LFI</a></li>
 <li><a href="/docs/exploitation/openredirect/">Open Redirect</a></li>
 <li><a href="/docs/exploitation/parameterpollution/">Parameter Pollution</a></li>
@@ -235,6 +234,8 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#parameter-discovery">Parameter Discovery</a>
       <ul>
+        <li><a href="#x8">X8</a></li>
+        <li><a href="#ffuf">ffuf</a></li>
         <li><a href="#param-discovering-from-crawling-results">Param discovering from crawling results</a></li>
         <li><a href="#feed-discovered-parameters-back-to-a-param-list">Feed discovered parameters back to a param list</a></li>
       </ul>
@@ -256,10 +257,18 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#parameter-discovery">#</a>
 </h1>
 <p>There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.</p>
+<h2 id="x8">
+  X8
+  <a class="anchor" href="#x8">#</a>
+</h2>
 <pre tabindex="0"><code># https://github.com/Sh1Yo/x8
 
 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt;
-</code></pre><pre tabindex="0"><code># https://github.com/ffuf/ffuf
+</code></pre><h2 id="ffuf">
+  ffuf
+  <a class="anchor" href="#ffuf">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/ffuf/ffuf
 
 ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value
 </code></pre><h2 id="param-discovering-from-crawling-results">
@@ -314,6 +323,8 @@ cat list.txt | grep &quot;=&quot; | unfurl format %d%p
   <ul>
     <li><a href="#parameter-discovery">Parameter Discovery</a>
       <ul>
+        <li><a href="#x8">X8</a></li>
+        <li><a href="#ffuf">ffuf</a></li>
         <li><a href="#param-discovering-from-crawling-results">Param discovering from crawling results</a></li>
         <li><a href="#feed-discovered-parameters-back-to-a-param-list">Feed discovered parameters back to a param list</a></li>
       </ul>

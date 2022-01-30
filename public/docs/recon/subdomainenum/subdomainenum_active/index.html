@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md ">
+# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md " />
+# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/subdomainenum/subdomainenum_active/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@ RESOLVER_SOURCE Pure DNS #  # https://github.com/d3mondev/puredns puredns resolv
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b928d9adea04ef1420a733ca24553ce4ccca7a3da86ce70359ee82808191ea2a.js" integrity="sha256-uSjZreoE7xQgpzPKJFU85MzKej2obOcDWe6CgIGR6io=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.cf9a6a49ba2b82301323fb0dfa5cd4072c55807357b0e65819500ff9df996163.js" integrity="sha256-z5pqSborgjATI/sN&#43;lzUByxVgHNXsOZYGVAP&#43;d&#43;ZYWM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -131,7 +131,6 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/exploitation/deserialization/">Deserialization</a></li>
 <li><a href="/docs/exploitation/hostheaderinjection/">Host Header Injection</a></li>
 <li><a href="/docs/exploitation/idor/">IDOR</a></li>
-<li><a href="/docs/exploitation/javascriptfiles/">Javascript Files</a></li>
 <li><a href="/docs/exploitation/lfi/">LFI</a></li>
 <li><a href="/docs/exploitation/openredirect/">Open Redirect</a></li>
 <li><a href="/docs/exploitation/parameterpollution/">Parameter Pollution</a></li>
@@ -259,7 +258,8 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <p>The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.</p>
 <p>Get resolvers at:</p>
-<pre tabindex="0"><code>RESOLVER_SOURCE
+<pre tabindex="0"><code># https://github.com/felipecaon/resolvers
+wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt
 </code></pre><h2 id="pure-dns">
   Pure DNS
   <a class="anchor" href="#pure-dns">#</a>

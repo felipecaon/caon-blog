@@ -1,11 +1,17 @@
 # Port Scan
 
+## Nmap
+
 ```
 # https://github.com/nmap/nmap
 ./configure
 make
 make install
+nmap -sC -sV example.com
+nmap example.com
 ```
+
+## Naabu
 
 ```
 # https://github.com/projectdiscovery/naabu

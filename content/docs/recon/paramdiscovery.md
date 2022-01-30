@@ -2,11 +2,15 @@
 
 There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
 
+## X8
+
 ```
 # https://github.com/Sh1Yo/x8
 
 x8 -u "https://example.com/" -w <wordlist>
 ```
+
+## ffuf
 
 ```
 # https://github.com/ffuf/ffuf
