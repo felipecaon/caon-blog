@@ -10,4 +10,3 @@
 | https://www.hacking8.com/ | Blog (chinese) |
 | https://www.rcesecurity.com | Blog |
 | https://weboas.is/ | Link aggregator |
-| https://github.com/ziishaned/learn-regex | Learn Regex | 

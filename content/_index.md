@@ -11,3 +11,11 @@ Everything written in here and in the following pages was acquired by reading ar
 
 If chit-chat is needed: `felipecaon[at]gmail[dot]com`
 
+# The basics
+
+Before jumping into "advanced" stuff, it is a good idea to understand the basics of applications, data manipulation, servers ...
+
+Hacking is like building a house, you need foundation before making the roof.
+
+- [Learn Regex](https://github.com/ziishaned/learn-regex)
+- [Blue Teaming](https://www.blueteamsacademy.com/)

