@@ -288,7 +288,7 @@ General format for website attacks: #  hydra -L &amp;lt;username list&amp;gt; -p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/prototypepollution/</guid>
-      <description>Prototype Pollution #   https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan  </description>
+      <description>Prototype Pollution #   https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan  Where to find? #   Javascript driven frameworks (Express..)  PHP #  PHP internally uses parse_str() to parse parameters so it sees the char &amp;ldquo;[&amp;rdquo; &amp;amp; &amp;ldquo;_&amp;rdquo; as the same. PHP by default will use the last param as valid. In cases PHP is running on backend but front end validates the param, we can smuggle fake params to php</description>
     </item>
     
     <item>
@@ -348,13 +348,7 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/typesofauth/</guid>
-      <description>Authentication Types #  Basic Auth (B64) #  Authorization: Basic AXVubzpwQDU1dzByYM==
-Bearer Token (JWT) #  Authorization: Bearer 
-API Key #  GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789
-Digest Auth #  Authorization: Digest username=”admin” Realm=”abcxyz” nonce=”474754847743646”, uri=”/uri” response=”7cffhfr54685gnnfgerg8”
-OAuth2.0 #  Authorization: Bearer hY_9.B5f-4.1BfE
-Hawk Authentication #  Authorization: Hawk id=&amp;ldquo;abcxyz123&amp;rdquo;, ts=&amp;ldquo;1592459563&amp;rdquo;, nonce=&amp;ldquo;gWqbkw&amp;rdquo;, mac=&amp;ldquo;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;rdquo;
-AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_</description>
+      <description>Authentication Types #  Basic Auth (B64) #  Authorization: Basic AXVubzpwQDU1dzByYM== Bearer Token (JWT) #  Authorization: Bearer &amp;lt;token&amp;gt; API Key #  GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 Digest Auth #  Authorization: Digest username=&amp;quot;admin&amp;quot; Realm=&amp;quot;abcxyz&amp;quot; nonce=&amp;quot;474754847743646&amp;quot;, uri=&amp;quot;/uri&amp;quot; response=&amp;quot;7cffhfr54685gnnfgerg8&amp;quot; OAuth2.0 #  Authorization: Bearer hY_9.B5f-4.1BfE Hawk Authentication #  Authorization: Hawk id=&amp;quot;abcxyz123&amp;quot;, ts=&amp;quot;1592459563&amp;quot;, nonce=&amp;quot;gWqbkw&amp;quot;, mac=&amp;quot;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;quot; AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ </description>
     </item>
     
     <item>
@@ -422,6 +416,17 @@ semgrep -c xss.yaml scripts/* Hold down!</description>
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/recon/asncidr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/asncidr/</guid>
+      <description>ASN #  An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
+The five regional Internet registries are:
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC)  Obtaining an autonomous system number #  By Organization Name #   https://asrank.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/recon/dorks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -456,7 +461,7 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/portscan/</guid>
-      <description>Port Scan #  Nmap #  # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com Naabu #  # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; </description>
+      <description>Port Scan #  Nmap #  # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com  https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/  Naabu #  # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; </description>
     </item>
     
     <item>
@@ -500,7 +505,8 @@ webscreenshot is Kopfschmerzen</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/spider/</guid>
-      <description>Spider #  # https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &amp;gt; spider.txt cat spider.txt | grep -o -E &amp;quot;(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;amp;\/\?\:@\+-\_=#%;,])*&amp;quot; | grep &amp;quot;example.com&amp;quot; &amp;gt;&amp;gt; links.txt # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt The list generated from gospider links.</description>
+      <description>Spider #  Crawling #  Use gospider or hakrawler. Personally, I found out hakrawler yields better results
+# https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &amp;gt; spider.txt cat spider.txt | grep -o -E &amp;quot;(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;amp;\/\?\:@\+-\_=#%;,])*&amp;quot; | grep &amp;quot;example.com&amp;quot; &amp;gt;&amp;gt; links.txt # hakrawler cat hosts | hakrawler -t 20 Check if hosts/paths are valid #  # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.</description>
     </item>
     
     <item>
@@ -567,7 +573,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career pa&amp;gt;   https://devskiller.com/screen-security-engineer/ Security Engineer Career    </description>
+      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ Security Engineer Career    </description>
     </item>
     
     <item>
@@ -585,7 +591,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator    </description>
+      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator   https://portswigger.net/research Burp&amp;rsquo;s owner research blog   https://blog.orange.tw/ Blog/Research   https://swarm.ptsecurity.com/ PT Swarm research blog    </description>
     </item>
     
     <item>
@@ -603,7 +609,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/writeups/</guid>
-      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues    </description>
+      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues   https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 Pre-Takeover using social logins    </description>
     </item>
     
     <item>

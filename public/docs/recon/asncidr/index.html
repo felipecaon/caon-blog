@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Probing #  Validates a list of urls, checks to see if they are alive or not.
-Two tools were provided, choose the best fit, they do the same thing.
-Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # HttpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out ">
+<meta name="description" content="ASN #  An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
+The five regional Internet registries are:
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC)  Obtaining an autonomous system number #  By Organization Name #   https://asrank.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Probing #  Validates a list of urls, checks to see if they are alive or not.
-Two tools were provided, choose the best fit, they do the same thing.
-Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out # HttpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out " />
+<meta property="og:description" content="ASN #  An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
+The five regional Internet registries are:
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC)  Obtaining an autonomous system number #  By Organization Name #   https://asrank." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://caon.io/docs/recon/probing/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://caon.io/docs/recon/asncidr/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-01-30T13:42:33-03:00" />
+<meta property="article:modified_time" content="2022-02-09T19:08:42-03:00" />
 
-<title>Probing | caon.io</title>
+<title>Asncidr | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -77,7 +77,7 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="/docs/recon/portscan/">Port Scan</a></p>
 </li>
 <li>
-<p><a href="/docs/recon/probing/"class=active>Probing</a></p>
+<p><a href="/docs/recon/probing/">Probing</a></p>
 </li>
 <li>
 <p><a href="/docs/recon/screenshot/">Screenshot</a></p>
@@ -212,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Probing</strong>
+  <strong>Asncidr</strong>
 
   <label for="toc-control">
     
@@ -228,11 +228,22 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#probing">Probing</a>
+    <li><a href="#asn">ASN</a>
       <ul>
-        <li><a href="#httprobe">Httprobe</a></li>
+        <li><a href="#obtaining-an-autonomous-system-number">Obtaining an autonomous system number</a>
+          <ul>
+            <li><a href="#by-organization-name">By Organization Name</a></li>
+          </ul>
+        </li>
+        <li><a href="#asn-lookup-tools">ASN Lookup tools</a></li>
       </ul>
     </li>
+    <li><a href="#cidr-analysis">CIDR analysis</a>
+      <ul>
+        <li><a href="#cidr-to-ip">CIDR to IP</a></li>
+      </ul>
+    </li>
+    <li><a href="#ip-information">IP information</a></li>
   </ul>
 </nav>
 
@@ -245,26 +256,68 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="probing">
-  Probing
-  <a class="anchor" href="#probing">#</a>
+  <article class="markdown"><h1 id="asn">
+  ASN
+  <a class="anchor" href="#asn">#</a>
 </h1>
-<p>Validates a list of urls, checks to see if they are alive or not.</p>
-<p>Two tools were provided, choose the best fit, they do the same thing.</p>
-<h2 id="httprobe">
-  Httprobe
-  <a class="anchor" href="#httprobe">#</a>
+<p>An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.</p>
+<p>The five regional Internet registries are:</p>
+<pre><code>African Network Information Center (AFRINIC)
+American Registry for Internet Numbers (ARIN)
+Asia-Pacific Network Information Centre (APNIC)
+Latin American and Caribbean Network Information Centre (LACNIC)
+Réseaux IP Européens Network Coordination Centre (RIPE NCC)
+</code></pre>
+<h2 id="obtaining-an-autonomous-system-number">
+  Obtaining an autonomous system number
+  <a class="anchor" href="#obtaining-an-autonomous-system-number">#</a>
 </h2>
-<pre tabindex="0"><code># https://github.com/tomnomnom/httprobe/
-# go get -u github.com/tomnomnom/httprobe@master
-cat urls | httprobe --prefer-https | tee -a out
+<h3 id="by-organization-name">
+  By Organization Name
+  <a class="anchor" href="#by-organization-name">#</a>
+</h3>
+<ul>
+<li><a href="https://asrank.caida.org/asns/by-name/">https://asrank.caida.org/asns/by-name/</a></li>
+</ul>
+<h2 id="asn-lookup-tools">
+  ASN Lookup tools
+  <a class="anchor" href="#asn-lookup-tools">#</a>
+</h2>
+<ul>
+<li><a href="https://www.bigdatacloud.com/asn-lookup/%7bASN%7d">https://www.bigdatacloud.com/asn-lookup/{ASN}</a></li>
+<li><a href="https://bgp.he.net/%7bASN%7d">https://bgp.he.net/{ASN}</a></li>
+<li><a href="https://ipinfo.io/%7bASN%7d">https://ipinfo.io/{ASN}</a></li>
+<li><a href="https://ipv4info.com/?act=check&amp;ip=%7bASN%7d">https://ipv4info.com/?act=check&ip={ASN}</a></li>
+<li><a href="https://spyse.com/target/as/%7bASN%7d">https://spyse.com/target/as/{ASN}</a></li>
+<li><a href="https://bgpview.io/asn/%7bASN%7d">https://bgpview.io/asn/{ASN}</a></li>
+</ul>
+<h1 id="cidr-analysis">
+  CIDR analysis
+  <a class="anchor" href="#cidr-analysis">#</a>
+</h1>
+<ul>
+<li><a href="http://ipv4info.com/">http://ipv4info.com/</a></li>
+<li><a href="https://rdnsdb.com/">https://rdnsdb.com/</a></li>
+<li><a href="https://www.robtex.com/">https://www.robtex.com/</a></li>
+<li><a href="https://bgp.tools/">https://bgp.tools/</a></li>
+</ul>
+<h2 id="cidr-to-ip">
+  CIDR to IP
+  <a class="anchor" href="#cidr-to-ip">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/robertdavidgraham/masscan
 
-# HttpX
-
-# https://github.com/projectdiscovery/httpx
-# go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-cat urls | httpx -random-agent -retries 2 -o out
-</code></pre></article>
+masscan -iL list-of-cidrs -oG output --rate 10000 -p 80,8443,443,8080
+</code></pre><h1 id="ip-information">
+  IP information
+  <a class="anchor" href="#ip-information">#</a>
+</h1>
+<ul>
+<li><a href="https://ipinfo.io">https://ipinfo.io</a></li>
+<li><a href="https://www.dnsgrep.cn">https://www.dnsgrep.cn</a></li>
+<li><a href="https://rdnsdb.com/">https://rdnsdb.com/</a></li>
+</ul>
+</article>
  
       
 
@@ -301,11 +354,22 @@ cat urls | httpx -random-agent -retries 2 -o out
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#probing">Probing</a>
+    <li><a href="#asn">ASN</a>
       <ul>
-        <li><a href="#httprobe">Httprobe</a></li>
+        <li><a href="#obtaining-an-autonomous-system-number">Obtaining an autonomous system number</a>
+          <ul>
+            <li><a href="#by-organization-name">By Organization Name</a></li>
+          </ul>
+        </li>
+        <li><a href="#asn-lookup-tools">ASN Lookup tools</a></li>
       </ul>
     </li>
+    <li><a href="#cidr-analysis">CIDR analysis</a>
+      <ul>
+        <li><a href="#cidr-to-ip">CIDR to IP</a></li>
+      </ul>
+    </li>
+    <li><a href="#ip-information">IP information</a></li>
   </ul>
 </nav>
 
