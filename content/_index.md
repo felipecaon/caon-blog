@@ -17,5 +17,15 @@ Before jumping into "advanced" stuff, it is a good idea to understand the basics
 
 Hacking is like building a house, you need foundation before making the roof.
 
+- [Dev Hints](https://devhints.io/)
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
 - [Blue Teaming](https://www.blueteamsacademy.com/)
+
+# Newslatter
+
+Sources to keep you informed about sec world
+
+- https://github.com/Simpsonpt/AppSecEzine/tree/master/Ezines
+- https://tldrsec.com/
+- https://danielmiessler.com/newsletter/
+- https://securib.ee/newsletter/
