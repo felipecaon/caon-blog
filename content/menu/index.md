@@ -34,6 +34,7 @@ headless: true
 
 - Vulnerabilities
 	- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning" >}})
+	- [Code Execution]({{< relref "/docs/exploitation/codeexecution.md" >}})
 	- [Clickjacking]({{< relref "/docs/exploitation/clickjacking" >}})
 	- [Command Injection]({{< relref "/docs/exploitation/commandinjection" >}})
 	- [Cookie Based Attacks]({{< relref "/docs/exploitation/cookieattacks" >}})

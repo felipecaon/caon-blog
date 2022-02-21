@@ -50,12 +50,14 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
 
 The following list contains sites that may have additional subdomains:
 
-
 - https://chaos.projectdiscovery.io/
 - https://phpinfo.me/domain/
 - http://tool.chinaz.com/subdomain
 - https://site.ip138.com/example.com/domain.html
 - https://spyse.com/target/domain/example.com/subdomain-list
+- https://jldc.me/anubis/subdomains/site.com
+- https://dataset.domainsproject.org/
+- https://domains-monitor.com/
 
 ## Google analytics ID
 

@@ -15,6 +15,18 @@
 - Burp Bounty, OP
 - HTTP methods discloser, discloses methods for same endpoint
 
+## Tips n Tricks
+
+### Send traffic from VPS to local burp
+
+```
+# Run this in terminal connecting to vps
+ssh -R 8080:127.0.0.1:8080 root@VPS_IP -f -N
+
+# Visit the sites in VPS
+curl URL -x http://127.0.0.1:8080
+```
+
 ## Repositories
 
 - [IntruderPayloads](https://github.com/1N3/IntruderPayloads), collection of payloads used in burp

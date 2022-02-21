@@ -10,11 +10,12 @@ The five regional Internet registries are:
     Latin American and Caribbean Network Information Centre (LACNIC)
     Réseaux IP Européens Network Coordination Centre (RIPE NCC)
 
-## Obtaining an autonomous system number
+## Obtaining an ASN (autonomous system number)
 
 ### By Organization Name
 
 - https://asrank.caida.org/asns/by-name/
+- http://asnlookup.com
 
 ## ASN Lookup tools 
 
@@ -24,15 +25,20 @@ The five regional Internet registries are:
 - https://ipv4info.com/?act=check&ip={ASN}
 - https://spyse.com/target/as/{ASN}
 - https://bgpview.io/asn/{ASN}
+- https://whois.ipip.net/{ASN}
 
 # CIDR analysis
 
+- https://whois.ipip.net/cidr/
 - http://ipv4info.com/
 - https://rdnsdb.com/
 - https://www.robtex.com/
 - https://bgp.tools/
+- https://omnisint.io/reverse-dns-lookup
+- https://rapiddns.io/
+- https://rapiddns.io/
 
-## CIDR to IP
+## CIDR range to IP list
 
 ```
 # https://github.com/robertdavidgraham/masscan
@@ -45,4 +51,5 @@ masscan -iL list-of-cidrs -oG output --rate 10000 -p 80,8443,443,8080
 - https://ipinfo.io
 - https://www.dnsgrep.cn
 - https://rdnsdb.com/
-
+- https://omnisint.io/reverse-dns-lookup
+- https://db-ip.com/

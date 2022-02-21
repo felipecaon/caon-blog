@@ -46,11 +46,23 @@ A website is vulnerable if:
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/codeexecution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/codeexecution/</guid>
+      <description>Code Execution #  Probably useful when reviewing code
+PHP #  Command Execution
+exec - Returns last line of commands output passthru - Passes commands output directly to the browser system - Passes commands output directly to the browser and returns last line shell_exec - Returns commands output \`\` (backticks) - Same as shell_exec() popen - Opens read or write pipe to process of a command proc_open - Similar to popen() but greater degree of control pcntl_exec - Executes a program Code Execution</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/commandinjection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/commandinjection/</guid>
-      <description></description>
+      <description>Command Injection #  OS command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
+ https://github.com/payloadbox/command-injection-payload-list  </description>
     </item>
     
     <item>
@@ -194,7 +206,7 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/passwordbruteforce/</guid>
-      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com Hydra #  Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
+      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra #  Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
 General format for website attacks: #  hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;quot;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;quot; Wordpress #  Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
     </item>
     
@@ -338,7 +350,7 @@ semgrep -c xss.yaml scripts/* Hold down!</description>
       <guid>https://caon.io/docs/recon/asncidr/</guid>
       <description>ASN #  An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
 The five regional Internet registries are:
-African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC)  Obtaining an autonomous system number #  By Organization Name #   https://asrank.</description>
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC)  Obtaining an ASN (autonomous system number) #  By Organization Name #   https://asrank.</description>
     </item>
     
     <item>
@@ -480,7 +492,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/burp/</guid>
-      <description>Burp Suite #  Plugins #   Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint  Repositories #   IntruderPayloads, collection of payloads used in burp AwesomeBurpExtensions  Articles #   Payload Processing Rule in Burp suite (Part 1) Payload Processing Rule in Burp suite (Part 2) Beginners Guide to Burpsuite Payloads (Part 1) Beginners Guide to Burpsuite Payloads (Part 2)  </description>
+      <description>Burp Suite #  Plugins #   Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint  Tips n Tricks #  Send traffic from VPS to local burp #  # Run this in terminal connecting to vps ssh -R 8080:127.</description>
     </item>
     
     <item>

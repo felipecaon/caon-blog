@@ -21,7 +21,7 @@ Hacking is like building a house, you need foundation before making the roof.
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
 - [Blue Teaming](https://www.blueteamsacademy.com/)
 
-# Newslatter
+# Newsletter
 
 Sources to keep you informed about sec world
 
@@ -29,3 +29,12 @@ Sources to keep you informed about sec world
 - https://tldrsec.com/
 - https://danielmiessler.com/newsletter/
 - https://securib.ee/newsletter/
+
+# CVE POC's
+
+- https://github.com/cckuailong/reapoc
+- https://github.com/trickest/cve
+
+# Get a Server!
+
+- https://www.oracle.com/cloud/ offers a free for life ARM server, change `Image` to use `Oracle Linux` and `Shape` to be Ampere processors with max configuration (4 CPUs, 24GB)
