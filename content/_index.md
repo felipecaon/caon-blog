@@ -9,8 +9,6 @@ This is my page where I share knowledge, this book contains mostly stuff about a
 
 Everything written in here and in the following pages was acquired by reading articles, books, watching videos and talks. None of this is exclusive, if you want to copy, feel free.
 
-If chit-chat is needed: `felipecaon[at]gmail[dot]com`
-
 # The basics
 
 Before jumping into "advanced" stuff, it is a good idea to understand the basics of applications, data manipulation, servers ...
@@ -37,4 +35,4 @@ Sources to keep you informed about sec world
 
 # Get a Server!
 
-- https://www.oracle.com/cloud/ offers a free for life ARM server, change `Image` to use `Oracle Linux` and `Shape` to be Ampere processors with max configuration (4 CPUs, 24GB)
+- https://www.oracle.com/cloud/ offers a free for life ARM server, change `Image` to use `Oracle Linux` and `Shape` to be `Ampere` processors with max configuration (4 CPUs, 24GB)

@@ -20,8 +20,12 @@
 ### Send traffic from VPS to local burp
 
 ```
-# Run this in terminal connecting to vps
+# Run this in terminal connecting to vps (if ssh with key is possible)
+# When in WSL, portforwarding needs to be set
 ssh -R 8080:127.0.0.1:8080 root@VPS_IP -f -N
+
+# If you are in windows and need to pass passsord, use this
+putty.exe -ssh caon@51.15.10.103 -pw Caonfelipe23 -R 8080:127.0.0.1:8080
 
 # Visit the sites in VPS
 curl URL -x http://127.0.0.1:8080

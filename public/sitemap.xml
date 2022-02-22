@@ -81,9 +81,10 @@
     <lastmod>2022-01-24T10:36:12-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/codeexecution/</loc>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/commandinjection/</loc>
-    <lastmod>2022-01-11T16:43:32-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/cookieattacks/</loc>
     <lastmod>2022-01-30T13:42:33-03:00</lastmod>
@@ -107,13 +108,13 @@
     <lastmod>2022-02-09T19:08:42-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/javascriptfiles/</loc>
-    <lastmod>2022-01-30T13:42:33-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/lfi/</loc>
     <lastmod>2022-01-31T22:04:23-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/oauth/</loc>
-    <lastmod>2022-01-31T22:04:23-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/openredirect/</loc>
     <lastmod>2022-01-25T21:53:25-03:00</lastmod>
@@ -122,7 +123,7 @@
     <lastmod>2022-01-25T21:53:25-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/passwordbruteforce/</loc>
-    <lastmod>2022-01-31T22:04:23-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/prototypepollution/</loc>
     <lastmod>2022-02-09T19:08:42-03:00</lastmod>
@@ -134,7 +135,7 @@
     <lastmod>2022-01-31T22:04:23-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/ssrf/</loc>
-    <lastmod>2022-01-31T22:04:23-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/ssti/</loc>
     <lastmod>2022-01-31T22:04:23-03:00</lastmod>
@@ -149,7 +150,7 @@
     <lastmod>2022-01-31T22:04:23-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/webtech/</loc>
-    <lastmod>2022-02-09T19:08:42-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/exploitation/xss/</loc>
     <lastmod>2022-02-09T19:08:42-03:00</lastmod>
@@ -164,7 +165,7 @@
     <lastmod>2022-01-11T16:43:32-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/recon/asncidr/</loc>
-    <lastmod>2022-02-09T19:08:42-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/recon/dorks/</loc>
     <lastmod>2022-01-10T18:01:56-03:00</lastmod>
@@ -197,7 +198,7 @@
     <lastmod>2022-01-30T13:42:33-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</loc>
-    <lastmod>2022-01-30T13:42:33-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/recon/wafcheck/</loc>
     <lastmod>2022-01-30T13:42:33-03:00</lastmod>
@@ -206,7 +207,7 @@
     <lastmod>2022-01-14T13:24:58-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/resources/burp/</loc>
-    <lastmod>2022-01-11T16:43:32-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/resources/career/</loc>
     <lastmod>2022-02-09T19:08:42-03:00</lastmod>
@@ -230,9 +231,9 @@
     <lastmod>2022-01-05T11:29:14-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/docs/</loc>
-    <lastmod>2022-02-09T19:08:42-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url><url>
     <loc>https://caon.io/</loc>
-    <lastmod>2022-02-09T19:08:42-03:00</lastmod>
+    <lastmod>2022-02-20T23:48:15-03:00</lastmod>
   </url>
 </urlset>
