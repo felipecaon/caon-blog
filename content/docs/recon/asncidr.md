@@ -53,3 +53,8 @@ masscan -iL list-of-cidrs -oG output --rate 10000 -p 80,8443,443,8080
 - https://rdnsdb.com/
 - https://omnisint.io/reverse-dns-lookup
 - https://db-ip.com/
+
+# Whois
+
+- https://www.whatsmydns.net/domain-name-owner
+- https://tools.whoisxmlapi.com/reverse-whois-search (paid)

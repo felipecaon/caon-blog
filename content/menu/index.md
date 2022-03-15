@@ -4,6 +4,7 @@ headless: true
 
 - **Recon**
 - [Scope]({{< relref "/docs/recon/scope" >}})
+- [ASN/CIDR]({{< relref "/docs/recon/asncidr" >}}) 
 - [Subdomain Enumeration]({{< relref "/docs/recon/subdomainenum/subdomainenum" >}})
 	- [Passive]({{< relref "/docs/recon/subdomainenum/subdomainenum_passive" >}})
 	- [Active]({{< relref "/docs/recon/subdomainenum/subdomainenum_active" >}})

@@ -51,13 +51,10 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
 The following list contains sites that may have additional subdomains:
 
 - https://chaos.projectdiscovery.io/
-- https://phpinfo.me/domain/
-- http://tool.chinaz.com/subdomain
 - https://site.ip138.com/example.com/domain.html
 - https://spyse.com/target/domain/example.com/subdomain-list
 - https://jldc.me/anubis/subdomains/site.com
 - https://dataset.domainsproject.org/
-- https://domains-monitor.com/
 
 ## Google analytics ID
 
@@ -76,11 +73,9 @@ cat subdomains.txt | analyticsrelationships
 
 Search for favicon md5 value in known search engines to find websites related to your search
 
-```
-# https://github.com/Viralmaniar/MurMurHash
-git clone https://github.com/Viralmaniar/MurMurHash.git
-cd MurMurHash/
-pip3 install -r requirements.txt
-```
+- https://faviconhash.com/
 
+```
+Tip: Use http.favicon.hash:<hash> on Shodan to hunt phishing sites.
+```
 
