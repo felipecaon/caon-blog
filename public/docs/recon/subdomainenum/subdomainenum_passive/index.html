@@ -12,14 +12,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-02-20T23:48:15-03:00" />
+<meta property="article:modified_time" content="2022-03-14T22:40:44-03:00" />
 
 <title>Subdomainenum Passive | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d963ceda48ffa908743e671f92688e7672e59af90848366cbaad66f81e4fbef8.js" integrity="sha256-2WPO2kj/qQh0PmcfkmiOdnLlmvkISDZsuq1m&#43;B5Pvvg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.1dcd71bed5d8369e9a70504f4a73c25a5c91a6f03dc3203fb9c6b1d478655aad.js" integrity="sha256-Hc1xvtXYNp6acFBPSnPCWlyRpvA9wyA/ucax1HhlWq0=" crossorigin="anonymous"></script>
 
   
 </head>
@@ -60,6 +60,9 @@
 </li>
 <li>
 <p><a href="/docs/recon/scope/">Scope</a></p>
+</li>
+<li>
+<p><a href="/docs/recon/asncidr/">ASN/CIDR</a></p>
 </li>
 <li>
 <p><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a></p>
@@ -296,13 +299,10 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
 <p>The following list contains sites that may have additional subdomains:</p>
 <ul>
 <li><a href="https://chaos.projectdiscovery.io/">https://chaos.projectdiscovery.io/</a></li>
-<li><a href="https://phpinfo.me/domain/">https://phpinfo.me/domain/</a></li>
-<li><a href="http://tool.chinaz.com/subdomain">http://tool.chinaz.com/subdomain</a></li>
 <li><a href="https://site.ip138.com/example.com/domain.html">https://site.ip138.com/example.com/domain.html</a></li>
 <li><a href="https://spyse.com/target/domain/example.com/subdomain-list">https://spyse.com/target/domain/example.com/subdomain-list</a></li>
 <li><a href="https://jldc.me/anubis/subdomains/site.com">https://jldc.me/anubis/subdomains/site.com</a></li>
 <li><a href="https://dataset.domainsproject.org/">https://dataset.domainsproject.org/</a></li>
-<li><a href="https://domains-monitor.com/">https://domains-monitor.com/</a></li>
 </ul>
 <h2 id="google-analytics-id">
   Google analytics ID
@@ -321,10 +321,10 @@ cat subdomains.txt | analyticsrelationships
   <a class="anchor" href="#favicon">#</a>
 </h2>
 <p>Search for favicon md5 value in known search engines to find websites related to your search</p>
-<pre tabindex="0"><code># https://github.com/Viralmaniar/MurMurHash
-git clone https://github.com/Viralmaniar/MurMurHash.git
-cd MurMurHash/
-pip3 install -r requirements.txt
+<ul>
+<li><a href="https://faviconhash.com/">https://faviconhash.com/</a></li>
+</ul>
+<pre tabindex="0"><code>Tip: Use http.favicon.hash:&lt;hash&gt; on Shodan to hunt phishing sites.
 </code></pre></article>
  
       
