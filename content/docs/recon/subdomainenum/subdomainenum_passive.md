@@ -17,11 +17,7 @@ findomain -u example.com -q
 
 # https://github.com/lc/gau
 # https://github.com/tomnomnom/unfurl
-gau -subs example.com | unfurl -u domains
-
-# https://github.com/gwen001/github-subdomains
-# Need to configure github keys
-github-subdomains -d example.com
+gau --subs example.com | unfurl -u domains
 ```
 
 ## All in one script
@@ -36,14 +32,11 @@ echo "[+] Subfinder done"
 findomain -t $1 -u findomain_$1.txt > /dev/null 2>&1
 echo "[+] Findomain done"
 
-github-subdomains -d $1 -o github_$1.txt > /dev/null 2>&1
-echo "[+] Github subdomains done"
-
 assetfinder -subs-only $1 > assetfinder_$1.txt
 echo "[+] Assetfinder done"
 
-cat subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
-rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt
+cat subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
+rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
 ```
 
 ## Third party websites
@@ -51,10 +44,10 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
 The following list contains sites that may have additional subdomains:
 
 - https://chaos.projectdiscovery.io/
-- https://site.ip138.com/example.com/domain.html
 - https://spyse.com/target/domain/example.com/subdomain-list
 - https://jldc.me/anubis/subdomains/site.com
 - https://dataset.domainsproject.org/
+- https://phonebook.cz/
 
 ## Google analytics ID
 

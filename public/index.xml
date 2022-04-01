@@ -455,7 +455,9 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <guid>https://caon.io/docs/recon/fuzzing/</guid>
       <description>Fuzzing #  Rate Limited?
 Try to run techniques from 403 Bypass
- # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://example.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.0.0.1&amp;quot; -X &amp;quot;METHOD&amp;quot; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  Tempers file to find possible backup files based in file name</description>
+ Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
+https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
+ # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://example.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.</description>
     </item>
     
     <item>
@@ -549,7 +551,7 @@ Get resolvers at:
       
       <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</guid>
       <description>Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau -subs example.com | unfurl -u domains # https://github.com/gwen001/github-subdomains # Need to configure github keys github-subdomains -d example.</description>
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script #  amass enum -passive -d domain.</description>
     </item>
     
     <item>
@@ -586,7 +588,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ Security Engineer Career    </description>
+      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ Security Engineer Career   https://hbr.org/1999/11/management-time-whos-got-the-monkey Aout management time    </description>
     </item>
     
     <item>
@@ -604,7 +606,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator   https://portswigger.net/research Burp&amp;rsquo;s owner research blog   https://blog.orange.tw/ Blog/Research   https://swarm.ptsecurity.com/ PT Swarm research blog    </description>
+      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator   https://portswigger.net/research Burp&amp;rsquo;s owner research blog   https://blog.orange.tw/ Blog/Research   https://swarm.ptsecurity.com/ PT Swarm research blog   https://0xdf.gitlab.io/ Solving HTB machines   https://sploitus.</description>
     </item>
     
     <item>

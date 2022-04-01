@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau -subs example.com | unfurl -u domains # https://github.com/gwen001/github-subdomains # Need to configure github keys github-subdomains -d example.">
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script #  amass enum -passive -d domain.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau -subs example.com | unfurl -u domains # https://github.com/gwen001/github-subdomains # Need to configure github keys github-subdomains -d example." />
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script #  amass enum -passive -d domain." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.1dcd71bed5d8369e9a70504f4a73c25a5c91a6f03dc3203fb9c6b1d478655aad.js" integrity="sha256-Hc1xvtXYNp6acFBPSnPCWlyRpvA9wyA/ucax1HhlWq0=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.ba72fb787d6efe07eca5173f8fb2f85c54d1579050613a2852ed13bf523811fd.js" integrity="sha256-unL7eH1u/gfspRc/j7L4XFTRV5BQYTooUu0Tv1I4Ef0=" crossorigin="anonymous"></script>
 
   
 </head>
@@ -266,11 +266,7 @@ findomain -u example.com -q
 
 # https://github.com/lc/gau
 # https://github.com/tomnomnom/unfurl
-gau -subs example.com | unfurl -u domains
-
-# https://github.com/gwen001/github-subdomains
-# Need to configure github keys
-github-subdomains -d example.com
+gau --subs example.com | unfurl -u domains
 </code></pre><h2 id="all-in-one-script">
   All in one script
   <a class="anchor" href="#all-in-one-script">#</a>
@@ -284,14 +280,11 @@ echo &#34;[+] Subfinder done&#34;
 findomain -t $1 -u findomain_$1.txt &gt; /dev/null 2&gt;&amp;1
 echo &#34;[+] Findomain done&#34;
 
-github-subdomains -d $1 -o github_$1.txt &gt; /dev/null 2&gt;&amp;1
-echo &#34;[+] Github subdomains done&#34;
-
 assetfinder -subs-only $1 &gt; assetfinder_$1.txt
 echo &#34;[+] Assetfinder done&#34;
 
-cat subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
-rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.txt
+cat subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
+rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
 </code></pre></div><h2 id="third-party-websites">
   Third party websites
   <a class="anchor" href="#third-party-websites">#</a>
@@ -299,10 +292,10 @@ rm subfinder_$1.txt findomain_$1.txt github_$1.txt assetfinder_$1.txt amass_$1.t
 <p>The following list contains sites that may have additional subdomains:</p>
 <ul>
 <li><a href="https://chaos.projectdiscovery.io/">https://chaos.projectdiscovery.io/</a></li>
-<li><a href="https://site.ip138.com/example.com/domain.html">https://site.ip138.com/example.com/domain.html</a></li>
 <li><a href="https://spyse.com/target/domain/example.com/subdomain-list">https://spyse.com/target/domain/example.com/subdomain-list</a></li>
 <li><a href="https://jldc.me/anubis/subdomains/site.com">https://jldc.me/anubis/subdomains/site.com</a></li>
 <li><a href="https://dataset.domainsproject.org/">https://dataset.domainsproject.org/</a></li>
+<li><a href="https://phonebook.cz/">https://phonebook.cz/</a></li>
 </ul>
 <h2 id="google-analytics-id">
   Google analytics ID

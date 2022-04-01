@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Fuzzing #  Rate Limited?
 Try to run techniques from 403 Bypass
- # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://example.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  Tempers file to find possible backup files based in file name">
+ Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
+https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
+ # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://example.com/PAYLOAD&quot; -H &quot;HEADER:127.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Fuzzing #  Rate Limited?
 Try to run techniques from 403 Bypass
- # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://example.com/PAYLOAD&quot; -H &quot;HEADER:127.0.0.1&quot; -X &quot;METHOD&quot; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Backup Files #  Tempers file to find possible backup files based in file name" />
+ Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
+https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
+ # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &quot;https://example.com/PAYLOAD&quot; -H &quot;HEADER:127." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/fuzzing/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +25,7 @@ Try to run techniques from 403 Bypass
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.1dcd71bed5d8369e9a70504f4a73c25a5c91a6f03dc3203fb9c6b1d478655aad.js" integrity="sha256-Hc1xvtXYNp6acFBPSnPCWlyRpvA9wyA/ucax1HhlWq0=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.ba72fb787d6efe07eca5173f8fb2f85c54d1579050613a2852ed13bf523811fd.js" integrity="sha256-unL7eH1u/gfspRc/j7L4XFTRV5BQYTooUu0Tv1I4Ef0=" crossorigin="anonymous"></script>
 
   
 </head>
@@ -254,6 +258,14 @@ Try to run techniques from 403 Bypass
 <blockquote class="book-hint info">
   <p><strong>Rate Limited?</strong></p>
 <p>Try to run techniques from <a href="https://caon.io/docs/exploitation/403bypass/">403 Bypass</a></p>
+
+</blockquote>
+
+<blockquote class="book-hint info">
+  <p><strong>Configure your options!</strong>
+ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data.
+The solution for this is to implement a .ffufrc file with real headers:</p>
+<p><a href="https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42">https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42</a></p>
 
 </blockquote>
 

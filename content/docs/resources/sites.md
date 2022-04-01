@@ -13,3 +13,6 @@
 | https://portswigger.net/research | Burp's owner research blog |
 | https://blog.orange.tw/ | Blog/Research |
 | https://swarm.ptsecurity.com/ | PT Swarm research blog |
+| https://0xdf.gitlab.io/ | Solving HTB machines | 
+| https://sploitus.com/ | Search engine to find exploits | 
+| https://www.exploitalert.com/ | Search engine to find exploits |

@@ -5,6 +5,14 @@
 Try to run techniques from [403 Bypass](https://caon.io/docs/exploitation/403bypass/) 
 {{< /hint >}}
 
+{{< hint info >}} **Configure your options!**
+ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. 
+The solution for this is to implement a .ffufrc file with real headers:
+
+https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
+{{< /hint >}}
+
+
 ```
 # https://github.com/ffuf/ffuf
 ffuf -w /path/to/wordlist -u https://target/FUZZ
