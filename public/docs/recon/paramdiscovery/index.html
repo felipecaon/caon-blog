@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
-X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; ffuf #  # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url">
+<meta name="description" content="Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
+X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; Arjun #  # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &lt;wordlist&gt; Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
-X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; ffuf #  # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url" />
+<meta property="og:description" content="Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
+X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt; Arjun #  # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &lt;wordlist&gt; Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/paramdiscovery/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &l
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ba72fb787d6efe07eca5173f8fb2f85c54d1579050613a2852ed13bf523811fd.js" integrity="sha256-unL7eH1u/gfspRc/j7L4XFTRV5BQYTooUu0Tv1I4Ef0=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.1ed8670ca0f49b5d84b84541ddd04a27d3d874dd7221d1e00252573215b6602b.js" integrity="sha256-HthnDKD0m12EuEVB3dBKJ9PYdN1yIdHgAlJXMhW2YCs=" crossorigin="anonymous"></script>
 
   
 </head>
@@ -154,6 +154,7 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &l
 <br />
 <ul>
 <li><strong>Resources</strong></li>
+<li><a href="/docs/resources/regexes/">Regexes</a></li>
 <li><a href="/docs/resources/burp/">Burp Suite</a></li>
 <li><a href="/docs/resources/sites/">Sites</a></li>
 <li><a href="/docs/resources/youtubechannels/">Youtube channels</a></li>
@@ -230,7 +231,7 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &l
     <li><a href="#parameter-discovery">Parameter Discovery</a>
       <ul>
         <li><a href="#x8">X8</a></li>
-        <li><a href="#ffuf">ffuf</a></li>
+        <li><a href="#arjun">Arjun</a></li>
         <li><a href="#param-discovering-from-crawling-results">Param discovering from crawling results</a></li>
         <li><a href="#feed-discovered-parameters-back-to-a-param-list">Feed discovered parameters back to a param list</a></li>
       </ul>
@@ -251,7 +252,7 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &l
   Parameter Discovery
   <a class="anchor" href="#parameter-discovery">#</a>
 </h1>
-<p>There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.</p>
+<p>There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.</p>
 <h2 id="x8">
   X8
   <a class="anchor" href="#x8">#</a>
@@ -259,13 +260,13 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &quot;https://example.com/&quot; -w &l
 <pre tabindex="0"><code># https://github.com/Sh1Yo/x8
 
 x8 -u &quot;https://example.com/&quot; -w &lt;wordlist&gt;
-</code></pre><h2 id="ffuf">
-  ffuf
-  <a class="anchor" href="#ffuf">#</a>
+</code></pre><h2 id="arjun">
+  Arjun
+  <a class="anchor" href="#arjun">#</a>
 </h2>
-<pre tabindex="0"><code># https://github.com/ffuf/ffuf
+<pre tabindex="0"><code># https://github.com/s0md3v/Arjun
 
-ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value
+arjun -u https://target.com/ -w &lt;wordlist&gt;
 </code></pre><h2 id="param-discovering-from-crawling-results">
   Param discovering from crawling results
   <a class="anchor" href="#param-discovering-from-crawling-results">#</a>
@@ -319,7 +320,7 @@ cat list.txt | grep &quot;=&quot; | unfurl format %d%p
     <li><a href="#parameter-discovery">Parameter Discovery</a>
       <ul>
         <li><a href="#x8">X8</a></li>
-        <li><a href="#ffuf">ffuf</a></li>
+        <li><a href="#arjun">Arjun</a></li>
         <li><a href="#param-discovering-from-crawling-results">Param discovering from crawling results</a></li>
         <li><a href="#feed-discovered-parameters-back-to-a-param-list">Feed discovered parameters back to a param list</a></li>
       </ul>

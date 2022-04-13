@@ -19,6 +19,11 @@ Hacking is like building a house, you need foundation before making the roof.
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
 - [Blue Teaming](https://www.blueteamsacademy.com/)
 
+# Want to start bug bounty?
+
+- https://github.com/harsh-bothra/learn365
+- https://github.com/KathanP19/HowToHunt
+
 # Newsletter
 
 Sources to keep you informed about sec world

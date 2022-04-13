@@ -382,8 +382,8 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/paramdiscovery/</guid>
-      <description>Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
-X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quot; -w &amp;lt;wordlist&amp;gt; ffuf #  # https://github.com/ffuf/ffuf ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
+      <description>Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
+X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quot; -w &amp;lt;wordlist&amp;gt; Arjun #  # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
     </item>
     
     <item>
@@ -504,7 +504,16 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ Security Engineer Career   https://hbr.org/1999/11/management-time-whos-got-the-monkey Aout management time    </description>
+      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ Security Engineer Career   https://hbr.org/1999/11/management-time-whos-got-the-monkey Aout management time       Articles     https://hbr.org/1999/11/management-time-whos-got-the-monkey    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/resources/regexes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/resources/regexes/</guid>
+      <description>Regexes #  Subdomain level extraction #     Regex pattern Domain level match     grep -P &amp;lsquo;^(?:[a-z0-9]+.){N}[^.]*$&amp;rsquo; Nnd level domains only   grep -P &amp;lsquo;^(?:[a-z0-9]+.){2,3}[^.]*$&amp;rsquo; 3rd to 4th level domains only   grep -P &amp;lsquo;^(?:[a-z0-9]+.){3,}[^.]*$&amp;rsquo; 4th level domains or higher    </description>
     </item>
     
     <item>
@@ -513,7 +522,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/repositories/</guid>
-      <description>Respositories #  </description>
+      <description>Respositories #     Repository Description     https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side    </description>
     </item>
     
     <item>

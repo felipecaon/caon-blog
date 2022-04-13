@@ -6,3 +6,7 @@
 | https://devskiller.com/screen-security-engineer/ | Security Engineer Career |
 | https://hbr.org/1999/11/management-time-whos-got-the-monkey | Aout management time |
 
+
+| Articles | 
+| --- |
+| https://hbr.org/1999/11/management-time-whos-got-the-monkey |

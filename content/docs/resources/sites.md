@@ -16,3 +16,4 @@
 | https://0xdf.gitlab.io/ | Solving HTB machines | 
 | https://sploitus.com/ | Search engine to find exploits | 
 | https://www.exploitalert.com/ | Search engine to find exploits |
+| https://unsafe.sh | Chinese forum |

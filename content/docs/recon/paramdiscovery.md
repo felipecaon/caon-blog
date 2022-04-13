@@ -1,6 +1,6 @@
 # Parameter Discovery
 
-There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and ffuf, which is a general fuzzing tool that can be used for single param testing.
+There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
 
 ## X8
 
@@ -10,12 +10,12 @@ There are two tools that I prefer when doing param scanning. X8, which is a tool
 x8 -u "https://example.com/" -w <wordlist>
 ```
 
-## ffuf
+## Arjun
 
 ```
-# https://github.com/ffuf/ffuf
+# https://github.com/s0md3v/Arjun
 
-ffuf -w /path/to/paramnames.txt -u https://target/script.php?FUZZ=test_value
+arjun -u https://target.com/ -w <wordlist>
 ```
 
 ## Param discovering from crawling results

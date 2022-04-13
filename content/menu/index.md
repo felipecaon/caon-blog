@@ -64,6 +64,7 @@ headless: true
 <br />
 
 - **Resources**
+- [Regexes]({{< relref "/docs/resources/regexes" >}})
 - [Burp Suite]({{< relref "/docs/resources/burp" >}})
 - [Sites]({{< relref "/docs/resources/sites" >}})
 - [Youtube channels]({{< relref "/docs/resources/youtubechannels" >}})
