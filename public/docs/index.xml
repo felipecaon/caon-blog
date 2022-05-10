@@ -72,7 +72,11 @@ Found secrets? #  https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e
       <guid>https://caon.io/docs/exploitation/cloud/google/</guid>
       <description>Google GCP #  Google Identity #  Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
-Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html</description>
+Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
+Google Storage #  Check what permissions the bucket has:
+https://github.com/RhinoSecurityLabs/GCPBucketBrute/blob/master/gcpbucketbrute.py
+If the site ends in appspot.com, bucket can be accessed in:
+https://storage.googleapis.com/&amp;lt;site_url&amp;gt;</description>
     </item>
     
     <item>
