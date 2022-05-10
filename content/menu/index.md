@@ -33,6 +33,11 @@ headless: true
 	- [OAuth 2]({{< relref "/docs/exploitation/oauth" >}})
 	- [2FA Auth]({{< relref "/docs/exploitation/twofa" >}})
 
+- Cloud
+	- [Amazon]({{< relref "/docs/exploitation/cloud/aws" >}})
+	- [Azure]({{< relref "/docs/exploitation/cloud/azure" >}})
+	- [Google]({{< relref "/docs/exploitation/cloud/google" >}})
+
 - Vulnerabilities
 	- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning" >}})
 	- [Code Execution]({{< relref "/docs/exploitation/codeexecution.md" >}})

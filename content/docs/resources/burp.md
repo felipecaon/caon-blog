@@ -25,7 +25,7 @@
 ssh -R 8080:127.0.0.1:8080 root@VPS_IP -f -N
 
 # If you are in windows and need to pass passsord, use this
-putty.exe -ssh caon@51.15.10.103 -pw Caonfelipe23 -R 8080:127.0.0.1:8080
+putty.exe -ssh user@host -pw password -R 8080:127.0.0.1:8080
 
 # Visit the sites in VPS
 curl URL -x http://127.0.0.1:8080

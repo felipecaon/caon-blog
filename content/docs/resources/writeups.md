@@ -9,3 +9,4 @@
 | https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ | Android testing in windows 11 | 
 | https://www.xmind.net/m/2FwJ7D/ | Cookie based authentication issues |
 | https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 | Pre-Takeover using social logins |
+| https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses | Payment Flow Vulnerabilites | 

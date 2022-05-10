@@ -46,6 +46,37 @@ A website is vulnerable if:
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/cloud/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cloud/aws/</guid>
+      <description>Amazon AWS #  Cognito #  AWS Cognito helps to authenticate users using amazon solutions, if identity poolis enabled it is possible to gather a temporary token
+https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
+Found secrets? #  https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e86be6</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cloud/azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cloud/azure/</guid>
+      <description>Microsoft Azure #  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cloud/google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cloud/google/</guid>
+      <description>Google GCP #  Google Identity #  Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
+Hint: deleteAccount and signUp may be gold
+Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/codeexecution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -513,7 +544,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/regexes/</guid>
-      <description>Regexes #  Subdomain level extraction #     Regex pattern Domain level match     grep -P &amp;lsquo;^(?:[a-z0-9]+.){N}[^.]*$&amp;rsquo; Nnd level domains only   grep -P &amp;lsquo;^(?:[a-z0-9]+.){2,3}[^.]*$&amp;rsquo; 3rd to 4th level domains only   grep -P &amp;lsquo;^(?:[a-z0-9]+.){3,}[^.]*$&amp;rsquo; 4th level domains or higher    </description>
+      <description>Regexes #  Subdomain level extraction #     Regex pattern Domain level match    </description>
     </item>
     
     <item>
@@ -549,7 +580,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/writeups/</guid>
-      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues   https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 Pre-Takeover using social logins    </description>
+      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues   https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 Pre-Takeover using social logins   https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites    </description>
     </item>
     
     <item>
