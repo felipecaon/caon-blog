@@ -3,6 +3,7 @@
 baseURL: https://caon.io
 title: caon.io
 theme: hugo-book
+googleAnalytics: G-92BCSZTKCE
 
 # Book configuration
 disablePathToLower: true
