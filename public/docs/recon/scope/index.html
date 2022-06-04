@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Scope #  An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+<meta name="description" content="Scope # An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 Example of scope
-   In-Scope Out of scope     example.com subdomain.example.com   *-dev.example.com     The scope above states that example.com and www.example.com are valid (www is a subdomain, example.">
+In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
+Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Scope #  An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+<meta property="og:description" content="Scope # An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 Example of scope
-   In-Scope Out of scope     example.com subdomain.example.com   *-dev.example.com     The scope above states that example.com and www.example.com are valid (www is a subdomain, example." />
+In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
+Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/scope/" /><meta property="article:section" content="docs" />
 
@@ -21,8 +23,22 @@ Example of scope
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.49776ffc1efa13be7d01440032b280a3ed8f024efb9124a30a9798afd260d7f6.js" integrity="sha256-SXdv/B76E759AUQAMrKAo&#43;2PAk77kSSjCpeYr9Jg1/Y=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.be921ce33ec8ceee489ea90dbf8ff7eadf06b8dd323c21d05fdad2521e08ba07.js" integrity="sha256-vpIc4z7Izu5InqkNv4/36t8GuN0yPCHQX9rSUh4Iugc=" crossorigin="anonymous"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-92BCSZTKCE', { 'anonymize_ip': false });
+}
+</script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
   
 </head>
 <body dir="ltr">
@@ -113,9 +129,9 @@ Example of scope
 <li>
 <p>Authentication</p>
 <ul>
-<li><a href="/docs/exploitation/typesofauth/">Authentication Types</a></li>
-<li><a href="/docs/exploitation/oauth/">OAuth 2</a></li>
-<li><a href="/docs/exploitation/twofa/">2FA Auth</a></li>
+<li><a href="/docs/exploitation/auths/typesofauth/">Authentication Types</a></li>
+<li><a href="/docs/exploitation/auths/oauth/">OAuth 2</a></li>
+<li><a href="/docs/exploitation/auths/twofa/">2FA Auth</a></li>
 </ul>
 </li>
 <li>
@@ -124,6 +140,15 @@ Example of scope
 <li><a href="/docs/exploitation/cloud/aws/">Amazon</a></li>
 <li><a href="/docs/exploitation/cloud/azure/">Azure</a></li>
 <li><a href="/docs/exploitation/cloud/google/">Google</a></li>
+</ul>
+</li>
+<li>
+<p>CMS</p>
+<ul>
+<li><a href="/docs/exploitation/cms/drupal/">Drupal</a></li>
+<li><a href="/docs/exploitation/cms/joomla/">Joomla</a></li>
+<li><a href="/docs/exploitation/cms/magento/">Magento</a></li>
+<li><a href="/docs/exploitation/cms/wordpress/">Wordpress</a></li>
 </ul>
 </li>
 <li>
@@ -207,7 +232,7 @@ Example of scope
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -313,7 +338,7 @@ Example of scope
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  

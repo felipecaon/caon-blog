@@ -19,8 +19,22 @@ This document is a brief primer on using Go templates." />
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.49776ffc1efa13be7d01440032b280a3ed8f024efb9124a30a9798afd260d7f6.js" integrity="sha256-SXdv/B76E759AUQAMrKAo&#43;2PAk77kSSjCpeYr9Jg1/Y=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.be921ce33ec8ceee489ea90dbf8ff7eadf06b8dd323c21d05fdad2521e08ba07.js" integrity="sha256-vpIc4z7Izu5InqkNv4/36t8GuN0yPCHQX9rSUh4Iugc=" crossorigin="anonymous"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-92BCSZTKCE', { 'anonymize_ip': false });
+}
+</script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
   
 </head>
 <body dir="ltr">
@@ -111,9 +125,9 @@ This document is a brief primer on using Go templates." />
 <li>
 <p>Authentication</p>
 <ul>
-<li><a href="/docs/exploitation/typesofauth/">Authentication Types</a></li>
-<li><a href="/docs/exploitation/oauth/">OAuth 2</a></li>
-<li><a href="/docs/exploitation/twofa/">2FA Auth</a></li>
+<li><a href="/docs/exploitation/auths/typesofauth/">Authentication Types</a></li>
+<li><a href="/docs/exploitation/auths/oauth/">OAuth 2</a></li>
+<li><a href="/docs/exploitation/auths/twofa/">2FA Auth</a></li>
 </ul>
 </li>
 <li>
@@ -122,6 +136,15 @@ This document is a brief primer on using Go templates." />
 <li><a href="/docs/exploitation/cloud/aws/">Amazon</a></li>
 <li><a href="/docs/exploitation/cloud/azure/">Azure</a></li>
 <li><a href="/docs/exploitation/cloud/google/">Google</a></li>
+</ul>
+</li>
+<li>
+<p>CMS</p>
+<ul>
+<li><a href="/docs/exploitation/cms/drupal/">Drupal</a></li>
+<li><a href="/docs/exploitation/cms/joomla/">Joomla</a></li>
+<li><a href="/docs/exploitation/cms/magento/">Magento</a></li>
+<li><a href="/docs/exploitation/cms/wordpress/">Wordpress</a></li>
 </ul>
 </li>
 <li>
@@ -205,7 +228,7 @@ This document is a brief primer on using Go templates." />
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -523,11 +546,11 @@ doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front m
 of some pages to turn off the TOC from being displayed.</p>
 <p>Here is the example front matter:</p>
 <pre tabindex="0"><code>---
-title: &quot;Permalinks&quot;
-date: &quot;2013-11-18&quot;
+title: &#34;Permalinks&#34;
+date: &#34;2013-11-18&#34;
 aliases:
-  - &quot;/doc/permalinks/&quot;
-groups: [&quot;extras&quot;]
+  - &#34;/doc/permalinks/&#34;
+groups: [&#34;extras&#34;]
 groups_weight: 30
 notoc: true
 ---
@@ -545,32 +568,32 @@ notoc: true
 <p>In your top-level configuration file (eg, <code>config.yaml</code>) you can define site
 parameters, which are values which will be available to you in chrome.</p>
 <p>For instance, you might declare:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">params</span>:
-  <span style="color:#f92672">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
-  <span style="color:#f92672">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
-  <span style="color:#f92672">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
-</code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
 provided if the <code>CopyrightHTML</code> parameter is provided, and if it is given,
 you would declare it to be HTML-safe, so that the HTML entity is not escaped
 again.  This would let you easily update just your top-level config file each
 January 1st, instead of hunting through your templates.</p>
 <pre tabindex="0"><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
-&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
+&lt;div class=&#34;text-center&#34;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
 &lt;/footer&gt;{{end}}
 </code></pre><p>An alternative way of writing the &ldquo;if&rdquo; and then referencing the same value
 is to use &ldquo;with&rdquo; instead. With rebinds the context <code>.</code> within its scope,
 and skips the block if the variable is absent:</p>
-<pre tabindex="0"><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
-&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
-&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
- alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+<pre tabindex="0"><code>{{with .Site.Params.TwitterUser}}&lt;span class=&#34;twitter&#34;&gt;
+&lt;a href=&#34;https://twitter.com/{{.}}&#34; rel=&#34;author&#34;&gt;
+&lt;img src=&#34;/images/twitter.png&#34; width=&#34;48&#34; height=&#34;48&#34; title=&#34;Twitter: {{.}}&#34;
+ alt=&#34;Twitter&#34;&gt;&lt;/a&gt;
 &lt;/span&gt;{{end}}
 </code></pre><p>Finally, if you want to pull &ldquo;magic constants&rdquo; out of your layouts, you can do
 so, such as in this example:</p>
-<pre tabindex="0"><code>&lt;nav class=&quot;recent&quot;&gt;
+<pre tabindex="0"><code>&lt;nav class=&#34;recent&#34;&gt;
   &lt;h1&gt;Recent Posts&lt;/h1&gt;
   &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;{{.RelPermalink}}&#34;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre></article>
@@ -589,7 +612,7 @@ so, such as in this example:</p>
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  

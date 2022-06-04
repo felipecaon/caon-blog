@@ -29,14 +29,20 @@ headless: true
 	- [WAF Bypass]({{< relref "/docs/exploitation/wafbypass" >}})
 
 - Authentication
-	- [Authentication Types]({{< relref "/docs/exploitation/typesofauth" >}})
-	- [OAuth 2]({{< relref "/docs/exploitation/oauth" >}})
-	- [2FA Auth]({{< relref "/docs/exploitation/twofa" >}})
+	- [Authentication Types]({{< relref "/docs/exploitation/auths/typesofauth" >}})
+	- [OAuth 2]({{< relref "/docs/exploitation/auths/oauth" >}})
+	- [2FA Auth]({{< relref "/docs/exploitation/auths/twofa" >}})
 
 - Cloud
 	- [Amazon]({{< relref "/docs/exploitation/cloud/aws" >}})
 	- [Azure]({{< relref "/docs/exploitation/cloud/azure" >}})
 	- [Google]({{< relref "/docs/exploitation/cloud/google" >}})
+
+- CMS
+	- [Drupal]({{< relref "/docs/exploitation/cms/drupal" >}})	
+	- [Joomla]({{< relref "/docs/exploitation/cms/joomla" >}})
+	- [Magento]({{< relref "/docs/exploitation/cms/magento" >}})
+	- [Wordpress]({{< relref "/docs/exploitation/cms/wordpress" >}})
 
 - Vulnerabilities
 	- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning" >}})

@@ -18,6 +18,7 @@ Hacking is like building a house, you need foundation before making the roof.
 - [Dev Hints](https://devhints.io/)
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
 - [Blue Teaming](https://www.blueteamsacademy.com/)
+- [The first rule](https://sol.gfxile.net/dontask.html)
 
 # Want to start bug bounty?
 

