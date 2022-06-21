@@ -175,7 +175,7 @@ Found secrets? # https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e8
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/google/</guid>
-      <description> Google GCP # Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
+      <description> Google GCP # PriveEsc # https://infosecwriteups.com/enumeration-and-lateral-movement-in-gcp-environments-c3b82d342794 Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
 Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
 Misconfigs in Google Identity Google Storage # Check what permissions the bucket has:
@@ -672,7 +672,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/repositories/</guid>
-      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side </description>
+      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon </description>
     </item>
     
     <item>
