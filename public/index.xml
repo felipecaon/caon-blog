@@ -95,7 +95,7 @@ Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta So
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/403bypass/</guid>
-      <description></description>
+      <description> 403 Bypass # # https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com </description>
     </item>
     
     <item>
@@ -122,6 +122,15 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/auths/saml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/auths/saml/</guid>
+      <description> SAML # https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/auths/twofa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -135,7 +144,7 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/auths/typesofauth/</guid>
-      <description> Authentication Types # Basic Auth (B64) # Authorization: Basic AXVubzpwQDU1dzByYM== Bearer Token (JWT) # Authorization: Bearer &amp;lt;token&amp;gt; API Key # GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 Digest Auth # Authorization: Digest username=&amp;#34;admin&amp;#34; Realm=&amp;#34;abcxyz&amp;#34; nonce=&amp;#34;474754847743646&amp;#34;, uri=&amp;#34;/uri&amp;#34; response=&amp;#34;7cffhfr54685gnnfgerg8&amp;#34; OAuth2.0 # Authorization: Bearer hY_9.B5f-4.1BfE Hawk Authentication # Authorization: Hawk id=&amp;#34;abcxyz123&amp;#34;, ts=&amp;#34;1592459563&amp;#34;, nonce=&amp;#34;gWqbkw&amp;#34;, mac=&amp;#34;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;#34; AWS signature # Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ </description>
+      <description> Authentication Types # Basic Auth (B64) # Authorization: Basic AXVubzpwQDU1dzByYM== Bearer Token (JWT) # Authorization: Bearer &amp;lt;token&amp;gt; API Key # GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 Digest Auth # Authorization: Digest username=&amp;#34;admin&amp;#34; Realm=&amp;#34;abcxyz&amp;#34; nonce=&amp;#34;474754847743646&amp;#34;, uri=&amp;#34;/uri&amp;#34; response=&amp;#34;7cffhfr54685gnnfgerg8&amp;#34; OAuth2.0 # Authorization: Bearer hY_9.B5f-4.1BfE Hawk Authentication # Authorization: Hawk id=&amp;#34;abcxyz123&amp;#34;, ts=&amp;#34;1592459563&amp;#34;, nonce=&amp;#34;gWqbkw&amp;#34;, mac=&amp;#34;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;#34; AWS signature # Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ SAML # SAMLRequest=wEXSeqwfDKu1NDXSeqwfq7Zfq7Z... </description>
     </item>
     
     <item>
@@ -402,7 +411,7 @@ example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute gue
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/rce/</guid>
-      <description> Remote code execution # How to achieve RCE in known CMSes, frameworks and related # https://github.com/p0dalirius/Awesome-RCE-techniques </description>
+      <description> Remote code execution # How to achieve RCE in known CMSes, frameworks and related # https://github.com/p0dalirius/Awesome-RCE-techniques PHP # ${@print(system(&amp;quot;whoami&amp;quot;))} </description>
     </item>
     
     <item>

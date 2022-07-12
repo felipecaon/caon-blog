@@ -33,6 +33,7 @@ headless: true
 	- [JWT]({{< relref "/docs/exploitation/auths/jwt" >}})
 	- [OAuth 2]({{< relref "/docs/exploitation/auths/oauth" >}})
 	- [2FA Auth]({{< relref "/docs/exploitation/auths/twofa" >}})
+	- [SAML]({{< relref "/docs/exploitation/auths/saml" >}})
 
 - Cloud
 	- [Amazon]({{< relref "/docs/exploitation/cloud/aws" >}})
