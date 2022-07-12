@@ -30,6 +30,7 @@ headless: true
 
 - Authentication
 	- [Authentication Types]({{< relref "/docs/exploitation/auths/typesofauth" >}})
+	- [JWT]({{< relref "/docs/exploitation/auths/jwt" >}})
 	- [OAuth 2]({{< relref "/docs/exploitation/auths/oauth" >}})
 	- [2FA Auth]({{< relref "/docs/exploitation/auths/twofa" >}})
 
@@ -61,6 +62,7 @@ headless: true
 	- [Parameter Pollution]({{< relref "/docs/exploitation/parameterpollution" >}})
 	- [Prototype Pollution]({{< relref "/docs/exploitation/prototypepollution" >}})
 	- [Request Smuggling]({{< relref "/docs/exploitation/requestsmuggling" >}})
+	- [RCE]({{< relref "/docs/exploitation/rce" >}})
 	- [SSTI]({{< relref "/docs/exploitation/ssti" >}})
 	- [SSRF]({{< relref "/docs/exploitation/ssrf" >}})
 	- [SQLi]({{< relref "/docs/exploitation/sqli" >}})

@@ -16,6 +16,16 @@
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/auths/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/auths/jwt/</guid>
+      <description>JWT # Change algorithm to None # Sometimes APIs don&amp;rsquo;t check for JWT encryption. None algorithm allows an attacker to craft a malicious JWT token to escalate privileges.
+B64 None: eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/auths/oauth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -71,9 +81,10 @@ https://securityheaders.com/ POC # &amp;lt;iframe src=&amp;#34;https://example.c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/aws/</guid>
-      <description>Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity poolis enabled it is possible to gather a temporary token
+      <description> Amazon AWS # How to explore a common misconigured AWS # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/ Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity poolis enabled it is possible to gather a temporary token
 https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
-Found secrets? # https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e86be6</description>
+Found secrets? # https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e86be6
+Collection of privilege escalation by misconfiguration # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/ </description>
     </item>
     
     <item>
@@ -91,14 +102,14 @@ Found secrets? # https://medium.com/@masonhck357/the-16-000-dev-mistake-13e516e8
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/google/</guid>
-      <description> Google GCP # PriveEsc # https://infosecwriteups.com/enumeration-and-lateral-movement-in-gcp-environments-c3b82d342794 Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
+      <description> Google GCP # PriveEsc in GCP environments # https://infosecwriteups.com/enumeration-and-lateral-movement-in-gcp-environments-c3b82d342794 Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
 Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
 Misconfigs in Google Identity Google Storage # Check what permissions the bucket has:
 https://github.com/RhinoSecurityLabs/GCPBucketBrute/blob/master/gcpbucketbrute.py
 If the site ends in appspot.com, bucket can be accessed in:
 https://storage.googleapis.com/&amp;lt;site_url&amp;gt;
-Hunting GCP Buckets </description>
+Hunting GCP Buckets Firebase # Insecure-Firebase-Exploit Pyrebase </description>
     </item>
     
     <item>
@@ -277,7 +288,7 @@ https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rd
       <guid>https://caon.io/docs/exploitation/parameterpollution/</guid>
       <description>HTTP Parameter Pollution # When searching for HPP keep in mind some servers handle parameters differently.
 Take http://example.com?username=foo&amp;amp;username=bar as an example.
-PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS user all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
+PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS uses all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
 Social Media Share Links # Often a websites offers its user a feature to share a given page in social media.</description>
     </item>
     
@@ -299,6 +310,15 @@ General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p 
       <guid>https://caon.io/docs/exploitation/prototypepollution/</guid>
       <description>Prototype Pollution # https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan Where to find? # Javascript driven frameworks (Express..) PHP # PHP internally uses parse_str() to parse parameters so it sees the char &amp;ldquo;[&amp;rdquo; &amp;amp; &amp;ldquo;_&amp;rdquo; as the same. PHP by default will use the last param as valid. In cases PHP is running on backend but front end validates the param, we can smuggle fake params to php
 example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute guest and frontend admin Talks # https://www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/rce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/rce/</guid>
+      <description> Remote code execution # How to achieve RCE in known CMSes, frameworks and related # https://github.com/p0dalirius/Awesome-RCE-techniques </description>
     </item>
     
     <item>
@@ -364,7 +384,7 @@ How to bypass wafs
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/webtech/</guid>
-      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.axd any.aspx/trace.axd WEB-INF/web.xml /con/ /aux/ con.aspx aux.aspx Cloudflare # Techniques to try to uncover web servers behind cloudflare:</description>
+      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.</description>
     </item>
     
     <item>
@@ -597,7 +617,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description> Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking </description>
+      <description> Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups </description>
     </item>
     
     <item>

@@ -18,3 +18,5 @@
 | https://www.exploitalert.com/ | Search engine to find exploits |
 | https://unsafe.sh | Chinese forum |
 | https://secret.club/ | About HW and low level hacking |
+| https://www.bugbountyhunting.com/ | Bug Bounty Writeups |
+
