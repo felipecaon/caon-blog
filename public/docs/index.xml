@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://caon.io/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://caon.io/docs/bb/impacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/bb/impacts/</guid>
+      <description>Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
+XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&amp;rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/403bypass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -337,7 +347,7 @@ example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute gue
       
       <guid>https://caon.io/docs/exploitation/requestsmuggling/</guid>
       <description> Request Smuggling # It&amp;rsquo;s far more easier to search for articles explaining this concept.
-Tools # HTTP Request Smuggler, Burp extension # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles # https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/ Exploitation # Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header. </description>
+Tools # HTTP Request Smuggler, Burp extension # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles # https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/ https://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/ Exploitation # Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header. </description>
     </item>
     
     <item>
@@ -346,9 +356,9 @@ Tools # HTTP Request Smuggler, Burp extension # https://github.com/defparam/smug
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/sqli/</guid>
-      <description> SQLi # sqlmap # https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 Temper # The ability to create payloads that can bypass waf
+      <description>SQLi # sqlmap # https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 Temper # The ability to create payloads that can bypass waf
 https://github.com/m4ll0k/Atlas Example:
---tamper=&amp;#34;between,randomcase&amp;#34; Articles # URL https://www.binarytides.com/sqlmap-hacking-tutorial/ https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html </description>
+--tamper=&amp;#34;between,randomcase&amp;#34; Tricks # Sometimes sites append an extra (&amp;rsquo;) character in injection. It is possible to bypass this behavior by abusing UTF-8.</description>
     </item>
     
     <item>
@@ -599,7 +609,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey Aout management time Articles https://hbr.org/1999/11/management-time-whos-got-the-monkey </description>
+      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec </description>
     </item>
     
     <item>
@@ -635,7 +645,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/tools/</guid>
-      <description> Web Tools # Website Description https://osintframework.com/ Collecion of OSINT tools https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
+      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Tabel https://osintframework.com/ Collecion of OSINT tools https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
     </item>
     
     <item>

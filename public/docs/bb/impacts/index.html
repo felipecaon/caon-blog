@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Screenshot # For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
-Hold down!
-A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
-EyeWitness # # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging webscreenshot.py
-webscreenshot is Kopfschmerzen">
+<meta name="description" content="Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
+XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Screenshot # For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
-Hold down!
-A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
-EyeWitness # # https://github.com/FortyNorthSecurity/EyeWitness EyeWitness -f urls.txt --web GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging webscreenshot.py
-webscreenshot is Kopfschmerzen" />
+<meta property="og:description" content="Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
+XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://caon.io/docs/recon/screenshot/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://caon.io/docs/bb/impacts/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-01-30T13:42:33-03:00" />
 
-<title>Screenshot | caon.io</title>
+
+<title>Impacts | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -98,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="/docs/recon/probing/">Probing</a></p>
 </li>
 <li>
-<p><a href="/docs/recon/screenshot/"class=active>Screenshot</a></p>
+<p><a href="/docs/recon/screenshot/">Screenshot</a></p>
 </li>
 <li>
 <p><a href="/docs/recon/wafcheck/">WAF Check</a></p>
@@ -252,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Screenshot</strong>
+  <strong>Impacts</strong>
 
   <label for="toc-control">
     
@@ -268,10 +262,15 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#screenshot">Screenshot</a>
+    <li><a href="#impacts">Impacts</a>
       <ul>
-        <li><a href="#eyewitness">EyeWitness</a></li>
-        <li><a href="#gowitness">GoWitness</a></li>
+        <li><a href="#sqli">SQLi</a></li>
+        <li><a href="#xss">XSS</a></li>
+        <li><a href="#lfi">LFI</a></li>
+        <li><a href="#amazon-cognito-identity">Amazon Cognito Identity</a></li>
+        <li><a href="#ato---password-reset">ATO - password reset</a></li>
+        <li><a href="#open-redirect">Open redirect</a></li>
+        <li><a href="#sensitive-readmemd-exposed">Sensitive README.md exposed</a></li>
       </ul>
     </li>
   </ul>
@@ -286,35 +285,50 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="screenshot">
-  Screenshot
-  <a class="anchor" href="#screenshot">#</a>
+  <article class="markdown"><h1 id="impacts">
+  Impacts
+  <a class="anchor" href="#impacts">#</a>
 </h1>
-<p>For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.</p>
-<blockquote class="book-hint danger">
-  <p><strong>Hold down!</strong></p>
-<p>A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.</p>
-
-</blockquote>
-
-<h2 id="eyewitness">
-  EyeWitness
-  <a class="anchor" href="#eyewitness">#</a>
+<h2 id="sqli">
+  SQLi
+  <a class="anchor" href="#sqli">#</a>
 </h2>
-<pre tabindex="0"><code># https://github.com/FortyNorthSecurity/EyeWitness
-EyeWitness -f urls.txt --web
-</code></pre><h2 id="gowitness">
-  GoWitness
-  <a class="anchor" href="#gowitness">#</a>
+<p>Attacker can obtain full database access holding private user information and other sensitive data.
+An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.</p>
+<h2 id="xss">
+  XSS
+  <a class="anchor" href="#xss">#</a>
 </h2>
-<pre tabindex="0"><code># https://github.com/sensepost/gowitness
-gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging
-</code></pre><blockquote class="book-hint info">
-  <p><strong>webscreenshot.py</strong></p>
-<p>webscreenshot is Kopfschmerzen</p>
-
-</blockquote>
-
+<p>A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information.
+It is also possible to inject code into the page, allowing the possibiliy of: phishing attacks, redirects and code manipulation.</p>
+<h2 id="lfi">
+  LFI
+  <a class="anchor" href="#lfi">#</a>
+</h2>
+<p>An attacker can read local files on the web server that should not be accessed, such as the application source code or configuration files containing sensitive information.</p>
+<h2 id="amazon-cognito-identity">
+  Amazon Cognito Identity
+  <a class="anchor" href="#amazon-cognito-identity">#</a>
+</h2>
+<p>Unauthorized access to AWS services with temporary user.
+An attacker can genereate a temporary guest token to peek - and maybe exploit - the company infrastructure.</p>
+<h2 id="ato---password-reset">
+  ATO - password reset
+  <a class="anchor" href="#ato---password-reset">#</a>
+</h2>
+<p>An attacker can log into any account by just knowing it&rsquo;s email address.</p>
+<h2 id="open-redirect">
+  Open redirect
+  <a class="anchor" href="#open-redirect">#</a>
+</h2>
+<p>An attacker can send the link to users to get them redirected to a malicious domain.
+To achieve success an attacker must trick vicitims into visiting the crafted URL.</p>
+<h2 id="sensitive-readmemd-exposed">
+  Sensitive README.md exposed
+  <a class="anchor" href="#sensitive-readmemd-exposed">#</a>
+</h2>
+<p>Information that is not supposed to be public became public due to misconfigurations.
+Attacker can use information leaked to learn more about company internals.</p>
 </article>
  
       
@@ -352,10 +366,15 @@ gowitness file -f websites.txt -t &lt;threads&gt; --disable-logging
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#screenshot">Screenshot</a>
+    <li><a href="#impacts">Impacts</a>
       <ul>
-        <li><a href="#eyewitness">EyeWitness</a></li>
-        <li><a href="#gowitness">GoWitness</a></li>
+        <li><a href="#sqli">SQLi</a></li>
+        <li><a href="#xss">XSS</a></li>
+        <li><a href="#lfi">LFI</a></li>
+        <li><a href="#amazon-cognito-identity">Amazon Cognito Identity</a></li>
+        <li><a href="#ato---password-reset">ATO - password reset</a></li>
+        <li><a href="#open-redirect">Open redirect</a></li>
+        <li><a href="#sensitive-readmemd-exposed">Sensitive README.md exposed</a></li>
       </ul>
     </li>
   </ul>

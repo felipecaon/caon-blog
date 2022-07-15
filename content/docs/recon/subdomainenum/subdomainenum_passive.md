@@ -44,10 +44,10 @@ rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
 The following list contains sites that may have additional subdomains:
 
 - https://chaos.projectdiscovery.io/
-- https://spyse.com/target/domain/example.com/subdomain-list
 - https://jldc.me/anubis/subdomains/site.com
 - https://dataset.domainsproject.org/
 - https://phonebook.cz/
+- https://suip.biz/?act=subfinder
 
 ## Google analytics ID
 
