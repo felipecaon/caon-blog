@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Parameter Discovery # There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
-X8 # # https://github.com/Sh1Yo/x8 x8 -u &#34;https://example.com/&#34; -w &lt;wordlist&gt; Arjun # # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &lt;wordlist&gt; Param discovering from crawling results # Given a list with crawled urls, grep the ones that have known parameters and get only the url">
+X8 # # https://github.com/Sh1Yo/x8 x8 -u &#34;https://example.com/&#34; -w &lt;wordlist&gt; Arjun # # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &lt;wordlist&gt; arjun -i urls.txt -oT output -m GET arjun -i urls.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Parameter Discovery # There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
-X8 # # https://github.com/Sh1Yo/x8 x8 -u &#34;https://example.com/&#34; -w &lt;wordlist&gt; Arjun # # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &lt;wordlist&gt; Param discovering from crawling results # Given a list with crawled urls, grep the ones that have known parameters and get only the url" />
+X8 # # https://github.com/Sh1Yo/x8 x8 -u &#34;https://example.com/&#34; -w &lt;wordlist&gt; Arjun # # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &lt;wordlist&gt; arjun -i urls.txt -oT output -m GET arjun -i urls." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/paramdiscovery/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@ X8 # # https://github.com/Sh1Yo/x8 x8 -u &#34;https://example.com/&#34; -w &lt;w
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.a61b330c628fcdf7481d8e8a1ca331de62fdb1e899db9bbbd2c6848f39772e1a.js" integrity="sha256-phszDGKPzfdIHY6KHKMx3mL9seiZ25u70saEjzl3Lho=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.e6c84ae2937c59820eea2309aee853015c616e6b93ea8591072f1170ab9533d9.js" integrity="sha256-5shK4pN8WYIO6iMJruhTAVxhbmuT6oWRBy8RcKuVM9k=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -301,6 +301,10 @@ x8 -u &#34;https://example.com/&#34; -w &lt;wordlist&gt;
 <pre tabindex="0"><code># https://github.com/s0md3v/Arjun
 
 arjun -u https://target.com/ -w &lt;wordlist&gt;
+</code></pre><pre tabindex="0"><code>arjun -i urls.txt -oT output -m GET
+arjun -i urls.txt -oT output -m POST
+arjun -i urls.txt -oT output -m POST-JSON
+arjun -i urls.txt -oT output -m POST-XML
 </code></pre><h2 id="param-discovering-from-crawling-results">
   Param discovering from crawling results
   <a class="anchor" href="#param-discovering-from-crawling-results">#</a>

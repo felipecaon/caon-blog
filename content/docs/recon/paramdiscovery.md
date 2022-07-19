@@ -18,6 +18,13 @@ x8 -u "https://example.com/" -w <wordlist>
 arjun -u https://target.com/ -w <wordlist>
 ```
 
+```
+arjun -i urls.txt -oT output -m GET
+arjun -i urls.txt -oT output -m POST
+arjun -i urls.txt -oT output -m POST-JSON
+arjun -i urls.txt -oT output -m POST-XML
+```
+
 ## Param discovering from crawling results
 
 Given a list with crawled urls, grep the ones that have known parameters and get only the url
@@ -31,3 +38,4 @@ cat list.txt | grep "=" | unfurl format %d%p
 ## Feed discovered parameters back to a param list
 
 See [Wordlist generation](https://caon.io/docs/recon/wordlistgeneration/)
+
