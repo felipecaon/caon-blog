@@ -26,7 +26,7 @@ gau --subs example.com | unfurl -u domains
 amass enum -passive -d domain.com -o amass_$1.txt > /dev/null 2>&1
 echo "[+] Amass done"
 
-subfinder -silent -d $1 -o subfinder_$1.txt > /dev/null 2>&1
+subfinder -silent -d $1 -all -o subfinder_$1.txt > /dev/null 2>&1
 echo "[+] Subfinder done"
 
 findomain -t $1 -u findomain_$1.txt > /dev/null 2>&1
