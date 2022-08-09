@@ -70,6 +70,10 @@ headless: true
 	- [XSS]({{< relref "/docs/exploitation/xss" >}})
 	- [XXE]({{< relref "/docs/exploitation/xxe" >}})
 
+- Workflows
+	
+	- [Payment]({{< relref "/docs/exploitation/workflows/payment" >}})
+
 - Other
 	- [Password Brute Force]({{< relref "/docs/exploitation/passwordbruteforce" >}})
 	- [Javascript Analysys]({{< relref "/docs/exploitation/javascriptfiles" >}})
