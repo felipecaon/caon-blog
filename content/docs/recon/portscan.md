@@ -19,6 +19,7 @@ nmap example.com
 # https://github.com/projectdiscovery/naabu
 naabu -p 80,443,21-23 -host example.com
 naabu -list hosts.txt
-cat lists | naabu -silent
+cat list | naabu -top-ports 100 -ep 80,443,8080,8443
+cat list | naabu -silent
 echo example.com | naabu -nmap-cli 'nmap -sC -sV -oX nmap-output'
 ```

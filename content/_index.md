@@ -45,14 +45,11 @@ Sources to keep you informed about sec world
 
 -----
 
+```
 Escalate everything you find!
-
 Don't report SSRF, Escalate to RCE.
-
 Don't report Self-XSS, Chain it with Clickjacking.
-
 Don't report Self-Stored XSS, Chain it with CSRF.
-
 Don't report Information Disclosure, try to use it (Privileges Escalation).
-
 Don't report Open Redirect, Escalate it to ATO.
+```

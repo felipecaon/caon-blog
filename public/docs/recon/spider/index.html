@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Spider # Crawling # Use gospider or hakrawler. Personally, I found out hakrawler yields better results
-# https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &gt; spider.txt cat spider.txt | grep -o -E &#34;(([a-zA-Z][a-zA-Z0-9&#43;-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;\/\?\:@\&#43;-\_=#%;,])*&#34; | grep &#34;example.com&#34; &gt;&gt; links.txt # hakrawler cat hosts | hakrawler -t 20 Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.">
+hakrawler # # go install github.com/hakluke/hakrawler@latest cat hosts | hakrawler -t 20 Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Spider # Crawling # Use gospider or hakrawler. Personally, I found out hakrawler yields better results
-# https://github.com/jaeles-project/gospider gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &gt; spider.txt cat spider.txt | grep -o -E &#34;(([a-zA-Z][a-zA-Z0-9&#43;-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;\/\?\:@\&#43;-\_=#%;,])*&#34; | grep &#34;example.com&#34; &gt;&gt; links.txt # hakrawler cat hosts | hakrawler -t 20 Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info." />
+hakrawler # # go install github.com/hakluke/hakrawler@latest cat hosts | hakrawler -t 20 Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/spider/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f80b829ea6d5ebd53de4c9430b5a77f4251464743543063d06844301868baef2.js" integrity="sha256-&#43;AuCnqbV69U95MlDC1p39CUUZHQ1QwY9BoRDAYaLrvI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.a20c1b2e3444c7336d6bfd36d74ece1b53583e7cec094d896ab100ee17d50e00.js" integrity="sha256-ogwbLjRExzNta/02107OG1NYPnzsCU2JarEA7hfVDgA=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -79,7 +79,7 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="/docs/recon/asncidr/">ASN/CIDR</a></p>
 </li>
 <li>
-<p><a href="/docs/recon/subdomainenum/subdomainenum/">Subdomain Enumeration</a></p>
+<p>Subdomain Enumeration</p>
 <ul>
 <li><a href="/docs/recon/subdomainenum/subdomainenum_passive/">Passive</a></li>
 <li><a href="/docs/recon/subdomainenum/subdomainenum_active/">Active</a></li>
@@ -153,7 +153,6 @@ https://github.com/alex-shpak/hugo-book
 <p>Vulnerabilities</p>
 <ul>
 <li><a href="/docs/exploitation/cachepoisoning/">Cache poisoning</a></li>
-<li><a href="/docs/exploitation/codeexecution/">Code Execution</a></li>
 <li><a href="/docs/exploitation/clickjacking/">Clickjacking</a></li>
 <li><a href="/docs/exploitation/commandinjection/">Command Injection</a></li>
 <li><a href="/docs/exploitation/cookieattacks/">Cookie Based Attacks</a></li>
@@ -271,6 +270,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#spider">Spider</a>
       <ul>
         <li><a href="#crawling">Crawling</a></li>
+        <li><a href="#hakrawler">hakrawler</a></li>
         <li><a href="#check-if-hostspaths-are-valid">Check if hosts/paths are valid</a></li>
         <li><a href="#find-records">Find records</a></li>
         <li><a href="#robots">Robots</a></li>
@@ -297,10 +297,11 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#crawling">#</a>
 </h2>
 <p>Use gospider or hakrawler. Personally, I found out hakrawler yields better results</p>
-<pre tabindex="0"><code># https://github.com/jaeles-project/gospider
-gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r &gt; spider.txt
-cat spider.txt | grep -o -E &#34;(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&amp;\/\?\:@\+-\_=#%;,])*&#34; | grep &#34;example.com&#34; &gt;&gt; links.txt
-</code></pre><pre tabindex="0"><code># hakrawler
+<h2 id="hakrawler">
+  hakrawler
+  <a class="anchor" href="#hakrawler">#</a>
+</h2>
+<pre tabindex="0"><code># go install github.com/hakluke/hakrawler@latest
 cat hosts | hakrawler -t 20
 </code></pre><h2 id="check-if-hostspaths-are-valid">
   Check if hosts/paths are valid
@@ -363,6 +364,7 @@ cat subdomains | roboxtractor -m 0 -wb
     <li><a href="#spider">Spider</a>
       <ul>
         <li><a href="#crawling">Crawling</a></li>
+        <li><a href="#hakrawler">hakrawler</a></li>
         <li><a href="#check-if-hostspaths-are-valid">Check if hosts/paths are valid</a></li>
         <li><a href="#find-records">Find records</a></li>
         <li><a href="#robots">Robots</a></li>

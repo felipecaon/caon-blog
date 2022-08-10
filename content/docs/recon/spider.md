@@ -5,14 +5,10 @@
 
 Use gospider or hakrawler. Personally, I found out hakrawler yields better results
 
-```
-# https://github.com/jaeles-project/gospider
-gospider -S subdomains.txt --js -t 20 -d 5 --sitemap --robots -r > spider.txt
-cat spider.txt | grep -o -E "(([a-zA-Z][a-zA-Z0-9+-.]*\:\/\/)|mailto|data\:)([a-zA-Z0-9\.\&\/\?\:@\+-\_=#%;,])*" | grep "example.com" >> links.txt
-```
+## hakrawler
 
 ```
-# hakrawler
+# go install github.com/hakluke/hakrawler@latest
 cat hosts | hakrawler -t 20
 ```
 

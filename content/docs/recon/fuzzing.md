@@ -24,7 +24,6 @@ ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u "https://ex
 ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v
 
 # Cool ffuf flags
-
 -ac: Calibrate requests to unmatch false positives
 -recursion: recursion
 -se: Stop on erors
