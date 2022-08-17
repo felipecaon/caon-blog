@@ -74,9 +74,10 @@ headless: true
 	- [Payment]({{< relref "/docs/exploitation/workflows/payment" >}})
 
 - Other
-	- [Password Brute Force]({{< relref "/docs/exploitation/passwordbruteforce" >}})
-	- [Javascript Analysys]({{< relref "/docs/exploitation/javascriptfiles" >}})
-	- [Web technologies]({{< relref "/docs/exploitation/webtech" >}})
+	- [Password Brute Force]({{< relref "/docs/exploitation/other/passwordbruteforce" >}})
+	- [Javascript Analysys]({{< relref "/docs/exploitation/other/javascriptfiles" >}})
+	- [UUID]({{< relref "/docs/exploitation/other/uuid" >}})
+	- [Web technologies]({{< relref "/docs/exploitation/other/webtech" >}})
 
 <br />
 

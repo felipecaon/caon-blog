@@ -249,21 +249,6 @@ Add parameters into the endpoints # GET /api_v1/messages --&amp;gt; 401 vs GET /
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/exploitation/javascriptfiles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/javascriptfiles/</guid>
-      <description>Javascript Files # Linters # JSHint Download # getJS
-Download all js files for each site https://github.com/003random/getJS
-JSScanner
-Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
-JSBeat
-Download all js files for each site and beautify: https://github.com/felipecaon/BugBountyStuff/blob/main/scripts/jsbeat.py
-Way Back Machine # Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://caon.io/docs/exploitation/lfi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -291,6 +276,50 @@ https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rd
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/exploitation/other/javascriptfiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/other/javascriptfiles/</guid>
+      <description>Javascript Files # Linters # JSHint Download # getJS
+Download all js files for each site https://github.com/003random/getJS
+JSScanner
+Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
+JSBeat
+Download all js files for each site and beautify: https://github.com/felipecaon/BugBountyStuff/blob/main/scripts/jsbeat.py
+Way Back Machine # Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/other/passwordbruteforce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/other/passwordbruteforce/</guid>
+      <description>Password Bruteforcing # Hash identify # # https://github.com/noraj/haiti haiti hash Test for default credentials # # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra # Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
+General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;#34;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;#34; Wordpress # Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/other/uuid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/other/uuid/</guid>
+      <description>UUID # V1 # V1 UUIDs are not that unique, UUIDv1 contains sequences that can be guessed.
+Since the first chunks are timestamps, one can bruteforce possibilities in between two known values, guessing the right one.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/other/webtech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/other/webtech/</guid>
+      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/exploitation/parameterpollution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -299,16 +328,6 @@ https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rd
 Take http://example.com?username=foo&amp;amp;username=bar as an example.
 PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS uses all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
 Social Media Share Links # Often a websites offers its user a feature to share a given page in social media.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/passwordbruteforce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/passwordbruteforce/</guid>
-      <description>Password Bruteforcing # Hash identify # # https://github.com/noraj/haiti haiti hash Test for default credentials # # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra # Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
-General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;#34;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;#34; Wordpress # Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
     </item>
     
     <item>
@@ -387,15 +406,6 @@ WAF Community Bypasses
 Known Bypasses
 How to bypass wafs
 # https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites # https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/ Quick Techniques # Given domain.com, try to access:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/webtech/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/webtech/</guid>
-      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.</description>
     </item>
     
     <item>

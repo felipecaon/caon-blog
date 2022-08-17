@@ -6,47 +6,34 @@
     <description>Recent content in Blog on caon.io</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://caon.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://caon.io/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>How to create strong passwords that are easy to remember</title>
+      <link>https://caon.io/posts/passwords/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/posts/creating-a-new-theme/</guid>
-      <description>Introduction # This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>https://caon.io/posts/passwords/</guid>
+      <description>I’m sure you have already heard about password managers and how you should use them on a daily bases because it is practically impossible to remember passwords for every service you may own.
+And yes, you should have a different password for every service you use, that’s a fact.
+If you haven’t heard about password managers take a minute to learn more about it, this Wikipedia article provides everything you need to know: https://en.</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://caon.io/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>How to find someone across social media networks</title>
+      <link>https://caon.io/posts/find-someone-social-media/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static # Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>https://caon.io/posts/find-someone-social-media/</guid>
+      <description>Online awareness is important. In the last twenty years the internet evolved to something that is way bigger than their initial purpose and here we are.
+We used it every day for everything and most of us don’t even care about what we do online or what possible outcomes can appear after doing something.
+This article focuses on your online identity, specifically in your social network presence. Are you doing it right?</description>
     </item>
     
     <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://caon.io/posts/goisforlovers/</link>
+      <title>Skeleton</title>
+      <link>https://caon.io/posts/example/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://caon.io/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:</description>
+      <guid>https://caon.io/posts/example/</guid>
+      <description>Skeleton</description>
     </item>
     
   </channel>
