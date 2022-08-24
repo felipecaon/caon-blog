@@ -6,8 +6,8 @@ headless: true
 - [Scope]({{< relref "/docs/recon/scope" >}})
 - [ASN/CIDR]({{< relref "/docs/recon/asncidr" >}}) 
 - Subdomain Enumeration
-	- [Passive]({{< relref "/docs/recon/subdomainenum/subdomainenum_passive" >}})
-	- [Active]({{< relref "/docs/recon/subdomainenum/subdomainenum_active" >}})
+	- [Passive]({{< relref "/docs/recon/subdomain/passive" >}})
+	- [Active]({{< relref "/docs/recon/subdomain/active" >}})
 - [Port Scan]({{< relref "/docs/recon/portscan" >}})
 - [Probing]({{< relref "/docs/recon/probing" >}})
 - [Screenshot]({{< relref "/docs/recon/screenshot" >}})

@@ -5,7 +5,7 @@ type: docs
 
 # Welcome
 
-This is my page where I share knowledge, this book contains mostly stuff about appsec that may be helpful for bug bounty hunters out there.
+This site contains mostly stuff about appsec that may be helpful for read teamers or bug bounty hunters out there.
 
 Everything written in here and in the following pages was acquired by reading articles, books, watching videos and talks. None of this is exclusive, if you want to copy, feel free.
 
@@ -13,7 +13,7 @@ Everything written in here and in the following pages was acquired by reading ar
 
 Before jumping into "advanced" stuff, it is a good idea to understand the basics of applications, data manipulation, servers ...
 
-Hacking is like building a house, you need foundation before making the roof.
+Hacking is like building a house, you need to construct a foundation before making the roof.
 
 - [Dev Hints](https://devhints.io/)
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
@@ -42,14 +42,3 @@ Sources to keep you informed about sec world
 # Get a Server!
 
 - https://www.oracle.com/cloud/ offers a free for life ARM server, change `Image` to use `Oracle Linux` and `Shape` to be `Ampere` processors with max configuration (4 CPUs, 24GB)
-
------
-
-```
-Escalate everything you find!
-Don't report SSRF, Escalate to RCE.
-Don't report Self-XSS, Chain it with Clickjacking.
-Don't report Self-Stored XSS, Chain it with CSRF.
-Don't report Information Disclosure, try to use it (Privileges Escalation).
-Don't report Open Redirect, Escalate it to ATO.
-```

@@ -6,7 +6,6 @@ There are two tools that I prefer when doing param scanning. X8, which is a tool
 
 ```
 # https://github.com/Sh1Yo/x8
-
 x8 -u "https://example.com/" -w <wordlist>
 ```
 
@@ -14,7 +13,6 @@ x8 -u "https://example.com/" -w <wordlist>
 
 ```
 # https://github.com/s0md3v/Arjun
-
 arjun -u https://target.com/ -w <wordlist>
 ```
 
@@ -31,7 +29,6 @@ Given a list with crawled urls, grep the ones that have known parameters and get
 
 ```
 # https://github.com/tomnomnom/unfurl
-
 cat list.txt | grep "=" | unfurl format %d%p 
 ```
 

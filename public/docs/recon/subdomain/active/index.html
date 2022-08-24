@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content=" Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+Get resolvers at:
+# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://caon.io/categories/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content=" Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+Get resolvers at:
+# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://caon.io/docs/recon/subdomain/active/" /><meta property="article:section" content="docs" />
 
-<title>Categories | caon.io</title>
+
+
+<title>Active | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -27,7 +33,6 @@ if (!doNotTrack) {
 	gtag('config', 'G-92BCSZTKCE', { 'anonymize_ip': false });
 }
 </script>
-<link rel="alternate" type="application/rss+xml" href="https://caon.io/categories/index.xml" title="caon.io" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -79,7 +84,7 @@ https://github.com/alex-shpak/hugo-book
 <p>Subdomain Enumeration</p>
 <ul>
 <li><a href="/docs/recon/subdomain/passive/">Passive</a></li>
-<li><a href="/docs/recon/subdomain/active/">Active</a></li>
+<li><a href="/docs/recon/subdomain/active/"class=active>Active</a></li>
 </ul>
 </li>
 <li>
@@ -249,7 +254,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Categories</strong>
+  <strong>Active</strong>
 
   <label for="toc-control">
     
@@ -262,44 +267,18 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#active-resources">Active Resources</a>
       <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/tips/">tips</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/OSINT/">OSINT</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/skeleton/">skeleton</a>
-          <span>1</span>
-        </li>
-      
+        <li><a href="#pure-dns">Pure DNS</a></li>
+        <li><a href="#permutations">Permutations</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
 
 
   </aside>
@@ -309,69 +288,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/categories/tips/">tips</a>
-    </h2>
-    
-  <h5>September 3, 2019</h5>
+  <article class="markdown"><h1 id="active-resources">
+  Active Resources
+  <a class="anchor" href="#active-resources">#</a>
+</h1>
+<p>The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.</p>
+<p>Get resolvers at:</p>
+<pre tabindex="0"><code># https://github.com/felipecaon/resolvers
+wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt
+</code></pre><h2 id="pure-dns">
+  Pure DNS
+  <a class="anchor" href="#pure-dns">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/d3mondev/puredns
+puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains
 
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/categories/OSINT/">OSINT</a>
-    </h2>
-    
-  <h5>March 9, 2019</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/categories/skeleton/">skeleton</a>
-    </h2>
-    
-  <h5>April 2, 2014</h5>
-
-
-
-  
-
-  
-
-
-
-
-    <p>
-    </p>
-  </article>
-  
-
-  
+puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains
+</code></pre><h2 id="permutations">
+  Permutations
+  <a class="anchor" href="#permutations">#</a>
+</h2>
+<pre tabindex="0"><code># https://github.com/Josue87/gotator
+gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md
+</code></pre></article>
  
       
 
@@ -405,44 +344,18 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#active-resources">Active Resources</a>
       <ul>
-      
-        <li class="flex justify-between">
-          <a href="/categories/tips/">tips</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/OSINT/">OSINT</a>
-          <span>1</span>
-        </li>
-      
-        <li class="flex justify-between">
-          <a href="/categories/skeleton/">skeleton</a>
-          <span>1</span>
-        </li>
-      
+        <li><a href="#pure-dns">Pure DNS</a></li>
+        <li><a href="#permutations">Permutations</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
   </ul>
 </nav>
+
 
  
       </div>

@@ -19,7 +19,7 @@ X8 # # https://github.com/Sh1Yo/x8 x8 -u &#34;https://example.com/&#34; -w &lt;w
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.78f7e43fd6453d84fe806620707d7d28f28882fef44723e9d743d854973b7805.js" integrity="sha256-ePfkP9ZFPYT&#43;gGYgcH19KPKIgv70RyPp10PYVJc7eAU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.11c08950a6b09822df4ac5871dd660d50d7d0f780ec00dac86b4a8335014fd92.js" integrity="sha256-EcCJUKawmCLfSsWHHdZg1Q19D3gOwA2shrSoM1AU/ZI=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -81,8 +81,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>Subdomain Enumeration</p>
 <ul>
-<li><a href="/docs/recon/subdomainenum/subdomainenum_passive/">Passive</a></li>
-<li><a href="/docs/recon/subdomainenum/subdomainenum_active/">Active</a></li>
+<li><a href="/docs/recon/subdomain/passive/">Passive</a></li>
+<li><a href="/docs/recon/subdomain/active/">Active</a></li>
 </ul>
 </li>
 <li>
@@ -298,14 +298,12 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#x8">#</a>
 </h2>
 <pre tabindex="0"><code># https://github.com/Sh1Yo/x8
-
 x8 -u &#34;https://example.com/&#34; -w &lt;wordlist&gt;
 </code></pre><h2 id="arjun">
   Arjun
   <a class="anchor" href="#arjun">#</a>
 </h2>
 <pre tabindex="0"><code># https://github.com/s0md3v/Arjun
-
 arjun -u https://target.com/ -w &lt;wordlist&gt;
 </code></pre><pre tabindex="0"><code>arjun -i urls.txt -oT output -m GET
 arjun -i urls.txt -oT output -m POST
@@ -317,7 +315,6 @@ arjun -i urls.txt -oT output -m POST-XML
 </h2>
 <p>Given a list with crawled urls, grep the ones that have known parameters and get only the url</p>
 <pre tabindex="0"><code># https://github.com/tomnomnom/unfurl
-
 cat list.txt | grep &#34;=&#34; | unfurl format %d%p 
 </code></pre><h2 id="feed-discovered-parameters-back-to-a-param-list">
   Feed discovered parameters back to a param list

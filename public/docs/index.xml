@@ -365,9 +365,9 @@ Tools # HTTP Request Smuggler, Burp extension # https://github.com/defparam/smug
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/sqli/</guid>
-      <description>SQLi # sqlmap # https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 Temper # The ability to create payloads that can bypass waf
+      <description>SQLi # sqlmap # https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 # headers sqlmap --headers=&amp;#34;HEADER&amp;#34; Temper # The ability to create payloads that can bypass waf
 https://github.com/m4ll0k/Atlas Example:
---tamper=&amp;#34;between,randomcase&amp;#34; Tricks # Sometimes sites append an extra (&amp;rsquo;) character in injection. It is possible to bypass this behavior by abusing UTF-8.</description>
+--tamper=&amp;#34;between,randomcase&amp;#34; Tricks # Sometimes sites append an extra (&amp;rsquo;) character in injection.</description>
     </item>
     
     <item>
@@ -489,7 +489,7 @@ X8 # # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/portscan/</guid>
-      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat list | naabu -top-ports 100 -ep 80,443,8080,8443 cat list | naabu -silent echo example.com | naabu -nmap-cli &amp;#39;nmap -sC -sV -oX nmap-output&amp;#39; </description>
+      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
     </item>
     
     <item>
@@ -500,7 +500,7 @@ X8 # # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; 
       <guid>https://caon.io/docs/recon/probing/</guid>
       <description>Probing # Validates a list of urls, checks to see if they are alive or not.
 httpX # # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!
-For some reason httpx fails to retrieve good working urls. It is recommended to run httpx more than once in a list to achieve better results.</description>
+For some reason httpx fails to retrieve all good working urls. It is recommended to run httpx more than once to achieve better results.</description>
     </item>
     
     <item>
@@ -509,7 +509,7 @@ For some reason httpx fails to retrieve good working urls. It is recommended to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/scope/</guid>
-      <description>Scope # An scope can be defined as the limits of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+      <description>Scope # A scope can be defined as of the limit of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 Example of scope
 In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
 Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid.</description>
@@ -524,7 +524,7 @@ Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) s
       <description> Screenshot # For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
 Hold down!
 A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
-GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; --disable-logging </description>
+GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; </description>
     </item>
     
     <item>
@@ -539,10 +539,10 @@ hakrawler # # go install github.com/hakluke/hakrawler@latest cat hosts | hakrawl
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</link>
+      <link>https://caon.io/docs/recon/subdomain/active/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_active/</guid>
+      <guid>https://caon.io/docs/recon/subdomain/active/</guid>
       <description> Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
 # https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
@@ -550,11 +550,11 @@ Get resolvers at:
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</link>
+      <link>https://caon.io/docs/recon/subdomain/passive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/docs/recon/subdomainenum/subdomainenum_passive/</guid>
-      <description>Passive Resources # A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
+      <guid>https://caon.io/docs/recon/subdomain/passive/</guid>
+      <description>Passive Resources # A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
 # https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script # amass enum -passive -d domain.</description>
     </item>
     

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat list | naabu -top-ports 100 -ep 80,443,8080,8443 cat list | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; ">
+<meta name="description" content=" Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com naabu -list hosts.txt cat list | naabu -top-ports 100 -ep 80,443,8080,8443 cat list | naabu -silent echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39; " />
+<meta property="og:description" content=" Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/recon/portscan/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.78f7e43fd6453d84fe806620707d7d28f28882fef44723e9d743d854973b7805.js" integrity="sha256-ePfkP9ZFPYT&#43;gGYgcH19KPKIgv70RyPp10PYVJc7eAU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.11c08950a6b09822df4ac5871dd660d50d7d0f780ec00dac86b4a8335014fd92.js" integrity="sha256-EcCJUKawmCLfSsWHHdZg1Q19D3gOwA2shrSoM1AU/ZI=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -79,8 +79,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>Subdomain Enumeration</p>
 <ul>
-<li><a href="/docs/recon/subdomainenum/subdomainenum_passive/">Passive</a></li>
-<li><a href="/docs/recon/subdomainenum/subdomainenum_active/">Active</a></li>
+<li><a href="/docs/recon/subdomain/passive/">Passive</a></li>
+<li><a href="/docs/recon/subdomain/active/">Active</a></li>
 </ul>
 </li>
 <li>
@@ -307,10 +307,7 @@ nmap example.com
 </h2>
 <pre tabindex="0"><code># https://github.com/projectdiscovery/naabu
 naabu -p 80,443,21-23 -host example.com
-naabu -list hosts.txt
 cat list | naabu -top-ports 100 -ep 80,443,8080,8443
-cat list | naabu -silent
-echo example.com | naabu -nmap-cli &#39;nmap -sC -sV -oX nmap-output&#39;
 </code></pre></article>
  
       

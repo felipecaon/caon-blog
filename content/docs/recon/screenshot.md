@@ -10,5 +10,5 @@ A browser must be installed prior using an screenshotter. Chrome or chromium is 
 
 ```
 # https://github.com/sensepost/gowitness
-gowitness file -f websites.txt -t <threads> --disable-logging
+gowitness file -f websites.txt -t <threads> 
 ```

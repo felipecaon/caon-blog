@@ -1,6 +1,6 @@
 # Passive Resources
 
-A passive resource means that you will grab subdomains that were already discovered from another tools or were registered in some place.
+A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
 
 ```
 # https://github.com/OWASP/Amass
