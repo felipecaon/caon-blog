@@ -2,8 +2,7 @@
 
 | Website | Description | 
 | --- | --- |
-| https://www.utf8-chartable.de/ | UTF-8 Tabel |
-| https://osintframework.com/ | Collecion of OSINT tools |
+| https://www.utf8-chartable.de/ | UTF-8 Table |
 | https://grep.app/ | Grep over multiple github repositories | 
 | https://publicwww.com/ | Grep over multiple websites source codes | 
 | https://www.degraeve.com/reference/urlencoding.php | List of URL encoded characters |   

@@ -42,3 +42,5 @@ curl URL -x http://127.0.0.1:8080
 - [Payload Processing Rule in Burp suite (Part 2)](https://www.hackingarticles.in/payload-processing-rule-burp-suite-part-2/)
 - [Beginners Guide to Burpsuite Payloads (Part 1)](https://www.hackingarticles.in/beginners-guide-burpsuite-payloads-part-1/)
 - [Beginners Guide to Burpsuite Payloads (Part 2)](https://www.hackingarticles.in/beginners-guide-burpsuite-payloads-part-2/)
+- [How to burp good](https://www.n00py.io/2017/10/how-to-burp-good/)
+- [Using burp session handling rules](https://portswigger.net/support/using-burp-suites-session-handling-rules-with-anti-csrf-tokens)

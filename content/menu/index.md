@@ -29,7 +29,6 @@ headless: true
 	- [WAF Bypass]({{< relref "/docs/exploitation/wafbypass" >}})
 
 - Authentication
-	- [Authentication Types]({{< relref "/docs/exploitation/auths/typesofauth" >}})
 	- [JWT]({{< relref "/docs/exploitation/auths/jwt" >}})
 	- [OAuth 2]({{< relref "/docs/exploitation/auths/oauth" >}})
 	- [2FA Auth]({{< relref "/docs/exploitation/auths/twofa" >}})
@@ -42,9 +41,8 @@ headless: true
 
 - CMS
 	- [Drupal]({{< relref "/docs/exploitation/cms/drupal" >}})	
-	- [Joomla]({{< relref "/docs/exploitation/cms/joomla" >}})
-	- [Magento]({{< relref "/docs/exploitation/cms/magento" >}})
 	- [Wordpress]({{< relref "/docs/exploitation/cms/wordpress" >}})
+	- [Others]({{< relref "/docs/exploitation/cms/others" >}})
 
 - Vulnerabilities
 	- [Cache poisoning]({{< relref "/docs/exploitation/cachepoisoning" >}})
@@ -59,6 +57,7 @@ headless: true
 	- [IDOR]({{< relref "/docs/exploitation/idor" >}})
 	- [LFI]({{< relref "/docs/exploitation/lfi" >}})
 	- [Open Redirect]({{< relref "/docs/exploitation/openredirect" >}})
+        - [Path Transversal]({{< relref "/docs/exploitation/pathtransversal >}})
 	- [Parameter Pollution]({{< relref "/docs/exploitation/parameterpollution" >}})
 	- [Prototype Pollution]({{< relref "/docs/exploitation/prototypepollution" >}})
 	- [Request Smuggling]({{< relref "/docs/exploitation/requestsmuggling" >}})
