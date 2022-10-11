@@ -21,7 +21,7 @@ XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/403bypass/</guid>
-      <description> 403 Bypass # # https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com </description>
+      <description> 403 Bypass # # https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com # https://github.com/devploit/dontgo403 dontgo403 -u https://example.com </description>
     </item>
     
     <item>
@@ -31,7 +31,8 @@ XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary
       
       <guid>https://caon.io/docs/exploitation/auths/jwt/</guid>
       <description>JWT # Change algorithm to None # Sometimes APIs don&amp;rsquo;t check for JWT encryption. None algorithm allows an attacker to craft a malicious JWT token to escalate privileges.
-B64 None: eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0</description>
+B64 None: eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0
+JWT Injection # Sometimes applications reflect data that is stored inside the token, try to create accounts with malicious payloads</description>
     </item>
     
     <item>
@@ -52,7 +53,7 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/auths/saml/</guid>
-      <description> SAML # https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf </description>
+      <description> SAML # https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf https://docs.google.com/presentation/d/1ngp3Mq8y2h2xwGKqkOhI1ePUQxvXTNO1Xhs1kaBJmqU/edit#slide=id.g14623ab8ca8_0_51 </description>
     </item>
     
     <item>
@@ -61,16 +62,7 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/auths/twofa/</guid>
-      <description> Two factor Authentication # Bypasses # Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/auths/typesofauth/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/auths/typesofauth/</guid>
-      <description> Authentication Types # Basic Auth (B64) # Authorization: Basic AXVubzpwQDU1dzByYM== Bearer Token (JWT) # Authorization: Bearer &amp;lt;token&amp;gt; API Key # GET /endpoint?api_key=abcdefgh123456789 X-API-Key: abcdefgh123456789 Digest Auth # Authorization: Digest username=&amp;#34;admin&amp;#34; Realm=&amp;#34;abcxyz&amp;#34; nonce=&amp;#34;474754847743646&amp;#34;, uri=&amp;#34;/uri&amp;#34; response=&amp;#34;7cffhfr54685gnnfgerg8&amp;#34; OAuth2.0 # Authorization: Bearer hY_9.B5f-4.1BfE Hawk Authentication # Authorization: Hawk id=&amp;#34;abcxyz123&amp;#34;, ts=&amp;#34;1592459563&amp;#34;, nonce=&amp;#34;gWqbkw&amp;#34;, mac=&amp;#34;vxBCccCutXGV30gwEDKu1NDXSeqwfq7Z0sg/HP1HjOU=&amp;#34; AWS signature # Authorization: AWS4-HMAC-SHA256 Credential=abc/20200618/us-east-1/execute-api/aws4_ SAML # SAMLRequest=wEXSeqwfDKu1NDXSeqwfq7Zfq7Z... </description>
+      <description>Two factor Authentication # Bypasses # Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp Open ID # acr_values can be manipulated as peeer RFC.</description>
     </item>
     
     <item>
@@ -102,7 +94,7 @@ https://securityheaders.com/ POC # &amp;lt;iframe src=&amp;#34;https://example.c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/aws/</guid>
-      <description> Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity poolis enabled it is possible to gather a temporary token
+      <description> Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity pool is enabled it is possible to gather a temporary token
 https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
 Found secrets? # Use those secrets in aws CLI Collection of privilege escalation by misconfiguration # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/ </description>
     </item>
@@ -113,7 +105,8 @@ Found secrets? # Use those secrets in aws CLI Collection of privilege escalation
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/azure/</guid>
-      <description> Microsoft Azure # </description>
+      <description> Microsoft Azure # azureedge takeover
+https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/ </description>
     </item>
     
     <item>
@@ -122,14 +115,14 @@ Found secrets? # Use those secrets in aws CLI Collection of privilege escalation
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/google/</guid>
-      <description>Google GCP # PriveEsc in GCP environments # https://infosecwriteups.com/enumeration-and-lateral-movement-in-gcp-environments-c3b82d342794 Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
+      <description>Google GCP # Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
 Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
 Misconfigs in Google Identity Google Storage # Check what permissions the bucket has:
-https://github.com/RhinoSecurityLabs/GCPBucketBrute/blob/master/gcpbucketbrute.py
+https://github.com/RhinoSecurityLabs/GCPBucketBrute
 If the site ends in appspot.com, bucket can be accessed in:
 https://storage.googleapis.com/&amp;lt;site_url&amp;gt;
-Hunting GCP Buckets Firebase # Pyrebase Add a .</description>
+Hunting GCP Buckets Firebase # Pyrebase Add a .json to the end of a firebaseio url, it may leak the database.</description>
     </item>
     
     <item>
@@ -143,20 +136,11 @@ Hunting GCP Buckets Firebase # Pyrebase Add a .</description>
     
     <item>
       <title></title>
-      <link>https://caon.io/docs/exploitation/cms/joomla/</link>
+      <link>https://caon.io/docs/exploitation/cms/others/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/docs/exploitation/cms/joomla/</guid>
-      <description> Joomla # joomscan </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/exploitation/cms/magento/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/exploitation/cms/magento/</guid>
-      <description> Magento # magescan </description>
+      <guid>https://caon.io/docs/exploitation/cms/others/</guid>
+      <description> Joomla # joomscan Magento # magescan </description>
     </item>
     
     <item>
@@ -306,7 +290,8 @@ General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p 
       
       <guid>https://caon.io/docs/exploitation/other/uuid/</guid>
       <description>UUID # V1 # V1 UUIDs are not that unique, UUIDv1 contains sequences that can be guessed.
-Since the first chunks are timestamps, one can bruteforce possibilities in between two known values, guessing the right one.</description>
+Since the first chunks are timestamps, one can bruteforce possibilities in between two known values, guessing the right one.
+https://github.com/felipecaon/uuidv1gen</description>
     </item>
     
     <item>
@@ -328,6 +313,18 @@ Since the first chunks are timestamps, one can bruteforce possibilities in betwe
 Take http://example.com?username=foo&amp;amp;username=bar as an example.
 PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS uses all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
 Social Media Share Links # Often a websites offers its user a feature to share a given page in social media.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/docs/exploitation/pathtransversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/exploitation/pathtransversal/</guid>
+      <description>Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252f -&amp;gt; %2e -&amp;gt; .
+Payloads # ..;/ ..%5c ..%2f ../ ..
+..%252f %2e%2e%252f / // /// //// ///// ////// /////// //////// ///////// //////////
+Files # env etc/passwd Windows/win.ini</description>
     </item>
     
     <item>
@@ -402,10 +399,8 @@ http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data
       <guid>https://caon.io/docs/exploitation/wafbypass/</guid>
       <description>WAF Bypass Techniques # Try to find real IP address instead of TLD domain, see IP history websites section
 Awesome WAF
-WAF Community Bypasses
-Known Bypasses
 How to bypass wafs
-# https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites # https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/ Quick Techniques # Given domain.com, try to access:</description>
+# https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites # https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/ Quick Techniques # Given domain.com, try to subdomains that reflect the main application but are not protected:</description>
     </item>
     
     <item>
@@ -601,7 +596,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/regexes/</guid>
-      <description> Regexes # Subdomain level extraction # Regex pattern Domain level match </description>
+      <description> Regexes # Regex pattern Description Site About https://www.autoregex.xyz/ Generate based on text </description>
     </item>
     
     <item>
@@ -619,7 +614,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description> Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups </description>
+      <description> Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts </description>
     </item>
     
     <item>
@@ -628,7 +623,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/tools/</guid>
-      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Tabel https://osintframework.com/ Collecion of OSINT tools https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
+      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
     </item>
     
     <item>
@@ -637,7 +632,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/writeups/</guid>
-      <description> Write Ups # WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://www.xmind.net/m/2FwJ7D/ Cookie based authentication issues https://hbothra22.medium.com/attacking-social-logins-pre-authentication-account-takeover-790248cfdc3 Pre-Takeover using social logins https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
+      <description> Write Ups # WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
     </item>
     
     <item>
