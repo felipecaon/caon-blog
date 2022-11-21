@@ -19,6 +19,8 @@ Hacking is like building a house, you need to construct a foundation before maki
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
 - [Blue Teaming](https://www.blueteamsacademy.com/)
 - [The first rule](https://sol.gfxile.net/dontask.html)
+- [Security Checklist](https://www.appsecmonkey.com/blog/web-application-security-checklist)
+- [The Six Dumbest Ideas](https://www.ranum.com/security/computer_security/editorials/dumb/)
 
 # Want to start bug bounty?
 

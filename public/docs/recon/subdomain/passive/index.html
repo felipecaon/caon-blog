@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ff405ba411c4560a177148112bfd480e925125169bc7d96d4f87c436bae1e2c8.js" integrity="sha256-/0BbpBHEVgoXcUgRK/1IDpJRJRabx9ltT4fENrrh4sg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2f2b6f0f63152b56b956b6e889aefcefc6c0c3b8e3ec5e63b1128273eee3b3ed.js" integrity="sha256-LytvD2MVK1a5Vrboia7878bAw7jj7F5jsRKCc&#43;7js&#43;0=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -275,6 +275,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#all-in-one-script">All in one script</a></li>
         <li><a href="#third-party-websites">Third party websites</a></li>
         <li><a href="#google-analytics-id">Google analytics ID</a></li>
+        <li><a href="#google-tag-manager">Google Tag Manager</a></li>
         <li><a href="#favicon">Favicon</a></li>
       </ul>
     </li>
@@ -314,21 +315,21 @@ gau --subs example.com | unfurl -u domains
   All in one script
   <a class="anchor" href="#all-in-one-script">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span>amass enum -passive -d domain.com -o amass_$1.txt &gt; /dev/null 2&gt;&amp;1
-</span></span><span style="display:flex;"><span>echo &#34;[+] Amass done&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>subfinder -silent -d $1 -all -o subfinder_$1.txt &gt; /dev/null 2&gt;&amp;1
-</span></span><span style="display:flex;"><span>echo &#34;[+] Subfinder done&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>findomain -t $1 -u findomain_$1.txt &gt; /dev/null 2&gt;&amp;1
-</span></span><span style="display:flex;"><span>echo &#34;[+] Findomain done&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>assetfinder -subs-only $1 &gt; assetfinder_$1.txt
-</span></span><span style="display:flex;"><span>echo &#34;[+] Assetfinder done&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>cat subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
-</span></span><span style="display:flex;"><span>rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
-</span></span></code></pre></div><h2 id="third-party-websites">
+<pre tabindex="0"><code>amass enum -passive -d domain.com -o amass_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Amass done&#34;
+
+subfinder -silent -d $1 -all -o subfinder_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Subfinder done&#34;
+
+findomain -t $1 -u findomain_$1.txt &gt; /dev/null 2&gt;&amp;1
+echo &#34;[+] Findomain done&#34;
+
+assetfinder -subs-only $1 &gt; assetfinder_$1.txt
+echo &#34;[+] Assetfinder done&#34;
+
+cat subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
+rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
+</code></pre><h2 id="third-party-websites">
   Third party websites
   <a class="anchor" href="#third-party-websites">#</a>
 </h2>
@@ -352,6 +353,11 @@ gau --subs example.com | unfurl -u domains
 </ul>
 <pre tabindex="0"><code># https://github.com/Josue87/AnalyticsRelationships
 cat subdomains.txt | analyticsrelationships
+</code></pre><h2 id="google-tag-manager">
+  Google Tag Manager
+  <a class="anchor" href="#google-tag-manager">#</a>
+</h2>
+<pre tabindex="0"><code>https://googletagmanager.com/gtm.js?id=TAGID
 </code></pre><h2 id="favicon">
   Favicon
   <a class="anchor" href="#favicon">#</a>
@@ -403,6 +409,7 @@ cat subdomains.txt | analyticsrelationships
         <li><a href="#all-in-one-script">All in one script</a></li>
         <li><a href="#third-party-websites">Third party websites</a></li>
         <li><a href="#google-analytics-id">Google analytics ID</a></li>
+        <li><a href="#google-tag-manager">Google Tag Manager</a></li>
         <li><a href="#favicon">Favicon</a></li>
       </ul>
     </li>

@@ -167,7 +167,7 @@ https://securityheaders.com/ POC # &amp;lt;iframe src=&amp;#34;https://example.c
       <guid>https://caon.io/docs/exploitation/cloud/aws/</guid>
       <description> Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity pool is enabled it is possible to gather a temporary token
 https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
-Found secrets? # Use those secrets in aws CLI Collection of privilege escalation by misconfiguration # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/ </description>
+Found secrets? # Use those secrets in aws CLI Collection of privilege escalation by misconfiguration # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/ Bucket Decloaker # https://gist.github.com/fransr/a155e5bd7ab11c93923ec8ce788e3368 </description>
     </item>
     
     <item>
@@ -279,7 +279,7 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/deserialization/</guid>
-      <description></description>
+      <description> Deseralization # Java # https://www.slideshare.net/codewhitesec/java-deserialization-vulnerabilities-the-forgotten-bug-class </description>
     </item>
     
     <item>
@@ -371,7 +371,7 @@ https://github.com/felipecaon/uuidv1gen</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/other/webtech/</guid>
-      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.</description>
+      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion # https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.</description>
     </item>
     
     <item>
@@ -392,10 +392,31 @@ Social Media Share Links # Often a websites offers its user a feature to share a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/pathtransversal/</guid>
-      <description>Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252f -&amp;gt; %2e -&amp;gt; .
-Payloads # ..;/ ..%5c ..%2f ../ ..
-..%252f %2e%2e%252f / // /// //// ///// ////// /////// //////// ///////// //////////
-Files # env etc/passwd Windows/win.ini</description>
+      <description> Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; /
+%252%65 -&amp;gt; %2e -&amp;gt; .
+%252f -&amp;gt; %2f -&amp;gt; /
+%252e -&amp;gt; %2e -&amp;gt; .
+Payloads # ..;/
+..%5c
+..%2f
+../
+..\
+..%252f
+%2e%2e%252f
+/
+//
+///
+////
+/////
+//////
+///////
+////////
+/////////
+//////////
+Files # env
+etc/passwd
+Windows/win.ini
+Resources # URL https://github.com/GrrrDog/weird_proxies </description>
     </item>
     
     <item>
@@ -489,11 +510,10 @@ How to bypass wafs
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/xss/</guid>
-      <description>XSS # # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe Find reflected parameters that could lead to XSS with Gxss
+      <description>XSS # # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe - --skip-bav --skip-mining-all Find reflected parameters that could lead to XSS with Gxss
 # https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING Semgrep # Semgrep can be used to detect sink and sources and assist in XSS detection.
 Usage # Download javascript files and beautify them (See Javascript), then run semgrep with
-semgrep -c xss.yaml scripts/* Hold down!
-Javascript files must be beautified, otherwise semgrep will no work properly.</description>
+semgrep -c xss.yaml scripts/* Hold down!</description>
     </item>
     
     <item>
@@ -599,8 +619,7 @@ GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/spider/</guid>
-      <description>Spider # Crawling # Use gospider or hakrawler. Personally, I found out hakrawler yields better results
-hakrawler # # go install github.com/hakluke/hakrawler@latest cat hosts | hakrawler -t 20 Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.</description>
+      <description> Spider # Crawling # katana # # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
     </item>
     
     <item>
@@ -658,7 +677,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec </description>
+      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec Boost your CV # Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
     </item>
     
     <item>

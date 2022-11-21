@@ -22,7 +22,7 @@ gau --subs example.com | unfurl -u domains
 
 ## All in one script
 
-```tpl
+```
 amass enum -passive -d domain.com -o amass_$1.txt > /dev/null 2>&1
 echo "[+] Amass done"
 
@@ -60,6 +60,12 @@ Extract Google tag manager from webiste, format: `UAXXXXXX`
 ```
 # https://github.com/Josue87/AnalyticsRelationships
 cat subdomains.txt | analyticsrelationships
+```
+
+## Google Tag Manager
+
+```
+https://googletagmanager.com/gtm.js?id=TAGID
 ```
 
 ## Favicon
