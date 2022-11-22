@@ -60,3 +60,7 @@ cat list | tlsx -san -cn -silent -resp-only
 - https://www.whatsmydns.net/domain-name-owner
 - https://tools.whoisxmlapi.com/reverse-whois-search (reverse whois, paid)
 - https://www.whoxy.com/ (whois history)
+
+## Whois checking:
+
+- https://github.com/melbadry9/WhoEnum
