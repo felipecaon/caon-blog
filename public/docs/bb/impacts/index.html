@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
-XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information.">
+XSS # Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
-XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information." />
+XSS # Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/docs/bb/impacts/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@ XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.2f2b6f0f63152b56b956b6e889aefcefc6c0c3b8e3ec5e63b1128273eee3b3ed.js" integrity="sha256-LytvD2MVK1a5Vrboia7878bAw7jj7F5jsRKCc&#43;7js&#43;0=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.47259549e4723da38b5c6f43057a33f84c1b479581e1df01a6578fb789b419e2.js" integrity="sha256-RyWVSeRyPaOLXG9DBXoz&#43;EwbR5WB4d8BplePt4m0GeI=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -307,8 +307,7 @@ An attacker can use information gathered in SQLi to login in admin panels and ob
   XSS
   <a class="anchor" href="#xss">#</a>
 </h2>
-<p>A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information.
-It is also possible to inject code into the page, allowing the possibiliy of: phishing attacks, redirects and code manipulation.</p>
+<p>Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information. It is also possible to inject code into the page, allowing the possibility of phishing attacks, redirects, and code manipulation.</p>
 <h2 id="lfi">
   LFI
   <a class="anchor" href="#lfi">#</a>
@@ -353,7 +352,7 @@ Attacker can use information leaked to learn more about company internals.</p>
 
 
 
-  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  

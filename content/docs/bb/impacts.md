@@ -7,8 +7,7 @@ An attacker can use information gathered in SQLi to login in admin panels and ob
 
 ## XSS
 
-A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim's browser, allowing the attacker to steal cookies, tokens or any other sensitive information. 
-It is also possible to inject code into the page, allowing the possibiliy of: phishing attacks, redirects and code manipulation.
+Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information. It is also possible to inject code into the page, allowing the possibility of phishing attacks, redirects, and code manipulation.
 
 ## LFI
 

@@ -63,7 +63,7 @@ This article focuses on your online identity, specifically in your social networ
       
       <guid>https://caon.io/docs/bb/impacts/</guid>
       <description>Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
-XSS # A successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim&amp;rsquo;s browser, allowing the attacker to steal cookies, tokens or any other sensitive information.</description>
+XSS # Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information.</description>
     </item>
     
     <item>
@@ -189,11 +189,7 @@ https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/ </description>
       <description>Google GCP # Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
 Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
-Misconfigs in Google Identity Google Storage # Check what permissions the bucket has:
-https://github.com/RhinoSecurityLabs/GCPBucketBrute
-If the site ends in appspot.com, bucket can be accessed in:
-https://storage.googleapis.com/&amp;lt;site_url&amp;gt;
-Hunting GCP Buckets Firebase # Pyrebase Add a .json to the end of a firebaseio url, it may leak the database.</description>
+Misconfigs in Google Identity POST /identitytoolkit/v3/relyingparty/signupNewUser?key=GOOGLEKEY HTTP/2 Host: www.googleapis.com User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:104.0) Gecko/20100101 Firefox/104.0 Accept: */* Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3 Accept-Encoding: gzip, deflate X-Client-Version: Firefox/JsCore/8.10.1/FirebaseCore-web X-Firebase-Locale: pt Content-Length: 81 {&amp;#34;returnSecureToken&amp;#34;:true,&amp;#34;email&amp;#34;:&amp;#34;asassa@asas.com&amp;#34;,&amp;#34;password&amp;#34;:&amp;#34;asassa@asas.com&amp;#34;} GET /v1/projects?key=GOOGLEKEY HTTP/2 Host: identitytoolkit.</description>
     </item>
     
     <item>
@@ -371,7 +367,7 @@ https://github.com/felipecaon/uuidv1gen</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/other/webtech/</guid>
-      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion # https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner trace.</description>
+      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion # https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner XSS trace.</description>
     </item>
     
     <item>
@@ -392,28 +388,7 @@ Social Media Share Links # Often a websites offers its user a feature to share a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/pathtransversal/</guid>
-      <description> Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; /
-%252%65 -&amp;gt; %2e -&amp;gt; .
-%252f -&amp;gt; %2f -&amp;gt; /
-%252e -&amp;gt; %2e -&amp;gt; .
-Payloads # ..;/
-..%5c
-..%2f
-../
-..\
-..%252f
-%2e%2e%252f
-/
-//
-///
-////
-/////
-//////
-///////
-////////
-/////////
-//////////
-Files # env
+      <description> Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252e -&amp;gt; %2e -&amp;gt; . Payloads # ..;/ ..%5c ..%2f ../ ..\ ..%252f %2e%2e%252f / // /// //// ///// ////// /////// //////// ///////// ////////// Files # env
 etc/passwd
 Windows/win.ini
 Resources # URL https://github.com/GrrrDog/weird_proxies </description>
@@ -543,7 +518,7 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/recon/dorks/</guid>
-      <description>Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:codepad.co &amp;#34;company&amp;#34; site:scribd.com &amp;#34;company&amp;#34; site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:libraries.io &amp;#34;company&amp;#34; site:ycombinator.com &amp;#34;company&amp;#34; site:coggle.it &amp;#34;company&amp;#34; site:sharecode.io &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:repl.it &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:gitter.im &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:papaly.com &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; site:jsdelivr.net &amp;#34;company&amp;#34; site:codepen.io &amp;#34;company&amp;#34; site:codeshare.</description>
+      <description> Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; </description>
     </item>
     
     <item>
