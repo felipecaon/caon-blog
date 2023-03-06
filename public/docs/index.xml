@@ -287,7 +287,8 @@ General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p 
       <guid>https://caon.io/docs/exploitation/other/uuid/</guid>
       <description>UUID # V1 # V1 UUIDs are not that unique, UUIDv1 contains sequences that can be guessed.
 Since the first chunks are timestamps, one can bruteforce possibilities in between two known values, guessing the right one.
-https://github.com/felipecaon/uuidv1gen</description>
+https://github.com/felipecaon/uuidv1gen
+https://www.uuidtools.com/decode</description>
     </item>
     
     <item>
@@ -608,7 +609,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/sites/</guid>
-      <description> Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts </description>
+      <description>Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts https://anchisesbr.</description>
     </item>
     
     <item>

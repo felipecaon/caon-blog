@@ -20,4 +20,4 @@
 | https://secret.club/ | About HW and low level hacking |
 | https://www.bugbountyhunting.com/ | Bug Bounty Writeups |
 | https://y4er.com/posts/ | Chinese security posts | 
- 
+| https://anchisesbr.blogspot.com/ | Portuguese security posts | 
