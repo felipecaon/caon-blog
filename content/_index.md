@@ -21,6 +21,7 @@ Hacking is like building a house, you need to construct a foundation before maki
 - [The first rule](https://sol.gfxile.net/dontask.html)
 - [Security Checklist](https://www.appsecmonkey.com/blog/web-application-security-checklist)
 - [The Six Dumbest Ideas](https://www.ranum.com/security/computer_security/editorials/dumb/)
+- [OWASP TOP10](https://application.security/free/owasp-top-10)
 
 # Want to start bug bounty?
 
