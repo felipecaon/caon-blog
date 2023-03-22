@@ -6,57 +6,6 @@
     <description>Recent content in Introduction on caon.io</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://caon.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>With ToC</title>
-      <link>https://caon.io/docs/example/table-of-contents/with-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/example/table-of-contents/with-toc/</guid>
-      <description>Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
-Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
-    </item>
-    
-    <item>
-      <title>Without ToC</title>
-      <link>https://caon.io/docs/example/table-of-contents/without-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/example/table-of-contents/without-toc/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus # Tanto oblite # Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
-Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
-    </item>
-    
-    <item>
-      <title>How to create strong passwords that are easy to remember</title>
-      <link>https://caon.io/posts/passwords/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/posts/passwords/</guid>
-      <description>I’m sure you have already heard about password managers and how you should use them on a daily bases because it is practically impossible to remember passwords for every service you may own.
-And yes, you should have a different password for every service you use, that’s a fact.
-If you haven’t heard about password managers take a minute to learn more about it, this Wikipedia article provides everything you need to know: https://en.</description>
-    </item>
-    
-    <item>
-      <title>How to find someone across social media networks</title>
-      <link>https://caon.io/posts/find-someone-social-media/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/posts/find-someone-social-media/</guid>
-      <description>Online awareness is important. In the last twenty years the internet evolved to something that is way bigger than their initial purpose and here we are.
-We used it every day for everything and most of us don’t even care about what we do online or what possible outcomes can appear after doing something.
-This article focuses on your online identity, specifically in your social network presence. Are you doing it right?</description>
-    </item>
-    
-    <item>
-      <title>Skeleton</title>
-      <link>https://caon.io/posts/example/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/posts/example/</guid>
-      <description>Skeleton</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://caon.io/docs/bb/impacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -64,26 +13,6 @@ This article focuses on your online identity, specifically in your social networ
       <guid>https://caon.io/docs/bb/impacts/</guid>
       <description>Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
 XSS # Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/example/collapsed/3rd-level/4th-level/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/example/collapsed/3rd-level/4th-level/</guid>
-      <description>4th Level of Menu # Caesorum illa tu sentit micat vestes papyriferi # Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
-Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii. Cupiens auctoribus pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae iusto!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/docs/example/hidden/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/docs/example/hidden/</guid>
-      <description>This page is hidden in menu # Quondam non pater est dignior ille Eurotas # Latent te facies # Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
-Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor Cum honorum Latona # O fallor in sustinui iussorum equidem.</description>
     </item>
     
     <item>
@@ -671,7 +600,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/repositories/</guid>
-      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon </description>
+      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines </description>
     </item>
     
     <item>

@@ -600,7 +600,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/repositories/</guid>
-      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon </description>
+      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines </description>
     </item>
     
     <item>
