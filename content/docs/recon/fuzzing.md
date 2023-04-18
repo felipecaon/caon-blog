@@ -30,6 +30,15 @@ ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtim
 -sf: Stop on 95% 403 Forbidden, possible WAF ban
 ```
 
+## Remove noise
+
+Ffuf can generate a large output, even with `-ac` flag enabled. To filter dummy and extract only juicy information, it is possible to use `ffufPostprocessing`
+
+```
+# https://github.com/Damian89/ffufPostprocessing
+ffufPostprocessing -result-file /tmp/ffuf/results.json -bodies-folder /tmp/ffuf/bodies/ -delete-bodies -overwrite-result-file
+```
+
 ## Backup Files
 
 Tempers file to find possible backup files based in file name

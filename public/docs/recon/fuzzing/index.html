@@ -24,7 +24,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.729619fcbbb37fdb38d36af44b80743f04e414241bc876db27bd0f11919f1812.js" integrity="sha256-cpYZ/Luzf9s402r0S4B0PwTkFCQbyHbbJ70PEZGfGBI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.62b630dc2f5ea4b617959ae64951dda9e207e70c1042fcbd8a760d0b50774329.js" integrity="sha256-YrYw3C9epLYXlZrmSVHdqeIH5wwQQvy9inYNC1B3Qyk=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -271,6 +271,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#fuzzing">Fuzzing</a>
       <ul>
+        <li><a href="#remove-noise">Remove noise</a></li>
         <li><a href="#backup-files">Backup Files</a></li>
         <li><a href="#wordlists">Wordlists</a></li>
       </ul>
@@ -319,6 +320,13 @@ ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtim
 -recursion: recursion
 -se: Stop on erors
 -sf: Stop on 95% 403 Forbidden, possible WAF ban
+</code></pre><h2 id="remove-noise">
+  Remove noise
+  <a class="anchor" href="#remove-noise">#</a>
+</h2>
+<p>Ffuf can generate a large output, even with <code>-ac</code> flag enabled. To filter dummy and extract only juicy information, it is possible to use <code>ffufPostprocessing</code></p>
+<pre tabindex="0"><code># https://github.com/Damian89/ffufPostprocessing
+ffufPostprocessing -result-file /tmp/ffuf/results.json -bodies-folder /tmp/ffuf/bodies/ -delete-bodies -overwrite-result-file
 </code></pre><h2 id="backup-files">
   Backup Files
   <a class="anchor" href="#backup-files">#</a>
@@ -399,6 +407,7 @@ bfac --no-text --url http://example.com/test.php --level 2
   <ul>
     <li><a href="#fuzzing">Fuzzing</a>
       <ul>
+        <li><a href="#remove-noise">Remove noise</a></li>
         <li><a href="#backup-files">Backup Files</a></li>
         <li><a href="#wordlists">Wordlists</a></li>
       </ul>

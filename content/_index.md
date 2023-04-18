@@ -17,11 +17,15 @@ Hacking is like building a house, you need to construct a foundation before maki
 
 - [Dev Hints](https://devhints.io/)
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
-- [Blue Teaming](https://www.blueteamsacademy.com/)
 - [The first rule](https://sol.gfxile.net/dontask.html)
 - [Security Checklist](https://www.appsecmonkey.com/blog/web-application-security-checklist)
 - [The Six Dumbest Ideas](https://www.ranum.com/security/computer_security/editorials/dumb/)
 - [OWASP TOP10](https://application.security/free/owasp-top-10)
+
+# Blue Team
+
+- [Blue Teaming](https://www.blueteamsacademy.com/)
+- [Let's Defend](https://letsdefend.io/)
 
 # Want to start bug bounty?
 

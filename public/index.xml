@@ -105,8 +105,8 @@ Found secrets? # Use those secrets in aws CLI Collection of privilege escalation
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cloud/azure/</guid>
-      <description> Microsoft Azure # azureedge takeover
-https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/ </description>
+      <description>Microsoft Azure # Azure Edge takeover # https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/ Active Directory recon # az ad sp show --id &amp;lt;clid_id&amp;gt;
+Sometimes ADs are configured as multi-tenants, allowing anyone to login into private tenants.</description>
     </item>
     
     <item>
@@ -195,7 +195,7 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/csrf/</guid>
-      <description>CSRF # Conditions to exploit an useful CSRF # Revelante action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find # Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request a call manually Extract the token with XSS or HTMl injection Generate POCs # In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
+      <description>CSRF # Conditions to exploit an useful CSRF # Revelant action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find # Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request and call manually Extract the token with XSS or HTMl injection Articles # URL Description What is CRSF Part #1 Why CORS makes CSRf impossible Part #2 Generate POCs # In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
     </item>
     
     <item>
@@ -582,7 +582,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/career/</guid>
-      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec Boost your CV # Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
+      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap Boost your CV # Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
     </item>
     
     <item>
