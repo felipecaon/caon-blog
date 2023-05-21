@@ -32,7 +32,8 @@ XSS # Successful exploitation of a XSS allows an attacker to execute arbitrary J
       <guid>https://caon.io/docs/exploitation/auths/jwt/</guid>
       <description>JWT # Change algorithm to None # Sometimes APIs don&amp;rsquo;t check for JWT encryption. None algorithm allows an attacker to craft a malicious JWT token to escalate privileges.
 B64 None: eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0
-JWT Injection # Sometimes applications reflect data that is stored inside the token, try to create accounts with malicious payloads</description>
+JWT Injection # Sometimes applications reflect data that is stored inside the token, try to create accounts with malicious payloads
+Crack JWTs # https://github.com/mazen160/jwt-pwn</description>
     </item>
     
     <item>
@@ -71,9 +72,9 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/cachepoisoning/</guid>
-      <description>Cache Poisoning # Check if the server is caching requests. You can tellby looking the headers and looking fot the word &amp;ldquo;HIT&amp;rdquo;.
-If application does not have login function: # Add an unknown header value to force the page get 400 cached result
-GET /home HTTP/1.1 Host: target.com \: If application has login function: # Login into an account and find a page that returns sensitive information. Add cachable extension (.</description>
+      <description>Cache Poisoning # Check if the server is caching requests. You can tell by looking the headers and looking for the words HIT OR DYNAMIC.
+Cloudflare caches content based on MIME type only. Akamai acceppts headers
+Trigger Cache # /profile.css /profile/nonexistent.css /profile?nonexistent /profile/x.jpeg?nonexistent /profile/.js /profile/;.js Add \: header Stored XSS # Find an endpoint that reflects content to page (cookies, parameter, headers..) and store it by poisoning the cache</description>
     </item>
     
     <item>
@@ -318,10 +319,10 @@ Social Media Share Links # Often a websites offers its user a feature to share a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/exploitation/pathtransversal/</guid>
-      <description> Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252e -&amp;gt; %2e -&amp;gt; . Payloads # ..;/ ..%5c ..%2f ../ ..\ ..%252f %2e%2e%252f / // /// //// ///// ////// /////// //////// ///////// ////////// Files # env
+      <description>Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252e -&amp;gt; %2e -&amp;gt; . Payloads # ..;/ ..%5c ..%2f ../ ..\ ..;\ ..%252f %2e%2e%252f %252%66.%252%65 / // /// //// ///// ////// /////// //////// ///////// ////////// Files # env
 etc/passwd
 Windows/win.ini
-Resources # URL https://github.com/GrrrDog/weird_proxies </description>
+Resources # URL https://github.</description>
     </item>
     
     <item>
@@ -550,6 +551,20 @@ Get resolvers at:
     
     <item>
       <title></title>
+      <link>https://caon.io/docs/recon/thirdparty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/docs/recon/thirdparty/</guid>
+      <description> Third Party # Waybackmachine &amp;amp; others # Use gau to search for old files and paths from crawl websites
+echo &amp;#34;example.com&amp;#34; | gau Alienvault # Look under Associated Urls
+https://otx.alienvault.com/indicator/domain/example.com
+AWS Scraping # By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
+https://github.com/jhaddix/awsScrape/
+More # https://leakix.net/ </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://caon.io/docs/recon/wafcheck/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -591,7 +606,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/docs/resources/regexes/</guid>
-      <description> Regexes # Regex pattern Description Site About https://www.autoregex.xyz/ Generate based on text </description>
+      <description> Regexes # Site About https://www.autoregex.xyz/ Generate based on text https://github.com/mazen160/secrets-patterns-db Database of regexes secrets </description>
     </item>
     
     <item>

@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SSTI # Tools # # https://github.com/epinna/tplmap tplmap.py -u &#39;http://www.target.com/page?name=John&#39; Python Django/Flask # Detection:
-{% if &#39;str&#39; = &#39;str&#39; %} vuln {% endif %} {% debug %} Disclose pages:
-{% include &#39;admin/base.html&#39; %} Disclose log table:
-{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX # % is a key character If &lt;% returns 500, try &lt;%= 7*7 %&gt; Tips # Try to SSTI with the fuzz string provided in cobalt.">
+<meta name="description" content=" Third Party # Waybackmachine &amp; others # Use gau to search for old files and paths from crawl websites
+echo &#34;example.com&#34; | gau Alienvault # Look under Associated Urls
+https://otx.alienvault.com/indicator/domain/example.com
+AWS Scraping # By visiting IP&rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
+https://github.com/jhaddix/awsScrape/
+More # https://leakix.net/ ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="SSTI # Tools # # https://github.com/epinna/tplmap tplmap.py -u &#39;http://www.target.com/page?name=John&#39; Python Django/Flask # Detection:
-{% if &#39;str&#39; = &#39;str&#39; %} vuln {% endif %} {% debug %} Disclose pages:
-{% include &#39;admin/base.html&#39; %} Disclose log table:
-{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX # % is a key character If &lt;% returns 500, try &lt;%= 7*7 %&gt; Tips # Try to SSTI with the fuzz string provided in cobalt." />
+<meta property="og:description" content=" Third Party # Waybackmachine &amp; others # Use gau to search for old files and paths from crawl websites
+echo &#34;example.com&#34; | gau Alienvault # Look under Associated Urls
+https://otx.alienvault.com/indicator/domain/example.com
+AWS Scraping # By visiting IP&rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
+https://github.com/jhaddix/awsScrape/
+More # https://leakix.net/ " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://caon.io/docs/exploitation/ssti/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://caon.io/docs/recon/thirdparty/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-07-23T13:00:41-03:00" />
-<title>Ssti | caon.io</title>
+
+<title>Thirdparty | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -107,7 +111,7 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/recon/spider/">Spidering</a></li>
 <li><a href="/docs/recon/fuzzing/">Fuzzing</a></li>
 <li><a href="/docs/recon/paramdiscovery/">Params</a></li>
-<li><a href="/docs/recon/thirdparty/">Third Party</a></li>
+<li><a href="/docs/recon/thirdparty/"class=active>Third Party</a></li>
 </ul>
 </li>
 <li>
@@ -206,7 +210,7 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="/docs/exploitation/rce/">RCE</a></p>
 </li>
 <li>
-<p><a href="/docs/exploitation/ssti/"class=active>SSTI</a></p>
+<p><a href="/docs/exploitation/ssti/">SSTI</a></p>
 </li>
 <li>
 <p><a href="/docs/exploitation/ssrf/">SSRF</a></p>
@@ -293,7 +297,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Ssti</strong>
+  <strong>Thirdparty</strong>
 
   <label for="toc-control">
     
@@ -309,14 +313,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ssti">SSTI</a>
+    <li><a href="#third-party">Third Party</a>
       <ul>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#python-djangoflask">Python Django/Flask</a></li>
-        <li><a href="#aspapsnetaspx">ASP/APS.NET/ASPX</a></li>
-        <li><a href="#tips">Tips</a></li>
+        <li><a href="#waybackmachine--others">Waybackmachine &amp; others</a></li>
+        <li><a href="#alienvault">Alienvault</a></li>
+        <li><a href="#aws-scraping">AWS Scraping</a></li>
       </ul>
     </li>
+    <li><a href="#more">More</a></li>
   </ul>
 </nav>
 
@@ -329,63 +333,35 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="ssti">
-  SSTI
-  <a class="anchor" href="#ssti">#</a>
+  <article class="markdown"><h1 id="third-party">
+  Third Party
+  <a class="anchor" href="#third-party">#</a>
 </h1>
-<h2 id="tools">
-  Tools
-  <a class="anchor" href="#tools">#</a>
+<h2 id="waybackmachine--others">
+  Waybackmachine &amp; others
+  <a class="anchor" href="#waybackmachine--others">#</a>
 </h2>
-<pre tabindex="0"><code># https://github.com/epinna/tplmap
-tplmap.py -u &#39;http://www.target.com/page?name=John&#39;
-</code></pre><h2 id="python-djangoflask">
-  Python Django/Flask
-  <a class="anchor" href="#python-djangoflask">#</a>
+<p>Use gau to search for old files and paths from crawl websites</p>
+<pre tabindex="0"><code>echo &#34;example.com&#34; | gau
+</code></pre><h2 id="alienvault">
+  Alienvault
+  <a class="anchor" href="#alienvault">#</a>
 </h2>
-<p>Detection:</p>
-<pre tabindex="0"><code>{% if &#39;str&#39; = &#39;str&#39; %} vuln {% endif %}
-{% debug %}
-</code></pre><p>Disclose pages:</p>
-<pre tabindex="0"><code>{% include &#39;admin/base.html&#39; %}
-</code></pre><p>Disclose log table:</p>
-<pre tabindex="0"><code>{% load log %}{% get_admin_log 10 as log %}{% for e in log %}
-{{e.user.get_username}} : {{e.user.password}}{% endfor %}
-</code></pre><h2 id="aspapsnetaspx">
-  ASP/APS.NET/ASPX
-  <a class="anchor" href="#aspapsnetaspx">#</a>
+<p>Look under Associated Urls</p>
+<p><a href="https://otx.alienvault.com/indicator/domain/example.com">https://otx.alienvault.com/indicator/domain/example.com</a></p>
+<h2 id="aws-scraping">
+  AWS Scraping
+  <a class="anchor" href="#aws-scraping">#</a>
 </h2>
+<p>By visiting IP&rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.</p>
+<p><a href="https://github.com/jhaddix/awsScrape/">https://github.com/jhaddix/awsScrape/</a></p>
+<h1 id="more">
+  More
+  <a class="anchor" href="#more">#</a>
+</h1>
 <ul>
-<li>% is a key character</li>
-<li>If <code>&lt;%</code> returns 500, try <code>&lt;%= 7*7 %&gt;</code></li>
+<li><a href="https://leakix.net/">https://leakix.net/</a></li>
 </ul>
-<h2 id="tips">
-  Tips
-  <a class="anchor" href="#tips">#</a>
-</h2>
-<p>Try to SSTI with the fuzz string provided in cobalt.io blog post refered below</p>
-<table>
-<thead>
-<tr>
-<th>URL</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/DiogoMRSilva/websitesVulnerableToSSTI">https://github.com/DiogoMRSilva/websitesVulnerableToSSTI</a></td>
-<td>Engines vulnerable to SSTI</td>
-</tr>
-<tr>
-<td><a href="https://github.com/payloadbox/ssti-payloads">https://github.com/payloadbox/ssti-payloads</a></td>
-<td>Payloads</td>
-</tr>
-<tr>
-<td><a href="https://cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti">https://cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti</a></td>
-<td>Blog about SSTI</td>
-</tr>
-</tbody>
-</table>
 </article>
  
       
@@ -423,14 +399,14 @@ tplmap.py -u &#39;http://www.target.com/page?name=John&#39;
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ssti">SSTI</a>
+    <li><a href="#third-party">Third Party</a>
       <ul>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#python-djangoflask">Python Django/Flask</a></li>
-        <li><a href="#aspapsnetaspx">ASP/APS.NET/ASPX</a></li>
-        <li><a href="#tips">Tips</a></li>
+        <li><a href="#waybackmachine--others">Waybackmachine &amp; others</a></li>
+        <li><a href="#alienvault">Alienvault</a></li>
+        <li><a href="#aws-scraping">AWS Scraping</a></li>
       </ul>
     </li>
+    <li><a href="#more">More</a></li>
   </ul>
 </nav>
 

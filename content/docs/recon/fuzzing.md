@@ -48,6 +48,12 @@ Tempers file to find possible backup files based in file name
 bfac --no-text --url http://example.com/test.php --level 2
 ```
 
+## Recollpase
+
+Generate a bunch of breaking-strings to test your target
+
+- https://github.com/0xacb/recollapse
+
 ## Wordlists
 
 | URL | Description |

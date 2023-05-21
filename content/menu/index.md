@@ -18,7 +18,7 @@ headless: true
 	- [Spidering]({{< relref "/docs/recon/spider" >}})
 	- [Fuzzing]({{< relref "/docs/recon/fuzzing" >}})
 	- [Params]({{< relref "/docs/recon/paramdiscovery" >}})
-
+	- [Third Party]({{< relref "/docs/recon/thirdparty" >}})
 - [Wordlist Generation]({{< relref "/docs/recon/wordlistgeneration" >}})
 
 <br />
@@ -58,7 +58,8 @@ headless: true
 	- [LFI]({{< relref "/docs/exploitation/lfi" >}})
 	- [Open Redirect]({{< relref "/docs/exploitation/openredirect" >}})
 	- [Parameter Pollution]({{< relref "/docs/exploitation/parameterpollution" >}})
-        - [Path Transversal]({{< relref "/docs/exploitation/pathtransversal" >}})
+	
+	- [Path Transversal]({{< relref "/docs/exploitation/pathtransversal" >}})
 	- [Prototype Pollution]({{< relref "/docs/exploitation/prototypepollution" >}})
 	- [Request Smuggling]({{< relref "/docs/exploitation/requestsmuggling" >}})
 	- [RCE]({{< relref "/docs/exploitation/rce" >}})

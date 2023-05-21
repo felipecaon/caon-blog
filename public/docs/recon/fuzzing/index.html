@@ -24,7 +24,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.62b630dc2f5ea4b617959ae64951dda9e207e70c1042fcbd8a760d0b50774329.js" integrity="sha256-YrYw3C9epLYXlZrmSVHdqeIH5wwQQvy9inYNC1B3Qyk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.8b1cb1113427a6a81ff33b4f0a2baf0c04757c9052f0f11fbed87257bd502cfe.js" integrity="sha256-ixyxETQnpqgf8ztPCiuvDAR1fJBS8PEfvthyV71QLP4=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92BCSZTKCE"></script>
 <script>
@@ -109,6 +109,7 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="/docs/recon/spider/">Spidering</a></li>
 <li><a href="/docs/recon/fuzzing/"class=active>Fuzzing</a></li>
 <li><a href="/docs/recon/paramdiscovery/">Params</a></li>
+<li><a href="/docs/recon/thirdparty/">Third Party</a></li>
 </ul>
 </li>
 <li>
@@ -155,31 +156,72 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>Vulnerabilities</p>
 <ul>
-<li><a href="/docs/exploitation/cachepoisoning/">Cache poisoning</a></li>
-<li><a href="/docs/exploitation/clickjacking/">Clickjacking</a></li>
-<li><a href="/docs/exploitation/commandinjection/">Command Injection</a></li>
-<li><a href="/docs/exploitation/cookieattacks/">Cookie Based Attacks</a></li>
-<li><a href="/docs/exploitation/crlf/">CRLF</a></li>
-<li><a href="/docs/exploitation/csrf/">CSRF</a></li>
-<li><a href="/docs/exploitation/cors/">CORS</a></li>
-<li><a href="/docs/exploitation/deserialization/">Deserialization</a></li>
-<li><a href="/docs/exploitation/hostheaderinjection/">Host Header Injection</a></li>
-<li><a href="/docs/exploitation/idor/">IDOR</a></li>
-<li><a href="/docs/exploitation/lfi/">LFI</a></li>
-<li><a href="/docs/exploitation/openredirect/">Open Redirect</a></li>
-<li><a href="/docs/exploitation/parameterpollution/">Parameter Pollution</a>
-<ul>
-<li><a href="/docs/exploitation/pathtransversal/">Path Transversal</a></li>
-</ul>
+<li>
+<p><a href="/docs/exploitation/cachepoisoning/">Cache poisoning</a></p>
 </li>
-<li><a href="/docs/exploitation/prototypepollution/">Prototype Pollution</a></li>
-<li><a href="/docs/exploitation/requestsmuggling/">Request Smuggling</a></li>
-<li><a href="/docs/exploitation/rce/">RCE</a></li>
-<li><a href="/docs/exploitation/ssti/">SSTI</a></li>
-<li><a href="/docs/exploitation/ssrf/">SSRF</a></li>
-<li><a href="/docs/exploitation/sqli/">SQLi</a></li>
-<li><a href="/docs/exploitation/xss/">XSS</a></li>
-<li><a href="/docs/exploitation/xxe/">XXE</a></li>
+<li>
+<p><a href="/docs/exploitation/clickjacking/">Clickjacking</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/commandinjection/">Command Injection</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/cookieattacks/">Cookie Based Attacks</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/crlf/">CRLF</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/csrf/">CSRF</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/cors/">CORS</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/deserialization/">Deserialization</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/hostheaderinjection/">Host Header Injection</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/idor/">IDOR</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/lfi/">LFI</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/openredirect/">Open Redirect</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/parameterpollution/">Parameter Pollution</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/pathtransversal/">Path Transversal</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/prototypepollution/">Prototype Pollution</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/requestsmuggling/">Request Smuggling</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/rce/">RCE</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/ssti/">SSTI</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/ssrf/">SSRF</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/sqli/">SQLi</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/xss/">XSS</a></p>
+</li>
+<li>
+<p><a href="/docs/exploitation/xxe/">XXE</a></p>
+</li>
 </ul>
 </li>
 <li>
@@ -273,6 +315,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#remove-noise">Remove noise</a></li>
         <li><a href="#backup-files">Backup Files</a></li>
+        <li><a href="#recollpase">Recollpase</a></li>
         <li><a href="#wordlists">Wordlists</a></li>
       </ul>
     </li>
@@ -334,7 +377,15 @@ ffufPostprocessing -result-file /tmp/ffuf/results.json -bodies-folder /tmp/ffuf/
 <p>Tempers file to find possible backup files based in file name</p>
 <pre tabindex="0"><code># https://github.com/mazen160/bfac
 bfac --no-text --url http://example.com/test.php --level 2
-</code></pre><h2 id="wordlists">
+</code></pre><h2 id="recollpase">
+  Recollpase
+  <a class="anchor" href="#recollpase">#</a>
+</h2>
+<p>Generate a bunch of breaking-strings to test your target</p>
+<ul>
+<li><a href="https://github.com/0xacb/recollapse">https://github.com/0xacb/recollapse</a></li>
+</ul>
+<h2 id="wordlists">
   Wordlists
   <a class="anchor" href="#wordlists">#</a>
 </h2>
@@ -409,6 +460,7 @@ bfac --no-text --url http://example.com/test.php --level 2
       <ul>
         <li><a href="#remove-noise">Remove noise</a></li>
         <li><a href="#backup-files">Backup Files</a></li>
+        <li><a href="#recollpase">Recollpase</a></li>
         <li><a href="#wordlists">Wordlists</a></li>
       </ul>
     </li>
