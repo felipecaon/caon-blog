@@ -4,6 +4,7 @@
     <title>Tags on caon.io</title>
     <link>https://caon.io/tags/</link>
     <description>Recent content in Tags on caon.io</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://caon.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://caon.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
