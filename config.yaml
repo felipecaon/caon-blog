@@ -1,9 +1,7 @@
-# hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
-
+googleAnalytics: G-YNBNGF8X6V
 baseURL: https://caon.io
 title: caon.io
 theme: hugo-book
-googleAnalytics: G-92BCSZTKCE
 
 # Book configuration
 disablePathToLower: true
