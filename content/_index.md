@@ -11,8 +11,6 @@ Everything written in here and in the following pages was acquired by reading ar
 
 # The basics
 
-Before jumping into "advanced" stuff, it is a good idea to understand the basics of applications, data manipulation, servers ...
-
 Hacking is like building a house, you need to construct a foundation before making the roof.
 
 - [Dev Hints](https://devhints.io/)
@@ -27,16 +25,10 @@ Hacking is like building a house, you need to construct a foundation before maki
 - [Blue Teaming](https://www.blueteamsacademy.com/)
 - [Let's Defend](https://letsdefend.io/)
 
-# Want to start bug bounty?
-
-- https://github.com/harsh-bothra/learn365
-- https://github.com/KathanP19/HowToHunt
-
 # Newsletter
 
 Sources to keep you informed about sec world
 
-- https://github.com/Simpsonpt/AppSecEzine/tree/master/Ezines
 - https://tldrsec.com/
 - https://danielmiessler.com/newsletter/
 - https://securib.ee/newsletter/
@@ -45,7 +37,3 @@ Sources to keep you informed about sec world
 
 - https://github.com/cckuailong/reapoc
 - https://github.com/trickest/cve
-
-# Get a Server!
-
-- https://www.oracle.com/cloud/ offers a free for life ARM server, change `Image` to use `Oracle Linux` and `Shape` to be `Ampere` processors with max configuration (4 CPUs, 24GB)

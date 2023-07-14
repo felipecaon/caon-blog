@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on caon.io</title>
+    <link>https://caon.io/resources/</link>
+    <description>Recent content in Resources on caon.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://caon.io/resources/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/burp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/burp/</guid>
+      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/career/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/career/</guid>
+      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap Boost your CV # Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/regexes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/regexes/</guid>
+      <description> Regexes # Site About https://www.autoregex.xyz/ Generate based on text https://github.com/mazen160/secrets-patterns-db Database of regexes secrets </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/repositories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/repositories/</guid>
+      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/sites/</guid>
+      <description>Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts https://anchisesbr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/tools/</guid>
+      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/writeups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/writeups/</guid>
+      <description> Write Ups # WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/resources/youtubechannels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/resources/youtubechannels/</guid>
+      <description> Youtube Channels # Name Channel Ippsec https://www.youtube.com/c/ippsec Reconless https://www.youtube.com/channel/UCCp25j1Zh9vc_WFm-nB9fhQ </description>
+    </item>
+    
+  </channel>
+</rss>

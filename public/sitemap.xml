@@ -2,199 +2,144 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://caon.io/docs/bb/impacts/</loc>
-    <lastmod>2023-01-14T22:38:05-03:00</lastmod>
+    <loc>https://caon.io/bb/impacts/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/403bypass/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/exploitation/403bypass/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/auths/jwt/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/auths/jwt/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/auths/oauth/</loc>
-    <lastmod>2022-11-20T21:10:20-03:00</lastmod>
+    <loc>https://caon.io/exploitation/auths/oauth/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/auths/saml/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/exploitation/auths/saml/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/auths/twofa/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/exploitation/auths/twofa/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cachepoisoning/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cachepoisoning/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/clickjacking/</loc>
-    <lastmod>2022-01-24T10:36:12-03:00</lastmod>
+    <loc>https://caon.io/exploitation/clickjacking/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cloud/aws/</loc>
-    <lastmod>2022-11-20T21:10:20-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cloud/aws/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cloud/azure/</loc>
-    <lastmod>2023-04-18T10:28:49-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cloud/azure/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cloud/google/</loc>
-    <lastmod>2023-01-14T22:38:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cloud/google/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cms/drupal/</loc>
-    <lastmod>2022-08-09T23:18:12-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cms/drupal/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cms/others/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cms/others/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cms/wordpress/</loc>
-    <lastmod>2022-08-09T23:18:12-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cms/wordpress/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/commandinjection/</loc>
-    <lastmod>2022-08-09T23:18:12-03:00</lastmod>
+    <loc>https://caon.io/exploitation/commandinjection/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cookieattacks/</loc>
-    <lastmod>2022-01-30T13:42:33-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cookieattacks/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/cors/</loc>
-    <lastmod>2022-01-30T13:42:33-03:00</lastmod>
+    <loc>https://caon.io/exploitation/cors/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/crlf/</loc>
-    <lastmod>2022-01-24T10:36:12-03:00</lastmod>
+    <loc>https://caon.io/exploitation/crlf/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/csrf/</loc>
-    <lastmod>2023-04-18T10:28:49-03:00</lastmod>
+    <loc>https://caon.io/exploitation/csrf/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/deserialization/</loc>
-    <lastmod>2022-11-20T21:10:20-03:00</lastmod>
+    <loc>https://caon.io/exploitation/deserialization/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/hostheaderinjection/</loc>
-    <lastmod>2022-04-12T22:14:59-03:00</lastmod>
+    <loc>https://caon.io/exploitation/hostheaderinjection/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/idor/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/idor/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/lfi/</loc>
-    <lastmod>2022-01-31T22:04:23-03:00</lastmod>
+    <loc>https://caon.io/exploitation/lfi/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/openredirect/</loc>
-    <lastmod>2022-01-25T21:53:25-03:00</lastmod>
+    <loc>https://caon.io/exploitation/openredirect/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/other/javascriptfiles/</loc>
-    <lastmod>2023-03-06T19:45:52-03:00</lastmod>
+    <loc>https://caon.io/exploitation/other/javascriptfiles/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/other/passwordbruteforce/</loc>
-    <lastmod>2022-08-16T22:15:18-03:00</lastmod>
+    <loc>https://caon.io/exploitation/other/passwordbruteforce/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/other/uuid/</loc>
-    <lastmod>2023-03-06T19:45:52-03:00</lastmod>
+    <loc>https://caon.io/exploitation/other/uuid/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/other/webtech/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/other/webtech/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/parameterpollution/</loc>
-    <lastmod>2022-07-12T13:39:41-03:00</lastmod>
+    <loc>https://caon.io/exploitation/parameterpollution/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/pathtransversal/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/pathtransversal/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/prototypepollution/</loc>
-    <lastmod>2022-02-25T16:42:32-03:00</lastmod>
+    <loc>https://caon.io/exploitation/prototypepollution/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/rce/</loc>
-    <lastmod>2022-07-12T17:43:46-03:00</lastmod>
+    <loc>https://caon.io/exploitation/rce/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/requestsmuggling/</loc>
-    <lastmod>2022-07-15T17:57:38-03:00</lastmod>
+    <loc>https://caon.io/exploitation/requestsmuggling/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/sqli/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/sqli/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/ssrf/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/ssrf/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/ssti/</loc>
-    <lastmod>2022-07-23T13:00:41-03:00</lastmod>
+    <loc>https://caon.io/exploitation/ssti/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/wafbypass/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/exploitation/wafbypass/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/workflows/payment/</loc>
-    <lastmod>2022-08-09T13:29:55-03:00</lastmod>
+    <loc>https://caon.io/exploitation/workflows/payment/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/xss/</loc>
-    <lastmod>2022-11-20T21:10:20-03:00</lastmod>
+    <loc>https://caon.io/exploitation/xss/</loc>
   </url><url>
-    <loc>https://caon.io/docs/exploitation/xxe/</loc>
-    <lastmod>2022-01-25T21:53:25-03:00</lastmod>
+    <loc>https://caon.io/exploitation/xxe/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/asncidr/</loc>
-    <lastmod>2022-11-22T16:05:46-03:00</lastmod>
+    <loc>https://caon.io/recon/asncidr/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/dorks/</loc>
-    <lastmod>2022-11-22T16:05:46-03:00</lastmod>
+    <loc>https://caon.io/recon/dorks/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/fuzzing/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/recon/fuzzing/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/paramdiscovery/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/paramdiscovery/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/portscan/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/portscan/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/probing/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/probing/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/scope/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/scope/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/screenshot/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/screenshot/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/spider/</loc>
-    <lastmod>2022-11-20T21:10:20-03:00</lastmod>
+    <loc>https://caon.io/recon/spider/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/subdomain/active/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/subdomain/active/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/subdomain/passive/</loc>
-    <lastmod>2022-11-20T21:10:20-03:00</lastmod>
+    <loc>https://caon.io/recon/subdomain/passive/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/thirdparty/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/recon/thirdparty/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/wafcheck/</loc>
-    <lastmod>2022-01-30T13:42:33-03:00</lastmod>
+    <loc>https://caon.io/recon/wafcheck/</loc>
   </url><url>
-    <loc>https://caon.io/docs/recon/wordlistgeneration/</loc>
-    <lastmod>2022-08-24T15:10:21-03:00</lastmod>
+    <loc>https://caon.io/recon/whois/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/burp/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/recon/wordlistgeneration/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/career/</loc>
-    <lastmod>2023-04-18T10:28:49-03:00</lastmod>
+    <loc>https://caon.io/resources/burp/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/regexes/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/resources/career/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/repositories/</loc>
-    <lastmod>2023-03-14T14:14:04-03:00</lastmod>
+    <loc>https://caon.io/resources/regexes/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/sites/</loc>
-    <lastmod>2023-03-06T19:45:52-03:00</lastmod>
+    <loc>https://caon.io/resources/repositories/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/tools/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/resources/sites/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/writeups/</loc>
-    <lastmod>2022-10-10T22:03:50-03:00</lastmod>
+    <loc>https://caon.io/resources/tools/</loc>
   </url><url>
-    <loc>https://caon.io/docs/resources/youtubechannels/</loc>
-    <lastmod>2022-01-07T13:12:18-03:00</lastmod>
+    <loc>https://caon.io/resources/writeups/</loc>
+  </url><url>
+    <loc>https://caon.io/resources/youtubechannels/</loc>
+  </url><url>
+    <loc>https://caon.io/bb/</loc>
   </url><url>
     <loc>https://caon.io/categories/</loc>
   </url><url>
-    <loc>https://caon.io/docs/</loc>
-    <lastmod>2023-05-21T15:21:05-03:00</lastmod>
+    <loc>https://caon.io/exploitation/</loc>
   </url><url>
     <loc>https://caon.io/</loc>
     <lastmod>2023-04-18T10:28:49-03:00</lastmod>
+  </url><url>
+    <loc>https://caon.io/recon/</loc>
+  </url><url>
+    <loc>https://caon.io/resources/</loc>
   </url><url>
     <loc>https://caon.io/tags/</loc>
   </url>

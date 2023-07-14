@@ -37,7 +37,6 @@ The five regional Internet registries are:
 
 ```
 # https://github.com/robertdavidgraham/masscan
-
 masscan -iL list-of-cidrs -oG output --rate 10000 -p 80,8443,443,8080
 ```
 
