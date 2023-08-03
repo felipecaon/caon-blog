@@ -23,7 +23,7 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/dorks/</guid>
-      <description> Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; </description>
+      <description>Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
     </item>
     
     <item>
@@ -55,7 +55,8 @@ X8 # # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/portscan/</guid>
-      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
+      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
+Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
     </item>
     
     <item>
@@ -110,7 +111,7 @@ GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.
       <guid>https://caon.io/recon/subdomain/active/</guid>
       <description> Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
+# https://github.com/proabiral/Fresh-Resolvers wget https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     
     <item>
@@ -129,12 +130,12 @@ Get resolvers at:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/thirdparty/</guid>
-      <description> Third Party # Waybackmachine &amp;amp; others # Use gau to search for old files and paths from crawl websites
+      <description>Third Party # Waybackmachine &amp;amp; others # Use gau to search for old files and paths from crawl websites
 echo &amp;#34;example.com&amp;#34; | gau Alienvault # Look under Associated Urls
 https://otx.alienvault.com/indicator/domain/example.com
 AWS Scraping # By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
 https://github.com/jhaddix/awsScrape/
-More # https://leakix.net/ </description>
+More # https://leakix.net/</description>
     </item>
     
     <item>
@@ -152,7 +153,7 @@ More # https://leakix.net/ </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/whois/</guid>
-      <description></description>
+      <description> Whois # https://www.whatsmydns.net/domain-name-owner Reverse Whois # https://tools.whoisxmlapi.com/reverse-whois-search Whois History # https://www.whoxy.com Whois mass checking: # https://github.com/melbadry9/WhoEnum </description>
     </item>
     
     <item>

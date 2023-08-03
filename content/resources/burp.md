@@ -5,15 +5,9 @@
 - Backslash powered scanner, find additional vulns
 - JS Miner, gets sensitive content from js files
 - Active Scan++, find additional vulns
-- J2EEScan
 - JS Link Finder, find links inside javascript files
-- Para Miner, mines urls searching for parameters
+- Param Miner, mines urls searching for parameters
 - Reflector, find reflected inputs
-- JSON Web Tokens, creates a tab to analyze json based tokens
-- Retire.js, find old javascript libraries with known vulns
-- Web Cache Deception Scanner, tests for cache problems
-- Burp Bounty, OP
-- HTTP methods discloser, discloses methods for same endpoint
 
 ## Tips n Tricks
 

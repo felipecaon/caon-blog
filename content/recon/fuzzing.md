@@ -48,7 +48,7 @@ Tempers file to find possible backup files based in file name
 bfac --no-text --url http://example.com/test.php --level 2
 ```
 
-## Recollpase
+## Recollapse
 
 Generate a bunch of breaking-strings to test your target
 
@@ -60,6 +60,3 @@ Generate a bunch of breaking-strings to test your target
 |---|---|
 |https://github.com/p0dalirius/webapp-wordlists|This repo contains wordlists for a lot of webapps|
 |https://github.com/six2dez/OneListForAll|Huge list of paths and files|
-|https://github.com/TheKingOfDuck/fuzzDicts| Collection of lists for fuzzing |
-| https://github.com/tennc/fuzzdb| Collection of lists for fuzzing |
-| https://github.com/the-xentropy/samlists| List of files, paths and parameter based on usage in the wild |

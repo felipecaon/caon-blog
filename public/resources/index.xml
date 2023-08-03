@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/burp/</guid>
-      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
+      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/tools/</guid>
-      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
+      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights </description>
     </item>
     
     <item>

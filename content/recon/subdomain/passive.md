@@ -39,16 +39,6 @@ cat subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_
 rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
 ```
 
-## Third party websites
-
-The following list contains sites that may have additional subdomains:
-
-- https://chaos.projectdiscovery.io/
-- https://jldc.me/anubis/subdomains/site.com
-- https://dataset.domainsproject.org/
-- https://phonebook.cz/
-- https://suip.biz/?act=subfinder
-
 ## Google analytics ID
 
 Extract Google tag manager from webiste, format: `UAXXXXXX`
@@ -72,9 +62,7 @@ https://googletagmanager.com/gtm.js?id=TAGID
 
 Search for favicon md5 value in known search engines to find websites related to your search
 
-- https://faviconhash.com/
-
 ```
-Tip: Use http.favicon.hash:<hash> on Shodan to hunt phishing sites.
+Tip: Use http.favicon.hash:<hash> on Shodan
 ```
 

@@ -56,6 +56,7 @@ headless: true
 	- [Deserialization]({{< relref "/exploitation/deserialization" >}})
 	- [Host Header Injection]({{< relref "/exploitation/hostheaderinjection" >}})
 	- [IDOR]({{< relref "/exploitation/idor" >}})
+        - [IIS]({{< relref "/exploitation/IIS" >}})
 	- [LFI]({{< relref "/exploitation/lfi" >}})
 	- [Open Redirect]({{< relref "/exploitation/openredirect" >}})
 	- [Parameter Pollution]({{< relref "/exploitation/parameterpollution" >}})

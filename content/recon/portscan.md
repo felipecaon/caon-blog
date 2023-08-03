@@ -11,7 +11,7 @@ nmap -sC -sV example.com
 nmap example.com
 ```
 
-- https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
+https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
 
 ## Naabu
 

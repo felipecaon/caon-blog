@@ -10,3 +10,4 @@
 | https://gchq.github.io/CyberChef/ | For all purposes | 
 | https://securityheaders.com/ | Test sites for security headers | 
 | https://builtwith.com | Database of sites technologies | 
+| https://deps.dev/ | Open Source Insights |

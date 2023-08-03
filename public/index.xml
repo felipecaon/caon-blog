@@ -55,7 +55,7 @@ https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/auths/saml/</guid>
-      <description> SAML # https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf https://docs.google.com/presentation/d/1ngp3Mq8y2h2xwGKqkOhI1ePUQxvXTNO1Xhs1kaBJmqU/edit#slide=id.g14623ab8ca8_0_51 </description>
+      <description> SAML # https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf https://docs.google.com/presentation/d/1ngp3Mq8y2h2xwGKqkOhI1ePUQxvXTNO1Xhs1kaBJmqU/edit </description>
     </item>
     
     <item>
@@ -96,9 +96,11 @@ https://securityheaders.com/ POC # &amp;lt;iframe src=&amp;#34;https://example.c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/cloud/aws/</guid>
-      <description> Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity pool is enabled it is possible to gather a temporary token
+      <description>Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity pool is enabled it is possible to gather a temporary token
 https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
-Found secrets? # Use those secrets in aws CLI Collection of privilege escalation by misconfiguration # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/ Bucket Decloaker # https://gist.github.com/fransr/a155e5bd7ab11c93923ec8ce788e3368 </description>
+Found secrets? # Use those secrets in aws CLI
+Once inside, escalate your privileges # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/
+Bucket Decloaker # https://gist.github.com/fransr/a155e5bd7ab11c93923ec8ce788e3368</description>
     </item>
     
     <item>
@@ -107,7 +109,8 @@ Found secrets? # Use those secrets in aws CLI Collection of privilege escalation
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/cloud/azure/</guid>
-      <description>Microsoft Azure # Azure Edge takeover # https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/ Active Directory recon # az ad sp show --id &amp;lt;clid_id&amp;gt;
+      <description>Microsoft Azure # Azure Edge takeover # https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/
+Active Directory recon # az ad sp show --id &amp;lt;client_id&amp;gt;
 Sometimes ADs are configured as multi-tenants, allowing anyone to login into private tenants.</description>
     </item>
     
@@ -129,7 +132,8 @@ Misconfigs in Google Identity POST /identitytoolkit/v3/relyingparty/signupNewUse
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/cms/drupal/</guid>
-      <description>Drupal # Drupal hacking guide droopescan Reverse Shel with admin access Content Discovery # Fuzz in example.com/node/FUZZ to find unmapped pages</description>
+      <description>Drupal # Drupal hacking guide Once inside, get RCE # Reverse Shel with admin access
+Content Discovery # Fuzz in example.com/node/FUZZ to find unmapped pages</description>
     </item>
     
     <item>
@@ -138,7 +142,8 @@ Misconfigs in Google Identity POST /identitytoolkit/v3/relyingparty/signupNewUse
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/cms/others/</guid>
-      <description> Joomla # joomscan Magento # magescan </description>
+      <description>Joomla # joomscan Magento # magescan More # Look for CVEs under the CMS
+https://sploitus.com/</description>
     </item>
     
     <item>
@@ -186,8 +191,7 @@ Attacks # Check for PII or sensitive in cookie data Add a very long cookie value
       
       <guid>https://caon.io/exploitation/crlf/</guid>
       <description> CRLF # Carriage Return Line Feed
-Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A
-Tools # # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;#34;http://example.com&amp;#34; POC # CRLF to XSS
+Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A Tools # # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;#34;http://example.com&amp;#34; POC # CRLF to XSS
 http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2025%0d%0a%0d%0a%3Cscript%3Ealert(1)%3C/script%3E </description>
     </item>
     
@@ -197,7 +201,7 @@ http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHT
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/csrf/</guid>
-      <description>CSRF # Conditions to exploit an useful CSRF # Revelant action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find # Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request and call manually Extract the token with XSS or HTMl injection Articles # URL Description What is CRSF Part #1 Why CORS makes CSRf impossible Part #2 Generate POCs # In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
+      <description>CSRF # Conditions to exploit an useful CSRF # Revelant action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find # Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request and call manually Extract the token with XSS or HTML injection Articles # URL Description What is CRSF Part #1 Why CORS makes CSRf impossible Part #2 Generate POCs # In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
     </item>
     
     <item>
@@ -226,7 +230,18 @@ Business Logic flaws Cache poisoning Attack Vectors # Premise: An websites allow
       
       <guid>https://caon.io/exploitation/idor/</guid>
       <description>IDOR # Basically try to screw with evertything.
-Add parameters into the endpoints # GET /api_v1/messages --&amp;gt; 401 vs GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution # GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: # POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! # /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions # /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
+Burp filter # (?i)\b\w*id\b(?!\w)\s*=\s*(&amp;quot;[^&amp;quot;]*&amp;quot;|&#39;[^&#39;]*&#39;|[^&amp;amp;\s}]*)
+Add parameters into the endpoints # GET /api_v1/messages --&amp;gt; 401 GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution # GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: # POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! # /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions # /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caon.io/exploitation/IIS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/exploitation/IIS/</guid>
+      <description> IIS # Shortscan # https://github.com/bitquark/shortscan
+$ shortscan http://example.org/ </description>
     </item>
     
     <item>
@@ -266,9 +281,8 @@ https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rd
 Download all js files for each site https://github.com/003random/getJS
 JSScanner
 Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
-JSBeat
-Download all js files for each site and beautify: https://github.com/felipecaon/BugBountyStuff/blob/main/scripts/jsbeat.py
-Way Back Machine # Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.</description>
+Way Back Machine # Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.
+# https://github.com/jsvine/waybackpack # Clean known paths or JS files that are going to be useless in analysis.</description>
     </item>
     
     <item>
@@ -408,7 +422,7 @@ How to bypass wafs
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/workflows/payment/</guid>
-      <description> Payment Workflow # </description>
+      <description>Payment Workflow # https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf</description>
     </item>
     
     <item>
@@ -450,7 +464,7 @@ African Network Information Center (AFRINIC) American Registry for Internet Numb
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/dorks/</guid>
-      <description> Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; </description>
+      <description>Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
     </item>
     
     <item>
@@ -482,7 +496,8 @@ X8 # # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/portscan/</guid>
-      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/ Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
+      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
+Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
     </item>
     
     <item>
@@ -537,7 +552,7 @@ GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.
       <guid>https://caon.io/recon/subdomain/active/</guid>
       <description> Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-# https://github.com/felipecaon/resolvers wget https://raw.githubusercontent.com/felipecaon/resolvers/main/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
+# https://github.com/proabiral/Fresh-Resolvers wget https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     
     <item>
@@ -556,12 +571,12 @@ Get resolvers at:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/thirdparty/</guid>
-      <description> Third Party # Waybackmachine &amp;amp; others # Use gau to search for old files and paths from crawl websites
+      <description>Third Party # Waybackmachine &amp;amp; others # Use gau to search for old files and paths from crawl websites
 echo &amp;#34;example.com&amp;#34; | gau Alienvault # Look under Associated Urls
 https://otx.alienvault.com/indicator/domain/example.com
 AWS Scraping # By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
 https://github.com/jhaddix/awsScrape/
-More # https://leakix.net/ </description>
+More # https://leakix.net/</description>
     </item>
     
     <item>
@@ -579,7 +594,7 @@ More # https://leakix.net/ </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/whois/</guid>
-      <description></description>
+      <description> Whois # https://www.whatsmydns.net/domain-name-owner Reverse Whois # https://tools.whoisxmlapi.com/reverse-whois-search Whois History # https://www.whoxy.com Whois mass checking: # https://github.com/melbadry9/WhoEnum </description>
     </item>
     
     <item>
@@ -598,7 +613,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/burp/</guid>
-      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns J2EEScan JS Link Finder, find links inside javascript files Para Miner, mines urls searching for parameters Reflector, find reflected inputs JSON Web Tokens, creates a tab to analyze json based tokens Retire.js, find old javascript libraries with known vulns Web Cache Deception Scanner, tests for cache problems Burp Bounty, OP HTTP methods discloser, discloses methods for same endpoint Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
+      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
     </item>
     
     <item>
@@ -643,7 +658,7 @@ Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/tools/</guid>
-      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies </description>
+      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights </description>
     </item>
     
     <item>

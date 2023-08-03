@@ -12,13 +12,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/recon/subdomain/passive/" /><meta property="article:section" content="recon" />
 
-
+<meta property="article:modified_time" content="2023-07-14T10:04:42-03:00" />
 <title>Passive | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.8eb55127aed64e50b2838edaef2b6d26a903ea092aaf442c0069430feb97cad5.js" integrity="sha256-jrVRJ67WTlCyg47a7yttJqkD6gkqr0QsAGlDD&#43;uXytU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b043ecb40e3d3386c1da8b2afc1ad3b4f344df28878bc241c79cd1bf882348af.js" integrity="sha256-sEPstA49M4bB2osq/BrTtPNE3yiHi8JBx5zRv4gjSK8=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNBNGF8X6V"></script>
 <script>
@@ -182,6 +182,9 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>
 <p><a href="/exploitation/idor/">IDOR</a></p>
+<ul>
+<li><a href="/exploitation/IIS/">IIS</a></li>
+</ul>
 </li>
 <li>
 <p><a href="/exploitation/lfi/">LFI</a></p>
@@ -311,7 +314,6 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#passive-resources">Passive Resources</a>
       <ul>
         <li><a href="#all-in-one-script">All in one script</a></li>
-        <li><a href="#third-party-websites">Third party websites</a></li>
         <li><a href="#google-analytics-id">Google analytics ID</a></li>
         <li><a href="#google-tag-manager">Google Tag Manager</a></li>
         <li><a href="#favicon">Favicon</a></li>
@@ -367,19 +369,7 @@ echo &#34;[+] Assetfinder done&#34;
 
 cat subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt | uniq $1_subdomains
 rm subfinder_$1.txt findomain_$1.txt assetfinder_$1.txt amass_$1.txt
-</code></pre><h2 id="third-party-websites">
-  Third party websites
-  <a class="anchor" href="#third-party-websites">#</a>
-</h2>
-<p>The following list contains sites that may have additional subdomains:</p>
-<ul>
-<li><a href="https://chaos.projectdiscovery.io/">https://chaos.projectdiscovery.io/</a></li>
-<li><a href="https://jldc.me/anubis/subdomains/site.com">https://jldc.me/anubis/subdomains/site.com</a></li>
-<li><a href="https://dataset.domainsproject.org/">https://dataset.domainsproject.org/</a></li>
-<li><a href="https://phonebook.cz/">https://phonebook.cz/</a></li>
-<li><a href="https://suip.biz/?act=subfinder">https://suip.biz/?act=subfinder</a></li>
-</ul>
-<h2 id="google-analytics-id">
+</code></pre><h2 id="google-analytics-id">
   Google analytics ID
   <a class="anchor" href="#google-analytics-id">#</a>
 </h2>
@@ -401,10 +391,7 @@ cat subdomains.txt | analyticsrelationships
   <a class="anchor" href="#favicon">#</a>
 </h2>
 <p>Search for favicon md5 value in known search engines to find websites related to your search</p>
-<ul>
-<li><a href="https://faviconhash.com/">https://faviconhash.com/</a></li>
-</ul>
-<pre tabindex="0"><code>Tip: Use http.favicon.hash:&lt;hash&gt; on Shodan to hunt phishing sites.
+<pre tabindex="0"><code>Tip: Use http.favicon.hash:&lt;hash&gt; on Shodan
 </code></pre></article>
  
       
@@ -445,7 +432,6 @@ cat subdomains.txt | analyticsrelationships
     <li><a href="#passive-resources">Passive Resources</a>
       <ul>
         <li><a href="#all-in-one-script">All in one script</a></li>
-        <li><a href="#third-party-websites">Third party websites</a></li>
         <li><a href="#google-analytics-id">Google analytics ID</a></li>
         <li><a href="#google-tag-manager">Google Tag Manager</a></li>
         <li><a href="#favicon">Favicon</a></li>
