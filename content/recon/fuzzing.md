@@ -6,8 +6,7 @@ Try to run techniques from [403 Bypass](https://caon.io/docs/exploitation/403byp
 {{< /hint >}}
 
 {{< hint info >}} **Configure your options!**
-ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. 
-The solution for this is to implement a .ffufrc file with real headers:
+You can customize your ffuf with special information, here's a sample:
 
 https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
 {{< /hint >}}
@@ -21,7 +20,7 @@ ffuf -w /path/to/wordlist -u https://target/FUZZ
 ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u "https://example.com/PAYLOAD" -H "HEADER:127.0.0.1" -X "METHOD"
 
 # Multiple URLs and mutiple files example
-ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v
+ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v
 
 # Cool ffuf flags
 -ac: Calibrate requests to unmatch false positives
@@ -60,3 +59,5 @@ Generate a bunch of breaking-strings to test your target
 |---|---|
 |https://github.com/p0dalirius/webapp-wordlists|This repo contains wordlists for a lot of webapps|
 |https://github.com/six2dez/OneListForAll|Huge list of paths and files|
+|https://www.acceis.fr/ffuf-advanced-tricks/|ffuf tricks|
+

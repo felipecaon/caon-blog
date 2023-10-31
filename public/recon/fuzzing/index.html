@@ -5,26 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Fuzzing # Rate Limited?
 Try to run techniques from 403 Bypass
-Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
+Configure your options! You can customize your ffuf with special information, here&rsquo;s a sample:
 https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
-# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &#34;https://example.com/PAYLOAD&#34; -H &#34;HEADER:127.0.0.1&#34; -X &#34;METHOD&#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.">
+# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &#34;https://example.com/PAYLOAD&#34; -H &#34;HEADER:127.0.0.1&#34; -X &#34;METHOD&#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise # Ffuf can generate a large output, even with -ac flag enabled.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Fuzzing # Rate Limited?
 Try to run techniques from 403 Bypass
-Configure your options! ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data. The solution for this is to implement a .ffufrc file with real headers:
+Configure your options! You can customize your ffuf with special information, here&rsquo;s a sample:
 https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
-# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &#34;https://example.com/PAYLOAD&#34; -H &#34;HEADER:127.0.0.1&#34; -X &#34;METHOD&#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/." />
+# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &#34;https://example.com/PAYLOAD&#34; -H &#34;HEADER:127.0.0.1&#34; -X &#34;METHOD&#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise # Ffuf can generate a large output, even with -ac flag enabled." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/recon/fuzzing/" /><meta property="article:section" content="recon" />
 
-<meta property="article:modified_time" content="2023-07-14T10:04:42-03:00" />
+<meta property="article:modified_time" content="2023-08-03T16:14:04-03:00" />
 <title>Fuzzing | caon.io</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b043ecb40e3d3386c1da8b2afc1ad3b4f344df28878bc241c79cd1bf882348af.js" integrity="sha256-sEPstA49M4bB2osq/BrTtPNE3yiHi8JBx5zRv4gjSK8=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b1f8ef8f7edd44c604c73cb8201cd0a5a3bfb67648cd5dc51165bad553df2dd0.js" integrity="sha256-sfjvj37dRMYExzy4IBzQpaO/tnZIzV3FEWW61VPfLdA=" crossorigin="anonymous"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNBNGF8X6V"></script>
 <script>
@@ -239,6 +239,7 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>Other</p>
 <ul>
+<li><a href="/exploitation/other/smsverification/">SMS Verification</a></li>
 <li><a href="/exploitation/other/passwordbruteforce/">Password Brute Force</a></li>
 <li><a href="/exploitation/other/javascriptfiles/">Javascript Analysys</a></li>
 <li><a href="/exploitation/other/uuid/">UUID</a></li>
@@ -349,8 +350,7 @@ https://github.com/alex-shpak/hugo-book
 
 <blockquote class="book-hint info">
   <p><strong>Configure your options!</strong>
-ffuf runs by default with ffuf custom user agent, some sites will not trust that and return dummy data.
-The solution for this is to implement a .ffufrc file with real headers:</p>
+You can customize your ffuf with special information, here&rsquo;s a sample:</p>
 <p><a href="https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42">https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42</a></p>
 
 </blockquote>
@@ -362,7 +362,7 @@ ffuf -w /path/to/wordlist -u https://target/FUZZ
 ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &#34;https://example.com/PAYLOAD&#34; -H &#34;HEADER:127.0.0.1&#34; -X &#34;METHOD&#34;
 
 # Multiple URLs and mutiple files example
-ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v
+ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v
 
 # Cool ffuf flags
 -ac: Calibrate requests to unmatch false positives
@@ -410,6 +410,10 @@ bfac --no-text --url http://example.com/test.php --level 2
 <tr>
 <td><a href="https://github.com/six2dez/OneListForAll">https://github.com/six2dez/OneListForAll</a></td>
 <td>Huge list of paths and files</td>
+</tr>
+<tr>
+<td><a href="https://www.acceis.fr/ffuf-advanced-tricks/">https://www.acceis.fr/ffuf-advanced-tricks/</a></td>
+<td>ffuf tricks</td>
 </tr>
 </tbody>
 </table>

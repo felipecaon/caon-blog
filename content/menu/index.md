@@ -56,7 +56,7 @@ headless: true
 	- [Deserialization]({{< relref "/exploitation/deserialization" >}})
 	- [Host Header Injection]({{< relref "/exploitation/hostheaderinjection" >}})
 	- [IDOR]({{< relref "/exploitation/idor" >}})
-        - [IIS]({{< relref "/exploitation/IIS" >}})
+	- [IIS]({{< relref "/exploitation/IIS" >}})
 	- [LFI]({{< relref "/exploitation/lfi" >}})
 	- [Open Redirect]({{< relref "/exploitation/openredirect" >}})
 	- [Parameter Pollution]({{< relref "/exploitation/parameterpollution" >}})
@@ -76,6 +76,7 @@ headless: true
 	- [Payment]({{< relref "/exploitation/workflows/payment" >}})
 
 - Other
+	- [SMS Verification]({{< relref "/exploitation/other/smsverification" >}})
 	- [Password Brute Force]({{< relref "/exploitation/other/passwordbruteforce" >}})
 	- [Javascript Analysys]({{< relref "/exploitation/other/javascriptfiles" >}})
 	- [UUID]({{< relref "/exploitation/other/uuid" >}})
