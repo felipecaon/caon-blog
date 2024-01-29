@@ -1,5 +1,3 @@
-# Scope
-
 A scope can be defined as of the limit of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 
 Example of scope

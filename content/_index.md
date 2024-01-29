@@ -1,9 +1,7 @@
----
-title: Introduction
-type: docs
----
-
-# Welcome
++++
+title = 'Welcome to caon.io'
+date = 2024-01-29T18:41:53-03:00
++++
 
 This site contains mostly stuff about appsec that may be helpful for read teamers or bug bounty hunters out there.
 

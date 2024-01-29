@@ -2,7 +2,7 @@
 
 A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
 
-```
+```bash
 # https://github.com/OWASP/Amass
 amass enum -passive -d domain.com
 
@@ -22,7 +22,7 @@ gau --subs example.com | unfurl -u domains
 
 ## All in one script
 
-```
+```bash
 amass enum -passive -d domain.com -o amass_$1.txt > /dev/null 2>&1
 echo "[+] Amass done"
 

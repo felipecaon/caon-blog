@@ -1,0 +1,147 @@
+---
+main:
+  - name: Recon
+    ref: "/recon"
+    icon: "gdoc_search"
+    sub:
+      - name: Scope
+        ref: "/recon/scope"
+      - name: ASN/CIDR
+        ref: "/recon/asncidr"
+      - name: Whois
+        ref: "/recon/whois"
+      - name: Subdomain Enumeration
+        sub:
+          - name: Passive
+            ref: "/recon/subdomain/passive"
+          - name: Active
+            ref: "/recon/subdomain/active"
+      - name: Port Scan
+        ref: "/recon/portscan"
+      - name: Probing
+        ref: "/recon/probing"
+      - name: Screenshot
+        ref: "/recon/screenshot"
+      - name: WAF Check
+        ref: "/recon/wafcheck"
+      - name: Content Discovery
+        sub:
+          - name: Dorking
+            ref: "/recon/dorks"
+          - name: Spidering
+            ref: "/recon/spider"
+          - name: Fuzzing
+            ref: "/recon/fuzzing"  
+          - name: Param Discovery
+            ref: "/recon/paramdiscovery"
+          - name: Third Party
+            ref: "/recon/thirdparty"              
+  - name: Exploitation
+    icon: "gdoc_fire"
+    sub:
+      - name: Bypass
+        sub:
+          - name: "403"
+            ref: "/exploitation/bypass/403"
+          - name: WAF
+            ref: "/exploitation/bypass/waf"
+      - name: Authentication
+        sub:
+          - name: JWT
+            ref: "/exploitation/auth/jwt"
+          - name: SAML
+            ref: "/exploitation/auth/saml"
+          - name: "2FA"
+            ref: "/exploitation/auth/2fa"
+          - name: OAuth
+            ref: "/exploitation/auth/oauth"
+      - name: Cloud
+        sub:
+          - name: Amazon AWS
+            ref: "/exploitation/cloud/aws"
+          - name: Azure
+            ref: "/exploitation/cloud/azure"
+          - name: "Google GCP"
+            ref: "/exploitation/cloud/gcp"
+      - name: Vulnerabilities
+        sub:
+          - name: Cache poisoning
+            ref: "/exploitation/vulnerability/cachepoisoning"
+          - name: Clickjacking	
+            ref: "/exploitation/vulnerability/clickjacking"
+          - name: Command Injection	
+            ref: "/exploitation/vulnerability/commandinjection"
+          - name: Cookie Based Attacks	
+            ref: "/exploitation/vulnerability/cookieattacks"
+          - name: CRLF
+            ref: "/exploitation/vulnerability/crlf"
+          - name: CSRF
+            ref: "/exploitation/vulnerability/csrf"
+          - name: CORS	
+            ref: "/exploitation/vulnerability/cors"
+          - name: Deserialization
+            ref: "/exploitation/vulnerability/deserialization"
+          - name: Host Header Injection
+            ref: "/exploitation/vulnerability/hostheaderinjection"
+          - name: IDOR
+            ref: "/exploitation/vulnerability/idor"
+          - name: IIS
+            ref: "/exploitation/vulnerability/IIS"
+          - name: LFI
+            ref: "/exploitation/vulnerability/lfi"
+          - name: Open Redirect
+            ref: "/exploitation/vulnerability/openredirect"
+          - name: Parameter Pollution
+            ref: "/exploitation/vulnerability/parameterpollution"	
+          - name: Path Transversal
+            ref: "/exploitation/vulnerability/pathtransversal"
+          - name: Prototype Pollution
+            ref: "/exploitation/vulnerability/prototypepollution"
+          - name: Request Smuggling
+            ref: "/exploitation/vulnerability/requestsmuggling"
+          - name: RCE
+            ref: "/exploitation/vulnerability/rce"
+          - name: SSTI
+            ref: "/exploitation/vulnerability/ssti"
+          - name: SSRF
+            ref: "/exploitation/vulnerability/ssrf"
+          - name: SQLi
+            ref: "/exploitation/vulnerability/sqli"
+          - name: XSS
+            ref: "/exploitation/vulnerability/xss"
+          - name: XXE
+            ref: "/exploitation/vulnerability/xxe"
+      - name: Other
+        ref: "/exploitation"
+        sub:
+          - name: SMS Verification
+            ref: "/exploitation/vulnerability/other/smsverification"
+          - name: Brute Force
+            ref: "/exploitation/vulnerability/other/bruteforce"
+          - name: Javascript Analysys
+            ref: "/exploitation/vulnerability/other/javascriptfiles"
+          - name: UUID
+            ref: "/exploitation/vulnerability/other/uuid"
+          - name: Web technologies
+            ref: "/exploitation/vulnerability/other/webtech"
+  - name: Resources
+    icon: "gdoc_star"
+    sub:
+      - name: Regexes
+        ref: "/resources/regexes"
+      - name: Burp Suite
+        ref: "/resources/burpsuite"
+      - name: Sites
+        ref: "/resources/sites"
+      - name: Youtube channels
+        ref: "/resources/youtubechannels"
+      - name: Writeups
+        ref: "/resources/writeups"
+      - name: Youtube channels
+        ref: "/resources/youtubechannels"
+      - name: Web Tools
+        ref: "/resources/webtools"
+      - name: Repositories
+        ref: "/resources/repositories"
+      - name: Career
+        ref: "/resources/career"

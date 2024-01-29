@@ -4,7 +4,7 @@
 
 Use gau to search for old files and paths from crawl websites
 
-```
+```bash
 echo "example.com" | gau
 ```
 
