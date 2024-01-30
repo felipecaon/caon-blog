@@ -37,6 +37,11 @@
     }
 }
 
+.gdoc-nav--main>.gdoc-nav__list {
+    overflow-y: auto;
+    height: 100vh;
+}
+
 /* Light mode theming */
 :root,
 :root[color-theme="light"] {
