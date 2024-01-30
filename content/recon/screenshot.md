@@ -1,4 +1,6 @@
-# Screenshot
++++
+title = 'Screenshot'
++++
 
 For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
 
@@ -6,7 +8,7 @@ For large recons where manual website visit is not doable. The program would gra
 
 A browser must be installed prior using an screenshotter. Chrome or chromium is recommended. {{< /hint >}}
 
-## GoWitness
+## GoWitnessß
 
 ```
 # https://github.com/sensepost/gowitness

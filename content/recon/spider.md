@@ -1,6 +1,3 @@
-# Spider
-
-
 ## Crawling
 
 ## katana

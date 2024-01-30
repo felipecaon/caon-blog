@@ -1,3 +1,7 @@
++++
+title = 'Whois'
++++
+
 ## Whois
 
 - https://www.whatsmydns.net/domain-name-owner

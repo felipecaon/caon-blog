@@ -2,113 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recons on caon.io</title>
-    <link>http://localhost/recon/</link>
+    <link>https://caon.io/recon/</link>
     <description>Recent content in Recons on caon.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/recon/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://caon.io/recon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost/recon/asncidr/</link>
+      <link>https://caon.io/recon/spider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/recon/asncidr/</guid>
-      <description>ASN An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
-The five regional Internet registries are:
-African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC) Obtaining an ASN (autonomous system number) By Organization Name https://asrank.</description>
+      <guid>https://caon.io/recon/spider/</guid>
+      <description> Crawling katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost/recon/dorks/</link>
+      <link>https://caon.io/recon/subdomain/active/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/recon/dorks/</guid>
-      <description>Dorks Google # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/fuzzing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/fuzzing/</guid>
-      <description>Fuzzing Rate Limited?
-Try to run techniques from 403 Bypass
-Configure your options! You can customize your ffuf with special information, here&amp;rsquo;s a sample:
-https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
-# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise Ffuf can generate a large output, even with -ac flag enabled.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/paramdiscovery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/paramdiscovery/</guid>
-      <description>Parameter Discovery There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
-X8 # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; -w &amp;lt;wordlist&amp;gt; Arjun # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; arjun -i urls.txt -oT output -m GET arjun -i urls.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/portscan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/portscan/</guid>
-      <description> Port Scan Nmap # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
-Naabu # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/probing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/probing/</guid>
-      <description>Probing Validates a list of urls, checks to see if they are alive or not.
-httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!
-For some reason httpx fails to retrieve all good working urls. It is recommended to run httpx more than once to achieve better results.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/scope/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/scope/</guid>
-      <description>A scope can be defined as of the limit of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
-Example of scope
-In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
-Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/screenshot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/screenshot/</guid>
-      <description> Screenshot For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
-Hold down!
-A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
-GoWitness # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/spider/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/spider/</guid>
-      <description> Spider Crawling katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/subdomain/active/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/subdomain/active/</guid>
+      <guid>https://caon.io/recon/subdomain/active/</guid>
       <description> Active Resources The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.
 Get resolvers at:
 # https://github.com/proabiral/Fresh-Resolvers wget https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt Pure DNS # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
@@ -116,21 +28,119 @@ Get resolvers at:
     
     <item>
       <title></title>
-      <link>http://localhost/recon/subdomain/passive/</link>
+      <link>https://caon.io/recon/subdomain/passive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/recon/subdomain/passive/</guid>
+      <guid>https://caon.io/recon/subdomain/passive/</guid>
       <description>Passive Resources A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
 # https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script amass enum -passive -d domain.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost/recon/thirdparty/</link>
+      <link>https://caon.io/recon/wordlistgeneration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/recon/thirdparty/</guid>
-      <description>Third Party Waybackmachine &amp;amp; others Use gau to search for old files and paths from crawl websites
+      <guid>https://caon.io/recon/wordlistgeneration/</guid>
+      <description> Wordlist generation After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
+Parameters # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths cat links.txt | unfurl paths | rev | cut -d &amp;#39;/&amp;#39; -f1 | rev | anew paths.txt </description>
+    </item>
+    
+    <item>
+      <title>ASN/CIDR</title>
+      <link>https://caon.io/recon/asncidr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/asncidr/</guid>
+      <description>ASN An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
+The five regional Internet registries are:
+African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC) Obtaining an ASN (autonomous system number) By Organization Name https://asrank.</description>
+    </item>
+    
+    <item>
+      <title>Dorks</title>
+      <link>https://caon.io/recon/dorks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/dorks/</guid>
+      <description>Google # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
+    </item>
+    
+    <item>
+      <title>Fuzzing</title>
+      <link>https://caon.io/recon/fuzzing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/fuzzing/</guid>
+      <description>Rate Limited?
+Try to run techniques from 403 Bypass
+Configure your options! You can customize your ffuf with special information, here&amp;rsquo;s a sample:
+https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
+# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise Ffuf can generate a large output, even with -ac flag enabled.</description>
+    </item>
+    
+    <item>
+      <title>Parameter Discovery</title>
+      <link>https://caon.io/recon/paramdiscovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/paramdiscovery/</guid>
+      <description>There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
+X8 # https://github.com/Sh1Yo/x8 x8 -u &amp;#34;https://example.com/&amp;#34; -w &amp;lt;wordlist&amp;gt; Arjun # https://github.com/s0md3v/Arjun arjun -u https://target.com/ -w &amp;lt;wordlist&amp;gt; arjun -i urls.txt -oT output -m GET arjun -i urls.txt -oT output -m POST arjun -i urls.</description>
+    </item>
+    
+    <item>
+      <title>Port Scan</title>
+      <link>https://caon.io/recon/portscan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/portscan/</guid>
+      <description> Nmap # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/
+Naabu # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
+    </item>
+    
+    <item>
+      <title>Probing</title>
+      <link>https://caon.io/recon/probing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/probing/</guid>
+      <description>Validates a list of urls, checks to see if they are alive or not.
+httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!
+For some reason httpx fails to retrieve all good working urls. It is recommended to run httpx more than once to achieve better results.</description>
+    </item>
+    
+    <item>
+      <title>Scope</title>
+      <link>https://caon.io/recon/scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/scope/</guid>
+      <description>A scope can be defined as of the limit of where your research should go, if you ever find a bug, this must reside inside the scope, otherwise, the finding is not valid.
+Example of scope
+In-Scope Out of scope example.com subdomain.example.com *-dev.example.com The scope above states that example.com and www.example.com are valid (www is a subdomain, example.com points to www by default).
+Any subdomain under -dev.example.com is valid as well, the wildcard symbol (*) states that anything is valid.</description>
+    </item>
+    
+    <item>
+      <title>Screenshot</title>
+      <link>https://caon.io/recon/screenshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/screenshot/</guid>
+      <description>For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.
+Hold down!
+A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.
+GoWitnessß # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Third Party</title>
+      <link>https://caon.io/recon/thirdparty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/thirdparty/</guid>
+      <description>Waybackmachine &amp;amp; others Use gau to search for old files and paths from crawl websites
 echo &amp;#34;example.com&amp;#34; | gau Alienvault Look under Associated Urls
 https://otx.alienvault.com/indicator/domain/example.com
 AWS Scraping By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.
@@ -139,31 +149,12 @@ More https://leakix.net/</description>
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost/recon/wafcheck/</link>
+      <title>Whois</title>
+      <link>https://caon.io/recon/whois/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/recon/wafcheck/</guid>
-      <description> WAF Check Wafw00f # https://github.com/EnableSecurity/wafw00f wafw00f -i websites.txt </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/whois/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/whois/</guid>
+      <guid>https://caon.io/recon/whois/</guid>
       <description> Whois https://www.whatsmydns.net/domain-name-owner Reverse Whois https://tools.whoisxmlapi.com/reverse-whois-search Whois History https://www.whoxy.com Whois mass checking: https://github.com/melbadry9/WhoEnum </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost/recon/wordlistgeneration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/recon/wordlistgeneration/</guid>
-      <description> Wordlist generation After spidering across the target it is a good idea to check the content discovered and append the newly discovered content to your wordlist.
-Parameters # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | anew all_parameters.txt Paths cat links.txt | unfurl paths | rev | cut -d &amp;#39;/&amp;#39; -f1 | rev | anew paths.txt </description>
     </item>
     
   </channel>

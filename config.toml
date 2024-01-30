@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "https://caon.io"
 title = "caon.io"
 theme = "hugo-geekdoc"
 

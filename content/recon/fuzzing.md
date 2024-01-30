@@ -1,4 +1,6 @@
-# Fuzzing
++++
+title = 'Fuzzing'
++++
 
 {{< hint info >}} **Rate Limited?**
 

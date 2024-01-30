@@ -1,4 +1,6 @@
-# Burp Suite
++++
+title = 'Burp Suite'
++++
 
 ## Plugins
 

@@ -22,8 +22,6 @@ main:
         ref: "/recon/probing"
       - name: Screenshot
         ref: "/recon/screenshot"
-      - name: WAF Check
-        ref: "/recon/wafcheck"
       - name: Content Discovery
         sub:
           - name: Dorking

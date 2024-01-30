@@ -1,4 +1,6 @@
-# Parameter Discovery
++++
+title = 'Parameter Discovery'
++++
 
 There are two tools that I prefer when doing param scanning. X8, which is a tool made just for param discovery with advanced comparison and arjun, which does basically the same. From my tests I could not determine which one is better.
 
