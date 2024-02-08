@@ -29,7 +29,6 @@ curl URL -x http://127.0.0.1:8080
 
 ## Repositories
 
-- [IntruderPayloads](https://github.com/1N3/IntruderPayloads), collection of payloads used in burp
 - [AwesomeBurpExtensions](https://github.com/snoopysecurity/awesome-burp-extensions)
 
 ## Articles

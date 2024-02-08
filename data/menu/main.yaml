@@ -37,6 +37,12 @@ main:
   - name: Exploitation
     icon: "gdoc_fire"
     sub:
+      - name: Android
+        sub:
+          - name: "APK Decompilers"
+            ref: "/exploitation/android/apkdecompilers"
+          - name: "Vulnerabilities"
+            ref: "/exploitation/android/vulnerabilities"
       - name: Bypass
         sub:
           - name: "403"
@@ -109,11 +115,16 @@ main:
             ref: "/exploitation/vulnerability/xss"
           - name: XXE
             ref: "/exploitation/vulnerability/xxe"
+      - name: Helpers
+        ref: "/helpers"
+        sub:
+          - name: LLMs
+            ref: "/helpers/llms"
+          - name: SMS Verification
+            ref: "/helpers/smsverification"
       - name: Other
         ref: "/exploitation"
         sub:
-          - name: SMS Verification
-            ref: "/exploitation/vulnerability/other/smsverification"
           - name: Brute Force
             ref: "/exploitation/vulnerability/other/bruteforce"
           - name: Javascript Analysys

@@ -147,6 +147,17 @@ Bucket Decloaker https://gist.github.com/fransr/a155e5bd7ab11c93923ec8ce788e3368
     </item>
     
     <item>
+      <title>APK Decompilers</title>
+      <link>https://caon.io/exploitation/android/apkdecompilers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/exploitation/android/apkdecompilers/</guid>
+      <description> JADX https://github.com/skylot/jadx Load the APK in the GUI app
+Command to load the source code without opening GUI:
+jadx GDA-android-reversing-Too https://github.com/charles2gan/GDA-android-reversing-Tool </description>
+    </item>
+    
+    <item>
       <title>ASN/CIDR</title>
       <link>https://caon.io/recon/asncidr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -205,7 +216,7 @@ List of cachable extensions 7z csv gif midi png tif zip avi doc gz mkv ppt tiff 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/career/</guid>
-      <description> Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
+      <description> Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap https://hbr.org/1999/11/management-time-whos-got-the-monkey Article on time optimization Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
     </item>
     
     <item>
@@ -378,6 +389,16 @@ wget http://[host]/page.php?url=../../../../../../../file.html Tricks PHP Filter
     </item>
     
     <item>
+      <title>LLMs   </title>
+      <link>https://caon.io/helpers/llms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/helpers/llms/</guid>
+      <description> Unfiltered LLMs Choose any mistral option
+https://labs.perplexity.ai/ </description>
+    </item>
+    
+    <item>
       <title>OAuth</title>
       <link>https://caon.io/exploitation/auth/oauth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -486,7 +507,7 @@ example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute gue
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/regexes/</guid>
-      <description> Site About https://www.autoregex.xyz/ Generate based on text https://github.com/mazen160/secrets-patterns-db Database of regexes secrets </description>
+      <description> Site About https://www.autoregex.xyz/ Generate based on text https://github.com/mazen160/secrets-patterns-db Database of regexes secrets https://github.com/PortSwigger/BChecks/blob/main/other/tokens/Tentative-leaks-checker.bcheck Burp BChecks for known regexes https://github.com/PortSwigger/BChecks/blob/main/other/tokens/Certain-leaks-checker.bcheck Burp BChecks for known regexes </description>
     </item>
     
     <item>
@@ -565,15 +586,15 @@ GoWitnessß # https://github.com/sensepost/gowitness gowitness file -f websites.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/sites/</guid>
-      <description> Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://weboas.is/ Link aggregator https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts https://anchisesbr.blogspot.com/ Portuguese security posts </description>
+      <description> Link Niche https://www.hahwul.com/ Blog https://netsec.expert/ Blog https://ihorrasch.com/ Blog https://www.agarri.fr/en Blog https://www.100security.com.br/ Blog (portuguese) https://www.hacking8.com/ Blog (chinese) https://www.rcesecurity.com Blog https://portswigger.net/research Burp&amp;rsquo;s owner research blog https://blog.orange.tw/ Blog/Research https://swarm.ptsecurity.com/ PT Swarm research blog https://0xdf.gitlab.io/ Solving HTB machines https://sploitus.com/ Search engine to find exploits https://www.exploitalert.com/ Search engine to find exploits https://unsafe.sh Chinese forum https://secret.club/ About HW and low level hacking https://www.bugbountyhunting.com/ Bug Bounty Writeups https://y4er.com/posts/ Chinese security posts https://anchisesbr.blogspot.com/ Portuguese security posts https://talkback.sh/ General hacking articles </description>
     </item>
     
     <item>
       <title>SMS Verification</title>
-      <link>https://caon.io/exploitation/vulnerability/other/smsverification/</link>
+      <link>https://caon.io/helpers/smsverification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://caon.io/exploitation/vulnerability/other/smsverification/</guid>
+      <guid>https://caon.io/helpers/smsverification/</guid>
       <description> Online https://receive-smss.com/ eSim https://www.airalo.com/ </description>
     </item>
     
@@ -639,6 +660,20 @@ https://www.uuidtools.com/decode</description>
     </item>
     
     <item>
+      <title>Vulnerabilities</title>
+      <link>https://caon.io/exploitation/android/vulnerabilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/exploitation/android/vulnerabilities/</guid>
+      <description>Quick scan MobSF to scan APK files
+https://github.com/MobSF/Mobile-Security-Framework-MobSF Grab APKs APKs can be found and download in
+https://apkcombo.com/ https://apps.evozi.com/apk-downloader/ Android Manifest In AndroidManifest.xml look for activities that are exported, those activities can be called by another apps
+exported=true Activities that use intent-filter are implicitly exported
+&amp;lt;intent-filter&amp;gt; # implicitly exported activity &amp;lt;/intent-filter&amp;gt; Adb commands Send intent data to Activity
+adb shell am start -n &amp;lt;package&amp;gt; --es &amp;lt;intent_param&amp;gt; &amp;lt;intent_value&amp;gt; Running deeplinks</description>
+    </item>
+    
+    <item>
       <title>WAF Bypass Techniques</title>
       <link>https://caon.io/exploitation/bypass/waf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -666,7 +701,7 @@ dev.domain.com stage.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/webtools/</guid>
-      <description> Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights </description>
+      <description> Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights https://makenowjust-labs.github.io/recheck/ REDos Checker </description>
     </item>
     
     <item>

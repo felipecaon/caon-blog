@@ -30,6 +30,8 @@
   </url><url>
     <loc>https://caon.io/exploitation/cloud/aws/</loc>
   </url><url>
+    <loc>https://caon.io/exploitation/android/apkdecompilers/</loc>
+  </url><url>
     <loc>https://caon.io/recon/asncidr/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/cloud/azure/</loc>
@@ -68,6 +70,8 @@
   </url><url>
     <loc>https://caon.io/exploitation/cloud/gcp/</loc>
   </url><url>
+    <loc>https://caon.io/helpers/</loc>
+  </url><url>
     <loc>https://caon.io/exploitation/vulnerability/hostheaderinjection/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/idor/</loc>
@@ -77,6 +81,8 @@
     <loc>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/lfi/</loc>
+  </url><url>
+    <loc>https://caon.io/helpers/llms/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/auth/oauth/</loc>
   </url><url>
@@ -118,7 +124,7 @@
   </url><url>
     <loc>https://caon.io/resources/sites/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/smsverification/</loc>
+    <loc>https://caon.io/helpers/smsverification/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/sqli/</loc>
   </url><url>
@@ -131,6 +137,8 @@
     <loc>https://caon.io/recon/thirdparty/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/other/uuid/</loc>
+  </url><url>
+    <loc>https://caon.io/exploitation/android/vulnerabilities/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/bypass/waf/</loc>
   </url><url>

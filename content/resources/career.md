@@ -9,6 +9,7 @@ title = 'Career Related Topics'
 | https://hbr.org/1999/11/management-time-whos-got-the-monkey | About management time |
 | https://shellsharks.com/getting-into-information-security | Steps to start in infosec | 
 | https://roadmap.sh/cyber-security | CyberSec toadmap | 
+| https://hbr.org/1999/11/management-time-whos-got-the-monkey | Article on time optimization | 
 
 # Boost your CV
 

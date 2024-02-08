@@ -13,3 +13,4 @@ title = 'Web Tools'
 | https://securityheaders.com/ | Test sites for security headers | 
 | https://builtwith.com | Database of sites technologies | 
 | https://deps.dev/ | Open Source Insights |
+| https://makenowjust-labs.github.io/recheck/ | REDos Checker |
