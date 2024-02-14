@@ -8,6 +8,36 @@
     display: none;
 }
 
+/* Stuff to keep things scollable */
+
+
+.gdoc-nav--main>.gdoc-nav__list {
+    overflow-y: auto;
+    height: 93vh;
+}
+
+/* .wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gdoc-page {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.gdoc-nav--main {
+    margin-top: 2vh !important;
+}
+
+.gdoc-nav--main {
+    padding: 2vh;
+}
+
+.gdoc-nav nav {
+    padding: 1vh 2vh 0 0;
+} */
+
 @media only screen and (min-width: 1200px) {
     .gdoc-header {
         display: none;
@@ -35,11 +65,6 @@
         width: 3rem !important;
         height: 3rem !important;
     }
-}
-
-.gdoc-nav--main>.gdoc-nav__list {
-    overflow-y: auto;
-    height: 100vh;
 }
 
 /* Light mode theming */
