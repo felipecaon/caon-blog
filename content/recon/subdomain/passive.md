@@ -20,6 +20,11 @@ findomain -u example.com -q
 gau --subs example.com | unfurl -u domains
 ```
 
+```
+# https://github.com/ARPSyndicate/puncia
+puncia subdomain <domain>
+```
+
 ## All in one script
 
 ```bash

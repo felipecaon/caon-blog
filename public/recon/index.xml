@@ -33,7 +33,7 @@ Get resolvers at:
       
       <guid>https://caon.io/recon/subdomain/passive/</guid>
       <description>Passive Resources A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).
-# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains All in one script amass enum -passive -d domain.</description>
+# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains # https://github.</description>
     </item>
     
     <item>
