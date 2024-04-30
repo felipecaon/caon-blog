@@ -67,6 +67,15 @@ main:
             ref: "/exploitation/cloud/azure"
           - name: "Google GCP"
             ref: "/exploitation/cloud/gcp"
+
+      - name: CMS
+        sub:
+          - name: Wordpress
+            ref: "/exploitation/cms/wordpress"
+          - name: Drupal
+            ref: "/exploitation/cms/drupal"
+          - name: Others
+            ref: "/exploitation/cms/others"
       - name: Vulnerabilities
         sub:
           - name: Cache poisoning

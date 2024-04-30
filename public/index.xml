@@ -50,15 +50,6 @@ https://sploitus.com/</description>
     
     <item>
       <title></title>
-      <link>https://caon.io/exploitation/cms/wordpress/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://caon.io/exploitation/cms/wordpress/</guid>
-      <description> Wordpress Analyze WP plugins source code wpscan Check WP IP behind WAF Pro tip To maximize results, configure a key in wpscan. </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://caon.io/exploitation/workflows/payment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -713,6 +704,17 @@ dev.domain.com stage.</description>
       
       <guid>https://caon.io/recon/whois/</guid>
       <description> Whois https://www.whatsmydns.net/domain-name-owner Reverse Whois https://tools.whoisxmlapi.com/reverse-whois-search Whois History https://www.whoxy.com Whois mass checking: https://github.com/melbadry9/WhoEnum </description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://caon.io/exploitation/cms/wordpress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/exploitation/cms/wordpress/</guid>
+      <description>Analyze WP plugins source code wpscan Check WP IP behind WAF Pro tip To maximize results, configure a key in wpscan. Code Analysis Wordpress exposes public interfaces that can be used in exploitation scenarios:
+Ajax Actions: Ajax actions can be called directly by intracting with the /wp-admin/admin-ajax.php endpoint. The actions are defined in the code in the following way:
+add_action( &amp;#39;wp_ajax_fcn_name&amp;#39;, &amp;#39;callback_function&amp;#39; ); add_action( &amp;#39;wp_ajax_nopriv_fcn_name&amp;#39;, &amp;#39;callback_function&amp;#39; ); Where all actions have the preffix wp_ajax, thus, the action name to be used is fcn_name.</description>
     </item>
     
     <item>
