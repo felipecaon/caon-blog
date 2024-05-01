@@ -712,7 +712,7 @@ dev.domain.com stage.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/cms/wordpress/</guid>
-      <description>Analyze WP plugins source code wpscan Check WP IP behind WAF Pro tip To maximize results, configure a key in wpscan. Code Analysis Wordpress exposes public interfaces that can be used in exploitation scenarios:
+      <description>Analyze WP plugins source code wpscan Check WP IP behind WAF WPSechelper Pro tip To maximize results, configure a key in wpscan. Code Analysis Wordpress exposes public interfaces that can be used in exploitation scenarios:
 Ajax Actions: Ajax actions can be called directly by intracting with the /wp-admin/admin-ajax.php endpoint. The actions are defined in the code in the following way:
 add_action( &amp;#39;wp_ajax_fcn_name&amp;#39;, &amp;#39;callback_function&amp;#39; ); add_action( &amp;#39;wp_ajax_nopriv_fcn_name&amp;#39;, &amp;#39;callback_function&amp;#39; ); Where all actions have the preffix wp_ajax, thus, the action name to be used is fcn_name.</description>
     </item>
