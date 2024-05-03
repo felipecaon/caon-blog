@@ -62,4 +62,4 @@ Generate a bunch of breaking-strings to test your target
 |https://github.com/p0dalirius/webapp-wordlists|This repo contains wordlists for a lot of webapps|
 |https://github.com/six2dez/OneListForAll|Huge list of paths and files|
 |https://www.acceis.fr/ffuf-advanced-tricks/|ffuf tricks|
-
+|https://github.com/Escape-Technologies/graphql-wordlist/tree/main| Initially for graphql, works everywhere|
