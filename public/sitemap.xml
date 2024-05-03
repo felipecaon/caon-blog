@@ -10,6 +10,8 @@
   </url><url>
     <loc>https://caon.io/exploitation/cms/others/</loc>
   </url><url>
+    <loc>https://caon.io/exploitation/cms/wordpress-cve/</loc>
+  </url><url>
     <loc>https://caon.io/exploitation/workflows/payment/</loc>
   </url><url>
     <loc>https://caon.io/recon/spider/</loc>
@@ -149,6 +151,8 @@
     <loc>https://caon.io/recon/whois/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/cms/wordpress/</loc>
+  </url><url>
+    <loc>https://caon.io/exploitation/cms/wordpress-cve-boilerplates/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/xss/</loc>
   </url><url>
