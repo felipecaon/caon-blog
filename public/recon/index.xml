@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/recon/spider/</guid>
-      <description> Crawling katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
+      <description> katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt Webpaste chrome extension # https://github.com/xnl-h4ck3r/webpaste </description>
     </item>
     
     <item>
@@ -55,6 +55,17 @@ Parameters # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | 
       <description>ASN An autonomous system number (ASN) is a unique identifier that allows its autonomous system to exchange routing information with other systems.
 The five regional Internet registries are:
 African Network Information Center (AFRINIC) American Registry for Internet Numbers (ARIN) Asia-Pacific Network Information Centre (APNIC) Latin American and Caribbean Network Information Centre (LACNIC) Réseaux IP Européens Network Coordination Centre (RIPE NCC) Obtaining an ASN (autonomous system number) By Organization Name https://asrank.</description>
+    </item>
+    
+    <item>
+      <title>Company Acquisitions &amp; Trademarks</title>
+      <link>https://caon.io/recon/companyinformation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caon.io/recon/companyinformation/</guid>
+      <description>Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
+To search all assets that is related to a company, one can search in the following resources:
+https://contracts.justia.com/companies/, find registered and approved trademarks https://www.crunchbase.com/, company acquisitions </description>
     </item>
     
     <item>

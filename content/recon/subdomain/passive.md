@@ -71,3 +71,4 @@ Search for favicon md5 value in known search engines to find websites related to
 Tip: Use http.favicon.hash:<hash> on Shodan
 ```
 
+See more shodan dorks here: https://github.com/dootss/shodan-dorks

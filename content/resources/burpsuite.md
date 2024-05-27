@@ -10,6 +10,7 @@ title = 'Burp Suite'
 - JS Link Finder, find links inside javascript files
 - Param Miner, mines urls searching for parameters
 - Reflector, find reflected inputs
+- JsLuice+ (https://github.com/0x999-x/jsluicepp)
 
 ## Tips n Tricks
 
@@ -26,6 +27,10 @@ putty.exe -ssh user@host -pw password -R 8080:127.0.0.1:8080
 # Visit the sites in VPS
 curl URL -x http://127.0.0.1:8080
 ```
+
+## Bchecks
+
+- https://github.com/j3ssie/custom-bcheck-scan
 
 ## Repositories
 

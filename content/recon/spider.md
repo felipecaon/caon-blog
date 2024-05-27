@@ -1,5 +1,3 @@
-## Crawling
-
 ## katana
 
 ```
@@ -19,4 +17,10 @@ cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent 
 ```
 # https://github.com/projectdiscovery/dnsx
 dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt > dnsx_info.txt
+```
+
+## Webpaste chrome extension
+
+```
+# https://github.com/xnl-h4ck3r/webpaste
 ```

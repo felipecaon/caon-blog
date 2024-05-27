@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.119.0">
 
 
-  <meta name="description" content="Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan&#43;&#43;, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127." />
+  <meta name="description" content="Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan&#43;&#43;, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs JsLuice&#43; (https://github.com/0x999-x/jsluicepp) Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127." />
 
   <title>Burp Suite | caon.io</title>
 
@@ -35,7 +35,7 @@
     content="Burp Suite"
   />
   <meta property="og:site_name" content="caon.io" />
-  <meta property="og:description" content="Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan&#43;&#43;, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127." />
+  <meta property="og:description" content="Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan&#43;&#43;, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs JsLuice&#43; (https://github.com/0x999-x/jsluicepp) Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/resources/burpsuite/" />
 
@@ -44,7 +44,7 @@
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Burp Suite" />
-  <meta name="twitter:description" content="Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan&#43;&#43;, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127." />
+  <meta name="twitter:description" content="Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan&#43;&#43;, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs JsLuice&#43; (https://github.com/0x999-x/jsluicepp) Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127." />
 
 
   <script type="application/ld+json">
@@ -55,8 +55,8 @@
       "name": "Burp Suite",
       "url" : "https://caon.io/resources/burpsuite/",
       "headline": "Burp Suite",
-      "description": "Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan\u002b\u002b, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.",
-      "wordCount" : "150",
+      "description": "Plugins Backslash powered scanner, find additional vulns JS Miner, gets sensitive content from js files Active Scan\u002b\u002b, find additional vulns JS Link Finder, find links inside javascript files Param Miner, mines urls searching for parameters Reflector, find reflected inputs JsLuice\u002b (https:\/\/github.com\/0x999-x\/jsluicepp) Tips n Tricks Send traffic from VPS to local burp # Run this in terminal connecting to vps (if ssh with key is possible) # When in WSL, portforwarding needs to be set ssh -R 8080:127.",
+      "wordCount" : "154",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -455,6 +455,51 @@
                   class="gdoc-nav__entry"
                 >
                   Whois
+                </a>
+              </span>
+              
+            </label>
+          
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+          
+          
+
+          
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              <span class="flex">
+                
+                <a
+                  href="/recon/companyinformation"
+                  class="gdoc-nav__entry"
+                >
+                  Company Information
                 </a>
               </span>
               
@@ -3666,6 +3711,10 @@
 <li>JS Link Finder, find links inside javascript files</li>
 <li>Param Miner, mines urls searching for parameters</li>
 <li>Reflector, find reflected inputs</li>
+<li>JsLuice+ (<a
+  class="gdoc-markdown__link"
+  href="https://github.com/0x999-x/jsluicepp"
+>https://github.com/0x999-x/jsluicepp</a>)</li>
 </ul>
 <div class="gdoc-page__anchorwrap">
     <h2 id="tips-n-tricks"
@@ -3689,6 +3738,18 @@ putty.exe -ssh user@host -pw password -R 8080:127.0.0.1:8080
 # Visit the sites in VPS
 curl URL -x http://127.0.0.1:8080
 </code></pre><div class="gdoc-page__anchorwrap">
+    <h2 id="bchecks"
+    >
+        Bchecks
+    </h2>
+</div>
+<ul>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://github.com/j3ssie/custom-bcheck-scan"
+>https://github.com/j3ssie/custom-bcheck-scan</a></li>
+</ul>
+<div class="gdoc-page__anchorwrap">
     <h2 id="repositories"
     >
         Repositories
@@ -3781,6 +3842,30 @@ curl URL -x http://127.0.0.1:8080
   
   
 
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
   
     
     

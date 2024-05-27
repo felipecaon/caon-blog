@@ -10,6 +10,8 @@ main:
         ref: "/recon/asncidr"
       - name: Whois
         ref: "/recon/whois"
+      - name: Company Information
+        ref: "/recon/companyinformation"
       - name: Subdomain Enumeration
         sub:
           - name: Passive

