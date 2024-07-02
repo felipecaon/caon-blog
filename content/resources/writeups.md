@@ -8,3 +8,4 @@
 | https://ctftime.org/writeups?tags=web200&hidden-tags=web%2cweb100%2cweb200 | CTF writeups |
 | https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ | Android testing in windows 11 | 
 | https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses | Payment Flow Vulnerabilites | 
+| https://writeups.io/ | Collection |

@@ -112,7 +112,7 @@ Parameters # https://github.com/tomnomnom/anew cat links.txt | unfurl -u keys | 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/writeups/</guid>
-      <description> Write Ups WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites </description>
+      <description> Write Ups WriteUp Description https://pentester.land/list-of-bug-bounty-writeups.html List of up to date writeups https://labs.detectify.com/2021/09/30/10-types-web-vulnerabilities-often-missed/ Common vulns often missed http://www.pc-help.org/obscure.htm Obscure URLs, useful for SSRF https://ctftime.org/writeups?tags=web200&amp;hidden-tags=web%2cweb100%2cweb200 CTF writeups https://sensepost.com/blog/2021/android-application-testing-using-windows-11-and-windows-subsystem-for-android/ Android testing in windows 11 https://gowthams.gitbook.io/bughunter-handbook/intresting-vulnerabilities/payment-bypasses Payment Flow Vulnerabilites https://writeups.io/ Collection </description>
     </item>
     
     <item>
@@ -221,7 +221,7 @@ List of cachable extensions 7z csv gif midi png tif zip avi doc gz mkv ppt tiff 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caon.io/resources/career/</guid>
-      <description> Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap https://hbr.org/1999/11/management-time-whos-got-the-monkey Article on time optimization Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
+      <description> Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap https://hbr.org/1999/11/management-time-whos-got-the-monkey Article on time optimization https://tib3rius.com/interview-questions Interview Questions Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
     </item>
     
     <item>
