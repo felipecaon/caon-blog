@@ -39,12 +39,14 @@ main:
   - name: Exploitation
     icon: "gdoc_fire"
     sub:
-      - name: Android
+      - name: Mobile
         sub:
+          - name: "Flutter"
+            ref: "/exploitation/mobile/flutter"
           - name: "APK Decompilers"
-            ref: "/exploitation/android/apkdecompilers"
-          - name: "Vulnerabilities"
-            ref: "/exploitation/android/vulnerabilities"
+            ref: "/exploitation/mobile/apkdecompilers"
+          - name: "Android Vulnerabilities"
+            ref: "/exploitation/mobile/androidvulnerabilities"
       - name: Bypass
         sub:
           - name: "403"
