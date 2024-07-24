@@ -30,7 +30,7 @@
   </url><url>
     <loc>https://caon.io/exploitation/cloud/aws/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/android/apkdecompilers/</loc>
+    <loc>https://caon.io/exploitation/mobile/apkdecompilers/</loc>
   </url><url>
     <loc>https://caon.io/recon/asncidr/</loc>
   </url><url>
@@ -67,6 +67,8 @@
     <loc>https://caon.io/exploitation/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/</loc>
+  </url><url>
+    <loc>https://caon.io/exploitation/mobile/flutter/</loc>
   </url><url>
     <loc>https://caon.io/recon/fuzzing/</loc>
   </url><url>
@@ -140,7 +142,7 @@
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/other/uuid/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/android/vulnerabilities/</loc>
+    <loc>https://caon.io/exploitation/mobile/androidvulnerabilities/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/bypass/waf/</loc>
   </url><url>
