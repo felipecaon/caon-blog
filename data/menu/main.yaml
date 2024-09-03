@@ -45,8 +45,8 @@ main:
             ref: "/exploitation/mobile/flutter"
           - name: "APK Decompilers"
             ref: "/exploitation/mobile/apkdecompilers"
-          - name: "Android Vulnerabilities"
-            ref: "/exploitation/mobile/androidvulnerabilities"
+          - name: "Android"
+            ref: "/exploitation/mobile/android"
       - name: Bypass
         sub:
           - name: "403"
@@ -124,6 +124,8 @@ main:
             ref: "/exploitation/vulnerability/ssrf"
           - name: SQLi
             ref: "/exploitation/vulnerability/sqli"
+          - name: Timing Attacks
+            ref: "/exploitation/vulnerability/timingattacks"
           - name: XSS
             ref: "/exploitation/vulnerability/xss"
           - name: XXE

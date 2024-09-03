@@ -2,166 +2,160 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://caon.io/bb/impacts/</loc>
+    <loc>http://localhost:1313/bb/impacts/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/auth/jwt/</loc>
+    <loc>http://localhost:1313/exploitation/auth/jwt/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cms/drupal/</loc>
+    <loc>http://localhost:1313/exploitation/cms/drupal/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cms/others/</loc>
+    <loc>http://localhost:1313/exploitation/cms/others/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cms/wordpress-cve/</loc>
+    <loc>http://localhost:1313/exploitation/cms/wordpress-cve/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/workflows/payment/</loc>
+    <loc>http://localhost:1313/exploitation/workflows/payment/</loc>
   </url><url>
-    <loc>https://caon.io/recon/spider/</loc>
+    <loc>http://localhost:1313/recon/spider/</loc>
   </url><url>
-    <loc>https://caon.io/recon/subdomain/active/</loc>
+    <loc>http://localhost:1313/recon/subdomain/active/</loc>
   </url><url>
-    <loc>https://caon.io/recon/subdomain/passive/</loc>
+    <loc>http://localhost:1313/recon/subdomain/passive/</loc>
   </url><url>
-    <loc>https://caon.io/recon/wordlistgeneration/</loc>
+    <loc>http://localhost:1313/recon/wordlistgeneration/</loc>
   </url><url>
-    <loc>https://caon.io/resources/writeups/</loc>
+    <loc>http://localhost:1313/resources/writeups/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/auth/2fa/</loc>
+    <loc>http://localhost:1313/exploitation/auth/2fa/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/bypass/403/</loc>
+    <loc>http://localhost:1313/exploitation/bypass/403/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cloud/aws/</loc>
+    <loc>http://localhost:1313/exploitation/cloud/aws/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/mobile/apkdecompilers/</loc>
+    <loc>http://localhost:1313/exploitation/mobile/apkdecompilers/</loc>
   </url><url>
-    <loc>https://caon.io/recon/asncidr/</loc>
+    <loc>http://localhost:1313/recon/asncidr/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cloud/azure/</loc>
+    <loc>http://localhost:1313/exploitation/cloud/azure/</loc>
   </url><url>
-    <loc>https://caon.io/bb/</loc>
+    <loc>http://localhost:1313/bb/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/bruteforce/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/other/bruteforce/</loc>
   </url><url>
-    <loc>https://caon.io/resources/burpsuite/</loc>
+    <loc>http://localhost:1313/resources/burpsuite/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/cachepoisoning/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/cachepoisoning/</loc>
   </url><url>
-    <loc>https://caon.io/resources/career/</loc>
+    <loc>http://localhost:1313/resources/career/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/clickjacking/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/clickjacking/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/commandinjection/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/commandinjection/</loc>
   </url><url>
-    <loc>https://caon.io/recon/companyinformation/</loc>
+    <loc>http://localhost:1313/recon/companyinformation/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/cookieattacks/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/cookieattacks/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/cors/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/cors/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/crlf/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/crlf/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/csrf/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/csrf/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/deserialization/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/deserialization/</loc>
   </url><url>
-    <loc>https://caon.io/recon/dorks/</loc>
+    <loc>http://localhost:1313/recon/dorks/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/</loc>
+    <loc>http://localhost:1313/exploitation/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/</loc>
+    <loc>http://localhost:1313/exploitation/mobile/flutter/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/mobile/flutter/</loc>
+    <loc>http://localhost:1313/recon/fuzzing/</loc>
   </url><url>
-    <loc>https://caon.io/recon/fuzzing/</loc>
+    <loc>http://localhost:1313/exploitation/cloud/gcp/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cloud/gcp/</loc>
+    <loc>http://localhost:1313/helpers/</loc>
   </url><url>
-    <loc>https://caon.io/helpers/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/hostheaderinjection/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/hostheaderinjection/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/idor/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/idor/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/IIS/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/IIS/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/other/javascriptfiles/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/lfi/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/lfi/</loc>
+    <loc>http://localhost:1313/helpers/llms/</loc>
   </url><url>
-    <loc>https://caon.io/helpers/llms/</loc>
+    <loc>http://localhost:1313/exploitation/auth/oauth/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/auth/oauth/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/openredirect/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/openredirect/</loc>
+    <loc>http://localhost:1313/recon/paramdiscovery/</loc>
   </url><url>
-    <loc>https://caon.io/recon/paramdiscovery/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/parameterpollution/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/parameterpollution/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/pathtransversal/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/pathtransversal/</loc>
+    <loc>http://localhost:1313/recon/portscan/</loc>
   </url><url>
-    <loc>https://caon.io/recon/portscan/</loc>
+    <loc>http://localhost:1313/recon/probing/</loc>
   </url><url>
-    <loc>https://caon.io/recon/probing/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/prototypepollution/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/prototypepollution/</loc>
+    <loc>http://localhost:1313/recon/</loc>
   </url><url>
-    <loc>https://caon.io/recon/</loc>
+    <loc>http://localhost:1313/resources/regexes/</loc>
   </url><url>
-    <loc>https://caon.io/recon/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/rce/</loc>
   </url><url>
-    <loc>https://caon.io/resources/regexes/</loc>
+    <loc>http://localhost:1313/resources/repositories/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/rce/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/requestsmuggling/</loc>
   </url><url>
-    <loc>https://caon.io/resources/repositories/</loc>
+    <loc>http://localhost:1313/resources/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/requestsmuggling/</loc>
+    <loc>http://localhost:1313/exploitation/auth/saml/</loc>
   </url><url>
-    <loc>https://caon.io/resources/</loc>
+    <loc>http://localhost:1313/recon/scope/</loc>
   </url><url>
-    <loc>https://caon.io/resources/</loc>
+    <loc>http://localhost:1313/recon/screenshot/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/auth/saml/</loc>
+    <loc>http://localhost:1313/resources/sites/</loc>
   </url><url>
-    <loc>https://caon.io/recon/scope/</loc>
+    <loc>http://localhost:1313/helpers/smsverification/</loc>
   </url><url>
-    <loc>https://caon.io/recon/screenshot/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/sqli/</loc>
   </url><url>
-    <loc>https://caon.io/resources/sites/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/ssrf/</loc>
   </url><url>
-    <loc>https://caon.io/helpers/smsverification/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/ssti/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/sqli/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/ssrf/</loc>
+    <loc>http://localhost:1313/recon/thirdparty/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/ssti/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/other/uuid/</loc>
   </url><url>
-    <loc>https://caon.io/tags/</loc>
+    <loc>http://localhost:1313/exploitation/mobile/androidvulnerabilities/</loc>
   </url><url>
-    <loc>https://caon.io/recon/thirdparty/</loc>
+    <loc>http://localhost:1313/exploitation/bypass/waf/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/uuid/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/other/webtech/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/mobile/androidvulnerabilities/</loc>
+    <loc>http://localhost:1313/resources/webtools/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/bypass/waf/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/webtech/</loc>
+    <loc>http://localhost:1313/recon/whois/</loc>
   </url><url>
-    <loc>https://caon.io/resources/webtools/</loc>
+    <loc>http://localhost:1313/exploitation/cms/wordpress/</loc>
   </url><url>
-    <loc>https://caon.io/</loc>
+    <loc>http://localhost:1313/exploitation/cms/wordpress-cve-boilerplates/</loc>
   </url><url>
-    <loc>https://caon.io/recon/whois/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/xss/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cms/wordpress/</loc>
+    <loc>http://localhost:1313/exploitation/vulnerability/xxe/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/cms/wordpress-cve-boilerplates/</loc>
-  </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/xss/</loc>
-  </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/xxe/</loc>
-  </url><url>
-    <loc>https://caon.io/resources/youtubechannels/</loc>
+    <loc>http://localhost:1313/resources/youtubechannels/</loc>
   </url>
 </urlset>
