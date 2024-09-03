@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="color-toggle-hidden" >
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8" />
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,7 +45,7 @@ Configure your options! You can customize your ffuf with special information, he
 https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
 # https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &#34;https://example.com/PAYLOAD&#34; -H &#34;HEADER:127.0.0.1&#34; -X &#34;METHOD&#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise Ffuf can generate a large output, even with -ac flag enabled." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/recon/fuzzing/" />
+<meta property="og:url" content="https://caon.io/recon/fuzzing/" />
 
 <meta property="article:section" content="Recon" />
 
@@ -65,7 +65,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       "@type": "TechArticle",
       "articleSection": "Recon",
       "name": "Fuzzing",
-      "url" : "http://localhost:1313/recon/fuzzing/",
+      "url" : "https://caon.io/recon/fuzzing/",
       "headline": "Fuzzing",
       "description": "Rate Limited?\nTry to run techniques from 403 Bypass\nConfigure your options! You can customize your ffuf with special information, here’s a sample:\nhttps:\/\/gist.github.com\/felipecaon\/d1e7c980d7bab1312ea81df1d0241f42\n# https:\/\/github.com\/ffuf\/ffuf ffuf -w \/path\/to\/wordlist -u https:\/\/target\/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u \u0022https:\/\/example.com\/PAYLOAD\u0022 -H \u0022HEADER:127.0.0.1\u0022 -X \u0022METHOD\u0022 # Multiple URLs and mutiple files example ffuf -u URL\/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise Ffuf can generate a large output, even with -ac flag enabled.",
       "wordCount" : "190",
@@ -73,7 +73,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost:1313/recon/fuzzing/"
+          "@id": "https://caon.io/recon/fuzzing/"
       },
       "copyrightHolder" : "caon.io",
       "copyrightYear" : "0001",
@@ -83,10 +83,10 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       "publisher":{
           "@type":"Organization",
           "name": "caon.io",
-          "url": "http://localhost:1313/",
+          "url": "https://caon.io/",
           "logo": {
               "@type": "ImageObject",
-              "url": "http://localhost:1313/brand.svg",
+              "url": "https://caon.io/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -156,7 +156,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost:1313/recon/fuzzing/" rel="canonical" type="text/html" />
+  <link href="https://caon.io/recon/fuzzing/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -191,7 +191,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       </label>
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="http://localhost:1313/">
+      <a class="gdoc-brand gdoc-header__link" href="https://caon.io/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
@@ -223,7 +223,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
         </span>
 
         <span class="gdoc-menu-header__home">
-          <a href="http://localhost:1313/" class="gdoc-header__link">
+          <a href="https://caon.io/" class="gdoc-header__link">
             <svg class="gdoc-icon gdoc_home">
               <title>Back to homepage</title>
               <use xlink:href="#gdoc_home"></use>
@@ -270,7 +270,7 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
       placeholder="Search..."
       aria-label="Search"
       maxlength="64"
-      data-site-base-url="http://localhost:1313/"
+      data-site-base-url="https://caon.io/"
       data-site-lang="en"
     />
     <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
@@ -1180,10 +1180,10 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
               <span class="flex">
                 
                 <a
-                  href="/exploitation/mobile/androidvulnerabilities"
+                  href="/exploitation/mobile/android"
                   class="gdoc-nav__entry"
                 >
-                  Android Vulnerabilities
+                  Android
                 </a>
               </span>
               
@@ -2784,6 +2784,51 @@ https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42
                   class="gdoc-nav__entry"
                 >
                   SQLi
+                </a>
+              </span>
+              
+            </label>
+          
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+          
+          
+
+          
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              <span class="flex">
+                
+                <a
+                  href="/exploitation/vulnerability/timingattacks"
+                  class="gdoc-nav__entry"
+                >
+                  Timing Attacks
                 </a>
               </span>
               
@@ -4767,6 +4812,30 @@ bfac --no-text --url http://example.com/test.php --level 2
   
   
 
+  
+    
+    
+
+    
+    
+      
+      
+      
+
+      
+        
+      
+      
+
+      
+
+      
+
+      
+    
+
+    
+    
   
     
     
