@@ -14,4 +14,4 @@ cat urls | httpx -random-agent -retries 2 -o out
 
 {{< hint danger >}} **Hold down!**
 
-For some reason httpx fails to retrieve all good working urls. It is recommended to run httpx more than once to achieve better results. {{< /hint >}}
+httpX fails to retrieve all good working urls in a single run. It is recommended to run httpx more than once to achieve better results. {{< /hint >}}

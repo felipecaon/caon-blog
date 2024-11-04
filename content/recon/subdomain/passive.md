@@ -28,7 +28,7 @@ puncia subdomain <domain>
 ## All in one script
 
 ```bash
-amass enum -passive -d domain.com -o amass_$1.txt > /dev/null 2>&1
+amass enum -passive -d $1 -o amass_$1.txt > /dev/null 2>&1
 echo "[+] Amass done"
 
 subfinder -silent -d $1 -all -o subfinder_$1.txt > /dev/null 2>&1

@@ -341,7 +341,7 @@
       <link>https://caon.io/recon/probing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/probing/</guid>
-      <description>Validates a list of urls, checks to see if they are alive or not.&#xA;httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!&#xA;For some reason httpx fails to retrieve all good working urls. It is recommended to run httpx more than once to achieve better results.</description>
+      <description>Validates a list of urls, checks to see if they are alive or not.&#xA;httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!&#xA;httpX fails to retrieve all good working urls in a single run. It is recommended to run httpx more than once to achieve better results.</description>
     </item>
     <item>
       <title>Prototype Pollution</title>

@@ -3821,7 +3821,7 @@ puncia subdomain &lt;domain&gt;
         All in one script
     </h2>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">amass enum -passive -d domain.com -o amass_<span class="nv">$1</span>.txt &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">amass enum -passive -d <span class="nv">$1</span> -o amass_<span class="nv">$1</span>.txt &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;[+] Amass done&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">subfinder -silent -d <span class="nv">$1</span> -all -o subfinder_<span class="nv">$1</span>.txt &gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span>
