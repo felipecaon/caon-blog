@@ -135,6 +135,8 @@ main:
         sub:
           - name: LLMs
             ref: "/helpers/llms"
+          - name: PostMessage
+            ref: "/helpers/postmessage"   
           - name: SMS Verification
             ref: "/helpers/smsverification"
       - name: Other
@@ -157,8 +159,6 @@ main:
         ref: "/resources/burpsuite"
       - name: Sites
         ref: "/resources/sites"
-      - name: Youtube channels
-        ref: "/resources/youtubechannels"
       - name: Writeups
         ref: "/resources/writeups"
       - name: Youtube channels

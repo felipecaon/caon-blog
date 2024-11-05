@@ -4,7 +4,6 @@ title = 'Web Tools'
 
 | Website | Description | 
 | --- | --- |
-| https://www.utf8-chartable.de/ | UTF-8 Table |
 | https://grep.app/ | Grep over multiple github repositories | 
 | https://publicwww.com/ | Grep over multiple websites source codes | 
 | https://www.degraeve.com/reference/urlencoding.php | List of URL encoded characters |   
@@ -14,3 +13,4 @@ title = 'Web Tools'
 | https://builtwith.com | Database of sites technologies | 
 | https://deps.dev/ | Open Source Insights |
 | https://makenowjust-labs.github.io/recheck/ | REDos Checker |
+| https://pix.nascent.com.br/ | PIX Validation | 

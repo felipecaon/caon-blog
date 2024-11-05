@@ -54,21 +54,21 @@
       <link>https://caon.io/recon/spider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/spider/</guid>
-      <description> katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Check if hosts/paths are valid # https://github.com/projectdiscovery/httpx cat links.txt | httpx -follow-host-redirects -random-agent -status-code -silent -retries 2 -title -web-server -tech-detect -location -o webs_info.txt Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt Webpaste chrome extension # https://github.com/xnl-h4ck3r/webpaste </description>
+      <description> katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt Webpaste chrome extension # https://github.com/xnl-h4ck3r/webpaste </description>
     </item>
     <item>
       <title></title>
       <link>https://caon.io/recon/subdomain/active/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/subdomain/active/</guid>
-      <description> Active Resources The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.&#xA;Get resolvers at:&#xA;# https://github.com/proabiral/Fresh-Resolvers wget https://github.com/proabiral/Fresh-Resolvers/blob/master/resolvers.txt Pure DNS # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
+      <description> Active Resources The ideia behind an active subdomain recon is to bruteforce subdomain in order to find anything that is valid.&#xA;Get resolvers at:&#xA;# https://github.com/proabiral/Fresh-Resolvers Pure DNS # https://github.com/d3mondev/puredns puredns resolve subdomains.txt -r resolvers.txt --write resolved_dns_domains puredns bruteforce subdomains.txt example.com -r resolvers.txt --write resolved_dns_domains Permutations # https://github.com/Josue87/gotator gotator -sub subdomains/subdomains.txt -perm permutations_list.txt -depth 1 -numbers 10 -mindup -adv -md </description>
     </item>
     <item>
       <title></title>
       <link>https://caon.io/recon/subdomain/passive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/subdomain/passive/</guid>
-      <description>Passive Resources A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).&#xA;# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains # https://github.</description>
+      <description>Passive Resources A passive resource means that you will grab subdomains that were already discovered by another tools or were found lying around in some place (open source code, legacy scripts, logs, etc).&#xA;# https://github.com/OWASP/Amass amass enum -passive -d domain.com # https://github.com/projectdiscovery/subfinder subfinder -d domain.com -all -silent # https://github.com/tomnomnom/assetfinder assetfinder --subs-only example.com # https://github.com/Findomain/Findomain findomain -u example.com -q # https://github.com/lc/gau # https://github.com/tomnomnom/unfurl gau --subs example.com | unfurl -u domains bbot pipx install bbot bbot -t evilcorp.</description>
     </item>
     <item>
       <title></title>
@@ -222,7 +222,7 @@
       <link>https://caon.io/recon/dorks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/dorks/</guid>
-      <description>Google # https://github.com/six2dez/degoogle_hunter ./degoogle_hunter.sh example.com # https://github.com/m3n0sd0n4ld/uDork ./uDork.sh united.com -u all ./uDork.sh united.com -e all # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:productforums.google.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; site:iorad.com &amp;#34;company&amp;#34; Github #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
+      <description>Google ## No longer works, but the wordlists are good # https://github.com/m3n0sd0n4ld/uDork # https://dorks.faisalahmed.me/ # Google dork helper, input url and the sites generates dorks site:npmjs.com &amp;#34;company&amp;#34; site:npm.runkit.com &amp;#34;company&amp;#34; site:pastebin.com &amp;#34;company&amp;#34; site:bitbucket.org &amp;#34;company&amp;#34; site:*.atlassian.net &amp;#34;company&amp;#34; site:trello.com &amp;#34;company&amp;#34; site:prezi.com &amp;#34;company&amp;#34; inurl:gitlab.com &amp;#34;company&amp;#34; Github #https://github.com/obheda12/GitDorker python3 GitDorker.py -tf github_tokens -q example.com -p -ri -d Dorks/medium_dorks.txt -o gitdorker_out.txt # https://vsec7.github.io/ # Git dork helper, input url and the site generates dorks org:company &amp;#34;firebase&amp;#34; org:company &amp;#34;password&amp;#34; org:company &amp;#34;bucket_name&amp;#34; org:company &amp;#34;aws_access_key&amp;#34; org:company &amp;#34;aws_secret_key&amp;#34; org:company &amp;#34;S3_BUCKET&amp;#34; org:company &amp;#34;S3_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;S3_SECRET_ACCESS_KEY&amp;#34; org:company &amp;#34;S3_ENDPOINT&amp;#34; org:company &amp;#34;AWS_ACCESS_KEY_ID&amp;#34; org:company &amp;#34;list_aws_accounts&amp;#34; https://gist.</description>
     </item>
     <item>
       <title>Exploitation</title>
@@ -288,7 +288,7 @@
       <description># https://github.com/kurobeats/fimap fimap -u &amp;#34;https://example.com?test=&amp;#34; Wget Sometimes browsers mess around with basic directory traversal sequences, but wget may work:&#xA;wget http://[host]/page.php?url=../../../../../../../file.html Tricks PHP Filter b64 (php://filter/zlib.deflate/convert.base64-encode/resource=FILE) Nullbyte ending (%00) 403bypass section may help Bypasses Nesting traversal sequences ....// ....\/ ..../\ ....\\ URL Encoding dot %2e forward slash %2f backslash %5c Double URL Encoding dot %252e forward slash %252f backslash %255c Null Byte Some applications check whether the user-supplied file name ends in a particular file type or set of file types, and reject attempts to access anything else.</description>
     </item>
     <item>
-      <title>LLMs   </title>
+      <title>LLMs</title>
       <link>https://caon.io/helpers/llms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/helpers/llms/</guid>
@@ -337,11 +337,18 @@
       <description> Nmap # https://github.com/nmap/nmap ./configure make make install nmap -sC -sV example.com nmap example.com https://3os.org/penetration-testing/cheatsheets/nmap-cheatsheet/&#xA;Naabu # https://github.com/projectdiscovery/naabu naabu -p 80,443,21-23 -host example.com cat list | naabu -top-ports 100 -ep 80,443,8080,8443 </description>
     </item>
     <item>
+      <title>PostMessage</title>
+      <link>https://caon.io/helpers/postmessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://caon.io/helpers/postmessage/</guid>
+      <description>Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5&#xA;Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU&#xA;Extension https://github.com/fransr/postMessage-tracker&#xA;Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse&#xA;Credits: https://x.com/Heli__9</description>
+    </item>
+    <item>
       <title>Probing</title>
       <link>https://caon.io/recon/probing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/probing/</guid>
-      <description>Validates a list of urls, checks to see if they are alive or not.&#xA;httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out Hold down!&#xA;httpX fails to retrieve all good working urls in a single run. It is recommended to run httpx more than once to achieve better results.</description>
+      <description>Validates a list of urls, checks to see if they are alive or not.&#xA;httpX # https://github.com/projectdiscovery/httpx # go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest cat urls | httpx -random-agent -retries 2 -o out </description>
     </item>
     <item>
       <title>Prototype Pollution</title>
@@ -411,7 +418,7 @@
       <link>https://caon.io/recon/screenshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/screenshot/</guid>
-      <description>For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.&#xA;Hold down!&#xA;A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.&#xA;GoWitnessß # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; </description>
+      <description>For large recons where manual website visit is not doable. The program would grab a list of valid urls and screenshot them using a headless browser.&#xA;Hold down!&#xA;A browser must be installed prior using an screenshotter. Chrome or chromium is recommended.&#xA;GoWitness # https://github.com/sensepost/gowitness gowitness file -f websites.txt -t &amp;lt;threads&amp;gt; Other HttpX can be used ot capture screenshots&#xA;echo example.com | httpx -ss </description>
     </item>
     <item>
       <title>Sites</title>
@@ -453,7 +460,7 @@
       <link>https://caon.io/recon/thirdparty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/thirdparty/</guid>
-      <description>Waybackmachine &amp;amp; others Use gau to search for old files and paths from crawl websites&#xA;echo &amp;#34;example.com&amp;#34; | gau Alienvault Look under Associated Urls&#xA;https://otx.alienvault.com/indicator/domain/example.com&#xA;AWS Scraping By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.&#xA;https://github.com/jhaddix/awsScrape/&#xA;More https://leakix.net/</description>
+      <description>Waybackmachine &amp;amp; others Use gau to search for old files and paths from crawl websites&#xA;echo &amp;#34;example.com&amp;#34; | gau --subs Alienvault Look under Associated Urls&#xA;https://otx.alienvault.com/indicator/domain/example.com&#xA;AWS Scraping By visiting IP&amp;rsquo;s under AWS control and looking for certificates it is possible to find content owned by a company.&#xA;https://github.com/jhaddix/awsScrape/&#xA;More https://leakix.net/</description>
     </item>
     <item>
       <title>Timing Attacks</title>
@@ -488,7 +495,7 @@
       <link>https://caon.io/resources/webtools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/resources/webtools/</guid>
-      <description> Website Description https://www.utf8-chartable.de/ UTF-8 Table https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights https://makenowjust-labs.github.io/recheck/ REDos Checker </description>
+      <description> Website Description https://grep.app/ Grep over multiple github repositories https://publicwww.com/ Grep over multiple websites source codes https://www.degraeve.com/reference/urlencoding.php List of URL encoded characters https://api-guesser.netlify.app/ Input an api key and the script will return from where it belongs https://gchq.github.io/CyberChef/ For all purposes https://securityheaders.com/ Test sites for security headers https://builtwith.com Database of sites technologies https://deps.dev/ Open Source Insights https://makenowjust-labs.github.io/recheck/ REDos Checker https://pix.nascent.com.br/ PIX Validation </description>
     </item>
     <item>
       <title>Whois</title>

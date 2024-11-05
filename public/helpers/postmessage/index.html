@@ -9,11 +9,13 @@
 <meta name="generator" content="Hugo 0.133.1">
 
 
-  <meta name="description" content="Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
-To search all assets that is related to a company, one can search in the following resources:
-https://contracts.justia.com/companies/, find registered and approved trademarks https://companyprofiles.justia.com/company/ https://www.crunchbase.com/, company acquisitions " />
+  <meta name="description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5
+Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU
+Extension https://github.com/fransr/postMessage-tracker
+Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse
+Credits: https://x.com/Heli__9" />
 
-  <title>Company Acquisitions &amp; Trademarks | caon.io</title>
+  <title>PostMessage | caon.io</title>
 
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -34,40 +36,44 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
   
   <meta
     property="og:title"
-    content="Company Acquisitions & Trademarks"
+    content="PostMessage"
   />
   <meta property="og:site_name" content="caon.io" />
-  <meta property="og:description" content="Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
-To search all assets that is related to a company, one can search in the following resources:
-https://contracts.justia.com/companies/, find registered and approved trademarks https://companyprofiles.justia.com/company/ https://www.crunchbase.com/, company acquisitions " />
+  <meta property="og:description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5
+Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU
+Extension https://github.com/fransr/postMessage-tracker
+Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse
+Credits: https://x.com/Heli__9" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://caon.io/recon/companyinformation/" />
+<meta property="og:url" content="https://caon.io/helpers/postmessage/" />
 
-<meta property="article:section" content="Recon" />
+<meta property="article:section" content="Helpers" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Company Acquisitions & Trademarks" />
-  <meta name="twitter:description" content="Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.
-To search all assets that is related to a company, one can search in the following resources:
-https://contracts.justia.com/companies/, find registered and approved trademarks https://companyprofiles.justia.com/company/ https://www.crunchbase.com/, company acquisitions " />
+<meta name="twitter:title" content="PostMessage" />
+  <meta name="twitter:description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5
+Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU
+Extension https://github.com/fransr/postMessage-tracker
+Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse
+Credits: https://x.com/Heli__9" />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Recon",
-      "name": "Company Acquisitions \u0026 Trademarks",
-      "url" : "https://caon.io/recon/companyinformation/",
-      "headline": "Company Acquisitions \u0026 Trademarks",
-      "description": "Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.\nTo search all assets that is related to a company, one can search in the following resources:\nhttps:\/\/contracts.justia.com\/companies\/, find registered and approved trademarks https:\/\/companyprofiles.justia.com\/company\/ https:\/\/www.crunchbase.com\/, company acquisitions ",
-      "wordCount" : "67",
+      "articleSection": "Helpers",
+      "name": "PostMessage",
+      "url" : "https://caon.io/helpers/postmessage/",
+      "headline": "PostMessage",
+      "description": "Writeups https:\/\/labs.detectify.com\/security-guidance\/the-pitfalls-of-postmessage\/ https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/API\/Window\/postMessage https:\/\/trustfoundry.net\/2024\/07\/30\/a-quick-introduction-to-postmessage-xss\/ https:\/\/www.yeswehack.com\/learn-bug-bounty\/introduction-postmessage-vulnerabilities https:\/\/hackerone.com\/reports\/900619 https:\/\/book.hacktricks.xyz\/pentesting-web\/postmessage-vulnerabilities https:\/\/hackerone.com\/reports\/231053 https:\/\/hackerone.com\/reports\/576532 https:\/\/hackerone.com\/reports\/1567186 https:\/\/hackerone.com\/reports\/1031644 https:\/\/hackerone.com\/reports\/217745 https:\/\/hackerone.com\/reports\/423218 https:\/\/rhynorater.github.io\/postMessage-Braindump https:\/\/vinothkumar.me\/20000-facebook-dom-xss\/ https:\/\/ndevtk.github.io\/writeups\/2023\/08\/18\/extensions\/ https:\/\/web.archive.org\/web\/20211016075506\/https:\/\/insight.claranet.co.uk\/technical-blogs\/hunting-postmessage-vulnerabilities https:\/\/medium.com\/bored-engineer\/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5\nVideos https:\/\/www.youtube.com\/watch?v=dCco6bZhUd0 https:\/\/youtu.be\/6731qvqBlCE?t=2435 https:\/\/www.youtube.com\/watch?v=KGsktwaxsKU\nExtension https:\/\/github.com\/fransr\/postMessage-tracker\nLabs https:\/\/html5.digi.ninja\/ https:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages https:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages-and-a-javascript-url https:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages-and-json-parse\nCredits: https:\/\/x.com\/Heli__9",
+      "wordCount" : "31",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://caon.io/recon/companyinformation/"
+          "@id": "https://caon.io/helpers/postmessage/"
       },
       "copyrightHolder" : "caon.io",
       "copyrightYear" : "0001",
@@ -150,7 +156,7 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
   href="/custom.css"
   media="all"
 />
-  <link href="https://caon.io/recon/companyinformation/" rel="canonical" type="text/html" />
+  <link href="https://caon.io/helpers/postmessage/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -503,7 +509,7 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
                 
                 <a
                   href="/recon/companyinformation"
-                  class="gdoc-nav__entry is-active"
+                  class="gdoc-nav__entry"
                 >
                   Company Information
                 </a>
@@ -3055,7 +3061,7 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
                 
                 <a
                   href="/helpers/postmessage"
-                  class="gdoc-nav__entry"
+                  class="gdoc-nav__entry is-active"
                 >
                   PostMessage
                 </a>
@@ -3793,23 +3799,135 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Company Acquisitions &amp; Trademarks</h1>
-    <p>Big companies usually have other brands, subsidiaries or simply have other names in the other countries. Not only that, but companies own patents, trademarks and have the most fiverse products that not always have the obvious company name in it.</p>
-<p>To search all assets that is related to a company, one can search in the following resources:</p>
-<ul>
-<li><a
+    <h1>PostMessage</h1>
+    <div class="gdoc-page__anchorwrap">
+    <h1 id="writeups"
+    >
+        Writeups
+    </h1>
+</div>
+<p><a
   class="gdoc-markdown__link"
-  href="https://contracts.justia.com/companies/"
->https://contracts.justia.com/companies/</a>, find registered and approved trademarks</li>
-<li><a
+  href="https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/"
+>https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/</a>
+<a
   class="gdoc-markdown__link"
-  href="https://companyprofiles.justia.com/company/"
->https://companyprofiles.justia.com/company/</a></li>
-<li><a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage"
+>https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage</a>
+<a
   class="gdoc-markdown__link"
-  href="https://www.crunchbase.com/"
->https://www.crunchbase.com/</a>, company acquisitions</li>
-</ul>
+  href="https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/"
+>https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities"
+>https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/900619"
+>https://hackerone.com/reports/900619</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities"
+>https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/231053"
+>https://hackerone.com/reports/231053</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/576532"
+>https://hackerone.com/reports/576532</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/1567186"
+>https://hackerone.com/reports/1567186</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/1031644"
+>https://hackerone.com/reports/1031644</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/217745"
+>https://hackerone.com/reports/217745</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://hackerone.com/reports/423218"
+>https://hackerone.com/reports/423218</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://rhynorater.github.io/postMessage-Braindump"
+>https://rhynorater.github.io/postMessage-Braindump</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://vinothkumar.me/20000-facebook-dom-xss/"
+>https://vinothkumar.me/20000-facebook-dom-xss/</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://ndevtk.github.io/writeups/2023/08/18/extensions/"
+>https://ndevtk.github.io/writeups/2023/08/18/extensions/</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities"
+>https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5"
+>https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5</a></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="videos"
+    >
+        Videos
+    </h2>
+</div>
+<p><a
+  class="gdoc-markdown__link"
+  href="https://www.youtube.com/watch?v=dCco6bZhUd0"
+>https://www.youtube.com/watch?v=dCco6bZhUd0</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://youtu.be/6731qvqBlCE?t=2435"
+>https://youtu.be/6731qvqBlCE?t=2435</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://www.youtube.com/watch?v=KGsktwaxsKU"
+>https://www.youtube.com/watch?v=KGsktwaxsKU</a></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="extension"
+    >
+        Extension
+    </h2>
+</div>
+<p><a
+  class="gdoc-markdown__link"
+  href="https://github.com/fransr/postMessage-tracker"
+>https://github.com/fransr/postMessage-tracker</a></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="labs"
+    >
+        Labs
+    </h2>
+</div>
+<p><a
+  class="gdoc-markdown__link"
+  href="https://html5.digi.ninja/"
+>https://html5.digi.ninja/</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages"
+>https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url"
+>https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url</a>
+<a
+  class="gdoc-markdown__link"
+  href="https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse"
+>https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse</a></p>
+<p>Credits: <a
+  class="gdoc-markdown__link"
+  href="https://x.com/Heli__9"
+>https://x.com/Heli__9</a></p>
 
   </article>
 
@@ -3949,9 +4067,6 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
       
 
       
-        
-        
-      
 
       
     
@@ -3986,9 +4101,6 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
       
       
 
-      
-        
-        
       
 
       
@@ -5351,6 +5463,9 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
       
 
       
+        
+        
+      
 
       
     
@@ -5372,6 +5487,9 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
       
       
 
+      
+        
+        
       
 
       
@@ -5731,11 +5849,11 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
   
     <a
       class="gdoc-page__nav--prev flex align-center"
-      href="/recon/whois/"
-      title="Whois"
+      href="/helpers/llms/"
+      title="LLMs"
     >
       <i class="gdoc-icon">gdoc_arrow_left_alt</i>
-      Whois
+      LLMs
     </a>
   
 </span>
@@ -5743,10 +5861,10 @@ https://contracts.justia.com/companies/, find registered and approved trademarks
   
     <a
       class="gdoc-page__nav--next flex align-center"
-      href="/recon/subdomain/passive/"
-      title="Passive"
+      href="/helpers/smsverification/"
+      title="SMS Verification"
     >
-      Passive
+      SMS Verification
       <i class="gdoc-icon">gdoc_arrow_right_alt</i>
     </a>
   

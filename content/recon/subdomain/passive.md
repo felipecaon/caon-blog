@@ -20,9 +20,12 @@ findomain -u example.com -q
 gau --subs example.com | unfurl -u domains
 ```
 
+## bbot
+
 ```
-# https://github.com/ARPSyndicate/puncia
-puncia subdomain <domain>
+pipx install bbot
+
+bbot -t evilcorp.com -p subdomain-enum -rf passive
 ```
 
 ## All in one script

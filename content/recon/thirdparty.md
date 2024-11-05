@@ -7,7 +7,7 @@ title = 'Third Party'
 Use gau to search for old files and paths from crawl websites
 
 ```bash
-echo "example.com" | gau
+echo "example.com" | gau --subs
 ```
 
 ## Alienvault
