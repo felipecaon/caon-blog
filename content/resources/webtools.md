@@ -14,3 +14,5 @@ title = 'Web Tools'
 | https://deps.dev/ | Open Source Insights |
 | https://makenowjust-labs.github.io/recheck/ | REDos Checker |
 | https://pix.nascent.com.br/ | PIX Validation | 
+| https://cspbypass.com/ | Search CSP Bypasses |
+| https://ray.so/ | Create images from code | 

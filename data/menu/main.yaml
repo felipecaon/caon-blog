@@ -150,6 +150,8 @@ main:
             ref: "/exploitation/vulnerability/other/uuid"
           - name: Web technologies
             ref: "/exploitation/vulnerability/other/webtech"
+          - name: Web3
+            ref: "/exploitation/vulnerability/other/web3"
   - name: Resources
     icon: "gdoc_star"
     sub:

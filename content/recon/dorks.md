@@ -5,6 +5,8 @@ title = 'Dorks'
 ## Google
 
 ```
+# https://github.com/revoltsecurities/googledorker
+
 ## No longer works, but the wordlists are good
 # https://github.com/m3n0sd0n4ld/uDork
 
