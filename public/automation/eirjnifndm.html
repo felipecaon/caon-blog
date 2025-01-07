@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diff Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #menu {
+            margin-bottom: 20px;
+        }
+        #status {
+            margin-top: 20px;
+        }
+        table {
+            width: 60%; /* Table width set to 60% of its container */
+            border-collapse: collapse;
+            margin: 20px auto; /* Center the table */
+            table-layout: fixed; /* Fixed table layout */
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px; /* Reduced padding for smaller table */
+            text-align: left;
+        }
+        th {
+            width: 15%; /* Asset column width */
+        }
+        td {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .loading, .success {
+            font-size: 2em;
+        }
+        .hidden {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .spinner {
+            margin: 50px auto;
+            width: 50px;
+            height: 50px;
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .copy-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .copy-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <button onclick="loadPage('updated')">Updated</button>
+        <button onclick="loadPage('search')">Search</button>
+        <button onclick="loadPage('info')">Information</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div id="content"></div>
+
+    <div id="login-screen" class="hidden">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="login-error" style="color: red; display: none;">Login failed. Please check your credentials.</p>
+    </div>
+
+    <script>
+        //const host = 'http://127.0.0.1:5000';
+        const host = 'http://198.7.127.171:8000';
+        let authToken = localStorage.getItem('authToken');
+
+        function showLoginScreen() {
+            document.getElementById('login-screen').classList.remove('hidden');
+            document.getElementById('content').classList.add('hidden');
+        }
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            fetch(`${host}/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.access_token === 'Sorry') {
+                    document.getElementById('login-error').style.display = 'block';
+                } else {
+                    authToken = data.access_token;
+                    localStorage.setItem('authToken', authToken);
+                    showUpdatedPage();
+                    document.getElementById('login-screen').classList.add('hidden');
+                    document.getElementById('content').classList.remove('hidden');
+                }
+            })
+            .catch(error => {
+                document.getElementById('login-error').style.display = 'block';
+                console.error("Login error:", error);
+            });
+        }
+
+        function logout() {
+            localStorage.removeItem('authToken');
+            authToken = '';
+            showLoginScreen();
+        }
+
+        function loadPage(page) {
+            if (!authToken) {
+                showLoginScreen();
+                return;
+            }
+
+            if (page === 'updated') {
+                showUpdatedPage();
+            } else if (page === 'search') {
+                showSearchPage();
+            } else if (page === 'info') {
+                showInfoPage();
+            }
+        }
+
+        // function showUpdatedPage() {
+        //     document.getElementById('content').innerHTML = '';
+        //     const spinner = document.createElement('div');
+        //     spinner.classList.add('spinner');
+        //     document.getElementById('content').appendChild(spinner);
+
+        //     fetch(`${host}/import/status`, {
+        //         headers: { 'Authorization': `Bearer ${authToken}` }
+        //     })
+        //     .then(response => response.json())
+        //     .then(status => {
+        //         const statusDiv = document.createElement('div');
+        //         const statusEmoji = status.status === 'IMPORTING' ? '⏳' : '✅';
+        //         statusDiv.innerHTML = `<h3>Status: ${status.status} ${statusEmoji}</h3><p>Updated at: ${status.updated}</p>`;
+        //         document.getElementById('content').appendChild(statusDiv);
+
+        //         fetch(`${host}/assets/updated/today`, {
+        //             headers: { 'Authorization': `Bearer ${authToken}` }
+        //         })
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             document.querySelector('.spinner').remove();
+        //             const table = document.createElement('table');
+        //             const tableHeader = `<tr><th>Asset</th><th>Current Values</th><th>Previous Values</th></tr>`;
+        //             table.innerHTML = tableHeader;
+
+        //             data.forEach(item => {
+        //                 const row = document.createElement('tr');
+        //                 row.innerHTML = `
+        //                     <td style="width: 15%; overflow: hidden; text-overflow: ellipsis;">
+        //                         <a href="${item.asset}" target="_blank">${item.asset}</a>
+        //                     </td>
+        //                     <td style="width: 42%">${highlightChanges(item.current_values, item.previous_values)}</td>
+        //                     <td style="width: 42%">${highlightChanges(item.previous_values, item.current_values)}</td>
+        //                 `;
+        //                 table.appendChild(row);
+        //             });
+
+        //             document.getElementById('content').appendChild(table);
+
+        //             // Add "Copy URLs" button
+        //             const copyButton = document.createElement('button');
+        //             copyButton.textContent = 'Copy URLs';
+        //             copyButton.classList.add('copy-button');
+        //             copyButton.onclick = () => copyUrlsFromPage(table);
+        //             document.getElementById('content').appendChild(copyButton);
+        //         })
+        //         .catch(error => {
+        //             console.error("Error fetching asset data:", error);
+        //         });
+        //     })
+        //     .catch(error => {
+        //         console.error("Error fetching status:", error);
+        //     });
+        // }
+    
+        function showUpdatedPage() {
+            document.getElementById('content').innerHTML = '';
+            const spinner = document.createElement('div');
+            spinner.classList.add('spinner');
+            document.getElementById('content').appendChild(spinner);
+
+            fetch(`${host}/import/status`, {
+                headers: { 'Authorization': `Bearer ${authToken}` }
+            })
+            .then(response => response.json())
+            .then(status => {
+                const statusDiv = document.createElement('div');
+                const statusEmoji = status.status === 'IMPORTING' ? '⏳' : '✅';
+                statusDiv.innerHTML = `<h3>Status: ${status.status} ${statusEmoji}</h3><p>Updated at: ${status.updated}</p>`;
+                document.getElementById('content').appendChild(statusDiv);
+
+                // Fetch data for the main table
+                fetch(`${host}/assets/updated/today`, {
+                    headers: { 'Authorization': `Bearer ${authToken}` }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelector('.spinner').remove();
+
+                    // Main table (larger)
+                    const mainTable = document.createElement('table');
+                    mainTable.style.width = '75%'; // Make main table larger
+                    mainTable.style.marginLeft = '20px'; // Add spacing from apexes table
+                    const mainTableHeader = `<tr><th>Asset</th><th>Current Values</th><th>Previous Values</th></tr>`;
+                    mainTable.innerHTML = mainTableHeader;
+
+                    data.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td style="heigthwidth: 15%; overflow: hidden; text-overflow: ellipsis;">
+                                <a href="${item.asset}" target="_blank">${item.asset}</a>
+                            </td>
+                            <td style="width: 42%">${highlightChanges(item.current_values, item.previous_values)}</td>
+                            <td style="width: 42%">${highlightChanges(item.previous_values, item.current_values)}</td>
+                        `;
+                        mainTable.appendChild(row);
+                    });
+
+                    // Add "Copy URLs" button for the main table
+                    const copyButton = document.createElement('button');
+                    copyButton.textContent = 'Copy URLs';
+                    copyButton.classList.add('copy-button');
+                    copyButton.onclick = () => copyUrlsFromPage(mainTable);
+
+                    // Fetch data for the additional table
+                    fetch(`${host}/assets/apexes/updated/today`, {
+                        headers: { 'Authorization': `Bearer ${authToken}` }
+                    })
+                    .then(response => response.json())
+                    .then(apexData => {
+                        // Additional table (smaller)
+                        const apexTable = document.createElement('table');
+                        apexTable.style.width = '25%'; // Make apexes table smaller
+                        apexTable.style.height = '1px'; // Make apexes table smaller
+                        apexTable.style.marginRight = '20px'; // Add spacing to the right
+                        const apexTableHeader = `<tr><th>Domain</th><th>Count</th></tr>`;
+                        apexTable.innerHTML = apexTableHeader;
+
+                        for (const [domain, count] of Object.entries(apexData)) {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td style="width: 70%; overflow: hidden; text-overflow: ellipsis;">
+                                    <a href="https://${domain}" target="_blank">${domain}</a>
+                                </td>
+                                <td style="width: 30%">${count}</td>
+                            `;
+                            apexTable.appendChild(row);
+                        }
+
+                        // Wrap the tables in a container for side-by-side display
+                        const tableContainer = document.createElement('div');
+                        tableContainer.style.display = 'flex';
+                        tableContainer.style.justifyContent = 'space-between'; // Ensure spacing
+                        tableContainer.appendChild(apexTable); // Apexes table first
+                        tableContainer.appendChild(mainTable); // Main table second
+
+                        // Append the container and button
+                        document.getElementById('content').appendChild(tableContainer);
+                        document.getElementById('content').appendChild(copyButton);
+                    })
+                    .catch(error => {
+                        console.error("Error fetching apex data:", error);
+                    });
+                })
+                .catch(error => {
+                    console.error("Error fetching asset data:", error);
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching status:", error);
+            });
+        }
+
+
+        function highlightChanges(current, previous) {
+            let result = '';
+            for (let key in current) {
+                if (!deepEqual(current[key], previous[key])) {
+                    result += `<span class="highlight"><b>${key}: ${current[key]}</b></span><br>`;
+                } else {
+                    result += `${key}: ${current[key]}<br>`;
+                }
+            }
+            return result;
+        }
+
+        // Function to copy all URLs from the asset columns
+        function copyUrlsFromPage(table) {
+            const urls = [];
+            const rows = table.querySelectorAll('tr');
+
+            rows.forEach(row => {
+                const link = row.querySelector('a');
+                if (link) {
+                    urls.push(link.href);
+                }
+            });
+
+            if (urls.length > 0) {
+                const textToCopy = urls.join('\n');
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    const contentDiv = document.getElementById('content');
+                    contentDiv.append("   copied to clipboard - 📋")
+                }).catch(err => {
+                    console.error('Failed to copy URLs: ', err);
+                });
+            } else {
+                console.log('No URLs found to copy.');
+            }
+        }
+
+        function showSearchPage() {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = `
+                <h3>Search</h3>
+                <input type="text" id="search-input" placeholder="Enter search term">
+                <div>
+                    <label><input type="radio" name="search-type" value="asset" checked> Asset</label>
+                    <label><input type="radio" name="search-type" value="cname"> Cname</label>
+                    <label><input type="radio" name="search-type" value="title"> Title</label>
+                    <label><input type="radio" name="search-type" value="tech"> Tech</label>
+                </div>
+                <button onclick="performSearch()">Search</button>
+                <div id="search-results"></div>
+            `;
+        }
+
+        function performSearch() {
+            const searchTerm = document.getElementById('search-input').value;
+            const searchType = document.querySelector('input[name="search-type"]:checked').value;
+            const searchBody = {};
+            searchBody[searchType] = searchTerm;
+
+            fetch(`${host}/assets/search`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${authToken}`,
+                },
+                body: JSON.stringify(searchBody)
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('search-results');
+                resultsDiv.innerHTML = '';
+
+                if (data.length === 0) {
+                    resultsDiv.innerHTML = '<p>No results found.</p>';
+                    return;
+                }
+
+                const table = document.createElement('table');
+                const tableHeader = `<tr><th>Asset</th><th>Value</th></tr>`;
+                table.innerHTML = tableHeader;
+
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const title = item.current_values.title
+                    const cname = item.current_values.cname
+                    const status_code = item.current_values.status_code
+
+                    row.innerHTML = `
+                        <td><a href="${item.asset}" target="_blank">${item.asset}</a></td>
+                        <td><b>Title: </b>${title}<br>
+                            <b>CNAME: </b>${cname}<br>
+                            <b>Status Code: </b>${status_code}</td>
+                    `;
+                    table.appendChild(row);
+                });
+
+                resultsDiv.appendChild(table);
+
+                // Add "Copy URLs" button
+                const copyButton = document.createElement('button');
+                copyButton.textContent = 'Copy URLs';
+                copyButton.classList.add('copy-button');
+                copyButton.onclick = () => copyUrlsFromPage(table);
+                resultsDiv.appendChild(copyButton);
+            })
+            .catch(error => {
+                console.error("Error during search:", error);
+            });
+        }
+
+        function downloadUrls() {
+            fetch(`${host}/assets/urls`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${authToken}`,
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const filename = `assets_data_${Date.now()}.txt`;
+
+                return response.blob().then(blob => ({ blob, filename }));
+            })
+            .then(({ blob, filename }) => {
+                // Create a temporary URL for the blob
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = filename;
+
+                // Append the <a> tag, trigger the click, and remove it
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+
+                // Clean up the temporary URL
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(err => console.error('Error downloading file:', err));
+        }
+
+
+        function showInfoPage() {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = `
+                <h3>Information</h3>
+                <button onclick="downloadUrls()">Get working URLs</button>
+            `;
+            fetch(`${host}/assets/information`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`, 
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Update the page with the received information
+                    contentDiv.innerHTML = `
+                        <h3>Information</h3>
+                        <p><b>Assets in database:</b> ${data.assets}</p>
+                        <button onclick="downloadUrls()">Get working URLs</button>
+                    `;
+                })
+                .catch(error => {
+                    // Handle errors and display a message
+                    console.error('Error fetching assets information:', error);
+                    contentDiv.innerHTML = `
+                        <h3>Information</h3>
+                        <p>Error loading assets information. Please try again later.</p>
+                        <button onclick="downloadUrls()">Get working URLs</button>
+                    `;
+                });
+                
+        }
+
+        function deepEqual(a, b) {
+            return JSON.stringify(a) === JSON.stringify(b);
+        }
+    </script>
+</body>
+</html>
