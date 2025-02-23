@@ -14,6 +14,8 @@
   </url><url>
     <loc>https://caon.io/exploitation/workflows/payment/</loc>
   </url><url>
+    <loc>https://caon.io/recon/fuzzing/</loc>
+  </url><url>
     <loc>https://caon.io/recon/spider/</loc>
   </url><url>
     <loc>https://caon.io/recon/subdomain/active/</loc>
@@ -69,8 +71,6 @@
     <loc>https://caon.io/exploitation/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/mobile/flutter/</loc>
-  </url><url>
-    <loc>https://caon.io/recon/fuzzing/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/cloud/gcp/</loc>
   </url><url>

@@ -51,6 +51,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://caon.io/recon/fuzzing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://caon.io/recon/fuzzing/</guid>
+      <description>Cust+++ title = &amp;lsquo;Fuzzing&amp;rsquo; +++&#xA;Rate Limited?&#xA;Try to run techniques from 403 Bypass&#xA;Configure your options! You can customize your ffuf with special information, here&amp;rsquo;s a sample:&#xA;https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42&#xA;# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Custom input seq 0 1000 | ffuf -u &amp;#39;http://ffuf.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://caon.io/recon/spider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/spider/</guid>
@@ -159,7 +166,7 @@
       <link>https://caon.io/resources/career/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/resources/career/</guid>
-      <description> Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap https://hbr.org/1999/11/management-time-whos-got-the-monkey Article on time optimization https://tib3rius.com/interview-questions Interview Questions Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s </description>
+      <description> Site Description https://github.com/rezaduty/cybersecurity-career-path/blob/master/Security_Engineer(Software).md CyberSec career path https://devskiller.com/screen-security-engineer/ Security Engineer Career https://hbr.org/1999/11/management-time-whos-got-the-monkey About management time https://shellsharks.com/getting-into-information-security Steps to start in infosec https://roadmap.sh/cyber-security CyberSec toadmap https://hbr.org/1999/11/management-time-whos-got-the-monkey Article on time optimization https://tib3rius.com/interview-questions Interview Questions Boost your CV Site Description https://cve-north-stars.github.io/ Get some CVE&amp;rsquo;s https://www.1point3acres.com/ Chinese site about working abroad, has some really good insights </description>
     </item>
     <item>
       <title>Clickjacking</title>
@@ -237,13 +244,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/mobile/flutter/</guid>
       <description> Reflutter https://github.com/ptswarm/reFlutter Install Reflutter pip3 install reflutter Reflutter the app with your local proxy IP reflutter main.apk Set burp mode to invisible proxying, check documentation Sign the app&#xA;java -jar uber-apk-signer.jar --allowResign -a release.RE.apk Install the APK adb install release.RE-aligned-debugSigned.apk NVISO https://blog.nviso.eu/2022/08/18/intercept-flutter-traffic-on-ios-and-android-http-https-dio-pinning/ https://github.com/NVISOsecurity/disable-flutter-tls-verification frida -U -f your.package.name -l disable-flutter-tls.js --no-pause # or Frida codeshare frida -U --codeshare TheDauntless/disable-flutter-tls-v1 -f YOUR_BINARY </description>
-    </item>
-    <item>
-      <title>Fuzzing</title>
-      <link>https://caon.io/recon/fuzzing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://caon.io/recon/fuzzing/</guid>
-      <description>Rate Limited?&#xA;Try to run techniques from 403 Bypass&#xA;Configure your options! You can customize your ffuf with special information, here&amp;rsquo;s a sample:&#xA;https://gist.github.com/felipecaon/d1e7c980d7bab1312ea81df1d0241f42&#xA;# https://github.com/ffuf/ffuf ffuf -w /path/to/wordlist -u https://target/FUZZ # Multiple sources ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u &amp;#34;https://example.com/PAYLOAD&amp;#34; -H &amp;#34;HEADER:127.0.0.1&amp;#34; -X &amp;#34;METHOD&amp;#34; # Multiple URLs and mutiple files example ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v # Cool ffuf flags -ac: Calibrate requests to unmatch false positives -recursion: recursion -se: Stop on erors -sf: Stop on 95% 403 Forbidden, possible WAF ban Remove noise Ffuf can generate a large output, even with -ac flag enabled.</description>
     </item>
     <item>
       <title>Google GCP</title>
@@ -453,7 +453,7 @@
       <link>https://caon.io/exploitation/vulnerability/ssti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/vulnerability/ssti/</guid>
-      <description>Tools # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; Python Django/Flask Detection:&#xA;{% if &amp;#39;str&amp;#39; = &amp;#39;str&amp;#39; %} vuln {% endif %} {% debug %} Disclose pages:&#xA;{% include &amp;#39;admin/base.html&amp;#39; %} Disclose log table:&#xA;{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; Tips Try to SSTI with the fuzz string provided in cobalt.</description>
+      <description>Tools # https://github.com/epinna/tplmap tplmap.py -u &amp;#39;http://www.target.com/page?name=John&amp;#39; Python Django/Flask Detection:&#xA;{% if &amp;#39;str&amp;#39; = &amp;#39;str&amp;#39; %} vuln {% endif %} {% debug %} Disclose pages:&#xA;{% include &amp;#39;admin/base.html&amp;#39; %} Disclose log table:&#xA;{% load log %}{% get_admin_log 10 as log %}{% for e in log %} {{e.user.get_username}} : {{e.user.password}}{% endfor %} ASP/APS.NET/ASPX % is a key character If &amp;lt;% returns 500, try &amp;lt;%= 7*7 %&amp;gt; FreeMarker https://gist.github.com/n1nj4sec/5e3fffdfa322f4c23053359fc8100ab9 Tips Try to SSTI with the fuzz string provided in cobalt.</description>
     </item>
     <item>
       <title>Third Party</title>
