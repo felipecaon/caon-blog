@@ -17,3 +17,4 @@ title = 'Career Related Topics'
 | Site | Description |
 | --- | --- |
 | https://cve-north-stars.github.io/ | Get some CVE's |
+| https://www.1point3acres.com/ | Chinese site about working abroad, has some really good insights |

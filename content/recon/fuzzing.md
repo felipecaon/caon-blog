@@ -1,4 +1,4 @@
-+++
+Cust+++
 title = 'Fuzzing'
 +++
 
@@ -23,6 +23,12 @@ ffuf -w http-methods:METHOD -w payloads:PAYLOAD -w headers:HEADER -u "https://ex
 
 # Multiple URLs and mutiple files example
 ffuf -u URL/FUZZ -w listofurls:URL -w listofpaths:FUZZ -maxtime 300 -t 500 -c -v
+
+# Custom input
+seq 0 1000 | ffuf -u 'http://ffuf.me/cd/pipes/user?id=FUZZ' -w -
+
+#Burp-like request
+ffuf -request /tmp/req.txt -w -
 
 # Cool ffuf flags
 -ac: Calibrate requests to unmatch false positives
