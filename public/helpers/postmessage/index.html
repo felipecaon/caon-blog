@@ -9,14 +9,7 @@
 <meta name="generator" content="Hugo 0.133.1">
 
 
-  <meta name="description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5
-Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU
-Extension https://github.com/fransr/postMessage-tracker
-Labs https://html5.digi.ninja/
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse
-Credits: https://x.com/Heli__9" />
+  <meta name="description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5 Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU Extension https://github.com/fransr/postMessage-tracker Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse Credits: https://x.com/Heli__9" />
 
   <title>PostMessage | caon.io</title>
 
@@ -42,14 +35,7 @@ Credits: https://x.com/Heli__9" />
     content="PostMessage"
   />
   <meta property="og:site_name" content="caon.io" />
-  <meta property="og:description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5
-Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU
-Extension https://github.com/fransr/postMessage-tracker
-Labs https://html5.digi.ninja/
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse
-Credits: https://x.com/Heli__9" />
+  <meta property="og:description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5 Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU Extension https://github.com/fransr/postMessage-tracker Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse Credits: https://x.com/Heli__9" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://caon.io/helpers/postmessage/" />
 
@@ -58,14 +44,7 @@ Credits: https://x.com/Heli__9" />
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="PostMessage" />
-  <meta name="twitter:description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5
-Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU
-Extension https://github.com/fransr/postMessage-tracker
-Labs https://html5.digi.ninja/
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url
-https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse
-Credits: https://x.com/Heli__9" />
+  <meta name="twitter:description" content="Writeups https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/ https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/ https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities https://hackerone.com/reports/900619 https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities https://hackerone.com/reports/231053 https://hackerone.com/reports/576532 https://hackerone.com/reports/1567186 https://hackerone.com/reports/1031644 https://hackerone.com/reports/217745 https://hackerone.com/reports/423218 https://rhynorater.github.io/postMessage-Braindump https://vinothkumar.me/20000-facebook-dom-xss/ https://ndevtk.github.io/writeups/2023/08/18/extensions/ https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5 Videos https://www.youtube.com/watch?v=dCco6bZhUd0 https://youtu.be/6731qvqBlCE?t=2435 https://www.youtube.com/watch?v=KGsktwaxsKU Extension https://github.com/fransr/postMessage-tracker Labs https://html5.digi.ninja/ https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse Credits: https://x.com/Heli__9" />
 
 
   <script type="application/ld+json">
@@ -76,7 +55,7 @@ Credits: https://x.com/Heli__9" />
       "name": "PostMessage",
       "url" : "https://caon.io/helpers/postmessage/",
       "headline": "PostMessage",
-      "description": "Writeups https:\/\/labs.detectify.com\/security-guidance\/the-pitfalls-of-postmessage\/ https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/API\/Window\/postMessage https:\/\/trustfoundry.net\/2024\/07\/30\/a-quick-introduction-to-postmessage-xss\/ https:\/\/www.yeswehack.com\/learn-bug-bounty\/introduction-postmessage-vulnerabilities https:\/\/hackerone.com\/reports\/900619 https:\/\/book.hacktricks.xyz\/pentesting-web\/postmessage-vulnerabilities https:\/\/hackerone.com\/reports\/231053 https:\/\/hackerone.com\/reports\/576532 https:\/\/hackerone.com\/reports\/1567186 https:\/\/hackerone.com\/reports\/1031644 https:\/\/hackerone.com\/reports\/217745 https:\/\/hackerone.com\/reports\/423218 https:\/\/rhynorater.github.io\/postMessage-Braindump https:\/\/vinothkumar.me\/20000-facebook-dom-xss\/ https:\/\/ndevtk.github.io\/writeups\/2023\/08\/18\/extensions\/ https:\/\/web.archive.org\/web\/20211016075506\/https:\/\/insight.claranet.co.uk\/technical-blogs\/hunting-postmessage-vulnerabilities https:\/\/medium.com\/bored-engineer\/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5\nVideos https:\/\/www.youtube.com\/watch?v=dCco6bZhUd0 https:\/\/youtu.be\/6731qvqBlCE?t=2435 https:\/\/www.youtube.com\/watch?v=KGsktwaxsKU\nExtension https:\/\/github.com\/fransr\/postMessage-tracker\nLabs https:\/\/html5.digi.ninja\/\nhttps:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages\nhttps:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages-and-a-javascript-url\nhttps:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages-and-json-parse\nCredits: https:\/\/x.com\/Heli__9",
+      "description": "Writeups https:\/\/labs.detectify.com\/security-guidance\/the-pitfalls-of-postmessage\/ https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/API\/Window\/postMessage https:\/\/trustfoundry.net\/2024\/07\/30\/a-quick-introduction-to-postmessage-xss\/ https:\/\/www.yeswehack.com\/learn-bug-bounty\/introduction-postmessage-vulnerabilities https:\/\/hackerone.com\/reports\/900619 https:\/\/book.hacktricks.xyz\/pentesting-web\/postmessage-vulnerabilities https:\/\/hackerone.com\/reports\/231053 https:\/\/hackerone.com\/reports\/576532 https:\/\/hackerone.com\/reports\/1567186 https:\/\/hackerone.com\/reports\/1031644 https:\/\/hackerone.com\/reports\/217745 https:\/\/hackerone.com\/reports\/423218 https:\/\/rhynorater.github.io\/postMessage-Braindump https:\/\/vinothkumar.me\/20000-facebook-dom-xss\/ https:\/\/ndevtk.github.io\/writeups\/2023\/08\/18\/extensions\/ https:\/\/web.archive.org\/web\/20211016075506\/https:\/\/insight.claranet.co.uk\/technical-blogs\/hunting-postmessage-vulnerabilities https:\/\/medium.com\/bored-engineer\/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5 Videos https:\/\/www.youtube.com\/watch?v=dCco6bZhUd0 https:\/\/youtu.be\/6731qvqBlCE?t=2435 https:\/\/www.youtube.com\/watch?v=KGsktwaxsKU Extension https:\/\/github.com\/fransr\/postMessage-tracker Labs https:\/\/html5.digi.ninja\/ https:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages https:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages-and-a-javascript-url https:\/\/portswigger.net\/web-security\/dom-based\/controlling-the-web-message-source\/lab-dom-xss-using-web-messages-and-json-parse Credits: https:\/\/x.com\/Heli__9",
       "wordCount" : "31",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -3860,124 +3839,132 @@ Credits: https://x.com/Heli__9" />
         Writeups
     </h1>
 </div>
-<p><a
+<ul>
+<li><a
   class="gdoc-markdown__link"
   href="https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/"
->https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/</a>
-<a
+>https://labs.detectify.com/security-guidance/the-pitfalls-of-postmessage/</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage"
->https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage</a>
-<a
+>https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/"
->https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/</a>
-<a
+>https://trustfoundry.net/2024/07/30/a-quick-introduction-to-postmessage-xss/</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities"
->https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities</a>
-<a
+>https://www.yeswehack.com/learn-bug-bounty/introduction-postmessage-vulnerabilities</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/900619"
->https://hackerone.com/reports/900619</a>
-<a
+>https://hackerone.com/reports/900619</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities"
->https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities</a>
-<a
+>https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/231053"
->https://hackerone.com/reports/231053</a>
-<a
+>https://hackerone.com/reports/231053</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/576532"
->https://hackerone.com/reports/576532</a>
-<a
+>https://hackerone.com/reports/576532</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/1567186"
->https://hackerone.com/reports/1567186</a>
-<a
+>https://hackerone.com/reports/1567186</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/1031644"
->https://hackerone.com/reports/1031644</a>
-<a
+>https://hackerone.com/reports/1031644</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/217745"
->https://hackerone.com/reports/217745</a>
-<a
+>https://hackerone.com/reports/217745</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://hackerone.com/reports/423218"
->https://hackerone.com/reports/423218</a>
-<a
+>https://hackerone.com/reports/423218</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://rhynorater.github.io/postMessage-Braindump"
->https://rhynorater.github.io/postMessage-Braindump</a>
-<a
+>https://rhynorater.github.io/postMessage-Braindump</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://vinothkumar.me/20000-facebook-dom-xss/"
->https://vinothkumar.me/20000-facebook-dom-xss/</a>
-<a
+>https://vinothkumar.me/20000-facebook-dom-xss/</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://ndevtk.github.io/writeups/2023/08/18/extensions/"
->https://ndevtk.github.io/writeups/2023/08/18/extensions/</a>
-<a
+>https://ndevtk.github.io/writeups/2023/08/18/extensions/</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities"
->https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities</a>
-<a
+>https://web.archive.org/web/20211016075506/https://insight.claranet.co.uk/technical-blogs/hunting-postmessage-vulnerabilities</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5"
->https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5</a></p>
+>https://medium.com/bored-engineer/xss-on-account-leagueoflegends-com-via-easyxdm-2016-75bcf9d582b5</a></li>
+</ul>
 <div class="gdoc-page__anchorwrap">
     <h2 id="videos"
     >
         Videos
     </h2>
 </div>
-<p><a
+<ul>
+<li><a
   class="gdoc-markdown__link"
   href="https://www.youtube.com/watch?v=dCco6bZhUd0"
->https://www.youtube.com/watch?v=dCco6bZhUd0</a>
-<a
+>https://www.youtube.com/watch?v=dCco6bZhUd0</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://youtu.be/6731qvqBlCE?t=2435"
->https://youtu.be/6731qvqBlCE?t=2435</a>
-<a
+>https://youtu.be/6731qvqBlCE?t=2435</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://www.youtube.com/watch?v=KGsktwaxsKU"
->https://www.youtube.com/watch?v=KGsktwaxsKU</a></p>
+>https://www.youtube.com/watch?v=KGsktwaxsKU</a></li>
+</ul>
 <div class="gdoc-page__anchorwrap">
     <h2 id="extension"
     >
         Extension
     </h2>
 </div>
-<p><a
+<ul>
+<li><a
   class="gdoc-markdown__link"
   href="https://github.com/fransr/postMessage-tracker"
->https://github.com/fransr/postMessage-tracker</a></p>
+>https://github.com/fransr/postMessage-tracker</a></li>
+</ul>
 <div class="gdoc-page__anchorwrap">
     <h2 id="labs"
     >
         Labs
     </h2>
 </div>
-<p><a
+<ul>
+<li><a
   class="gdoc-markdown__link"
   href="https://html5.digi.ninja/"
->https://html5.digi.ninja/</a></p>
-<p><a
+>https://html5.digi.ninja/</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages"
->https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages</a></p>
-<p><a
+>https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url"
->https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url</a></p>
-<p><a
+>https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-a-javascript-url</a></li>
+<li><a
   class="gdoc-markdown__link"
   href="https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse"
->https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse</a></p>
+>https://portswigger.net/web-security/dom-based/controlling-the-web-message-source/lab-dom-xss-using-web-messages-and-json-parse</a></li>
+</ul>
 <p>Credits: <a
   class="gdoc-markdown__link"
   href="https://x.com/Heli__9"
