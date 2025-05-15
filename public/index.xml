@@ -26,7 +26,7 @@
       <link>https://caon.io/exploitation/cms/drupal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/cms/drupal/</guid>
-      <description>Drupal Drupal hacking guide Once inside, get RCE Reverse Shel with admin access&#xA;Content Discovery Fuzz in example.com/node/FUZZ to find unmapped pages</description>
+      <description>Drupal hacktricks guide Once inside, get RCE Reverse Shel with admin access&#xA;Content Discovery Fuzz in example.com/node/FUZZ to find unmapped pages&#xA;Nuclei templates https://github.com/RandomRobbieBF/nuclei-drupal-sa/</description>
     </item>
     <item>
       <title></title>
@@ -278,7 +278,7 @@
       <link>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</guid>
-      <description>Linters JSHint Download getJS&#xA;Download all js files for each site https://github.com/003random/getJS&#xA;JSScanner&#xA;Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner&#xA;Way Back Machine Premise: Javascript files often gets changed, an attaker may find sensitive stuff in an older version of a JS file that is not alive anymore.&#xA;# https://github.com/jsvine/waybackpack # Clean known paths or JS files that are going to be useless in analysis.</description>
+      <description>Linters JSHint Download getJS&#xA;Download all js files for each site https://github.com/003random/getJS&#xA;JSScanner&#xA;Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner&#xA;Way Back Machine Premise: Javascript files often gets changed, an attacker may find sensitive stuff in an older version of a JS file that is not alive anymore.&#xA;# https://github.com/jsvine/waybackpack # Clean known paths or JS files that are going to be useless in analysis.</description>
     </item>
     <item>
       <title>LFI</title>
@@ -502,7 +502,7 @@
       <link>https://caon.io/exploitation/vulnerability/other/web3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/vulnerability/other/web3/</guid>
-      <description> https://github.com/slowmist/Knowledge-Base https://github.com/slowmist/SlowMist-Learning-Roadmap-for-Becoming-a-Smart-Contract-Auditor </description>
+      <description> https://github.com/slowmist/Knowledge-Base https://github.com/slowmist/SlowMist-Learning-Roadmap-for-Becoming-a-Smart-Contract-Auditor https://www.youtube.com/@opensensepw https://www.youtube.com/@0xOwenThurm https://capturetheether.com/ https://www.damnvulnerabledefi.xyz/ </description>
     </item>
     <item>
       <title>Whois</title>
