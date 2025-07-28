@@ -46,15 +46,6 @@ Ffuf can generate a large output, even with `-ac` flag enabled. To filter dummy 
 ffufPostprocessing -result-file /tmp/ffuf/results.json -bodies-folder /tmp/ffuf/bodies/ -delete-bodies -overwrite-result-file
 ```
 
-## Backup Files
-
-Tempers file to find possible backup files based in file name
-
-```
-# https://github.com/mazen160/bfac
-bfac --no-text --url http://example.com/test.php --level 2
-```
-
 ## Recollapse
 
 Generate a bunch of breaking-strings to test your target

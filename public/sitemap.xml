@@ -12,6 +12,8 @@
   </url><url>
     <loc>https://caon.io/exploitation/cms/wordpress-cve/</loc>
   </url><url>
+    <loc>https://caon.io/exploitation/vulnerability/cspt/</loc>
+  </url><url>
     <loc>https://caon.io/exploitation/workflows/payment/</loc>
   </url><url>
     <loc>https://caon.io/recon/fuzzing/</loc>
@@ -62,9 +64,13 @@
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/crlf/</loc>
   </url><url>
+    <loc>https://caon.io/exploitation/bypass/csp/</loc>
+  </url><url>
     <loc>https://caon.io/exploitation/vulnerability/csrf/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/deserialization/</loc>
+  </url><url>
+    <loc>https://caon.io/exploitation/techniques/domclobbering/</loc>
   </url><url>
     <loc>https://caon.io/recon/dorks/</loc>
   </url><url>
@@ -82,7 +88,7 @@
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/IIS/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</loc>
+    <loc>https://caon.io/exploitation/techniques/javascriptfiles/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/lfi/</loc>
   </url><url>
@@ -94,7 +100,7 @@
   </url><url>
     <loc>https://caon.io/recon/paramdiscovery/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/parameterpollution/</loc>
+    <loc>https://caon.io/exploitation/techniques/parameterpollution/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/vulnerability/pathtransversal/</loc>
   </url><url>
@@ -138,9 +144,9 @@
   </url><url>
     <loc>https://caon.io/recon/thirdparty/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/timingattacks/</loc>
+    <loc>https://caon.io/exploitation/techniques/timingattacks/</loc>
   </url><url>
-    <loc>https://caon.io/exploitation/vulnerability/other/uuid/</loc>
+    <loc>https://caon.io/exploitation/techniques/uuid/</loc>
   </url><url>
     <loc>https://caon.io/exploitation/bypass/waf/</loc>
   </url><url>

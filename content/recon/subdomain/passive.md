@@ -75,3 +75,11 @@ Tip: Use http.favicon.hash:<hash> on Shodan
 ```
 
 See more shodan dorks here: https://github.com/dootss/shodan-dorks
+
+## AI
+
+- https://github.com/hadriansecurity/subwiz
+
+```
+subwiz -i subdomains.txt
+```

@@ -44,6 +44,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://caon.io/exploitation/vulnerability/cspt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://caon.io/exploitation/vulnerability/cspt/</guid>
+      <description> CSPT https://blog.doyensec.com/2025/03/27/cspt-resources.html Chrome Extension https://github.com/vitorfhc/gecko Burp Extension https://github.com/doyensec/CSPTBurpExtension </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://caon.io/exploitation/workflows/payment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/workflows/payment/</guid>
@@ -61,7 +68,7 @@
       <link>https://caon.io/recon/spider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/recon/spider/</guid>
-      <description> katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt Webpaste chrome extension # https://github.com/xnl-h4ck3r/webpaste </description>
+      <description> katana # go install github.com/projectdiscovery/katana/cmd/katana@latest cat hosts | katana -jc -kf all -nc -ef png,jpg,jpeg,css,gif,ttf,woff,woff2,svg,eot Find records # https://github.com/projectdiscovery/dnsx dnsx -retry 3 -a -aaaa -cname -ns -ptr -mx -soa -resp -silent -l subdomains.txt &amp;gt; dnsx_info.txt </description>
     </item>
     <item>
       <title></title>
@@ -103,7 +110,7 @@
       <link>https://caon.io/exploitation/bypass/403/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/bypass/403/</guid>
-      <description># https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com # https://github.com/devploit/nomore403 nomore403 -u https://example.com </description>
+      <description># https://github.com/laluka/bypass-url-parser python3 bypass-url-parser.py --url target.com # https://github.com/devploit/nomore403 nomore403 -u https://example.com https://blogs.jsmon.sh/403-bypass-tricks-every-bug-hunter-should-know/ </description>
     </item>
     <item>
       <title>Amazon AWS</title>
@@ -211,6 +218,13 @@
       <description>Carriage Return Line Feed&#xA;Carriage Return = ASCII 13, \r, %0D Line Feed = ASCII 10, \n, %0A Tools # https://github.com/dwisiswant0/crlfuzz crlfuzz -u &amp;#34;http://example.com&amp;#34; POC CRLF to XSS&#xA;http://www.example.com/somepage.php?page=%0d%0aContent-Length:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContent-Type:%20text/html%0d%0aContent-Length:%2025%0d%0a%0d%0a%3Cscript%3Ealert(1)%3C/script%3E </description>
     </item>
     <item>
+      <title>CSP Bypass Techniques</title>
+      <link>https://caon.io/exploitation/bypass/csp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://caon.io/exploitation/bypass/csp/</guid>
+      <description> https://nzt-48.org/form-action-content-security-policy-bypass-and-other-tactics-for-dealing-with-the-csp https://cspbypass.com/ </description>
+    </item>
+    <item>
       <title>CSRF</title>
       <link>https://caon.io/exploitation/vulnerability/csrf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -223,6 +237,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://caon.io/exploitation/vulnerability/deserialization/</guid>
       <description> Java https://www.slideshare.net/codewhitesec/java-deserialization-vulnerabilities-the-forgotten-bug-class ASP https://notsosecure.com/exploiting-viewstate-deserialization-using-blacklist3r-and-ysoserial-net </description>
+    </item>
+    <item>
+      <title>DOM Clobbering</title>
+      <link>https://caon.io/exploitation/techniques/domclobbering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://caon.io/exploitation/techniques/domclobbering/</guid>
+      <description> https://clobberx.netlify.app/ </description>
     </item>
     <item>
       <title>Dorks</title>
@@ -275,9 +296,9 @@
     </item>
     <item>
       <title>Javascript</title>
-      <link>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</link>
+      <link>https://caon.io/exploitation/techniques/javascriptfiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://caon.io/exploitation/vulnerability/other/javascriptfiles/</guid>
+      <guid>https://caon.io/exploitation/techniques/javascriptfiles/</guid>
       <description>Linters JSHint Download getJS&#xA;Download all js files for each site https://github.com/003random/getJS&#xA;JSScanner&#xA;Download all js files for each site, beautify and run linkfinder: https://github.com/dark-warlord14/JSScanner&#xA;Way Back Machine Premise: Javascript files often gets changed, an attacker may find sensitive stuff in an older version of a JS file that is not alive anymore.&#xA;# https://github.com/jsvine/waybackpack # Clean known paths or JS files that are going to be useless in analysis.</description>
     </item>
     <item>
@@ -317,9 +338,9 @@
     </item>
     <item>
       <title>Parameter Pollution</title>
-      <link>https://caon.io/exploitation/vulnerability/parameterpollution/</link>
+      <link>https://caon.io/exploitation/techniques/parameterpollution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://caon.io/exploitation/vulnerability/parameterpollution/</guid>
+      <guid>https://caon.io/exploitation/techniques/parameterpollution/</guid>
       <description>When searching for HPP keep in mind some servers handle parameters differently.&#xA;Take http://example.com?username=foo&amp;amp;username=bar as an example.&#xA;PHP and Apache use the last username occurence. Tomcat uses the first occurence. ASP and IIS uses all occurences A study containing all the servers can be found here: https://owasp.org/www-pdf-archive/AppsecEU09_CarettoniDiPaola_v0.8.pdf&#xA;Social Media Share Links Often a websites offers its user a feature to share a given page in social media. The fearture works this way: An user clicks the share button and a pop-ip page shows the message and action button that the user click uses to share content.</description>
     </item>
     <item>
@@ -464,16 +485,16 @@
     </item>
     <item>
       <title>Timing Attacks</title>
-      <link>https://caon.io/exploitation/vulnerability/timingattacks/</link>
+      <link>https://caon.io/exploitation/techniques/timingattacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://caon.io/exploitation/vulnerability/timingattacks/</guid>
+      <guid>https://caon.io/exploitation/techniques/timingattacks/</guid>
       <description> https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work </description>
     </item>
     <item>
       <title>UUID</title>
-      <link>https://caon.io/exploitation/vulnerability/other/uuid/</link>
+      <link>https://caon.io/exploitation/techniques/uuid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://caon.io/exploitation/vulnerability/other/uuid/</guid>
+      <guid>https://caon.io/exploitation/techniques/uuid/</guid>
       <description>V1 V1 UUIDs are not that unique, UUIDv1 contains sequences that can be guessed.&#xA;Since the first chunks are timestamps, one can bruteforce possibilities in between two known values, guessing the right one.&#xA;https://github.com/felipecaon/uuidv1gen&#xA;https://www.uuidtools.com/decode</description>
     </item>
     <item>

@@ -35,6 +35,7 @@ curl URL -x http://127.0.0.1:8080
 ## Repositories
 
 - [AwesomeBurpExtensions](https://github.com/snoopysecurity/awesome-burp-extensions)
+- [Bambdas](https://github.com/PortSwigger/bambdas)
 
 ## Articles
 

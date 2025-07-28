@@ -8,7 +8,7 @@ main:
         ref: "/recon/scope"
       - name: ASN/CIDR
         ref: "/recon/asncidr"
-      - name: Whois
+      - name: Whois Lookup
         ref: "/recon/whois"
       - name: Company Information
         ref: "/recon/companyinformation"
@@ -18,11 +18,11 @@ main:
             ref: "/recon/subdomain/passive"
           - name: Active
             ref: "/recon/subdomain/active"
-      - name: Port Scan
+      - name: Port Scanning
         ref: "/recon/portscan"
       - name: Probing
         ref: "/recon/probing"
-      - name: Screenshot
+      - name: Screenshotting
         ref: "/recon/screenshot"
       - name: Content Discovery
         sub:
@@ -37,8 +37,21 @@ main:
           - name: Third Party
             ref: "/recon/thirdparty"              
   - name: Exploitation
+    ref: "/exploitation"
     icon: "gdoc_fire"
     sub:
+      - name: Techniques
+        sub:
+          - name: DOM Clobbering
+            ref: "/exploitation/techniques/domclobbering"
+          - name: Parameter Pollution
+            ref: "/exploitation/techniques/parameterpollution"
+          - name: Timing Attacks
+            ref: "/exploitation/techniques/timingattacks"
+          - name: UUID Guessing
+            ref: "/exploitation/techniques/uuid"
+          - name: JavaScript Analysis
+            ref: "/exploitation/techniques/javascriptfiles"
       - name: Mobile
         sub:
           - name: "Flutter"
@@ -51,6 +64,8 @@ main:
         sub:
           - name: "403"
             ref: "/exploitation/bypass/403"
+          - name: "CSP"
+            ref: "/exploitation/bypass/csp"
           - name: WAF
             ref: "/exploitation/bypass/waf"
       - name: Authentication
@@ -92,6 +107,8 @@ main:
             ref: "/exploitation/vulnerability/cookieattacks"
           - name: CRLF
             ref: "/exploitation/vulnerability/crlf"
+          - name: CSPT
+            ref: "/exploitation/vulnerability/cspt"
           - name: CSRF
             ref: "/exploitation/vulnerability/csrf"
           - name: CORS	
@@ -108,8 +125,6 @@ main:
             ref: "/exploitation/vulnerability/lfi"
           - name: Open Redirect
             ref: "/exploitation/vulnerability/openredirect"
-          - name: Parameter Pollution
-            ref: "/exploitation/vulnerability/parameterpollution"	
           - name: Path Transversal
             ref: "/exploitation/vulnerability/pathtransversal"
           - name: Prototype Pollution
@@ -124,8 +139,6 @@ main:
             ref: "/exploitation/vulnerability/ssrf"
           - name: SQLi
             ref: "/exploitation/vulnerability/sqli"
-          - name: Timing Attacks
-            ref: "/exploitation/vulnerability/timingattacks"
           - name: XSS
             ref: "/exploitation/vulnerability/xss"
           - name: XXE
@@ -144,15 +157,12 @@ main:
         sub:
           - name: Brute Force
             ref: "/exploitation/vulnerability/other/bruteforce"
-          - name: Javascript Analysys
-            ref: "/exploitation/vulnerability/other/javascriptfiles"
-          - name: UUID
-            ref: "/exploitation/vulnerability/other/uuid"
           - name: Web technologies
             ref: "/exploitation/vulnerability/other/webtech"
           - name: Web3
             ref: "/exploitation/vulnerability/other/web3"
   - name: Resources
+    ref: "/resources"
     icon: "gdoc_star"
     sub:
       - name: Regexes
